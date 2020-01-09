@@ -7,7 +7,7 @@
 
 Name: gtkhtml3
 Version: 3.32.2
-Release: 2%{?dist}
+Release: 4%{?dist}
 Group: System Environment/Libraries
 Summary: GtkHTML library
 License: LGPLv2+ and GPLv2
@@ -31,6 +31,12 @@ Patch04: gtkhtml-3.32.2-print-underline-strikeout.patch
 
 # RH bug #626690
 Patch05: gtkhtml-3.32.2-par-style-draw.patch
+
+# RH bug #1127179
+Patch06: gtkhtml-3.32.2-crash-link-on-image.patch
+
+# RH bug #1406370
+Patch07: gtkhtml-3.32.2-iframe-print-height.patch
 
 ### Dependencies ###
 
@@ -71,6 +77,8 @@ Libraries and include files that can be used to develop GtkHTML applications.
 %patch03 -p1 -b .whitespace-drop-on-paste
 %patch04 -p1 -b .print-underline-strikeout
 %patch05 -p1 -b .par-style-draw
+%patch06 -p1 -b .crash-link-on-image
+%patch07 -p1 -b .iframe-print-height
 
 %build
 
@@ -116,6 +124,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*.pc
 
 %changelog
+* Tue Jan 03 2017 Milan Crha <mcrha@redhat.com> - 3.32.2-4.el6
+- Add patch for RH bug #1406370 (frame/iframe print miscalculates its height)
+
+* Wed Aug 31 2016 Milan Crha <mcrha@redhat.com> - 3.32.2-3.el6
+- Add patch for RH bug #1127179 (Crash when inserting a link on an image)
+
 * Wed Jul 03 2013 Milan Crha <mcrha@redhat.com> - 3.32.2-2.el6
 - Add patch for some issues found by Coverity scan
 - Add patch for RH bug #577797 (Cursor misplaced after paste)
