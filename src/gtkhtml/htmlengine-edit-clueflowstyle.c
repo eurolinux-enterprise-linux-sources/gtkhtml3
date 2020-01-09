@@ -241,7 +241,7 @@ static void
 add_undo (HTMLEngine *engine,
 	  ClueFlowStyleOperation *op, HTMLUndoDirection dir)
 {
-	html_undo_add_action (engine->undo, undo_action_from_op (engine, op), dir);
+	html_undo_add_action (engine->undo, engine, undo_action_from_op (engine, op), dir);
 }
 
 
@@ -304,7 +304,7 @@ set_clueflow_style_in_region (HTMLEngine *engine,
 			break;
 	}
 
-	if (! do_undo)
+	if (!do_undo)
 		return;
 
 	add_undo (engine, style_operation_new (undo_forward ? g_list_reverse (prop_list) : prop_list, undo_forward), dir);

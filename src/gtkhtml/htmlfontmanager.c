@@ -65,16 +65,16 @@ html_font_set_release (HTMLFontSet *set, HTMLPainter *painter)
 	gint i;
 
 	for (i=0; i<GTK_HTML_FONT_STYLE_MAX_FONT; i++) {
-		if (set->font [i])
-			html_font_unref (set->font [i], painter);
-		set->font [i] = NULL;
+		if (set->font[i])
+			html_font_unref (set->font[i], painter);
+		set->font[i] = NULL;
 	}
 }
 
 static void
 html_font_set_unref (HTMLFontSet *set, HTMLPainter *painter)
 {
-	set->ref_count --;
+	set->ref_count--;
 	if (!set->ref_count) {
 		html_font_set_release (set, painter);
 		if (set->face)
@@ -224,9 +224,9 @@ html_font_set_font (HTMLFontManager *manager, HTMLFontSet *set, GtkHTMLFontStyle
 
 	/* set font in font set */
 	idx = html_font_set_get_idx (style);
-	if (set->font [idx] && font != set->font [idx])
-		html_font_unref (set->font [idx], manager->painter);
-	set->font [idx] = font;
+	if (set->font[idx] && font != set->font[idx])
+		html_font_unref (set->font[idx], manager->painter);
+	set->font[idx] = font;
 }
 
 static HTMLFont *
@@ -236,7 +236,7 @@ get_font (HTMLFontManager *manager, HTMLFontSet **set, gchar *face, GtkHTMLFontS
 
 	*set = get_font_set (manager, face, style);
 	if (*set)
-		font = (*set)->font [html_font_set_get_idx (style)];
+		font = (*set)->font[html_font_set_get_idx (style)];
 	return font;
 }
 
@@ -275,12 +275,12 @@ static gchar *
 strip_white_space (gchar *name)
 {
 	gint end;
-	while (name [0] == ' ' || name [0] == '\t')
-		name ++;
+	while (name[0] == ' ' || name[0] == '\t')
+		name++;
 	end = strlen (name);
-	while (end && (name [end - 1] == ' ' || name [end - 1] == '\t')) {
-		name [end - 1] = 0;
-		end --;
+	while (end && (name[end - 1] == ' ' || name[end - 1] == '\t')) {
+		name[end - 1] = 0;
+		end--;
 	}
 
 	return name;
@@ -308,7 +308,7 @@ alloc_new_font (HTMLFontManager *manager, HTMLFontSet **set, gchar *face_list, G
 					g_hash_table_insert (manager->font_sets, g_strdup (face_name), *set);
 				}
 				if (strcmp (face_list, *face)) {
-					(*set)->ref_count ++;
+					(*set)->ref_count++;
 					g_hash_table_insert (manager->font_sets, g_strdup (face_list), *set);
 				}
 				break;
@@ -403,13 +403,13 @@ void
 html_font_ref (HTMLFont *font, HTMLPainter *painter)
 {
 	html_painter_ref_font (painter, font);
-	font->ref_count ++;
+	font->ref_count++;
 }
 
 void
 html_font_unref (HTMLFont *font, HTMLPainter *painter)
 {
-	font->ref_count --;
+	font->ref_count--;
 	html_painter_unref_font (painter, font);
 
 	if (font->ref_count < 1)

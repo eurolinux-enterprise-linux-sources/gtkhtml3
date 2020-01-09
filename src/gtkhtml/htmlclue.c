@@ -62,7 +62,7 @@ get_n_children (HTMLObject *o)
 	gint n_children = 0;
 
 	while (cur) {
-		n_children ++;
+		n_children++;
 		cur = html_object_next_not_slave (cur);
 	}
 
@@ -79,7 +79,7 @@ get_child (HTMLObject *o, gint index)
 	while (cur) {
 		if (!index)
 			break;
-		index --;
+		index--;
 		cur = html_object_next_not_slave (cur);
 	}
 
@@ -95,7 +95,7 @@ get_child_index (HTMLObject *self, HTMLObject *child)
 	while (cur) {
 		if (cur == child)
 			return index;
-		index ++;
+		index++;
 		cur = html_object_next_not_slave (cur);
 	}
 
@@ -242,7 +242,7 @@ split (HTMLObject *self, HTMLEngine *e, HTMLObject *child, gint offset, gint lev
 	*left  = g_list_prepend (*left, self);
 	*right = g_list_prepend (*right, dup);
 
-	level --;
+	level--;
 	if (level > 0)
 		html_object_split (self->parent, e, dup, 0, level, left, right);
 }
@@ -380,7 +380,7 @@ find_anchor (HTMLObject *self, const gchar *name, gint *x, gint *y)
 
 	clue = HTML_CLUE (self);
 
-	for ( obj = clue->head; obj != NULL; obj = obj->next ) {
+	for (obj = clue->head; obj != NULL; obj = obj->next) {
 		if ((anchor = html_object_find_anchor ( obj, name, x, y)) != 0 )
 			return anchor;
 	}
@@ -476,7 +476,7 @@ save (HTMLObject *self,
 	clue = HTML_CLUE (self);
 
 	for (p = clue->head; p != NULL; p = p->next) {
-		if (! html_object_save (p, state))
+		if (!html_object_save (p, state))
 		    return FALSE;
 	}
 
@@ -494,7 +494,7 @@ save_plain (HTMLObject *self,
 	clue = HTML_CLUE (self);
 
 	for (p = clue->head; p != NULL; p = p->next) {
-		if (! html_object_save_plain (p, state, requested_width))
+		if (!html_object_save_plain (p, state, requested_width))
 		    return FALSE;
 	}
 
@@ -818,7 +818,7 @@ html_clue_append (HTMLClue *clue,
 
 	tail = get_tail (o);
 
-	if (! clue->head) {
+	if (!clue->head) {
 		clue->head = o;
 		o->prev = NULL;
 	} else {
@@ -854,7 +854,7 @@ html_clue_prepend (HTMLClue *clue,
 
 	tail = get_tail (o);
 
-	if (! clue->head) {
+	if (!clue->head) {
 		clue->head = o;
 		clue->tail = tail;
 		o->prev = NULL;

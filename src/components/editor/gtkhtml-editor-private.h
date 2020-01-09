@@ -25,6 +25,10 @@
 
 #include <glib/gi18n-lib.h>
 
+#ifdef HAVE_XFREE
+#include <X11/XF86keysym.h>
+#endif
+
 /* Custom Widgets */
 #include "gtkhtml-color-combo.h"
 #include "gtkhtml-color-palette.h"
@@ -83,6 +87,8 @@
 	} G_STMT_END
 
 G_BEGIN_DECLS
+
+typedef struct _GtkhtmlEditorRequest GtkhtmlEditorRequest;
 
 typedef enum {
 	EDITOR_MODE_HTML,
@@ -148,9 +154,6 @@ struct _GtkhtmlEditorPrivate {
 
 	/*** Link Properties State ***/
 
-	HTMLObject *link_object;
-	gint link_start_offset;
-	gint link_end_offset;
 	gboolean link_custom_description;
 
 	/*** Rule Properties State ***/
@@ -160,6 +163,10 @@ struct _GtkhtmlEditorPrivate {
 	/*** Table Properties State ***/
 
 	HTMLObject *table_object;
+
+	/* Active URI Requests */
+
+	GList *requests;
 
 	/*** Miscellaneous ***/
 
@@ -175,30 +182,41 @@ struct _GtkhtmlEditorPrivate {
 	gboolean changed;
 };
 
-void		gtkhtml_editor_private_init	 (GtkhtmlEditor *editor);
-void		gtkhtml_editor_private_dispose	 (GtkhtmlEditor *editor);
-void		gtkhtml_editor_private_finalize	 (GtkhtmlEditor *editor);
+struct _GtkhtmlEditorRequest {
+	GtkhtmlEditor *editor;
+	GCancellable *cancellable;
+	GSimpleAsyncResult *simple;
+
+	GFile *file;
+	GInputStream *input_stream;
+	GtkHTMLStream *output_stream;
+	gchar buffer[4096];
+};
+
+void		gtkhtml_editor_private_init	(GtkhtmlEditor *editor);
+void		gtkhtml_editor_private_constructed
+						(GtkhtmlEditor *editor);
+void		gtkhtml_editor_private_dispose	(GtkhtmlEditor *editor);
+void		gtkhtml_editor_private_finalize	(GtkhtmlEditor *editor);
 
 /* Private Utilities */
 
-void		gtkhtml_editor_actions_init	 (GtkhtmlEditor *editor);
-gchar *		gtkhtml_editor_find_data_file	 (const gchar *basename);
-gchar *		gtkhtml_editor_get_file_charset	 (const gchar *filename);
-gboolean	gtkhtml_editor_get_file_contents (const gchar *filename,
-						  const gchar *encoding,
-						  gchar **contents,
-						  gsize *length,
-						  GError **error);
-gint		gtkhtml_editor_insert_file	 (GtkhtmlEditor *editor,
-						  const gchar *title,
-						  GCallback response_cb);
-void		gtkhtml_editor_show_uri		 (GtkWindow *parent,
-						  const gchar *uri);
-void		gtkhtml_editor_spell_check	 (GtkhtmlEditor *editor,
-						  gboolean whole_document);
-gboolean	gtkhtml_editor_next_spell_error	 (GtkhtmlEditor *editor);
-gboolean	gtkhtml_editor_prev_spell_error	 (GtkhtmlEditor *editor);
-void		gtkhtml_editor_update_context	 (GtkhtmlEditor *editor);
+void		gtkhtml_editor_actions_init	(GtkhtmlEditor *editor);
+gchar *		gtkhtml_editor_find_data_file	(const gchar *basename);
+gint		gtkhtml_editor_insert_file	(GtkhtmlEditor *editor,
+						 const gchar *title,
+						 GCallback response_cb);
+GFile *		gtkhtml_editor_run_open_dialog	(GtkhtmlEditor *editor,
+						 const gchar *title,
+						 GtkCallback customize_func,
+						 gpointer customize_data);
+void		gtkhtml_editor_show_uri		(GtkWindow *parent,
+						 const gchar *uri);
+void		gtkhtml_editor_spell_check	(GtkhtmlEditor *editor,
+						 gboolean whole_document);
+gboolean	gtkhtml_editor_next_spell_error	(GtkhtmlEditor *editor);
+gboolean	gtkhtml_editor_prev_spell_error	(GtkhtmlEditor *editor);
+void		gtkhtml_editor_update_context	(GtkhtmlEditor *editor);
 
 G_END_DECLS
 

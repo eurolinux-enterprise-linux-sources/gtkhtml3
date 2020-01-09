@@ -70,31 +70,31 @@
 #include "math.h"
 
 enum DndTargetType {
-	DND_TARGET_TYPE_MESSAGE_RFC822,
-	DND_TARGET_TYPE_X_UID_LIST,
 	DND_TARGET_TYPE_TEXT_URI_LIST,
 	DND_TARGET_TYPE_MOZILLA_URL,
-	DND_TARGET_TYPE_TEXT_VCARD,
-	DND_TARGET_TYPE_TEXT_CALENDAR,
 	DND_TARGET_TYPE_TEXT_HTML,
 	DND_TARGET_TYPE_UTF8_STRING,
 	DND_TARGET_TYPE_TEXT_PLAIN,
 	DND_TARGET_TYPE_STRING
 };
 
-static GtkTargetEntry dnd_link_sources [] = {
-	{ (gchar *) "message/rfc822", 0, DND_TARGET_TYPE_MESSAGE_RFC822 },
-	{ (gchar *) "x-uid-list", 0, DND_TARGET_TYPE_X_UID_LIST },
+static GtkTargetEntry drag_dest_targets[] = {
 	{ (gchar *) "text/uri-list", 0, DND_TARGET_TYPE_TEXT_URI_LIST },
 	{ (gchar *) "_NETSCAPE_URL", 0, DND_TARGET_TYPE_MOZILLA_URL },
-	{ (gchar *) "text/x-vcard", 0, DND_TARGET_TYPE_TEXT_VCARD },
-	{ (gchar *) "text/calendar", 0, DND_TARGET_TYPE_TEXT_CALENDAR },
 	{ (gchar *) "text/html", 0, DND_TARGET_TYPE_TEXT_HTML },
 	{ (gchar *) "UTF8_STRING", 0, DND_TARGET_TYPE_UTF8_STRING },
 	{ (gchar *) "text/plain", 0, DND_TARGET_TYPE_TEXT_PLAIN },
 	{ (gchar *) "STRING", 0, DND_TARGET_TYPE_STRING },
 };
-#define DND_LINK_SOURCES sizeof (dnd_link_sources) / sizeof (GtkTargetEntry)
+
+static GtkTargetEntry drag_source_targets[] = {
+	{ (gchar *) "text/uri-list", 0, DND_TARGET_TYPE_TEXT_URI_LIST },
+	{ (gchar *) "_NETSCAPE_URL", 0, DND_TARGET_TYPE_MOZILLA_URL },
+	{ (gchar *) "text/html", 0, DND_TARGET_TYPE_TEXT_HTML },
+	{ (gchar *) "UTF8_STRING", 0, DND_TARGET_TYPE_UTF8_STRING },
+	{ (gchar *) "text/plain", 0, DND_TARGET_TYPE_TEXT_PLAIN },
+	{ (gchar *) "STRING", 0, DND_TARGET_TYPE_STRING },
+};
 
 enum _TargetInfo {
 	TARGET_HTML,
@@ -128,7 +128,6 @@ struct _ClipboardContents {
 
 static GtkLayoutClass *parent_class = NULL;
 
-static GConfClient *gconf_client = NULL;
 static GError      *gconf_error  = NULL;
 
 enum {
@@ -174,7 +173,7 @@ static void     gtk_html_get_property  (GObject *object, guint prop_id, GValue *
 static void     gtk_html_set_property  (GObject *object, guint prop_id, const GValue *value, GParamSpec *pspec);
 #endif
 
-static guint signals [LAST_SIGNAL] = { 0 };
+static guint signals[LAST_SIGNAL] = { 0 };
 
 static void
 gtk_html_update_scrollbars_on_resize (GtkHTML *html,
@@ -338,7 +337,7 @@ gtk_html_update_styles (GtkHTML *html)
 
 	/* printf ("gtk_html_update_styles called\n"); */
 
-	if (! html_engine_get_editable (html->engine))
+	if (!html_engine_get_editable (html->engine))
 		return;
 
 	engine          = html->engine;
@@ -347,25 +346,25 @@ gtk_html_update_styles (GtkHTML *html)
 
 	if (paragraph_style != html->priv->paragraph_style) {
 		html->priv->paragraph_style = paragraph_style;
-		g_signal_emit (html, signals [CURRENT_PARAGRAPH_STYLE_CHANGED], 0, paragraph_style);
+		g_signal_emit (html, signals[CURRENT_PARAGRAPH_STYLE_CHANGED], 0, paragraph_style);
 	}
 
 	indentation = html_engine_get_current_clueflow_indentation (engine);
 	if (indentation != html->priv->paragraph_indentation) {
 		html->priv->paragraph_indentation = indentation;
-		g_signal_emit (html, signals [CURRENT_PARAGRAPH_INDENTATION_CHANGED], 0, indentation);
+		g_signal_emit (html, signals[CURRENT_PARAGRAPH_INDENTATION_CHANGED], 0, indentation);
 	}
 
 	alignment = html_alignment_to_paragraph (html_engine_get_current_clueflow_alignment (engine));
 	if (alignment != html->priv->paragraph_alignment) {
 		html->priv->paragraph_alignment = alignment;
-		g_signal_emit (html, signals [CURRENT_PARAGRAPH_ALIGNMENT_CHANGED], 0, alignment);
+		g_signal_emit (html, signals[CURRENT_PARAGRAPH_ALIGNMENT_CHANGED], 0, alignment);
 	}
 
 	if (html_engine_update_insertion_font_style (engine))
-		g_signal_emit (html, signals [INSERTION_FONT_STYLE_CHANGED], 0, engine->insertion_font_style);
+		g_signal_emit (html, signals[INSERTION_FONT_STYLE_CHANGED], 0, engine->insertion_font_style);
 	if (html_engine_update_insertion_color (engine))
-		g_signal_emit (html, signals [INSERTION_COLOR_CHANGED], 0, engine->insertion_color);
+		g_signal_emit (html, signals[INSERTION_COLOR_CHANGED], 0, engine->insertion_color);
 
 	/* TODO add insertion_url_or_targed_changed signal */
 	html_engine_update_insertion_url_and_target (engine);
@@ -449,7 +448,7 @@ html_engine_title_changed_cb (HTMLEngine *engine, gpointer data)
 	GtkHTML *gtk_html;
 
 	gtk_html = GTK_HTML (data);
-	g_signal_emit (gtk_html, signals [TITLE_CHANGED], 0, engine->title->str);
+	g_signal_emit (gtk_html, signals[TITLE_CHANGED], 0, engine->title->str);
 }
 
 static void
@@ -561,7 +560,7 @@ scroll_update_mouse (GtkWidget *widget)
 	GdkWindow *bin_window;
 	gint x, y;
 
-	if (!GTK_WIDGET_REALIZED (widget))
+	if (!gtk_widget_get_realized (widget))
 		return;
 
 	window = gtk_widget_get_window (widget);
@@ -674,7 +673,7 @@ scroll_timeout_cb (gpointer data)
 	GdkWindow *window;
 	GtkHTML *html;
 	HTMLEngine *engine;
-
+	GtkAllocation allocation;
 	GtkAdjustment *hadjustment;
 	GtkAdjustment *vadjustment;
 	gint x_scroll, y_scroll;
@@ -689,13 +688,15 @@ scroll_timeout_cb (gpointer data)
 	window = gtk_widget_get_window (widget);
 	gdk_window_get_pointer (window, &x, &y, NULL);
 
+	gtk_widget_get_allocation (widget, &allocation);
+
 	if (x < 0) {
 		x_scroll = x;
 		if (x + engine->x_offset >= 0)
 			x = 0;
-	} else if (x >= widget->allocation.width) {
-		x_scroll = x - widget->allocation.width + 1;
-		x = widget->allocation.width;
+	} else if (x >= allocation.width) {
+		x_scroll = x - allocation.width + 1;
+		x = allocation.width;
 	} else {
 		x_scroll = 0;
 	}
@@ -705,9 +706,9 @@ scroll_timeout_cb (gpointer data)
 		y_scroll = y;
 		if (y + engine->y_offset >= 0)
 			y = 0;
-	} else if (y >= widget->allocation.height) {
-		y_scroll = y - widget->allocation.height + 1;
-		y = widget->allocation.height;
+	} else if (y >= allocation.height) {
+		y_scroll = y - allocation.height + 1;
+		y = allocation.height;
 	} else {
 		y_scroll = 0;
 	}
@@ -721,9 +722,9 @@ scroll_timeout_cb (gpointer data)
 	vadjustment = gtk_layout_get_vadjustment (GTK_LAYOUT (widget));
 
 	inc_adjustment (hadjustment, html_engine_get_doc_width (html->engine),
-			widget->allocation.width, x_scroll);
+			allocation.width, x_scroll);
 	inc_adjustment (vadjustment, html_engine_get_doc_height (html->engine),
-			widget->allocation.height, y_scroll);
+			allocation.height, y_scroll);
 
 	GDK_THREADS_LEAVE ();
 
@@ -791,7 +792,9 @@ destroy (GtkObject *object)
 		}
 
 		if (html->priv->notify_monospace_font_id) {
-			gconf_client_notify_remove (gconf_client, html->priv->notify_monospace_font_id);
+			gconf_client_notify_remove (
+				gconf_client_get_default (),
+				html->priv->notify_monospace_font_id);
 			html->priv->notify_monospace_font_id = 0;
 		}
 
@@ -1027,7 +1030,7 @@ update_mouse_cursor (GtkWidget *widget, guint state)
 	motion_notify_event (widget, &event);
 }
 
-static gint
+static gboolean
 key_press_event (GtkWidget *widget, GdkEventKey *event)
 {
 	GtkHTML *html = GTK_HTML (widget);
@@ -1092,7 +1095,7 @@ key_press_event (GtkWidget *widget, GdkEventKey *event)
 					/* printf ("link clicked: %s\n", url); */
                                         if (HTML_IS_TEXT(focus_object)) {
 						html_text_set_link_visited (HTML_TEXT (focus_object), focus_object_offset, html->engine, TRUE);
-					g_signal_emit (html, signals [LINK_CLICKED], 0, url);
+					g_signal_emit (html, signals[LINK_CLICKED], 0, url);
 					}
 					g_free (url);
 				}
@@ -1111,7 +1114,7 @@ key_press_event (GtkWidget *widget, GdkEventKey *event)
 	return retval;
 }
 
-static gint
+static gboolean
 key_release_event (GtkWidget *widget, GdkEventKey *event)
 {
 	GtkHTML *html = GTK_HTML (widget);
@@ -1135,8 +1138,11 @@ void
 gtk_html_drag_dest_set (GtkHTML *html)
 {
 	if (html_engine_get_editable (html->engine))
-		gtk_drag_dest_set (GTK_WIDGET (html), GTK_DEST_DEFAULT_ALL,
-				   dnd_link_sources, DND_LINK_SOURCES, GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_LINK);
+		gtk_drag_dest_set (
+			GTK_WIDGET (html),
+			GTK_DEST_DEFAULT_HIGHLIGHT | GTK_DEST_DEFAULT_DROP,
+			drag_dest_targets, G_N_ELEMENTS (drag_dest_targets),
+			GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_LINK);
 	else
 		gtk_drag_dest_unset (GTK_WIDGET (html));
 }
@@ -1277,12 +1283,79 @@ child_size_allocate (HTMLObject *o, HTMLEngine *e, gpointer data)
 }
 
 static void
+set_adjustment_upper (GtkAdjustment *adjustment,
+                      gdouble upper)
+{
+	gdouble page_size;
+	gdouble value;
+	gdouble min;
+
+	/* XXX Stolen from gtklayout.c and simplified. */
+
+	value = gtk_adjustment_get_value (adjustment);
+	page_size = gtk_adjustment_get_page_size (adjustment);
+	min = MAX (0., upper - page_size);
+
+	gtk_adjustment_set_upper (adjustment, upper);
+
+	if (value > min)
+		gtk_adjustment_set_value (adjustment, min);
+}
+
+static void
+gtk_layout_faux_size_allocate (GtkWidget *widget,
+                               GtkAllocation *allocation)
+{
+	GtkLayout *layout = GTK_LAYOUT (widget);
+	GtkAdjustment *adjustment;
+	guint width, height;
+
+	/* XXX This is essentially a copy of GtkLayout's size_allocate()
+	 *     method, but with the GtkLayoutChild loop removed.  We call
+	 *     this instead of chaining up to GtkLayout. */
+
+	gtk_widget_set_allocation (widget, allocation);
+	gtk_layout_get_size (layout, &width, &height);
+
+	if (gtk_widget_get_realized (widget)) {
+		gdk_window_move_resize (
+			gtk_widget_get_window (widget),
+			allocation->x, allocation->y,
+			allocation->width, allocation->height);
+
+		gdk_window_resize (
+			gtk_layout_get_bin_window (layout),
+			MAX (width, allocation->width),
+			MAX (height, allocation->height));
+	}
+
+	/* XXX Does the previous logic alter the GtkLayout size?
+	 *     Not sure, so best refetch the size just to be safe. */
+	gtk_layout_get_size (layout, &width, &height);
+
+	adjustment = gtk_layout_get_hadjustment (layout);
+	g_object_freeze_notify (G_OBJECT (adjustment));
+	gtk_adjustment_set_page_size (adjustment, allocation->width);
+	gtk_adjustment_set_page_increment (adjustment, allocation->width * 0.9);
+	gtk_adjustment_set_lower (adjustment, 0);
+	set_adjustment_upper (adjustment, MAX (allocation->width, width));
+	g_object_thaw_notify (G_OBJECT (adjustment));
+
+	adjustment = gtk_layout_get_vadjustment (layout);
+	g_object_freeze_notify (G_OBJECT (adjustment));
+	gtk_adjustment_set_page_size (adjustment, allocation->height);
+	gtk_adjustment_set_page_increment (adjustment, allocation->height * 0.9);
+	gtk_adjustment_set_lower (adjustment, 0);
+	set_adjustment_upper (adjustment, MAX (allocation->height, height));
+	g_object_thaw_notify (G_OBJECT (adjustment));
+}
+
+static void
 size_allocate (GtkWidget *widget, GtkAllocation *allocation)
 {
 	GtkHTML *html;
 	GtkLayout *layout;
 	gboolean changed_x = FALSE, changed_y = FALSE;
-	GList *children;
 
 	g_return_if_fail (widget != NULL);
 	g_return_if_fail (GTK_IS_HTML (widget));
@@ -1293,11 +1366,7 @@ size_allocate (GtkWidget *widget, GtkAllocation *allocation)
 
 	/* isolate childs from layout - we want to set them after calc size is performed
 	   and we know the children positions */
-	children = GTK_LAYOUT (widget)->children;
-	GTK_LAYOUT (widget)->children = NULL;
-	if (GTK_WIDGET_CLASS (parent_class)->size_allocate)
-		(*GTK_WIDGET_CLASS (parent_class)->size_allocate) (widget, allocation);
-	GTK_LAYOUT (widget)->children = children;
+	gtk_layout_faux_size_allocate (widget, allocation);
 
 	if (html->engine->width != allocation->width
 	    || html->engine->height != allocation->height) {
@@ -1356,9 +1425,10 @@ dnd_link_set (GtkWidget *widget, HTMLObject *o, gint offset)
 	if (!html_engine_get_editable (GTK_HTML (widget)->engine)) {
 		/* printf ("dnd_link_set %p\n", o); */
 
-		gtk_drag_source_set (widget, GDK_BUTTON1_MASK,
-				     dnd_link_sources, DND_LINK_SOURCES,
-				     GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_LINK);
+		gtk_drag_source_set (
+			widget, GDK_BUTTON1_MASK,
+			drag_source_targets, G_N_ELEMENTS (drag_source_targets),
+			GDK_ACTION_COPY | GDK_ACTION_MOVE | GDK_ACTION_LINK);
 		GTK_HTML (widget)->priv->dnd_object = o;
 		GTK_HTML (widget)->priv->dnd_object_offset = offset;
 	}
@@ -1437,7 +1507,7 @@ mouse_change_pos (GtkWidget *widget, GdkWindow *window, gint x, gint y, gint sta
 	HTMLType type;
 	gint offset;
 
-	if (!GTK_WIDGET_REALIZED (widget))
+	if (!gtk_widget_get_realized (widget))
 		return FALSE;
 
 	html   = GTK_HTML (widget);
@@ -1445,7 +1515,10 @@ mouse_change_pos (GtkWidget *widget, GdkWindow *window, gint x, gint y, gint sta
 	obj    = html_engine_get_object_at (engine, x, y, (guint *) &offset, FALSE);
 
 	if ((html->in_selection || html->in_selection_drag) && html->allow_selection) {
+		GtkAllocation allocation;
 		gboolean need_scroll;
+
+		gtk_widget_get_allocation (widget, &allocation);
 
 		if (obj) {
 			type = HTML_OBJECT_TYPE (obj);
@@ -1475,13 +1548,13 @@ mouse_change_pos (GtkWidget *widget, GdkWindow *window, gint x, gint y, gint sta
 
 		if (x < html->engine->x_offset) {
 			need_scroll = TRUE;
-		} else if (x >= widget->allocation.width) {
+		} else if (x >= allocation.width) {
 			need_scroll = TRUE;
 		}
 
 		if (y < html->engine->y_offset) {
 			need_scroll = TRUE;
-		} else if (y >= widget->allocation.height) {
+		} else if (y >= allocation.height) {
 			need_scroll = TRUE;
 		}
 
@@ -1532,7 +1605,7 @@ skip_host (const gchar *url)
 	       host++;
 
 	if (*host == ':') {
-		url = host++;
+		host++;
 
 		if (*host == '/')
 			host++;
@@ -1623,10 +1696,10 @@ url_is_absolute (const gchar *url)
 
 	if (!isalpha (*url))
 		return FALSE;
-	url ++;
+	url++;
 
 	while (*url && (isalnum (*url) || *url == '+' || *url == '-' || *url == '.'))
-		url ++;
+		url++;
 
 	return *url && *url == ':';
 }
@@ -1737,10 +1810,14 @@ static GtkWidget *
 shift_to_iframe_parent (GtkWidget *widget, gint *x, gint *y)
 {
 	while (GTK_HTML (widget)->iframe_parent) {
+		GtkAllocation allocation;
+
+		gtk_widget_get_allocation (widget, &allocation);
+
 		if (x)
-			*x += widget->allocation.x - GTK_HTML (widget)->engine->x_offset;
+			*x += allocation.x - GTK_HTML (widget)->engine->x_offset;
 		if (y)
-			*y += widget->allocation.y - GTK_HTML (widget)->engine->y_offset;
+			*y += allocation.y - GTK_HTML (widget)->engine->y_offset;
 
 		widget = GTK_HTML (widget)->iframe_parent;
 
@@ -1806,7 +1883,7 @@ hierarchy_changed (GtkWidget *widget,
 
 	toplevel = gtk_widget_get_toplevel (widget);
 
-	if (GTK_WIDGET_TOPLEVEL (toplevel) && priv->toplevel_unmap_handler == 0) {
+	if (gtk_widget_is_toplevel (toplevel) && priv->toplevel_unmap_handler == 0) {
 		priv->toplevel_unmap_handler = g_signal_connect (G_OBJECT (toplevel), "unmap-event",
 								 G_CALLBACK (toplevel_unmap), widget);
 	}
@@ -2040,7 +2117,7 @@ button_release_event (GtkWidget *initial_widget,
 
 	engine =  html->engine;
 
-	if (html->in_selection) {
+	if (html->in_selection && !html->priv->dnd_in_progress) {
 		html_engine_update_selection_active_state (html->engine, html->priv->event_time);
 		if (html->in_selection_drag)
 			html_engine_select_region (engine, html->selection_x1, html->selection_y1,
@@ -2058,7 +2135,7 @@ button_release_event (GtkWidget *initial_widget,
 		html->in_selection_drag = FALSE;
 
 		if (!html->priv->dnd_in_progress
-		    && html->pointer_url != NULL && ! html->in_selection
+		    && html->pointer_url != NULL && !html->in_selection
 		    && (!gtk_html_get_editable (html) || html->priv->in_url_test_mode)) {
 			g_signal_emit (widget,  signals[LINK_CLICKED], 0, html->pointer_url);
 			focus_object = html_engine_get_focus_object (html->engine, &focus_object_offset);
@@ -2145,7 +2222,6 @@ focus_in_event (GtkWidget *widget,
 
 	/* printf ("focus in\n"); */
 	if (!html->iframe_parent) {
-		GTK_WIDGET_SET_FLAGS (widget, GTK_HAS_FOCUS);
 		if (html->engine->cursor && html->engine->cursor->position == 0 && html->engine->caret_mode)
 			goto_caret_anchor (html);
 		html_engine_set_focus (html->engine, TRUE);
@@ -2176,7 +2252,6 @@ focus_out_event (GtkWidget *widget,
 	html_engine_redraw_selection (html->engine);
 	/* printf ("focus out\n"); */
 	if (!html->iframe_parent) {
-		GTK_WIDGET_UNSET_FLAGS (widget, GTK_HAS_FOCUS);
 		html_engine_set_focus (html->engine, FALSE);
 	}
 
@@ -2365,34 +2440,6 @@ set_adjustments (GtkLayout     *layout,
 
 /* Initialization.  */
 static void
-setup_class_properties (GtkHTML *html)
-{
-	GtkHTMLClass *klass;
-
-	klass = GTK_HTML_CLASS (GTK_WIDGET_GET_CLASS (html));
-	if (!klass->properties) {
-		klass->properties = gtk_html_class_properties_new (GTK_WIDGET (html));
-
-		if (!gconf_is_initialized ()) {
-			gchar *argv[] = { (gchar *) "gtkhtml", NULL };
-
-			g_warning ("gconf is not initialized, please call gconf_init before using GtkHTML library. "
-				   "Meanwhile it's initialized by gtkhtml itself.");
-			gconf_init (1, argv, &gconf_error);
-			if (gconf_error)
-				g_error ("gconf error: %s\n", gconf_error->message);
-		}
-
-		gconf_client = gconf_client_get_default ();
-		if (!gconf_client)
-			g_error ("cannot create gconf_client\n");
-		gconf_client_add_dir (gconf_client, GTK_HTML_GCONF_DIR, GCONF_CLIENT_PRELOAD_ONELEVEL, &gconf_error);
-		if (gconf_error)
-			g_error ("gconf error: %s\n", gconf_error->message);
-	}
-}
-
-static void
 set_focus_child (GtkContainer *containter, GtkWidget *w)
 {
 	HTMLObject *o = NULL;
@@ -2426,18 +2473,18 @@ focus (GtkWidget *w, GtkDirectionType direction)
 		e->shift_selection = FALSE;
 	}
 
-	if (!GTK_WIDGET_HAS_FOCUS (w) && e->caret_mode) {
+	if (!gtk_widget_has_focus (w) && e->caret_mode) {
 		if (goto_caret_anchor (GTK_HTML (w))) {
 			gtk_widget_grab_focus (w);
 
 			update_primary_selection (GTK_HTML (w));
-			g_signal_emit (GTK_HTML (w), signals [CURSOR_CHANGED], 0);
+			g_signal_emit (GTK_HTML (w), signals[CURSOR_CHANGED], 0);
 
 			return TRUE;
 		}
 	}
 
-	if (((e->focus_object && !(GTK_WIDGET_HAS_FOCUS (w))) || html_engine_focus (e, direction)) && e->focus_object) {
+	if (((e->focus_object && !(gtk_widget_has_focus (w))) || html_engine_focus (e, direction)) && e->focus_object) {
 		gint offset;
 		HTMLObject *obj = html_engine_get_focus_object (e, &offset);
 		gint x1, y1, x2, y2, xo, yo;
@@ -2492,14 +2539,14 @@ focus (GtkWidget *w, GtkDirectionType direction)
 		/* printf ("engine pos: %d,%d x %d,%d\n",
 		   e->x_offset, e->y_offset, e->x_offset + e->width, e->y_offset + e->height); */
 
-		if (!GTK_WIDGET_HAS_FOCUS (w) && !html_object_is_embedded (obj))
+		if (!gtk_widget_has_focus (w) && !html_object_is_embedded (obj))
 			gtk_widget_grab_focus (w);
 		if (e->caret_mode) {
 			html_engine_jump_to_object (e, obj, offset);
 		}
 
 		update_primary_selection (GTK_HTML (w));
-		g_signal_emit (GTK_HTML (w), signals [CURSOR_CHANGED], 0);
+		g_signal_emit (GTK_HTML (w), signals[CURSOR_CHANGED], 0);
 
 		return TRUE;
 	}
@@ -2527,8 +2574,14 @@ drag_begin (GtkWidget *widget, GdkDragContext *context)
 static void
 drag_end (GtkWidget *widget, GdkDragContext *context)
 {
+	GtkHTML *html;
+
 	/* printf ("drag_end\n"); */
-	GTK_HTML (widget)->priv->dnd_in_progress = FALSE;
+	g_return_if_fail (GTK_IS_HTML (widget));
+
+	html = GTK_HTML (widget);
+	if (html->priv)
+		html->priv->dnd_in_progress = FALSE;
 }
 
 static void
@@ -2725,7 +2778,7 @@ drag_data_received (GtkWidget *widget, GdkDragContext *context,
                                  pasted = TRUE;
                          }
                  } while (list_len);
-                 html_undo_level_end (engine->undo);
+                 html_undo_level_end (engine->undo, engine);
 	}
 	break;
 	}
@@ -2846,7 +2899,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 
 	parent_class = g_type_class_peek_parent (klass);
 
-	signals [TITLE_CHANGED] =
+	signals[TITLE_CHANGED] =
 		g_signal_new ("title_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2855,17 +2908,17 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      g_cclosure_marshal_VOID__STRING,
 			      G_TYPE_NONE, 1,
 			      G_TYPE_STRING);
-	signals [URL_REQUESTED] =
+	signals[URL_REQUESTED] =
 		g_signal_new ("url_requested",
 			      G_TYPE_FROM_CLASS (object_class),
-			      G_SIGNAL_RUN_FIRST,
+			      G_SIGNAL_RUN_LAST,
 			      G_STRUCT_OFFSET (GtkHTMLClass, url_requested),
 			      NULL, NULL,
 			      html_g_cclosure_marshal_VOID__STRING_POINTER,
 			      G_TYPE_NONE, 2,
 			      G_TYPE_STRING,
 			      G_TYPE_POINTER);
-	signals [LOAD_DONE] =
+	signals[LOAD_DONE] =
 		g_signal_new ("load_done",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2873,7 +2926,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      NULL, NULL,
 			      g_cclosure_marshal_VOID__VOID,
 			      G_TYPE_NONE, 0);
-	signals [LINK_CLICKED] =
+	signals[LINK_CLICKED] =
 		g_signal_new ("link_clicked",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2882,7 +2935,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      g_cclosure_marshal_VOID__STRING,
 			      G_TYPE_NONE, 1,
 			      G_TYPE_STRING);
-	signals [SET_BASE] =
+	signals[SET_BASE] =
 		g_signal_new ("set_base",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2891,7 +2944,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      g_cclosure_marshal_VOID__STRING,
 			      G_TYPE_NONE, 1,
 			      G_TYPE_STRING);
-	signals [SET_BASE_TARGET] =
+	signals[SET_BASE_TARGET] =
 		g_signal_new ("set_base_target",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2901,7 +2954,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_STRING);
 
-	signals [ON_URL] =
+	signals[ON_URL] =
 		g_signal_new ("on_url",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2911,7 +2964,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_STRING);
 
-	signals [REDIRECT] =
+	signals[REDIRECT] =
 		g_signal_new ("redirect",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2922,7 +2975,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_STRING,
 			      G_TYPE_INT);
 
-	signals [SUBMIT] =
+	signals[SUBMIT] =
 		g_signal_new ("submit",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2934,7 +2987,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_STRING,
 			      G_TYPE_STRING);
 
-	signals [OBJECT_REQUESTED] =
+	signals[OBJECT_REQUESTED] =
 		g_signal_new ("object_requested",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_LAST,
@@ -2944,7 +2997,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_BOOLEAN, 1,
 			      G_TYPE_OBJECT);
 
-	signals [CURRENT_PARAGRAPH_STYLE_CHANGED] =
+	signals[CURRENT_PARAGRAPH_STYLE_CHANGED] =
 		g_signal_new ("current_paragraph_style_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2954,7 +3007,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_INT);
 
-	signals [CURRENT_PARAGRAPH_INDENTATION_CHANGED] =
+	signals[CURRENT_PARAGRAPH_INDENTATION_CHANGED] =
 		g_signal_new ("current_paragraph_indentation_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2964,7 +3017,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_INT);
 
-	signals [CURRENT_PARAGRAPH_ALIGNMENT_CHANGED] =
+	signals[CURRENT_PARAGRAPH_ALIGNMENT_CHANGED] =
 		g_signal_new ("current_paragraph_alignment_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2974,7 +3027,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_INT);
 
-	signals [INSERTION_FONT_STYLE_CHANGED] =
+	signals[INSERTION_FONT_STYLE_CHANGED] =
 		g_signal_new ("insertion_font_style_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2984,7 +3037,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_INT);
 
-	signals [INSERTION_COLOR_CHANGED] =
+	signals[INSERTION_COLOR_CHANGED] =
 		g_signal_new ("insertion_color_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -2994,7 +3047,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      G_TYPE_POINTER);
 
-	signals [SIZE_CHANGED] =
+	signals[SIZE_CHANGED] =
 		g_signal_new ("size_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -3002,7 +3055,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      NULL, NULL,
 			      g_cclosure_marshal_VOID__VOID,
 			      G_TYPE_NONE, 0);
-	signals [IFRAME_CREATED] =
+	signals[IFRAME_CREATED] =
 		g_signal_new ("iframe_created",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -3012,7 +3065,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 1,
 			      GTK_TYPE_HTML);
 
-	signals [SCROLL] =
+	signals[SCROLL] =
 		g_signal_new ("scroll",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
@@ -3023,7 +3076,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      GTK_TYPE_ORIENTATION,
 			      GTK_TYPE_SCROLL_TYPE, G_TYPE_FLOAT);
 
-	signals [CURSOR_MOVE] =
+	signals[CURSOR_MOVE] =
 		g_signal_new ("cursor_move",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
@@ -3032,7 +3085,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      html_g_cclosure_marshal_VOID__ENUM_ENUM,
 			      G_TYPE_NONE, 2, GTK_TYPE_DIRECTION_TYPE, GTK_TYPE_HTML_CURSOR_SKIP);
 
-	signals [COMMAND] =
+	signals[COMMAND] =
 		g_signal_new ("command",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
@@ -3041,7 +3094,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      html_g_cclosure_marshal_BOOL__ENUM,
 			      G_TYPE_BOOLEAN, 1, GTK_TYPE_HTML_COMMAND);
 
-	signals [CURSOR_CHANGED] =
+	signals[CURSOR_CHANGED] =
 		g_signal_new ("cursor_changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -3050,7 +3103,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      g_cclosure_marshal_VOID__VOID,
 			      G_TYPE_NONE, 0);
 
-	signals [OBJECT_INSERTED] =
+	signals[OBJECT_INSERTED] =
 		g_signal_new ("object_inserted",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -3060,7 +3113,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 			      G_TYPE_NONE, 2,
 			      G_TYPE_INT, G_TYPE_INT);
 
-	signals [OBJECT_DELETE] =
+	signals[OBJECT_DELETE] =
 		g_signal_new ("object_delete",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -3078,29 +3131,29 @@ gtk_html_class_init (GtkHTMLClass *klass)
 	g_object_class_install_property (gobject_class,
 					 PROP_EDITABLE,
 					 g_param_spec_boolean ("editable",
-							       _("Editable"),
-							       _("Whether the html can be edited"),
+							       "Editable",
+							       "Whether the html can be edited",
 							       FALSE,
 							       G_PARAM_READABLE | G_PARAM_WRITABLE));
 	g_object_class_install_property (gobject_class,
 					 PROP_TITLE,
 					 g_param_spec_string ("title",
-							      _("Document Title"),
-							      _("The title of the current document"),
+							      "Document Title",
+							      "The title of the current document",
 							      NULL,
 							      G_PARAM_WRITABLE | G_PARAM_READABLE));
 	g_object_class_install_property (gobject_class,
 					 PROP_DOCUMENT_BASE,
 					 g_param_spec_string ("document_base",
-							      _("Document Base"),
-							      _("The base URL for relative references"),
+							      "Document Base",
+							      "The base URL for relative references",
 							      NULL,
 							      G_PARAM_WRITABLE | G_PARAM_READABLE));
 	g_object_class_install_property (gobject_class,
 					 PROP_TARGET_BASE,
 					 g_param_spec_string ("target_base",
-							      _("Target Base"),
-							      _("The base URL of the target frame"),
+							      "Target Base",
+							      "The base URL of the target frame",
 							      NULL,
 							      G_PARAM_WRITABLE | G_PARAM_READABLE));
 
@@ -3108,39 +3161,39 @@ gtk_html_class_init (GtkHTMLClass *klass)
 
 	gtk_widget_class_install_style_property (widget_class,
 						 g_param_spec_string ("fixed_font_name",
-								     _("Fixed Width Font"),
-								     _("The Monospace font to use for typewriter text"),
+								     "Fixed Width Font",
+								     "The Monospace font to use for typewriter text",
 								     NULL,
 								     G_PARAM_READABLE));
 
 	gtk_widget_class_install_style_property (widget_class,
 						 g_param_spec_boxed ("link_color",
-								     _("New Link Color"),
-								     _("The color of new link elements"),
+								     "New Link Color",
+								     "The color of new link elements",
 								     GDK_TYPE_COLOR,
 								     G_PARAM_READABLE));
 	gtk_widget_class_install_style_property (widget_class,
 						 g_param_spec_boxed ("vlink_color",
-								     _("Visited Link Color"),
-								     _("The color of visited link elements"),
+								     "Visited Link Color",
+								     "The color of visited link elements",
 								     GDK_TYPE_COLOR,
 								     G_PARAM_READABLE));
 	gtk_widget_class_install_style_property (widget_class,
 						 g_param_spec_boxed ("alink_color",
-								     _("Active Link Color"),
-								     _("The color of active link elements"),
+								     "Active Link Color",
+								     "The color of active link elements",
 								     GDK_TYPE_COLOR,
 								     G_PARAM_READABLE));
 	gtk_widget_class_install_style_property (widget_class,
 						 g_param_spec_boxed ("spell_error_color",
-								     _("Spelling Error Color"),
-								     _("The color of the spelling error markers"),
+								     "Spelling Error Color",
+								     "The color of the spelling error markers",
 								     GDK_TYPE_COLOR,
 								     G_PARAM_READABLE));
 	gtk_widget_class_install_style_property (widget_class,
 						 g_param_spec_boxed ("cite_color",
-								     _("Cite Quotation Color"),
-								     _("The color of the cited text"),
+								     "Cite Quotation Color",
+								     "The color of the cited text",
 								     GDK_TYPE_COLOR,
 								     G_PARAM_READABLE));
 
@@ -3176,6 +3229,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 	html_class->scroll            = scroll;
 	html_class->cursor_move       = cursor_move;
 	html_class->command           = command;
+	html_class->properties        = gtk_html_class_properties_new ();
 
 	add_bindings (klass);
 	gtk_html_accessibility_init ();
@@ -3196,16 +3250,6 @@ gtk_html_class_init (GtkHTMLClass *klass)
 	client_notify_cursor_blink (client, 0, NULL, NULL);
 
 	g_object_unref (client);
-}
-
-static void
-init_properties_widget (GtkHTML *html)
-{
-	setup_class_properties (html);
-
-	if (!gconf_client)
-		gconf_client = gconf_client_get_default ();
-
 }
 
 void
@@ -3276,9 +3320,14 @@ gtk_html_im_preedit_changed_cb (GtkIMContext *context, GtkHTML *html)
 		      html->engine->cursor ? html->engine->cursor->position : 0, html->engine->cursor,
 		      html->engine->mark ? html->engine->mark->position : 0, html->engine->mark,
 		      html_engine_is_selection_active (html->engine));)
+
+	if (!html->engine->cursor) {
+		return;
+	}
+
 	html->priv->im_block_reset = TRUE;
 
-	if (html_engine_is_selection_active (html->engine)) {
+	if (html->engine->mark && html_engine_is_selection_active (html->engine)) {
 		D_IM (printf ("IM push selection\n");)
 		html_engine_selection_push (html->engine);
 		html_engine_disable_selection (html->engine);
@@ -3431,8 +3480,8 @@ gtk_html_im_delete_surrounding_cb (GtkIMContext *slave, gint offset, gint n_char
 static void
 gtk_html_init (GtkHTML* html)
 {
-	GTK_WIDGET_SET_FLAGS (GTK_WIDGET (html), GTK_CAN_FOCUS);
-	GTK_WIDGET_SET_FLAGS (GTK_WIDGET (html), GTK_APP_PAINTABLE);
+	gtk_widget_set_can_focus (GTK_WIDGET (html), TRUE);
+	gtk_widget_set_app_paintable (GTK_WIDGET (html), TRUE);
 
 	html->editor_api = NULL;
 	html->debug = FALSE;
@@ -3587,8 +3636,6 @@ gtk_html_construct (GtkHTML *html)
 			  G_CALLBACK (html_engine_submit_cb), html);
 	g_signal_connect (G_OBJECT (html->engine), "object_requested",
 			  G_CALLBACK (html_engine_object_requested_cb), html);
-
-	init_properties_widget (html);
 }
 
 
@@ -3703,7 +3750,7 @@ gtk_html_begin (GtkHTML *html)
 GtkHTMLStream *
 gtk_html_begin_content (GtkHTML *html, const gchar *content_type)
 {
-	g_return_val_if_fail (! gtk_html_get_editable (html), NULL);
+	g_return_val_if_fail (!gtk_html_get_editable (html), NULL);
 
 	return gtk_html_begin_full (html, NULL, content_type , 0);
 }
@@ -3910,7 +3957,7 @@ gtk_html_private_calc_scrollbars (GtkHTML *html, gboolean *changed_x, gboolean *
 	gint width, height;
 	gdouble value;
 
-	if (!GTK_WIDGET_REALIZED (html))
+	if (!gtk_widget_get_realized (GTK_WIDGET (html)))
 		return;
 
 	/* printf ("calc scrollbars\n"); */
@@ -3939,7 +3986,7 @@ gtk_html_private_calc_scrollbars (GtkHTML *html, gboolean *changed_x, gboolean *
 
 	gtk_layout_get_size (layout, &layout_width, &layout_height);
 	if ((width != layout_width) || (height != layout_height)) {
-		g_signal_emit (html, signals [SIZE_CHANGED], 0);
+		g_signal_emit (html, signals[SIZE_CHANGED], 0);
 		gtk_layout_set_size (layout, width, height);
 	}
 
@@ -4040,6 +4087,10 @@ gtk_html_set_inline_spelling (GtkHTML *html,
 	g_return_if_fail (GTK_IS_HTML (html));
 
 	html->priv->inline_spelling = inline_spell;
+
+	/* do not update content, when there is none set (yet) */
+	if (!html->engine || !html->engine->clue)
+		return;
 
 	if (gtk_html_get_editable (html) && html->priv->inline_spelling)
 		html_engine_spell_check (html->engine);
@@ -4252,7 +4303,7 @@ gtk_html_set_paragraph_style (GtkHTML *html,
 	    && (current_style != HTML_CLUEFLOW_STYLE_LIST_ITEM || item_type == cur_item_type))
 		return;
 
-	if (! html_engine_set_clueflow_style (html->engine, clueflow_style, item_type, 0, 0, NULL,
+	if (!html_engine_set_clueflow_style (html->engine, clueflow_style, item_type, 0, 0, NULL,
 					      HTML_ENGINE_SET_CLUEFLOW_STYLE, HTML_UNDO_UNDO, TRUE))
 		return;
 
@@ -4329,7 +4380,7 @@ gtk_html_set_font_style (GtkHTML *html,
 	g_return_if_fail (GTK_IS_HTML (html));
 
 	if (html_engine_set_font_style (html->engine, and_mask, or_mask))
-		g_signal_emit (html, signals [INSERTION_FONT_STYLE_CHANGED], 0, html->engine->insertion_font_style);
+		g_signal_emit (html, signals[INSERTION_FONT_STYLE_CHANGED], 0, html->engine->insertion_font_style);
 }
 
 void
@@ -4339,7 +4390,7 @@ gtk_html_set_color (GtkHTML *html, HTMLColor *color)
 	g_return_if_fail (GTK_IS_HTML (html));
 
 	if (html_engine_set_color (html->engine, color))
-		g_signal_emit (html, signals [INSERTION_COLOR_CHANGED], 0, html->engine->insertion_color);
+		g_signal_emit (html, signals[INSERTION_COLOR_CHANGED], 0, html->engine->insertion_color);
 }
 
 void
@@ -4353,7 +4404,7 @@ gtk_html_toggle_font_style (GtkHTML *html,
 		return;
 
 	if (html_engine_toggle_font_style (html->engine, style))
-		g_signal_emit (html, signals [INSERTION_FONT_STYLE_CHANGED], 0, html->engine->insertion_font_style);
+		g_signal_emit (html, signals[INSERTION_FONT_STYLE_CHANGED], 0, html->engine->insertion_font_style);
 }
 
 GtkHTMLParagraphAlignment
@@ -4380,7 +4431,7 @@ gtk_html_set_paragraph_alignment (GtkHTML *html,
 	if (html_engine_set_clueflow_style (html->engine, 0, 0, align, 0, NULL,
 					    HTML_ENGINE_SET_CLUEFLOW_ALIGNMENT, HTML_UNDO_UNDO, TRUE)) {
 		html->priv->paragraph_alignment = alignment;
-		g_signal_emit (html,  signals [CURRENT_PARAGRAPH_ALIGNMENT_CHANGED], 0, alignment);
+		g_signal_emit (html,  signals[CURRENT_PARAGRAPH_ALIGNMENT_CHANGED], 0, alignment);
 	}
 }
 
@@ -4492,8 +4543,7 @@ clipboard_paste_received_cb (GtkClipboard     *clipboard,
 			}
 
 			if (HTML_IS_TEXT (e->cursor->object))
-				html_text_magic_link (HTML_TEXT (e->cursor->object), e,
-						html_object_get_length (e->cursor->object));
+				html_text_magic_link (HTML_TEXT (e->cursor->object), e, 1);
 		}
 
 		if (utf8)
@@ -4757,7 +4807,6 @@ scroll (GtkHTML *html,
 		break;
 	default:
 		g_warning ("invalid scroll parameters: %d %d %f\n", orientation, scroll_type, position);
-		delta = 0.0;
 		return;
 	}
 
@@ -4795,7 +4844,7 @@ scroll_command (GtkHTML *html,
 	gdouble page_size;
 
 	/* we dont want scroll in editable (move cursor instead) */
-	if (html_engine_get_editable (html->engine) || html->engine->caret_mode)
+	if (html_engine_get_editable (html->engine))
 		return FALSE;
 
 	adjustment = gtk_layout_get_vadjustment (GTK_LAYOUT (html));
@@ -4870,7 +4919,7 @@ cursor_move (GtkHTML *html, GtkDirectionType dir_type, GtkHTMLCursorSkipType ski
 
 	if (skip == GTK_HTML_CURSOR_SKIP_NONE) {
 		update_primary_selection (html);
-		g_signal_emit (GTK_HTML (html), signals [CURSOR_CHANGED], 0);
+		g_signal_emit (GTK_HTML (html), signals[CURSOR_CHANGED], 0);
 		return;
 	}
 
@@ -4916,22 +4965,24 @@ cursor_move (GtkHTML *html, GtkDirectionType dir_type, GtkHTMLCursorSkipType ski
 		}
 		break;
 	case GTK_HTML_CURSOR_SKIP_PAGE: {
+		GtkAllocation allocation;
 		gint line_height;
 
-		line_height =  GTK_WIDGET (html)->allocation.height > (3 * get_line_height (html))
+		gtk_widget_get_allocation (GTK_WIDGET (html), &allocation);
+		line_height = allocation.height > (3 * get_line_height (html))
 			? get_line_height (html) : 0;
 
 		switch (dir_type) {
 		case GTK_DIR_UP:
 		case GTK_DIR_LEFT:
 			if ((amount = html_engine_scroll_up (html->engine,
-							     GTK_WIDGET (html)->allocation.height - line_height)) > 0)
+							     allocation.height - line_height)) > 0)
 				scroll_by_amount (html, - amount);
 			break;
 		case GTK_DIR_DOWN:
 		case GTK_DIR_RIGHT:
 			if ((amount = html_engine_scroll_down (html->engine,
-							       GTK_WIDGET (html)->allocation.height - line_height)) > 0)
+							       allocation.height - line_height)) > 0)
 				scroll_by_amount (html, amount);
 			break;
 		default:
@@ -4966,17 +5017,20 @@ cursor_move (GtkHTML *html, GtkDirectionType dir_type, GtkHTMLCursorSkipType ski
 	gtk_html_edit_make_cursor_visible (html);
 	html_engine_update_selection_active_state (html->engine, html->priv->event_time);
 	update_primary_selection (html);
-	g_signal_emit (GTK_HTML (html), signals [CURSOR_CHANGED], 0);
+	g_signal_emit (GTK_HTML (html), signals[CURSOR_CHANGED], 0);
 }
 
 static gboolean
 move_selection (GtkHTML *html, GtkHTMLCommandType com_type)
 {
+	GtkAllocation allocation;
 	gboolean rv;
 	gint amount;
 
 	if (!html_engine_get_editable (html->engine) && !html->engine->caret_mode)
 		return FALSE;
+
+	gtk_widget_get_allocation (GTK_WIDGET (html), &allocation);
 
 	html->priv->cursor_moved = TRUE;
 	html->engine->shift_selection = TRUE;
@@ -5016,14 +5070,14 @@ move_selection (GtkHTML *html, GtkHTMLCommandType com_type)
 		rv = html_engine_forward_word (html->engine);
 		break;
 	case GTK_HTML_COMMAND_MODIFY_SELECTION_PAGEUP:
-		if ((amount = html_engine_scroll_up (html->engine, GTK_WIDGET (html)->allocation.height)) > 0) {
+		if ((amount = html_engine_scroll_up (html->engine, allocation.height)) > 0) {
 			scroll_by_amount (html, - amount);
 			rv = TRUE;
 		} else
 			rv = FALSE;
 		break;
 	case GTK_HTML_COMMAND_MODIFY_SELECTION_PAGEDOWN:
-		if ((amount = html_engine_scroll_down (html->engine, GTK_WIDGET (html)->allocation.height)) > 0) {
+		if ((amount = html_engine_scroll_down (html->engine, allocation.height)) > 0) {
 			scroll_by_amount (html, amount);
 			rv = TRUE;
 		} else
@@ -5162,6 +5216,9 @@ command (GtkHTML *html, GtkHTMLCommandType com_type)
 			rv = move_selection (html, com_type);
 		}
 		break;
+	case GTK_HTML_COMMAND_SELECT_ALL:
+		gtk_html_select_all (html);
+		break;
 	case GTK_HTML_COMMAND_EDITABLE_ON:
 		gtk_html_set_editable (html, TRUE);
 		break;
@@ -5174,9 +5231,11 @@ command (GtkHTML *html, GtkHTMLCommandType com_type)
 	case GTK_HTML_COMMAND_UNBLOCK_SELECTION:
 		html_engine_unblock_selection (html->engine);
 		break;
-
 	case GTK_HTML_COMMAND_IS_SELECTION_ACTIVE:
 		rv = html_engine_is_selection_active (html->engine);
+		break;
+	case GTK_HTML_COMMAND_UNSELECT_ALL:
+		gtk_html_unselect_all (html);
 		break;
 
 	default:
@@ -5441,9 +5500,6 @@ command (GtkHTML *html, GtkHTMLCommandType com_type)
 		break;
 	case GTK_HTML_COMMAND_SELECT_PARAGRAPH_EXTENDED:
 		gtk_html_select_paragraph_extended (html);
-		break;
-	case GTK_HTML_COMMAND_SELECT_ALL:
-		gtk_html_select_all (html);
 		break;
 	case GTK_HTML_COMMAND_CURSOR_POSITION_SAVE:
 		html_engine_edit_cursor_position_save (html->engine);
@@ -5837,7 +5893,7 @@ gtk_html_set_iframe_parent (GtkHTML *html, GtkWidget *parent, HTMLObject *frame)
 		html_painter_set_widget (html->engine->painter, top_level);
 		gtk_html_set_fonts (html, html->engine->painter);
 	}
-	g_signal_emit (top_level, signals [IFRAME_CREATED], 0, html);
+	g_signal_emit (top_level, signals[IFRAME_CREATED], 0, html);
 
 	while (html->iframe_parent) {
 		depth++;
@@ -5936,6 +5992,19 @@ gtk_html_select_all (GtkHTML *html)
 	else {
 		html_engine_select_all (e);
 	}
+
+	html_engine_update_selection_active_state (html->engine, html->priv->event_time);
+	update_primary_selection (html);
+}
+
+void
+gtk_html_unselect_all (GtkHTML *html)
+{
+	HTMLEngine *e;
+
+	e = html->engine;
+
+	html_engine_unselect_all (e);
 
 	html_engine_update_selection_active_state (html->engine, html->priv->event_time);
 	update_primary_selection (html);
@@ -6138,7 +6207,7 @@ gtk_html_insert_html_generic (GtkHTML *html, GtkHTML *tmp, const gchar *html_src
 			html_object_remove_child (o->parent, o);
 			html_engine_append_flow (html->engine, o, html_object_get_recursive_length (o));
 		}
-		html_undo_level_end (html->engine->undo);
+		html_undo_level_end (html->engine->undo, html->engine);
 	} else {
 		g_return_if_fail (tmp->engine->clue);
 

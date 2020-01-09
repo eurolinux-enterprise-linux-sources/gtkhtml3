@@ -19,6 +19,7 @@
  */
 
 #include "gtkhtml-editor-private.h"
+#include "gtkhtml-stream.h"
 
 /******************************************************************************
  * Action Group Quick Reference
@@ -150,107 +151,87 @@ insert_image_response_cb (GtkFileChooser *file_chooser,
 }
 
 static void
-insert_html_file_response_cb (GtkFileChooser *file_chooser,
-                              gint response,
-                              GtkhtmlEditor *editor)
+insert_html_file_ready_cb (GFile *file,
+                           GAsyncResult *result,
+                           GtkhtmlEditor *editor)
 {
-	gchar *filename;
+	GtkHTML *html;
+	GtkHTML *new_html;
+	GtkHTMLStream *stream;
+	GtkWidget *dialog;
 	gchar *contents;
 	gsize length;
 	GError *error = NULL;
 
-	if (response != GTK_RESPONSE_OK)
-		return;
+	g_file_load_contents_finish (
+		file, result, &contents, &length, NULL, &error);
+	if (error != NULL)
+		goto fail;
 
-	filename = gtk_file_chooser_get_filename (file_chooser);
+	html = gtkhtml_editor_get_html (editor);
+	new_html = GTK_HTML (gtk_html_new ());
 
-	/* Assume the file encoding is UTF-8. */
-	gtkhtml_editor_get_file_contents (
-		filename, NULL, &contents, &length, &error);
+	stream = gtk_html_begin (new_html);
+	gtk_html_write (html, stream, contents, length);
+	/* 'stream' is destroyed inside gtk_html_end */
+	gtk_html_end (html, stream, GTK_HTML_STREAM_OK);
 
-	/* If we get a conversion error, look for a charset and try again. */
-	if (error != NULL && g_error_matches (error, G_CONVERT_ERROR,
-		G_CONVERT_ERROR_ILLEGAL_SEQUENCE)) {
+	g_free (contents);
 
-		gchar *charset;
+	html = gtkhtml_editor_get_html (editor);
+	/* 'new_html' destroys gtk_html_insert_gtk_html itself */
+	gtk_html_insert_gtk_html (html, new_html);
 
-		charset = gtkhtml_editor_get_file_charset (filename);
-		if (charset != NULL) {
-			g_clear_error (&error);
-			gtkhtml_editor_get_file_contents (
-				filename, charset, &contents, &length, &error);
-			g_free (charset);
-		}
-	}
+	goto exit;
 
-	if (error == NULL) {
-		GtkHTML *html;
-		GtkHTMLStream *stream;
+fail:
+	dialog = gtk_message_dialog_new (
+		GTK_WINDOW (editor), 0, GTK_MESSAGE_ERROR,
+		GTK_BUTTONS_CLOSE, _("Failed to insert HTML file."));
+	gtk_message_dialog_format_secondary_text (
+		GTK_MESSAGE_DIALOG (dialog), "%s.", error->message);
+	gtk_dialog_run (GTK_DIALOG (dialog));
+	gtk_widget_destroy (dialog);
 
-		html = GTK_HTML (gtk_html_new ());
-		stream = gtk_html_begin_content (
-			html, "text/html; charset=utf-8");
-		gtk_html_write (html, stream, contents, length);
-		gtk_html_end (html, stream, GTK_HTML_STREAM_OK);
-		gtk_html_insert_gtk_html (
-			gtkhtml_editor_get_html (editor), html);
-		g_free (contents);
-	} else {
-		/* XXX Show an error dialog. */
-		g_warning ("%s", error->message);
-		g_error_free (error);
-	}
+	g_error_free (error);
 
-	g_free (filename);
+exit:
+	g_object_unref (editor);
 }
 
 static void
-insert_text_file_response_cb (GtkFileChooser *file_chooser,
-                              gint response,
-                              GtkhtmlEditor *editor)
+insert_text_file_ready_cb (GFile *file,
+                           GAsyncResult *result,
+                           GtkhtmlEditor *editor)
 {
+	GtkHTML *html;
+	GtkWidget *dialog;
 	gchar *contents;
-	gchar *filename;
 	gsize length;
 	GError *error = NULL;
 
-	if (response != GTK_RESPONSE_OK)
-		return;
+	g_file_load_contents_finish (
+		file, result, &contents, &length, NULL, &error);
+	if (error != NULL)
+		goto fail;
 
-	filename = gtk_file_chooser_get_filename (file_chooser);
+	html = gtkhtml_editor_get_html (editor);
+	html_engine_paste_text (html->engine, contents, length);
+	g_free (contents);
 
-	/* Assume the file encoding is UTF-8. */
-	gtkhtml_editor_get_file_contents (
-		filename, NULL, &contents, &length, &error);
+	goto exit;
 
-	/* If we get a conversion error, look for a charset and try again. */
-	if (error != NULL && g_error_matches (error, G_CONVERT_ERROR,
-		G_CONVERT_ERROR_ILLEGAL_SEQUENCE)) {
+fail:
+	dialog = gtk_message_dialog_new (
+		GTK_WINDOW (editor), 0, GTK_MESSAGE_ERROR,
+		GTK_BUTTONS_CLOSE, _("Failed to insert text file."));
+	gtk_message_dialog_format_secondary_text (
+		GTK_MESSAGE_DIALOG (dialog), "%s.", error->message);
+	gtk_dialog_run (GTK_DIALOG (dialog));
+	gtk_widget_destroy (dialog);
 
-		gchar *charset;
-
-		charset = gtkhtml_editor_get_file_charset (filename);
-		if (charset != NULL) {
-			g_clear_error (&error);
-			gtkhtml_editor_get_file_contents (
-				filename, charset, &contents, &length, &error);
-			g_free (charset);
-		}
-	}
-
-	if (error == NULL) {
-		GtkHTML *html;
-
-		html = gtkhtml_editor_get_html (editor);
-		html_engine_paste_text (html->engine, contents, length);
-		g_free (contents);
-	} else {
-		/* XXX Show an error dialog. */
-		g_warning ("%s", error->message);
-		g_error_free (error);
-	}
-
-	g_free (filename);
+exit:
+	g_object_unref (editor);
 }
 
 static void
@@ -628,9 +609,22 @@ static void
 action_insert_html_file_cb (GtkToggleAction *action,
                             GtkhtmlEditor *editor)
 {
-	gtkhtml_editor_insert_file (
-		editor, _("Insert HTML File"),
-		G_CALLBACK (insert_html_file_response_cb));
+	GFile *file;
+
+	file = gtkhtml_editor_run_open_dialog (
+		editor, _("Insert HTML File"), NULL, NULL);
+
+	/* User cancelled? */
+	if (file == NULL)
+		return;
+
+	/* XXX Need a way to cancel this. */
+	g_file_load_contents_async (
+		file, NULL, (GAsyncReadyCallback)
+		insert_html_file_ready_cb,
+		g_object_ref (editor));
+
+	g_object_unref (file);
 }
 
 static void
@@ -684,9 +678,22 @@ static void
 action_insert_text_file_cb (GtkAction *action,
                             GtkhtmlEditor *editor)
 {
-	gtkhtml_editor_insert_file (
-		editor, _("Insert Text File"),
-		G_CALLBACK (insert_text_file_response_cb));
+	GFile *file;
+
+	file = gtkhtml_editor_run_open_dialog (
+		editor, _("Insert Text File"), NULL, NULL);
+
+	/* User cancelled? */
+	if (file == NULL)
+		return;
+
+	/* XXX Need a way to cancel this. */
+	g_file_load_contents_async (
+		file, NULL, (GAsyncReadyCallback)
+		insert_text_file_ready_cb,
+		g_object_ref (editor));
+
+	g_object_unref (file);
 }
 
 static void
@@ -1551,8 +1558,10 @@ static GtkActionEntry html_entries[] = {
 
 	{ "insert-rule",
 	  "stock_insert-rule",
+	  /* Translators: 'Rule' here means a horizontal line in an HTML text */
 	  N_("_Rule..."),
 	  NULL,
+	  /* Translators: 'Rule' here means a horizontal line in an HTML text */
 	  N_("Insert Rule"),
 	  G_CALLBACK (action_insert_rule_cb) },
 
@@ -1593,6 +1602,7 @@ static GtkActionEntry html_entries[] = {
 
 	{ "properties-rule",
 	  NULL,
+	  /* Translators: 'Rule' here means a horizontal line in an HTML text */
 	  N_("_Rule..."),
 	  NULL,
 	  NULL,
@@ -1669,6 +1679,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-minus-two",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("-2"),
 	  NULL,
 	  NULL,
@@ -1676,6 +1687,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-minus-one",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("-1"),
 	  NULL,
 	  NULL,
@@ -1683,6 +1695,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-plus-zero",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("+0"),
 	  NULL,
 	  NULL,
@@ -1690,6 +1703,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-plus-one",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("+1"),
 	  NULL,
 	  NULL,
@@ -1697,6 +1711,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-plus-two",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("+2"),
 	  NULL,
 	  NULL,
@@ -1704,6 +1719,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-plus-three",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("+3"),
 	  NULL,
 	  NULL,
@@ -1711,6 +1727,7 @@ static GtkRadioActionEntry html_size_entries[] = {
 
 	{ "size-plus-four",
 	  NULL,
+	  /* Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible. */
 	  N_("+4"),
 	  NULL,
 	  NULL,
@@ -1760,6 +1777,7 @@ static GtkActionEntry context_entries[] = {
 
 	{ "context-delete-table-menu",
 	  NULL,
+	  /* Translators: Popup menu item caption, containing all the Delete options for a table */
 	  N_("Table Delete"),
 	  NULL,
 	  NULL,
@@ -1774,6 +1792,7 @@ static GtkActionEntry context_entries[] = {
 
 	{ "context-insert-table-menu",
 	  NULL,
+	  /* Translators: Popup menu item caption, containing all the Insert options for a table */
 	  N_("Table Insert"),
 	  NULL,
 	  NULL,
@@ -1876,6 +1895,7 @@ static GtkActionEntry html_context_entries[] = {
 
 	{ "context-properties-rule",
 	  NULL,
+	  /* Translators: 'Rule' here means a horizontal line in an HTML text */
 	  N_("Rule..."),
 	  NULL,
 	  NULL,
@@ -2035,8 +2055,10 @@ editor_actions_setup_spell_check_menu (GtkhtmlEditor *editor)
 
 		/* Add an item to the "Add Word To" menu. */
 
-		action_label = g_strdup_printf ("%s Dictionary", name);
 		action_name = g_strdup_printf ("context-spell-add-%s", code);
+		/* Translators: %s will be replaced with the actual dictionary name,
+		   where a user can add a word to. This is part of an "Add Word To" submenu. */
+		action_label = g_strdup_printf (_("%s Dictionary"), name);
 
 		action = gtk_action_new (
 			action_name, action_label, NULL, NULL);
@@ -2178,6 +2200,7 @@ gtkhtml_editor_actions_init (GtkhtmlEditor *editor)
 		"short-label", _("_Link"), NULL);
 	g_object_set (
 		G_OBJECT (ACTION (INSERT_RULE)),
+		/* Translators: 'Rule' here means a horizontal line in an HTML text */
 		"short-label", _("_Rule"), NULL);
 	g_object_set (
 		G_OBJECT (ACTION (INSERT_TABLE)),

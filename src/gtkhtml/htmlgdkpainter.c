@@ -141,7 +141,7 @@ end (HTMLPainter *painter)
 
 	gdk_painter = HTML_GDK_PAINTER (painter);
 
-	if (! gdk_painter->double_buffer)
+	if (!gdk_painter->double_buffer)
 		return;
 
 	gdk_draw_drawable (gdk_painter->window, gdk_painter->gc,
@@ -162,7 +162,7 @@ clear (HTMLPainter *painter)
 
 	gdk_painter = HTML_GDK_PAINTER (painter);
 
-	if (! gdk_painter->double_buffer) {
+	if (!gdk_painter->double_buffer) {
 		gdk_window_clear (gdk_painter->window);
 	} else {
 		if (gdk_painter->pixmap != NULL)
@@ -603,13 +603,13 @@ draw_pixmap (HTMLPainter *painter,
 			      255);
 
 	if (color != NULL) {
-		guchar *p, *q;
+		guchar *q;
 		guint i, j;
 
 		n_channels = gdk_pixbuf_get_n_channels (tmp_pixbuf);
-		p = q = gdk_pixbuf_get_pixels (tmp_pixbuf);
+		q = gdk_pixbuf_get_pixels (tmp_pixbuf);
 		for (i = 0; i < paint.height; i++) {
-			p = q;
+			guchar *p = q;
 
 			for (j = 0; j < paint.width; j++) {
 				gint r, g, b, a;
@@ -682,6 +682,7 @@ draw_spell_error (HTMLPainter *painter, gint x, gint y, gint width)
 	gdk_draw_line (gdk_painter->pixmap, gdk_painter->gc, x, y, x + width, y);
 	gdk_gc_set_dashes (gdk_painter->gc, 0, dash_list, 2);
 	gdk_draw_line (gdk_painter->pixmap, gdk_painter->gc, x, y + 1, x + width, y + 1);
+	gdk_gc_set_fill (gdk_painter->gc, values.fill);
 	gdk_gc_set_line_attributes (gdk_painter->gc, values.line_width,
 				    values.line_style, values.cap_style, values.join_style);
 
@@ -798,8 +799,8 @@ draw_glyphs (HTMLPainter *painter, gint x, gint y, PangoItem *item, PangoGlyphSt
 	if (properties.strikethrough || properties.underline)
 		cw = draw_lines (glyphs, x, y, gdk_painter->pixmap, gdk_painter->gc, item, &properties);
 	else
-		for (i=0; i < glyphs->num_glyphs; i ++)
-			cw += glyphs->glyphs [i].geometry.width;
+		for (i=0; i < glyphs->num_glyphs; i++)
+			cw += glyphs->glyphs[i].geometry.width;
 
 	if (fg_text_color || fg)
 		gdk_gc_set_foreground (gdk_painter->gc, &orig_fg.foreground);

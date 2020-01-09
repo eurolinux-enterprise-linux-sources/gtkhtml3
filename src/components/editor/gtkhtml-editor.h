@@ -83,7 +83,7 @@ struct _GtkhtmlEditorClass {
 	void		(*object_deleted)	(GtkhtmlEditor *editor);
 	void		(*uri_requested)	(GtkhtmlEditor *editor,
 						 const gchar *uri,
-						 GtkHTMLStream *output);
+						 GtkHTMLStream *stream);
 };
 
 GType		gtkhtml_editor_get_type		(void);
@@ -122,8 +122,10 @@ void		gtkhtml_editor_set_inline_spelling
 gboolean	gtkhtml_editor_get_magic_links	(GtkhtmlEditor *editor);
 void		gtkhtml_editor_set_magic_links	(GtkhtmlEditor *editor,
 						 gboolean magic_links);
-gboolean	gtkhtml_editor_get_magic_smileys(GtkhtmlEditor *editor);
-void		gtkhtml_editor_set_magic_smileys(GtkhtmlEditor *editor,
+gboolean	gtkhtml_editor_get_magic_smileys
+						(GtkhtmlEditor *editor);
+void		gtkhtml_editor_set_magic_smileys
+						(GtkhtmlEditor *editor,
 						 gboolean magic_smileys);
 GList *		gtkhtml_editor_get_spell_languages
 						(GtkhtmlEditor *editor);
@@ -165,7 +167,9 @@ gboolean	gtkhtml_editor_is_previous_paragraph_empty
 void		gtkhtml_editor_insert_html	(GtkhtmlEditor *editor,
 						 const gchar *html_text);
 void		gtkhtml_editor_insert_image	(GtkhtmlEditor *editor,
-						 const gchar *filename_uri);
+						 const gchar *image_uri);
+void		gtkhtml_editor_insert_text	(GtkhtmlEditor *editor,
+						 const gchar *plain_text);
 gboolean	gtkhtml_editor_search_by_data	(GtkhtmlEditor *editor,
 						 glong level,
 						 const gchar *klass,

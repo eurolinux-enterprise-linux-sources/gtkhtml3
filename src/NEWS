@@ -1,94 +1,332 @@
-GtkHTML-3.28.3 2010-03-01
+GtkHTML-3.32.2 2011-02-07
 -------------------------
 
 Bug Fixes:
-	#606167 - Crash on composer Link editing (Milan Crha)
-	#494986 - Clicking URL moves view to the top in caret mode 
-	          (Milan Crha)
-
-GtkHTML-3.28.2 2009-12-14
--------------------------
-
-Bug Fixes:
-	#471687 - Crash selecting mail content (Simon Brys)
-	#598159 - Context popup clears a selection (Milan Crha)
-	#600042 - Hyperlink dialog doesn't allow more hyperlinks (Milan Crha)
-
-Other Changes:
-	Add argument guards to gtk_html_command(). (Matthew Barnes)
-
-Translations:
-	Ivar Smolin (et)
-	Leonid Kanter (ru)
+	Bug 402693 - Sending centered or right-aligned text doubles the
+	             spacing (Milan Crha)
+	Bug 612344 - Crash in html_object_prev_not_type at htmlobject.c
+	             (Milan Crha)
+	Bug 635576 - gtkhtml-editor-test link failure (Diego Escalante Urrelo)
 
 
-GtkHTML-3.28.1 2009-10-19
--------------------------
-
-Bug Fixes:
-	#344008 - Broken context-sensitive spell check (Matthew Barnes)
-	#598159 - Context popup clears a selection (Milan Crha)
-
-Other Fixes:
-	Restore Glade catalog file. (Matthew Barnes)
-	Fix an editing crash. (Matthew Barnes)
-
-Translations:
-	Gil Forcada (ca)
-	Marek Černocký (cs)
-	Ivar Smolin (et)
-	Takayuki KUSANO (ja)
-	Leonid Kanter (ru)
-
-GtkHTML-3.28.0 2009-09-21
+GtkHTML-3.32.1 2010-11-15
 --------------------------
 
+Bug Fixes:
+	Bug #630360 - Crash when inserting html file in composer (Milan Crha)
+
+Miscellaneous Fixes:
+	Updated Basque language (Inaki Larranaga Murgoitio)
+
 Translations:
-	Piotr Drąg (pl)
-	Sweta Kothari (gu)
-	Gabor Kelemen (hu)
-	Baris Cicek (tr)
-	Ani (ml)
-	Miloš Popović (sr)
-	Philip Withnall (en_GB)
-	Ask H. Larsen (da)
-	Rajesh Ranjan (hi)
-	Matej Urbančič (sl)
-	Manoj Kumar Giri (or)
-	krishnababu k (te)
-	Milo Casagrande (it)
 	Changwoo Ryu (ko)
-	A S Alam (pa)
+	Valencian translation (ca)
+	Simos Xenitellis (el)
+	Gintautas Miliauskas (lt)
 
-GtkHTML-3.27.02 2009-09-07
+GtkHTML-3.31.92 2010-09-13
 --------------------------
 
 Bug Fixes:
-	#593570 - Text entry not focused when find dialog shown
-                  (Matthew Barnes)
+	Bug 629393 - git.mk breaks parallel builds (Matthew Barnes)
+	Bug 615511 (bnc) - Encoded question mark issues. (Simon Brys)
+	Bug 463936 (bnc) - Table insertion issues. (Chenthill Palanisamy)
+	Bug 623265 - Various memory leaks (Milan Crha)
+
+Miscellaneous Fixes:
+	Use --disable-gtk3 in DISTCHECK_CONFIGURE_FLAGS. (Matthew Barnes)
+	Fix a build break - missing include file (Milan Crha)
+	Fix for #613774, GtkHTMLStream should be freed by unref (Jeff Cai)
 
 Translations:
-	Jamil Ahmed (bn)
-	Runa Bhattacharjee (bn_IN)
-	Gil Forcada (ca)
-	Carles Ferrando (ca@valencia)
-	Inaki Larranaga (eu)
+	Chao-Hsiung Liao (zh_HK)
+	Wolfgang Stöggl (de)
+	Piotr Drąg (pl)
+	Philip Withnall (en_GB)
 	Duarte Loreto (pt)
-	Krishnababu K (te)
+	Gabor Kelemen (hu)
 
-GtkHTML-3.37.91 2009-08-24
+GtkHTML-3.31.91 2010-08-29
 --------------------------
 
 Translations:
 	Alexander Shopov (bg)
-	Mario Blättermann (de)
+	David Planella (ca)
 	Ivar Smolin (et)
-	Tommi Vainikainen (fi)
+	Milo Casagrande (it)
+	Hideki Yamane (ja)
+	Милош Поповић (sr)
+
+GtkHTML-3.31.90 2010-08-16
+--------------------------
+
+Bug Fixes:
+	Bug 605335 - Alignment of horizontal rules is not saved (Matthew Barnes)
+	Bug 626090 - Only set -fno-strict-aliasing for GCC (Matthew Barnes)
+
+Miscellaneous Fixes:
+	Add an option for disabling deprecated warning flags. We would handle the deprecated gdk gc past evolution-2.32 (Chenthill Palanisamy)
+	Remove GTK_DEST_DEFAULT_MOTION flag. (Matthew Barnes)
+	Remove -DGDK_DISABLE_DEPRECATED (Matthew Barnes)
+
+Translations:
+	Marek Černocký (cs)
+	Andika Triwidada (id)
 	Claude Paroz (fr)
-	Seán de Búrca (ga)
-	Antón Méixome (gl)
-	Sandeep Shedmake (mr)
+	A S Alam (pa)
+
+GtkHTML-3.31.6 2010-08-02
+-------------------------
+
+Bug Fixes:
+	Bug 625171 - Crash while pasting text with links (Milan Crha)
+	Bug 610797 - Improve UTF-8 text sanitizing (Milan Crha)
+	Bug 624315 - Skip spelling update when no content set (Milan Crha)
+
+Translations:
+	Fran Diéguez (gl)
+	Matej Urban¿i¿ (sl)
+	Daniel Nylander (sv)
+	Aron Xu (zh_CN)
+
+GtkHTML-3.31.5 2010-07-12
+-------------------------
+
+Bug Fixes:
+	Bug 624149 - Check for NULL after gtkhtml_editor_run_open_dialog()
+	             (Matthew Barnes)
+
+Other Changes:
+	Work around sudden disapperance of GdkRegion in GTK+ 2.90.5.
+	(Matthew Barnes)
+
+Translations:
+	Marek Cernocky (cs)
+	Matej Urban¿i¿ (sl)
+
+GtkHTML-3.31.4 2010-06-29
+-------------------------
+
+Bug Fixes:
+	Bug 444709 - Add support for multimedia keys (Matthew Barnes)
+	Bug 344076 - Crash after closing an inline view of text attachment (Chenthill Palanisamy)
+	Bug #607324 - Crash doing table editing. (Bharath Acharya)
+
+Miscellaneous Fixes:
+	Remove bogus drag destination targets. (Matthew Barnes)
+	Split target lists for drag source and drag destination. (Matthew Barnes)
+	Build with gtk3 and have backward compatibility (Chenthill Palanisamy, Matthew Barnes)
+
+Translations:
+	Anita Reitere (lv)
+
+GtkHTML-3.31.3 2010-06-07
+-------------------------
+
+Bug Fixes:
+	(None)
+
+Translations:
+	Yaron Shahrabani (he)
+	Jorge Gonz¿¿lez (es)
+	Kjartan Maraas (nn)
+	Ivar Smolin (et)
+
+GtkHTML-3.31.2 2010-05-24
+-------------------------
+
+Bug Fixes:
+	#220672 - Excessive autosaving uses lots of resources (Milan Crha)
+	#220672 - Excessive autosaving uses lots of resources (Milan Crha)
+	#512468 - Wrap Lines keeps spaces in quoted text (Milan Crha)
+	#597111 - Line wrap only acts on current paragraph regardless
+	          selection (Milan Crha)
+	#615294 - Does not compile with -DGSEAL_ENABLE (Matthew Barnes)
+	#618368 - Doesn't make all pasted links clickable (Milan Crha)
+
+Translations:
+	Thomas Thurman (en@shaw)
+	Fran DiÃ©guez (gl)
+
+GtkHTML-3.31.1 2010-05-03
+--------------------------
+
+Bug Fixes:
+	Bug #575038 - Cursor/caret mode breaks magic spacebar (Milan Crha)
+	Bug #247302 - Wrong letter color with HTML content rendering (Milan Crha)
+	Bug #615205 - Translations not working in Emoticons and Find/Replace dialogs. (Mario Carrion)
+	Bug #551554 - gtkhtml translation issues (add translation comments) (Milan Crha)
+	Bug #514611 - Add translators comments and one string (Milan Crha)
+	Bug #325121 - Do not translate developer strings in g_param_spec_* (Milan Crha)
+	Bug #602634 - Not fully supported list types (Denis Pauk)
+	Bug #461203 - Do not select text on drop abort (Milan Crha)
+Miscellaneous Fixes:
+	Use gtk_accessible_get_widget() if available. (Matthew Barnes)
+	Fix most GSEAL issues. (Matthew Barnes)
+
+Translations:
+	Wouter Bolsterlee (nl)
+	Valencian translation  (ca)
+	Francisco DiÃ©guez (gl)
+	Jordi Serratosa (ca)
+	Kjartan Maraas (nn)
+
+GtkHTML-3.29.92 2010-03-08
+--------------------------
+
+Bug Fixes:
+	(None)
+
+Other Changes:
+	Work around recent GTK+ deprecations. (Matthew Barnes)
+
+Translations:
+	Lucas Lommer (cs)
+	Bruce Cowan (en_GB)
+	Claude Paroz (fr)
+	Gabor Kelemen (hu)
+	Changwoo Ryu (ko)
+	Piotr DrÄg (pl)
+	Yuri Kozlov (ru)
+
+GtkHTML-3.29.91 2010-02-22
+--------------------------
+
+Translations:
+	Vladimir Melo (br)
+	vasudeven (ta)
+	Chao-Hsiung Liao (zh_HK)
+	Fran DiÃ©guez (gl)
+	Mario BlÃ¤ttermann (de)
+	Lucian Adrian Grijincu (ro)
+
+GtkHTML-3.29.90 2010-02-08
+--------------------------
+
+Bug Fixes:
+	(None)
+
+Other Changes:
+	Warn on console when finalizing HTMLEngine with opened streams
+	(Milan Crha)
+	Disable strict aliasing optimization. (Matthew Barnes)
+
+Translations:
+	Alexander Shopov (bg)
+	Jamil Ahmed (bn)
+	Ivar Smolin (et)
+	Theppitak Karoonboonyanan (th)
+
+GtkHTML-3.29.6 2010-01-25
+-------------------------
+
+Bug Fixes:
+	#600754 - Check for enchant >= 1.1.7 (Matthew Barnes)
+	#606167 - Crash on composer Link editing (Milan Crha)
+	#591463 - Build fixes (H.Habighorst)
+	#494986 - Clicking URL moves view to the top in caret mode (Milan Crha)
+
+Other Changes:
+	Add gtkhtml_editor_insert_text() (Matthew Barnes)
+	Fix dead assignments found by clang. (Matthew Barnes)
+
+Translations:
+	Kjartan Maraas (nb)
+
+GtkHTML-3.29.5 2010-01-11
+-------------------------
+
+Bug Fixes:
+	#606244 - Remove usage of deprecated GTK+ symbols (FrÃ©dÃ©ric PÃ©ters)
+	#604561 - Copy popup action shown with no text selected (Milan Crha)
+	#605587 - draw_spell_error() doesn't restore GC fill style
+	          (Michel DÃ¤nzer)
+
+Other Changes:
+	Allow overriding the HTML widget in GtkhtmlEditor. (Matthew Barnes)
+	Remove duplicate policy supplied by EWebView. (Matthew Barnes)
+	Change GtkHTML::url-requested to G_SIGNAL_RUN_LAST. (Matthew Barnes)
+
+Translations:
+	Xandru Armesto Fernandez (ast)
+	Jorge GonzÃ¡lez (es)
+	Matej UrbanÄiÄ (sl)
+	Daniel Nylander (sv)
+	Maxim V. Dziumanenko (uk)
+
+GtkHTML-3.29.4 2009-12-21
+-------------------------
+
+Bug Fixes:
+	#366035 - Header expander image drag drop crash (Milan Crha) 
+	#603342 - Memory leak fix (Milan Crha) i
+Misc:
+	Support remote locations when inserting files into editor. (Matthew Barnes)
+
+Translations:
+	Jorge GonzÃ¡lez (es)
+	Ivar Smolin (et)
+	Kjartan Maraas (nb)	
+
+GtkHTML-3.29.3 2009-11-30
+-------------------------
+
+Translations:
+	Thomas Thurman (en@shaw)
+
+GtkHTML-3.29.2 2009-11-16
+-------------------------
+
+Bug Fixes:
+	#471687 - Crash selecting mail content (Simon Brys)
+	#600042 - Hyperlink dialog doesn't allow more hyperlinks (Milan Crha)
+
+Other Changes:
+	Allow "select-all" command in read-only mode. (Matthew Barnes)
+	Add gtk_html_unselect_all() for clearing selections. (Matthew Barnes)
+
+
+GtkHTML-3.29.1 2009-10-26
+--------------------------
+
+Bug Fixes:
+	#598635 - Not all hyperlinks are ctrl-clickable in mail composer (Milan Crha)
+	#598567 - Can only insert local image files (Matthew Barnes)
+	#580142 - Email with PRE HTML Tags Should Wrap When Printed (Milan Crha)
+	#598159 - Context popup clears a selection (Milan Crha)
+	#344008 - Broken context-sensitive spell check (Matthew Barnes)
+	#593570 - Text entry not focused when find dialog shown (Matthew Barnes)
+
+Translations:
+	Ivar Smolin (et)
+	Amitakhya Phukan (as)
+	A S Alam (pa)
+	Gil Forcada (ca)
+	Marek ÄernockÃ½ (cs)
+	Takayuki KUSANO (ja)
+	Petr Kovar (cs)
+	Christian Kirbach (de)
+	Milo Casagrande (it)
+	Matej UrbanÄiÄ (sl)
+	Ask H. Larsen (da)
+	Philip Withnall (en_GB)
+	MiloÅ¡ PopoviÄ (sr)
+	Gabor Kelemen (hu)
+	Sweta Kothari (gu)
+	Piotr DrÄg (pl)
+	Jamil Ahmed (bn)
+	Duarte Loreto (pt)
+	krishnababu k (te)
+	Inaki Larranaga (eu)
+	Mario BlÃ¤ttermann (de)
+	Tommi Vainikainen (fi)
 	Daniel S. Koda (pt_BR)
+	Claude Paroz (fr)
+	Alexander Shopov (bg)
+	SeÃ¡n de BÃºrca (ga)
+	Sandeep Shedmake (mr)
+	Sweta Kothari (gu)
+
 
 GtkHTML-3.27.90 2009-08-10
 --------------------------
@@ -125,8 +363,8 @@ GtkHTML-3.27.4 2009-07-13
 
 Bug Fixes:
 	#585959, Add G_THREAD dependency for the test binary (Jeff Cai)	
-	#586809 – Enable "silent rules" automake 1.11 option (Matthew Barnes)
-	#582505 – Use GtkBuilder instead of libglade (Denis Pauk)	
+	#586809 â Enable "silent rules" automake 1.11 option (Matthew Barnes)
+	#582505 â Use GtkBuilder instead of libglade (Denis Pauk)	
 
 Other Fixes:
 	Work around deprecation of g_mapped_file_free(). (Matthew Barnes)
@@ -137,7 +375,7 @@ Other Fixes:
 	Require automake 1.9. (Matthew Barnes)
 
 Translations:
-	Mattias Põldaru (et)
+	Mattias PÃµldaru (et)
 	Jorge Gonzalez (es)
 	drtvasudevan (ta)
 	Maxim V. Dziumanenko (uk)
@@ -178,7 +416,7 @@ Bug Fixes:
 	#573046 - Get rid of deprecated GTK_CHECK_*
 
 Updated Translations:
-	Miloš Popović (sr)
+	MiloÅ¡ PopoviÄ (sr)
 	Amitakhya Phukan(as)
 	Shankar Prasad (kn)
 	Djihed Afifi(ar)
@@ -197,32 +435,32 @@ GtkHTML-3.25.92 2009-03-02
 Updated Translations:
 	Alexander Shopov (bg)
 	Andre Gondim (pt)
-»·······Chao-Hsiung Liao (zh)
-»·······Claude Paroz (fr)
-»·······Clytie Siddall (vi)
-»·······Daniel Nylander (sv)
-»·······Duarte Loreto (pt)
-»·······Gabor Kelemen (hu)
-»·······Gil Forcada (ca)
-»·······Ilkka Tuohela (fi)
-»·······Inaki Larranaga Murgoitio (eu)
-»·······Ivar Smolin (et)
-»·······Jani Monoses (ro)
-»·······Kenneth Nielsen (da)
-»·······Milo Casagrande (it)
-»·······Philip Withnall (en)
-»·······Takeshi AIHANA (ja)
-»·······Theppitak Karoonboonyanan (th)
-»·······Wouter Bolsterlee (nl)
+Â»Â·Â·Â·Â·Â·Â·Â·Chao-Hsiung Liao (zh)
+Â»Â·Â·Â·Â·Â·Â·Â·Claude Paroz (fr)
+Â»Â·Â·Â·Â·Â·Â·Â·Clytie Siddall (vi)
+Â»Â·Â·Â·Â·Â·Â·Â·Daniel Nylander (sv)
+Â»Â·Â·Â·Â·Â·Â·Â·Duarte Loreto (pt)
+Â»Â·Â·Â·Â·Â·Â·Â·Gabor Kelemen (hu)
+Â»Â·Â·Â·Â·Â·Â·Â·Gil Forcada (ca)
+Â»Â·Â·Â·Â·Â·Â·Â·Ilkka Tuohela (fi)
+Â»Â·Â·Â·Â·Â·Â·Â·Inaki Larranaga Murgoitio (eu)
+Â»Â·Â·Â·Â·Â·Â·Â·Ivar Smolin (et)
+Â»Â·Â·Â·Â·Â·Â·Â·Jani Monoses (ro)
+Â»Â·Â·Â·Â·Â·Â·Â·Kenneth Nielsen (da)
+Â»Â·Â·Â·Â·Â·Â·Â·Milo Casagrande (it)
+Â»Â·Â·Â·Â·Â·Â·Â·Philip Withnall (en)
+Â»Â·Â·Â·Â·Â·Â·Â·Takeshi AIHANA (ja)
+Â»Â·Â·Â·Â·Â·Â·Â·Theppitak Karoonboonyanan (th)
+Â»Â·Â·Â·Â·Â·Â·Â·Wouter Bolsterlee (nl)
 
 Bug Fixes:
-»·······#549838 : Revert workarounds for HTML entities (Matt McCutchen)
-»·······#569365 : Do not draw a cursor without a window (Milan Crha)
-»·······#570276 : Change Word Wrap accelerator to CtrlK (Matthew Barnes)
-»·······#570728 : Use gtk_show_uri in html-editor (Paweł Zembrzuski)
-»·······#571621 : Replace a g_assert() with g_return_if_fail() (Matthew Barnes)
-»·······#571654 : Clear also primary selection (Milan Crha)
-»·······#571738 : Remove unused libart_lgpl includes (Andre Klapper)
+Â»Â·Â·Â·Â·Â·Â·Â·#549838 : Revert workarounds for HTML entities (Matt McCutchen)
+Â»Â·Â·Â·Â·Â·Â·Â·#569365 : Do not draw a cursor without a window (Milan Crha)
+Â»Â·Â·Â·Â·Â·Â·Â·#570276 : Change Word Wrap accelerator to CtrlK (Matthew Barnes)
+Â»Â·Â·Â·Â·Â·Â·Â·#570728 : Use gtk_show_uri in html-editor (PaweÅ Zembrzuski)
+Â»Â·Â·Â·Â·Â·Â·Â·#571621 : Replace a g_assert() with g_return_if_fail() (Matthew Barnes)
+Â»Â·Â·Â·Â·Â·Â·Â·#571654 : Clear also primary selection (Milan Crha)
+Â»Â·Â·Â·Â·Â·Â·Â·#571738 : Remove unused libart_lgpl includes (Andre Klapper)
 
 GtkHTML-3.25.90 2009-02-02
 --------------------------
@@ -319,7 +557,7 @@ Updated Translations:
 	Lucas Lommer (cs)
 	Ask H. Larsen (da)
 	Hendrik Richter (de)
-	Inaki Larrañaga Murgoitio (eu)
+	Inaki LarraÃ±aga Murgoitio (eu)
 	Ilkka Tuohela (fi)
 	Chao-Hsiung Liao (zh_HK, zh_TW)
 	Djihed Afifi (ar)
@@ -333,7 +571,7 @@ Updated Translations:
 	Ivar Smolin (et)
 	Shankar Prasad (kn)
 	Philip Withnall (en_GB)
-	Åsmund Skjæveland (nn)
+	Ãsmund SkjÃ¦veland (nn)
 	Funda Wang (zh_CN)
 
 GtkHTML-3.23.92 2008-09-08
@@ -412,7 +650,7 @@ Updated Translations:
 	Andre Klapper (de)
 	Ignacio Casal Quinteiro (gl)
 	Daniel Nylander (sv)
-	Matej Urbanči (sl)
+	Matej UrbanÄi (sl)
 	Theppitak Karoonboonyanan (th)
 	Kjartan Maraas (nb)
 	Jorge Gonzalez (es)
@@ -439,7 +677,7 @@ Bug Fixes:
 	#524338: Reverting the fix for bug #342659 which caused the fickering (Srinivasa Ragavan)
 
 Updated Translations:
-	Máté Őry (hu)
+	MÃ¡tÃ© Åry (hu)
 	Clytie Siddall (vi)
 	Khaled Hosny (ar)
 
@@ -575,7 +813,7 @@ Bug Fixes:
 
 Updated Translations:
 	Kjartan Maraas (nb)
-	Matej Urbanči (sl)
+	Matej UrbanÄi (sl)
 	Jorge Gonzalez (es)
 
 GtkHTML-3.17.3 2007-12-03
@@ -610,7 +848,7 @@ Bug Fixes:
 
 Updated Translations:
 	Djihed Afifi (ar)
-	Matej Urbanči (sl)
+	Matej UrbanÄi (sl)
 
 GtkHTML-3.16.0 2007-09-17
 -------------------------
@@ -653,7 +891,7 @@ Bug Fixes:
 	 emoticons display (Rashmi)
 
 Updated Translations:
-	Stéphane Raimbault (fr)
+	StÃ©phane Raimbault (fr)
 	Daniel Nylander (sv)
 	Takeshi AIHANA (ja)
 	Ivar Smolin (et)
@@ -792,7 +1030,7 @@ Updated Translations:
 	Tino Meinen (nl)
 	Jovan Naumovski (mk)
 	Ankit Patel (gu)
-	Josep Puigdemont i Casamajó (ca)
+	Josep Puigdemont i CasamajÃ³ (ca)
 	Chao-Hsiung Liao (zh_HK, zh_TW)
 	Artur Flinta, GNOME PL Team (pl)
 	Ivar Smolin (et)
@@ -809,7 +1047,7 @@ Updated Translations:
 	Luca Ferretti (it)
 	Gabor Kelemen (hu)
 	Changwoo Ryu (ko)
-	Nguyễn Thái Ngọc Duy (vi)
+	Nguyá»n ThÃ¡i Ngá»c Duy (vi)
 	Alexander Shopov (bg)
 	Leonardo Ferreira Fontenelle (pt_BR)
 	Artur Flinta (pl)
@@ -909,7 +1147,7 @@ Vincent van Adrighem (nl)
 
 Bug Fixes :
 
-Bastien Nocera, Björn Lindqvist, Nancy Cai
+Bastien Nocera, BjÃ¶rn Lindqvist, Nancy Cai
 
 GtkHTML-3.11.90 2006-07-24
 --------------------------
@@ -927,7 +1165,7 @@ GtkHTML-3.11.4 2006-07-10
 
 Updated Translations :
 
-Runa Bhattacharjee, Benoît Dejean, Ilkka Tuohela,
+Runa Bhattacharjee, BenoÃ®t Dejean, Ilkka Tuohela,
 Yair Hershkovitz, Rajesh Ranjan, Raivis Dejus,
 Changwoo Ryu, Hendrik Richter.
 
@@ -943,7 +1181,7 @@ F. Serrador.
 Bug fixes : Rohini, Harish K, Sebastien Bacher.
 [327841, 303634, 334814, 334873]
 
-GNOME Goal for po/LINGUAS : Przemysław Grzegorczyk
+GNOME Goal for po/LINGUAS : PrzemysÅaw Grzegorczyk
 
 GtkHTML-3.11.1 2006-04-24
 --------------------------
@@ -964,7 +1202,7 @@ Updated Translations:
 	- eu (Inaki Larranaga)
 	- hu (Gabor Kelemen)
 	- it (Luca Ferretti)
-	- lt (Žygimantas Beručka)
+	- lt (Å½ygimantas BeruÄka)
 	- nb (Kjartan Maraas)
 	- no (Kjartan Maraas)
 	- sr (Slobodan D. Sredojevic)
@@ -979,14 +1217,14 @@ http://go-evolution.org/Evo2.5.91#gtkhtml
 
 Updated Translations:
 
-	- ca (Josep Puigdemont i CasamajÃ³)
+	- ca (Josep Puigdemont i CasamajÃÂ³)
 	- es (Francisco Javier F. Serrador)
 	- et (Ivar Smolin)
 	- fi (Ilkka Tuohela)
 	- gl (Ignacio Casal Quinteiro)
 	- gu (Ankit Patel)
 	- ja (Takeshi AIHANA)
-	- lt (Å½ygimantas BeruÄka)
+	- lt (ÃÂ½ygimantas BeruÃÂka)
 	- nb, no (Kjartan Maraas)
 	- nl (Tino Meinen)
 	- pt_BR (Raphael Higino)
@@ -1011,7 +1249,7 @@ http://bugzilla.gnome.org/buglist.cgi?query_format=advanced&short_desc_type=allw
 Updated Translations:
 
         - bg (Vladimir Petkov)
-	- ca (Josep Puigdemont i Casamajó)
+	- ca (Josep Puigdemont i CasamajÃ³)
 	- es (Francisco Javier F. Serrador)
         - gl (Ignacio Casal Quinteiro)
         - gu (Ankit Patel)
@@ -1033,7 +1271,7 @@ New in this release
    * Win32 fixes (Tor Lillqvist)
    * Updated Translations:
 
-	- ca (Josep Puigdemont i Casamajó)
+	- ca (Josep Puigdemont i CasamajÃ³)
 	- en_CA (Adam Weinberger) 
 	- es (Francisco Javier F. Serrador)
 	- et (Priit Laes)
@@ -1055,7 +1293,7 @@ New in this release
    * Fixed popup menu layout for the GtkHTML Editor (Srinivasa Ragavan)
    * Updated Translations:
 
-	- lt (Žygimantas Beručka)
+	- lt (Å½ygimantas BeruÄka)
 	- vi (Clytie Siddall)
 
 GtkHTML-3.9.3 "Stroll" 2005-12-12
@@ -1161,7 +1399,7 @@ New in this release
      - Maxim Dziumanenko (uk)
      - Laurent Dhima (sq)
      - Xavier Conde Rueda (ca)
-     - Žygimantas Beručka (lt)
+     - Å½ygimantas BeruÄka (lt)
 
 gtkhtml-3.7.6 "Look mom, there ain't no bizarre bugs no more!!" 2005-08-08
 --------------------------------------------------------------------------
@@ -1294,7 +1532,7 @@ New in this release
      Kostas Papadimas, Takeshi Aihana, David Lodge, Vincent van
      Adrighem, Alexander Shopov, Laurent Dhima, Maxim Dziumanenko,
      Duarte Loreto, Nikos Charonitakis, Raphael Higino, Miloslav
-     Trmač, Christophe Merlet, Martin Willemoes Hansen, Ankit Patel,
+     TrmaÄ, Christophe Merlet, Martin Willemoes Hansen, Ankit Patel,
      Amanpreet Singh Alamwala, Jordi Mallach, Artur Flinta)
 
 gtkhtml-3.5.6 "Winter mood" 2005-02-07
@@ -1331,7 +1569,7 @@ New in this release
    * fixed crash when deleting table/row/column when selection is active
    * updated translations (Hendrik Brandt, Alexander Shopov, Kjartan
      Maraas, Francisco Javier F. Serrador, Duarte Loreto, Adam Weinberger,
-     Miloslav Trmac, Priit Laes, Žygimantas Beručka, Christian Rose,
+     Miloslav Trmac, Priit Laes, Å½ygimantas BeruÄka, Christian Rose,
      Vincent van Adrighem, Funda Wang)
 
 gtkhtml-3.5.4 "Snowman" 2005-01-24

@@ -75,21 +75,22 @@ draw (HTMLObject *o,
 		return;
 
 	if (element->parent) {
+		GtkWidget *parent;
 		new_x = o->x + tx;
 		new_y = o->y + ty - o->ascent;
 
-		if (gtk_widget_get_parent (element->widget)) {
+		if ((parent = gtk_widget_get_parent (element->widget))) {
 			if (new_x != element->abs_x || new_y != element->abs_y) {
 				d (printf ("element: %p moveto: %d,%d shown: %d\n", element, new_x, new_y, GTK_WIDGET_VISIBLE (element->widget)));
-				gtk_layout_move (GTK_LAYOUT(element->parent), element->widget, new_x, new_y);
-			} else if (!GTK_HTML (element->parent)->engine->expose)
+				gtk_layout_move (GTK_LAYOUT(parent), element->widget, new_x, new_y);
+			} else if (!GTK_HTML (parent)->engine->expose)
 				gtk_widget_queue_draw (element->widget);
 		}
 
 		element->abs_x = new_x;
 		element->abs_y = new_y;
 
-		if (!gtk_widget_get_parent (element->widget)) {
+		if (!parent) {
 			d (printf ("element: %p put: %d,%d shown: %d\n", element, new_x, new_y, GTK_WIDGET_VISIBLE (element->widget)));
 			gtk_layout_put (GTK_LAYOUT(element->parent), element->widget, new_x, new_y);
 		}
@@ -149,7 +150,7 @@ calc_min_width (HTMLObject *self,
 
 	widget = HTML_EMBEDDED (self)->widget;
 
-	if (widget == NULL || !GTK_WIDGET_VISIBLE (widget))
+	if (widget == NULL || !gtk_widget_get_visible (widget))
 		return 0;
 
 	requisition.width = requisition.height = 0;
@@ -249,7 +250,7 @@ html_embedded_encode_string (const gchar *before, const gchar *codepage)
 		g_iconv_close(iconv_cd);
 	    }
 
-        while ( pos < strlen(str) ) {
+        while (pos < strlen(str)) {
 
 		c = (guchar) str[pos];
 
@@ -261,15 +262,15 @@ html_embedded_encode_string (const gchar *before, const gchar *codepage)
 			{
 				encoded = g_string_append_c (encoded, c);
 			}
-		else if ( c == ' ' )
+		else if (c == ' ')
 			{
 				encoded = g_string_append_c (encoded, '+');
 			}
-		else if ( c == '\n' )
+		else if (c == '\n')
 			{
 				encoded = g_string_append (encoded, "%0D%0A");
 			}
-		else if ( c != '\r' )
+		else if (c != '\r')
 			{
 				sprintf( buffer, "%%%02X", (gint)c );
 				encoded = g_string_append (encoded, buffer);

@@ -111,11 +111,9 @@ cell_properties_set_table (GtkhtmlEditor *editor,
 {
 	GtkHTML *html;
 	HTMLObject *parent;
-	HTMLTableCell *cell;
 	HTMLTableCell *iter;
 
 	html = gtkhtml_editor_get_html (editor);
-	cell = HTML_TABLE_CELL (editor->priv->cell_object);
 	parent = editor->priv->cell_parent;
 
 	iter = html_engine_get_table_cell (html->engine);
@@ -253,7 +251,7 @@ cell_properties_set_horizontal_alignment_cb (GtkhtmlEditor *editor,
 	active = gtk_combo_box_get_active (GTK_COMBO_BOX (widget));
 	align = HTML_HALIGN_LEFT + (HTMLHAlignType) active;
 
-	html_engine_table_cell_set_halign (html->engine, cell, active);
+	html_engine_table_cell_set_halign (html->engine, cell, align);
 }
 
 static void
@@ -784,12 +782,8 @@ gtkhtml_editor_image_properties_show_window_cb (GtkWidget *window))
 		|| html_object_get_data (parent, "template_image") == NULL)
 		&& image->image_ptr->url != NULL) {
 
-		gchar *filename;
-
-		filename = gtk_html_filename_from_uri (image->image_ptr->url);
-		gtk_file_chooser_set_filename (
-			GTK_FILE_CHOOSER (widget), filename);
-		g_free (filename);
+		gtk_file_chooser_set_uri (
+			GTK_FILE_CHOOSER (widget), image->image_ptr->url);
 	} else
 		gtk_file_chooser_unselect_all (GTK_FILE_CHOOSER (widget));
 
@@ -1035,25 +1029,6 @@ sanitize_description_text (const gchar *ptext)
 	return g_strstrip (text);
 }
 
-static void
-update_link_offsets (GtkhtmlEditor *editor)
-{
-	Link *link;
-	GtkHTML *html;
-
-	g_return_if_fail (editor != NULL);
-	g_return_if_fail (GTKHTML_IS_EDITOR (editor));
-	g_return_if_fail (editor->priv != NULL);
-
-	html = gtkhtml_editor_get_html (editor);
-
-	link = html_text_get_link_at_offset (HTML_TEXT (html->engine->cursor->object), html->engine->cursor->offset);
-	g_return_if_fail (link != NULL);
-
-	editor->priv->link_start_offset = link->start_offset;
-	editor->priv->link_end_offset = link->end_offset;
-}
-
 AUTOCONNECTED_SIGNAL_HANDLER (void
 gtkhtml_editor_link_properties_description_changed_cb (GtkWidget *window))
 {
@@ -1074,31 +1049,26 @@ gtkhtml_editor_link_properties_description_changed_cb (GtkWidget *window))
 	editor->priv->link_custom_description = (*text != '\0');
 
 	if (editor->priv->link_custom_description) {
-		gint start_offset;
-		gint end_offset;
 		glong length;
+		Link *link;
 
-		start_offset = editor->priv->link_start_offset;
-		end_offset = editor->priv->link_end_offset;
+		link = html_text_get_link_at_offset (HTML_TEXT (html->engine->cursor->object), html->engine->cursor->offset);
 		length = g_utf8_strlen (text, -1);
 
-		if (start_offset != end_offset) {
+		if (link && link->start_offset != link->end_offset) {
 			html_cursor_jump_to (
 				html->engine->cursor, html->engine,
-				editor->priv->link_object, start_offset);
+				html->engine->cursor->object, link->start_offset);
 			html_engine_set_mark (html->engine);
 			html_cursor_jump_to (
 				html->engine->cursor, html->engine,
-				editor->priv->link_object, end_offset);
+				html->engine->cursor->object, link->end_offset);
 			html_engine_delete (html->engine);
 		}
 
 		html_engine_paste_link (
 			html->engine, text, length,
 			gtk_entry_get_text (GTK_ENTRY (url_entry)));
-
-		editor->priv->link_object = html->engine->cursor->object;
-		update_link_offsets (editor);
 	}
 
 	g_free (text);
@@ -1134,31 +1104,26 @@ gtkhtml_editor_link_properties_url_changed_cb (GtkWidget *window))
 		g_free (descr);
 		editor->priv->link_custom_description = FALSE;
 	} else {
-		gint start_offset;
-		gint end_offset;
 		glong length;
+		Link *link;
 		const gchar *descr = gtk_entry_get_text (GTK_ENTRY (dsc_entry));
 
-		start_offset = editor->priv->link_start_offset;
-		end_offset = editor->priv->link_end_offset;
+		link = html_text_get_link_at_offset (HTML_TEXT (html->engine->cursor->object), html->engine->cursor->offset);
 		length = g_utf8_strlen (descr, -1);
 
-		if (start_offset != end_offset) {
+		if (link && link->start_offset != link->end_offset) {
 			html_cursor_jump_to (
 				html->engine->cursor, html->engine,
-				editor->priv->link_object, start_offset);
+				html->engine->cursor->object, link->start_offset);
 			html_engine_set_mark (html->engine);
 			html_cursor_jump_to (
 				html->engine->cursor, html->engine,
-				editor->priv->link_object, end_offset);
+				html->engine->cursor->object, link->end_offset);
 			html_engine_delete (html->engine);
 		}
 
 		html_engine_paste_link (
 			html->engine, descr, length, text);
-
-		editor->priv->link_object = html->engine->cursor->object;
-		update_link_offsets (editor);
 	}
 
 	g_free (text);
@@ -1222,10 +1187,6 @@ gtkhtml_editor_link_properties_show_window_cb (GtkWidget *window))
 			dsc = html_engine_get_selection_string (html->engine);
 		sensitive = FALSE;
 	}
-
-	editor->priv->link_object = cursor->object;
-	editor->priv->link_start_offset = start_offset;
-	editor->priv->link_end_offset = end_offset;
 
 	gtk_widget_set_sensitive (dsc_entry, sensitive);
 	gtk_entry_set_text (

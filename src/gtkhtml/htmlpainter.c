@@ -140,10 +140,10 @@ text_width (HTMLPainter *painter, PangoFontDescription *desc, const gchar *text,
 	if (pi && glyphs) {
 		GList *list;
 		gint i;
-		for (list = glyphs, i = 0; list; list = list->next->next, i++) {
+		for (list = glyphs; list; list = list->next->next) {
 			PangoGlyphString *str = (PangoGlyphString *) list->data;
-			for (i=0; i < str->num_glyphs; i ++)
-				width += str->glyphs [i].geometry.width;
+			for (i=0; i < str->num_glyphs; i++)
+				width += str->glyphs[i].geometry.width;
 		}
 	}
 	if (glyphs)
@@ -182,7 +182,7 @@ text_size (HTMLPainter *painter, PangoFontDescription *desc, const gchar *text, 
 			str = (PangoGlyphString *) gl->data;
 			gl = gl->next;
 			ii = GPOINTER_TO_INT (gl->data);
-			item = pi->entries [ii].glyph_item.item;
+			item = pi->entries[ii].glyph_item.item;
 			pango_glyph_string_extents (str, item->analysis.font, NULL, &log_rect);
 			width += log_rect.width;
 
@@ -197,7 +197,7 @@ text_size (HTMLPainter *painter, PangoFontDescription *desc, const gchar *text, 
 
 			c_text = g_utf8_offset_to_pointer (c_text, str->num_glyphs);
 			if (*text == '\t')
-				c_text ++;
+				c_text++;
 			c_bytes = c_text - text;
 		}
 	}
@@ -533,7 +533,7 @@ html_replace_tabs (const gchar *text, gchar *translated, guint bytes)
 			strncpy (tt, t, tab - t);
 			tt += tab - t;
 			*tt = ' ';
-			tt ++;
+			tt++;
 			t = tab + 1;
 		} else
 			strncpy (tt, t, bytes - (t - text));
@@ -1014,11 +1014,11 @@ html_painter_text_itemize_and_prepare_glyphs (HTMLPainter *painter, PangoFontDes
 
 		for (il = items; il; il = il->next) {
 			item = (PangoItem *) il->data;
-			pi->entries [i].glyph_item.item = item;
+			pi->entries[i].glyph_item.item = item;
 			end = g_utf8_offset_to_pointer (text, item->num_chars);
 			*glyphs = html_get_glyphs_non_tab (*glyphs, item, i, text, end - text, item->num_chars);
 			text = end;
-			i ++;
+			i++;
 		}
 		*glyphs = g_list_reverse (*glyphs);
 		g_list_free (items);

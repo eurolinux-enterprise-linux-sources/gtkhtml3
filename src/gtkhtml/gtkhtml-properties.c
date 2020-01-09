@@ -57,8 +57,8 @@ get_locale_language (void)
 		if (strlen (lang) >= 2) {
 			if (lang[2] == '-' || lang[2] == '_') {
 				/* canonicalise the lang */
-				lang [0] = g_ascii_tolower (lang [0]);
-				lang [1] = g_ascii_tolower (lang [1]);
+				lang[0] = g_ascii_tolower (lang[0]);
+				lang[1] = g_ascii_tolower (lang[1]);
 
 				/* validate the country code */
 				if (strlen (lang + 3) > 2) {
@@ -66,8 +66,8 @@ get_locale_language (void)
 					lang[2] = '\0';
 				} else {
 					lang[2] = '-';
-					lang [3] = g_ascii_toupper (lang [3]);
-					lang [4] = g_ascii_toupper (lang [4]);
+					lang[3] = g_ascii_toupper (lang[3]);
+					lang[4] = g_ascii_toupper (lang[4]);
 				}
 			} else if (lang[2] != '\0') {
 				/* invalid language */
@@ -86,7 +86,7 @@ get_locale_language (void)
 }
 
 GtkHTMLClassProperties *
-gtk_html_class_properties_new (GtkWidget *widget)
+gtk_html_class_properties_new (void)
 {
 	GtkHTMLClassProperties *p = g_new0 (GtkHTMLClassProperties, 1);
 
@@ -294,6 +294,7 @@ static GEnumValue _gtk_html_command_values[] = {
 	{ GTK_HTML_COMMAND_IS_SELECTION_ACTIVE, "GTK_HTML_COMMAND_IS_SELECTION_ACTIVE", "is-selection-active" },
 	{ GTK_HTML_COMMAND_SCROLL_FORWARD, "GTK_HTML_COMMAND_SCROLL_FORWARD", "scroll-forward" },
 	{ GTK_HTML_COMMAND_SCROLL_BACKWARD, "GTK_HTML_COMMAND_SCROLL_BACKWARD", "scroll-backward" },
+	{ GTK_HTML_COMMAND_UNSELECT_ALL, "GTK_HTML_COMMAND_UNSELECT_ALL", "unselect-all" },
 	{ 0, NULL, NULL }
 };
 

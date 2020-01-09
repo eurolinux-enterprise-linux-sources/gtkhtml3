@@ -121,7 +121,7 @@ draw_cursor_rectangle (HTMLEngine *e, gint x1, gint y1, gint x2, gint y2,
 {
 	GdkGC *gc;
 	GdkColor color;
-	gint8 dashes [2] = { 1, 3 };
+	gint8 dashes[2] = { 1, 3 };
 
 	if (x1 > x2 || y1 > y2 || !e->window)
 		return;
@@ -266,7 +266,7 @@ html_engine_draw_table_cursor (HTMLEngine *e)
 
 		html_object_calc_abs_position (to, &cr->x1, &cr->y2);
 		cr->x2 = cr->x1 + to->width - 1;
-		cr->y2 --;
+		cr->y2--;
 		cr->y1 = cr->y2 - (to->ascent + to->descent - 1);
 
 		animate = HTML_IS_TABLE (e->cursor->object) && !html_engine_get_table_cell (e);
@@ -356,7 +356,7 @@ blink_timeout_cb (gpointer data)
 	g_return_val_if_fail (HTML_IS_ENGINE (data), FALSE);
 	engine = HTML_ENGINE (data);
 
-	engine->blinking_status = ! engine->blinking_status;
+	engine->blinking_status = !engine->blinking_status;
 
 	if (engine->blinking_status)
 		html_engine_show_cursor (engine);

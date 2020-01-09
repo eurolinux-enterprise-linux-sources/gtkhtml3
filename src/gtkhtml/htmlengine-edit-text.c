@@ -40,7 +40,7 @@ find_first (HTMLEngine *e)
 	gunichar c;
 
 	c = html_cursor_get_current_char (e->cursor);
-	while (c == 0 || ! g_unichar_isalnum (c) || c == ' ') {
+	while (c == 0 || !g_unichar_isalnum (c) || c == ' ') {
 		if (!html_cursor_forward (e->cursor, e))
 			return FALSE;
 		c = html_cursor_get_current_char (e->cursor);
@@ -82,7 +82,7 @@ html_engine_capitalize_word (HTMLEngine *e)
 						   upper_lower, GINT_TO_POINTER (FALSE));
 			html_engine_disable_selection (e);
 		}
-		html_undo_level_end (e->undo);
+		html_undo_level_end (e->undo, e);
 	}
 }
 
@@ -114,7 +114,7 @@ set_link (HTMLObject *obj, HTMLEngine *e, gpointer data)
 			target = strrchr (url, '#');
 			if (target) {
 				*target = 0;
-				target ++;
+				target++;
 			}
 		}
 

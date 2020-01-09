@@ -152,6 +152,7 @@ color_combo_reposition_window (GtkhtmlColorCombo *combo)
 	GdkScreen *screen;
 	GdkWindow *window;
 	GdkRectangle monitor;
+	GtkAllocation allocation;
 	gint monitor_num;
 	gint x, y, width, height;
 
@@ -162,13 +163,15 @@ color_combo_reposition_window (GtkhtmlColorCombo *combo)
 
 	gdk_window_get_origin (window, &x, &y);
 
-	if (GTK_WIDGET_NO_WINDOW (combo)) {
-		x += GTK_WIDGET (combo)->allocation.x;
-		y += GTK_WIDGET (combo)->allocation.y;
+	if (!gtk_widget_get_has_window (GTK_WIDGET (combo))) {
+		gtk_widget_get_allocation (GTK_WIDGET (combo), &allocation);
+		x += allocation.x;
+		y += allocation.y;
 	}
 
-	width = combo->priv->window->allocation.width;
-	height = combo->priv->window->allocation.height;
+	gtk_widget_get_allocation (combo->priv->window, &allocation);
+	width = allocation.width;
+	height = allocation.height;
 
 	x = CLAMP (x, monitor.x, monitor.x + monitor.width - width);
 	y = CLAMP (y, monitor.y, monitor.y + monitor.height - height);
@@ -276,7 +279,7 @@ color_combo_custom_clicked_cb (GtkhtmlColorCombo *combo)
 		GTK_COLOR_SELECTION_DIALOG (dialog));
 	toplevel = gtk_widget_get_toplevel (GTK_WIDGET (combo));
 
-	if (GTK_WIDGET_TOPLEVEL (toplevel))
+	if (gtk_widget_is_toplevel (toplevel))
 		gtk_window_set_transient_for (
 			GTK_WINDOW (dialog), GTK_WINDOW (toplevel));
 
@@ -318,7 +321,11 @@ color_combo_default_release_event_cb (GtkhtmlColorCombo *combo,
                                       GdkEventButton *event,
                                       GtkButton *button)
 {
-	if (GTK_WIDGET_STATE (button) != GTK_STATE_NORMAL)
+	GtkStateType state;
+
+	state = gtk_widget_get_state (GTK_WIDGET (button));
+
+	if (state != GTK_STATE_NORMAL)
 		gtk_button_clicked (button);
 
 	return FALSE;
@@ -371,7 +378,11 @@ color_combo_swatch_release_event_cb (GtkhtmlColorCombo *combo,
                                      GdkEventButton *event,
                                      GtkButton *button)
 {
-	if (GTK_WIDGET_STATE (button) != GTK_STATE_NORMAL)
+	GtkStateType state;
+
+	state = gtk_widget_get_state (GTK_WIDGET (button));
+
+	if (state != GTK_STATE_NORMAL)
 		gtk_button_clicked (button);
 
 	return FALSE;
@@ -607,7 +618,7 @@ color_combo_size_allocate (GtkWidget *widget,
 
 	priv = GTKHTML_COLOR_COMBO_GET_PRIVATE (widget);
 
-	widget->allocation = *allocation;
+	gtk_widget_set_allocation (widget, allocation);
 	gtk_widget_size_allocate (priv->toggle_button, allocation);
 }
 
@@ -620,7 +631,7 @@ color_combo_popup (GtkhtmlColorCombo *combo)
 	GdkGrabStatus status;
 	const gchar *label;
 
-	if (!GTK_WIDGET_REALIZED (combo))
+	if (!gtk_widget_get_realized (GTK_WIDGET (combo)))
 		return;
 
 	if (combo->priv->popup_shown)
@@ -667,7 +678,7 @@ color_combo_popdown (GtkhtmlColorCombo *combo)
 {
 	GtkToggleButton *toggle_button;
 
-	if (!GTK_WIDGET_REALIZED (combo))
+	if (!gtk_widget_get_realized (GTK_WIDGET (combo)))
 		return;
 
 	if (!combo->priv->popup_shown)
@@ -708,8 +719,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_CURRENT_COLOR,
 		g_param_spec_boxed (
 			"current-color",
-			_("Current color"),
-			_("The currently selected color"),
+			"Current color",
+			"The currently selected color",
 			GDK_TYPE_COLOR,
 			G_PARAM_READWRITE));
 
@@ -718,8 +729,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_DEFAULT_COLOR,
 		g_param_spec_boxed (
 			"default-color",
-			_("Default color"),
-			_("The color associated with the default button"),
+			"Default color",
+			"The color associated with the default button",
 			GDK_TYPE_COLOR,
 			G_PARAM_CONSTRUCT |
 			G_PARAM_READWRITE));
@@ -729,8 +740,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_DEFAULT_LABEL,
 		g_param_spec_string (
 			"default-label",
-			_("Default label"),
-			_("The label for the default button"),
+			"Default label",
+			"The label for the default button",
 			_("Default"),
 			G_PARAM_CONSTRUCT |
 			G_PARAM_READWRITE));
@@ -740,8 +751,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_DEFAULT_TRANSPARENT,
 		g_param_spec_boolean (
 			"default-transparent",
-			_("Default is transparent"),
-			_("Whether the default color is transparent"),
+			"Default is transparent",
+			"Whether the default color is transparent",
 			FALSE,
 			G_PARAM_CONSTRUCT |
 			G_PARAM_READWRITE));
@@ -751,8 +762,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_PALETTE,
 		g_param_spec_object (
 			"palette",
-			_("Color palette"),
-			_("Custom color palette"),
+			"Color palette",
+			"Custom color palette",
 			GTKHTML_TYPE_COLOR_PALETTE,
 			G_PARAM_READWRITE));
 
@@ -761,14 +772,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_POPUP_SHOWN,
 		g_param_spec_boolean (
 			"popup-shown",
-			/* Translators: This is the nickname for a
-			 * GtkhtmlColorCombo property named "popup-shown",
-			 * based on a similar property in GtkComboBox. */
-			_("Popup shown"),
-			/* Translators: This is the blurb for a
-			 * GtkhtmlColorCombo property named "popup-shown",
-			 * based on a similar property in GtkComboBox. */
-			_("Whether the combo's dropdown is shown"),
+			"Popup shown",
+			"Whether the combo's dropdown is shown",
 			FALSE,
 			G_PARAM_READWRITE));
 
@@ -777,16 +782,8 @@ color_combo_class_init (GtkhtmlColorComboClass *class)
 		PROP_STATE,
 		g_param_spec_object (
 			"state",
-			/* Translators: This is the nickname for a
-			GtkHtmlColorCombo property named "state". It holds all
-			the internal values for a GtkHtml color combination box.
-			*/
-			_("Color state"),
-			/* Translators: This is the blurb for a
-			GtkHtmlColorCombo property named "state". It holds all
-			the internal values for a GtkHtml color combination box.
-			*/
-			_("The state of a color combo box"),
+			"Color state",
+			"The state of a color combo box",
 			GTKHTML_TYPE_COLOR_STATE,
 			G_PARAM_READWRITE));
 
@@ -895,7 +892,7 @@ color_combo_init (GtkhtmlColorCombo *combo)
 	gtk_window_set_resizable (GTK_WINDOW (window), FALSE);
 	gtk_window_set_type_hint (
 		GTK_WINDOW (window), GDK_WINDOW_TYPE_HINT_COMBO);
-	if (GTK_WIDGET_TOPLEVEL (toplevel)) {
+	if (gtk_widget_is_toplevel (toplevel)) {
 		gtk_window_group_add_window (
 			gtk_window_get_group (GTK_WINDOW (toplevel)),
 			GTK_WINDOW (window));

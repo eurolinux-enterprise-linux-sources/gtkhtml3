@@ -1,27 +1,36 @@
 %define gnome_icon_theme_version 2.22.0
-%define gtk2_version 2.14.0
-%define intltool_version 0.35.5
+%define gtk2_version 2.20.0
+%define intltool_version 0.36.3
 %define gtkhtml_major 3.14
 
 ### Abstract ###
 
 Name: gtkhtml3
-Version: 3.28.3
-Release: 3%{?dist}
+Version: 3.32.2
+Release: 2%{?dist}
 Group: System Environment/Libraries
 Summary: GtkHTML library
 License: LGPLv2+ and GPLv2
 URL: http://projects.gnome.org/evolution/
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
-Source: http://download.gnome.org/sources/gtkhtml/3.28/gtkhtml-%{version}.tar.bz2
+Source: http://download.gnome.org/sources/gtkhtml/3.32/gtkhtml-%{version}.tar.bz2
 
 ### Patches ###
 
-# RH bug #588457 / GNOME bug #597111
-Patch1: gtkhtml-3.28.3-wrap-lines.patch
+# Address some of the Coverity scan issues
+Patch01: gtkhtml-3.32.2-covscan-issues.patch
 
-# RH bug #590877 / GNOME bug #618368
-Patch2: gtkhtml-3.28.3-clickable-links.patch
+# RH bug #577797
+Patch02: gtkhtml-3.32.2-cursor-pos-after-paste.patch
+
+# RH bug #615969
+Patch03: gtkhtml-3.32.2-whitespace-drop-on-paste.patch
+
+# RH bug #627199
+Patch04: gtkhtml-3.32.2-print-underline-strikeout.patch
+
+# RH bug #626690
+Patch05: gtkhtml-3.32.2-par-style-draw.patch
 
 ### Dependencies ###
 
@@ -57,8 +66,11 @@ Libraries and include files that can be used to develop GtkHTML applications.
 
 %prep
 %setup -q -n gtkhtml-%{version}
-%patch1 -p1 -b .wrap-lines
-%patch2 -p1 -b .clickable-links
+%patch01 -p1 -b .covscan-issues
+%patch02 -p1 -b .cursor-pos-after-paste
+%patch03 -p1 -b .whitespace-drop-on-paste
+%patch04 -p1 -b .print-underline-strikeout
+%patch05 -p1 -b .par-style-draw
 
 %build
 
@@ -93,17 +105,29 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README COPYING TODO
 %{_bindir}/gtkhtml-editor-test
 %{_libdir}/libgtkhtml-%{gtkhtml_major}.so.*
-%{_libdir}/libgtkhtml-editor.so.*
+%{_libdir}/libgtkhtml-editor-%{gtkhtml_major}.so.*
 %{_datadir}/gtkhtml-%{gtkhtml_major}
 
 %files devel
 %defattr(-, root, root)
 %{_includedir}/libgtkhtml-%{gtkhtml_major}
 %{_libdir}/libgtkhtml-%{gtkhtml_major}.so
-%{_libdir}/libgtkhtml-editor.so
+%{_libdir}/libgtkhtml-editor-%{gtkhtml_major}.so
 %{_libdir}/pkgconfig/*.pc
 
 %changelog
+* Wed Jul 03 2013 Milan Crha <mcrha@redhat.com> - 3.32.2-2.el6
+- Add patch for some issues found by Coverity scan
+- Add patch for RH bug #577797 (Cursor misplaced after paste)
+- Add patch for RH bug #615969 (Whitespaces drop on paste)
+- Add patch for RH bug #627199 (Underline/strikeout misplaced in printout)
+- Add patch for RH bug #626690 (Paragraph style not drawn after font style change)
+
+* Mon Jun 03 2013 Milan Crha <mcrha@redhat.com> - 3.32.2-1.el6
+- Rebase to 3.32.2
+- Remove patch for RH bug #588457 (part of rebase)
+- Remove patch for RH bug #590877 (part of rebase)
+
 * Thu Jun 17 2010 Matthew Barnes <mbarnes@redhat.com> - 3.28.3-3.el6
 - Add patch for RH bug #590877 (pasted links not clickable).
 

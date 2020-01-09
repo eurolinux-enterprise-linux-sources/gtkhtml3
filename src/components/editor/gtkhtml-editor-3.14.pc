@@ -1,6 +1,6 @@
-prefix=/home/test/opt
+prefix=/home/mbarnes/local/stable
 exec_prefix=${prefix}
-libdir=/home/test/opt/lib64
+libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 gtkhtml_api_version=3.14
@@ -8,6 +8,6 @@ gtkhtml_api_version=3.14
 Name: gtkhtml-editor
 Description: HTML editor widget
 Requires: libgtkhtml-3.14
-Version: 3.28.3
-Libs: -L${libdir} -lgtkhtml-editor
+Version: 3.32.2
+Libs: -L${libdir} -lgtkhtml-editor-3.14
 Cflags: -I${includedir}/libgtkhtml-3.14/editor

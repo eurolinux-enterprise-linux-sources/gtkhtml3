@@ -408,7 +408,7 @@ relayout (HTMLObject *self,
 		self->y = self->ascent;
 	} else {
 		/* Relayout our parent starting from us.  */
-		if (! html_object_relayout (self->parent, engine, self))
+		if (!html_object_relayout (self->parent, engine, self))
 			html_engine_queue_draw (engine, self);
 	}
 
@@ -502,7 +502,7 @@ select_range (HTMLObject *self,
 	gboolean changed;
 
 	selected = length > 0 || (length == -1 && start < html_object_get_length (self)) || html_object_is_container (self) ? TRUE : FALSE;
-	changed  = (! selected && self->selected) || (selected && ! self->selected) ? TRUE : FALSE;
+	changed  = (!selected && self->selected) || (selected && !self->selected) ? TRUE : FALSE;
 
 	self->selected = selected;
 
@@ -617,8 +617,8 @@ html_object_real_cursor_forward (HTMLObject *self, HTMLCursor *cursor, HTMLEngin
 
 	len = html_object_get_length (self);
 	if (cursor->offset < len) {
-		cursor->offset ++;
-		cursor->position ++;
+		cursor->offset++;
+		cursor->position++;
 		return TRUE;
 	} else
 		return FALSE;
@@ -655,8 +655,8 @@ html_object_real_cursor_backward (HTMLObject *self, HTMLCursor *cursor, HTMLEngi
 		return FALSE;
 
 	if (cursor->offset > 1 || html_cursor_allow_zero_offset (cursor, self)) {
-		cursor->offset --;
-		cursor->position --;
+		cursor->offset--;
+		cursor->position--;
 		return TRUE;
 	}
 
@@ -680,14 +680,14 @@ html_object_real_cursor_right (HTMLObject *self, HTMLPainter *painter, HTMLCurso
 		len = html_object_get_length (self);
 
 		if (cursor->offset < len) {
-			cursor->offset ++;
-			cursor->position ++;
+			cursor->offset++;
+			cursor->position++;
 			return TRUE;
 		}
 	} else {
 		if (cursor->offset > 1 || html_cursor_allow_zero_offset (cursor, self)) {
-			cursor->offset --;
-			cursor->position --;
+			cursor->offset--;
+			cursor->position--;
 			return TRUE;
 		}
 	}
@@ -708,8 +708,8 @@ html_object_real_cursor_left (HTMLObject *self, HTMLPainter *painter, HTMLCursor
 
 	if (dir != HTML_DIRECTION_RTL) {
 		if (cursor->offset > 1 || html_cursor_allow_zero_offset (cursor, self)) {
-			cursor->offset --;
-			cursor->position --;
+			cursor->offset--;
+			cursor->position--;
 			return TRUE;
 		}
 	} else {
@@ -718,8 +718,8 @@ html_object_real_cursor_left (HTMLObject *self, HTMLPainter *painter, HTMLCursor
 		len = html_object_get_length (self);
 
 		if (cursor->offset < len) {
-			cursor->offset ++;
-			cursor->position ++;
+			cursor->offset++;
+			cursor->position++;
 			return TRUE;
 		}
 	}
@@ -2038,7 +2038,7 @@ html_object_nth_parent (HTMLObject *self, gint n)
 {
 	while (self && n > 0) {
 		self = self->parent;
-		n --;
+		n--;
 	}
 
 	return self;
@@ -2050,7 +2050,7 @@ html_object_get_parent_level (HTMLObject *self)
 	gint level = 0;
 
 	while (self) {
-		level ++;
+		level++;
 		self = self->parent;
 	}
 
@@ -2133,7 +2133,7 @@ html_object_get_insert_level (HTMLObject *o)
 
 		while (o && (HTML_IS_CLUEV (o) || HTML_IS_TABLE_CELL (o))
 		       && HTML_CLUE (o)->head && (HTML_IS_CLUEV (HTML_CLUE (o)->head) || HTML_IS_TABLE_CELL (HTML_CLUE (o)->head))) {
-			level ++;
+			level++;
 			o = HTML_CLUE (o)->head;
 		}
 

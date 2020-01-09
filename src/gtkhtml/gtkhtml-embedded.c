@@ -45,7 +45,7 @@ enum {
 	LAST_SIGNAL
 };
 
-static guint signals [LAST_SIGNAL] = { 0 };
+static guint signals[LAST_SIGNAL] = { 0 };
 
 GType
 gtk_html_embedded_get_type (void)
@@ -171,7 +171,7 @@ gtk_html_embedded_class_init (GtkHTMLEmbeddedClass *class)
 
 	parent_class = g_type_class_peek_parent (class);
 
-	signals [CHANGED] =
+	signals[CHANGED] =
 		g_signal_new ("changed",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -179,7 +179,7 @@ gtk_html_embedded_class_init (GtkHTMLEmbeddedClass *class)
 			      NULL, NULL,
 			      g_cclosure_marshal_VOID__VOID,
 			      G_TYPE_NONE, 0);
-	signals [DRAW_GDK] =
+	signals[DRAW_GDK] =
 		g_signal_new ("draw_gdk",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -189,7 +189,7 @@ gtk_html_embedded_class_init (GtkHTMLEmbeddedClass *class)
 			      G_TYPE_POINTER, G_TYPE_POINTER,
 			      G_TYPE_INT, G_TYPE_INT);
 
-	signals [DRAW_PRINT] =
+	signals[DRAW_PRINT] =
 		g_signal_new ("draw_print",
 			      G_TYPE_FROM_CLASS (object_class),
 			      G_SIGNAL_RUN_FIRST,
@@ -223,8 +223,11 @@ gtk_html_embedded_size_request (GtkWidget *widget, GtkRequisition *requisition)
 	if (child) {
 		gtk_widget_size_request (child, requisition);
 	} else {
-		requisition->width = widget->requisition.width;
-		requisition->height = widget->requisition.height;
+		GtkRequisition self_requisition;
+
+		gtk_widget_get_requisition (widget, &self_requisition);
+		requisition->width = self_requisition.width;
+		requisition->height = self_requisition.height;
 	}
 }
 
@@ -238,10 +241,10 @@ gtk_html_embedded_size_allocate (GtkWidget *widget, GtkAllocation *allocation)
 
 	child = gtk_bin_get_child (GTK_BIN (widget));
 
-	if (child && GTK_WIDGET_VISIBLE (child)) {
+	if (child && gtk_widget_get_visible (child)) {
 		gtk_widget_size_allocate (child, allocation);
 	}
-	widget->allocation = *allocation;
+	gtk_widget_set_allocation (widget, allocation);
 }
 
 static void

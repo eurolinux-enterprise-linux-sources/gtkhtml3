@@ -90,6 +90,7 @@ html_engine_insert_table_1_1 (HTMLEngine *e)
 
 	html_engine_append_object (e, table, 2);
 	html_cursor_backward (e->cursor, e);
+	html_engine_table_set_align (e, (HTMLTable *) table, HTML_HALIGN_CENTER);
 }
 
 /**
@@ -111,9 +112,9 @@ html_engine_insert_table (HTMLEngine *e, gint cols, gint rows, gint width, gint 
 
 	table = html_table_new (width, percent, padding, spacing, border);
 
-	for (r = 0; r < rows; r ++) {
+	for (r = 0; r < rows; r++) {
 		html_table_start_row (HTML_TABLE (table));
-		for (c = 0; c < cols; c ++)
+		for (c = 0; c < cols; c++)
 			html_table_add_cell (HTML_TABLE (table), html_engine_new_cell (e, HTML_TABLE (table)));
 		html_table_end_row (HTML_TABLE (table));
 	}
@@ -154,7 +155,7 @@ insert_column_undo_action (HTMLEngine *e, HTMLUndoData *data, HTMLUndoDirection 
 static void
 insert_column_setup_undo (HTMLEngine *e, gint col, guint position_before, HTMLUndoDirection dir)
 {
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Insert table column", insert_column_undo_action,
 						    insert_undo_data_new (col), html_cursor_get_position (e->cursor),
 						    position_before),
@@ -238,32 +239,32 @@ html_table_insert_column (HTMLTable *t, HTMLEngine *e, gint col, HTMLTableCell *
 	html_engine_goto_table_0 (e, t);
 
 	html_table_alloc_cell (t, 0, t->totalCols);
-	for (c = t->totalCols - 1; c > col; c --) {
-		for (r = 0; r < t->totalRows; r ++) {
-			HTMLTableCell *cell = t->cells [r][c - 1];
+	for (c = t->totalCols - 1; c > col; c--) {
+		for (r = 0; r < t->totalRows; r++) {
+			HTMLTableCell *cell = t->cells[r][c - 1];
 
 			if (cell) {
 				if (cell->col == c - 1) {
 					html_table_cell_set_position (cell, cell->row, c);
-					t->cells [r][c - 1] = NULL;
+					t->cells[r][c - 1] = NULL;
 				} else if (c == col + 1 && cell->row == r)
-					cell->cspan ++;
+					cell->cspan++;
 				if (cell->col > c - 1)
-					t->cells [r][c - 1] = NULL;
-				t->cells [r][c] = cell;
+					t->cells[r][c - 1] = NULL;
+				t->cells[r][c] = cell;
 			}
 		}
 	}
-	for (r = 0; r < t->totalRows; r ++) {
-		if (!t->cells [r][col]) {
+	for (r = 0; r < t->totalRows; r++) {
+		if (!t->cells[r][col]) {
 			guint len;
 
 			cell = column
-				? HTML_TABLE_CELL (html_object_op_copy (HTML_OBJECT (column [r]), HTML_OBJECT (t),
+				? HTML_TABLE_CELL (html_object_op_copy (HTML_OBJECT (column[r]), HTML_OBJECT (t),
 									e, NULL, NULL, &len))
 				: html_engine_new_cell (e, t);
 			html_table_set_cell (t, r, col, cell);
-			html_table_cell_set_position (t->cells [r][col], r, col);
+			html_table_cell_set_position (t->cells[r][col], r, col);
 		}
 	}
 
@@ -314,8 +315,9 @@ delete_cells_undo_destroy (HTMLUndoData *undo_data)
 	DeleteCellsUndo *data = (DeleteCellsUndo *) undo_data;
 	gint i;
 
-	for (i = 0; i < data->size; i ++)
-		html_object_destroy (HTML_OBJECT (data->cells [i]));
+	for (i = 0; i < data->size; i++)
+		if (data->cells[i])
+			html_object_destroy (HTML_OBJECT (data->cells[i]));
 	g_free(data->cells);
 }
 
@@ -355,7 +357,7 @@ delete_column_undo_action (HTMLEngine *e, HTMLUndoData *undo_data, HTMLUndoDirec
 static void
 delete_column_setup_undo (HTMLEngine *e, HTMLTableCell **column, gint size, guint position_after, gint col, HTMLUndoDirection dir)
 {
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Delete table column", delete_column_undo_action,
 						    HTML_UNDO_DATA (delete_cells_undo_new (column, size, col)),
 						    html_cursor_get_position (e->cursor),
@@ -396,23 +398,23 @@ html_table_delete_column (HTMLTable *t, HTMLEngine *e, gint col, HTMLUndoDirecti
 	pos.offset = e->cursor->offset;
 
 	html_engine_goto_table_0 (e, t);
-	for (r = 0; r < t->totalRows; r ++) {
-		cell = t->cells [r][col];
+	for (r = 0; r < t->totalRows; r++) {
+		cell = t->cells[r][col];
 
 		/* remove & keep old one */
 		if (cell && cell->col == col) {
 			HTML_OBJECT (cell)->parent = NULL;
-			column [r] = cell;
-			t->cells [r][col] = NULL;
+			column[r] = cell;
+			t->cells[r][col] = NULL;
 		}
 
-		for (c = col + 1; c < t->totalCols; c ++) {
-			cell = t->cells [r][c];
+		for (c = col + 1; c < t->totalCols; c++) {
+			cell = t->cells[r][c];
 			if (cell && cell->col != col) {
 				if (cell->row == r && cell->col == c)
 					html_table_cell_set_position (cell, r, c - 1);
-				t->cells [r][c - 1] = cell;
-				t->cells [r][c]     = NULL;
+				t->cells[r][c - 1] = cell;
+				t->cells[r][c]     = NULL;
 			}
 		}
 	}
@@ -420,7 +422,7 @@ html_table_delete_column (HTMLTable *t, HTMLEngine *e, gint col, HTMLUndoDirecti
 	html_cursor_jump_to (e->cursor, e, pos.object, pos.offset);
 	position_after = e->cursor->position;
 	delete_column_setup_undo (e, column, t->totalRows, position_after, col, dir);
-	t->totalCols --;
+	t->totalCols--;
 
 	html_object_change_set (HTML_OBJECT (t), HTML_CHANGE_ALL_CALC);
 	html_engine_queue_draw (e, HTML_OBJECT (t));
@@ -506,7 +508,7 @@ insert_row_undo_action (HTMLEngine *e, HTMLUndoData *data, HTMLUndoDirection dir
 static void
 insert_row_setup_undo (HTMLEngine *e, gint row, guint position_before, HTMLUndoDirection dir)
 {
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Insert table row", insert_row_undo_action,
 						    insert_undo_data_new (row),
 						    html_cursor_get_position (e->cursor),
@@ -529,32 +531,32 @@ html_table_insert_row (HTMLTable *t, HTMLEngine *e, gint row, HTMLTableCell **ro
 	html_engine_goto_table_0 (e, t);
 
 	html_table_alloc_cell (t, t->totalRows, 0);
-	for (r = t->totalRows; r > row; r --) {
-		for (c = 0; c < t->totalCols; c ++) {
-			HTMLTableCell *cell = t->cells [r - 1][c];
+	for (r = t->totalRows; r > row; r--) {
+		for (c = 0; c < t->totalCols; c++) {
+			HTMLTableCell *cell = t->cells[r - 1][c];
 
 			if (cell) {
 				if (cell->row == r - 1) {
 					html_table_cell_set_position (cell, r, cell->col);
-					t->cells [r - 1][c] = NULL;
+					t->cells[r - 1][c] = NULL;
 				} else if (r == row + 1 && cell->col == c)
-					cell->rspan ++;
+					cell->rspan++;
 				if (cell->row > r - 1)
-					t->cells [r - 1][c] = NULL;
-				t->cells [r][c] = cell;
+					t->cells[r - 1][c] = NULL;
+				t->cells[r][c] = cell;
 			}
 		}
 	}
-	for (c = 0; c < t->totalCols; c ++) {
-		if (!t->cells [row][c]) {
+	for (c = 0; c < t->totalCols; c++) {
+		if (!t->cells[row][c]) {
 			guint len;
 
 			cell = row_cells
-				? HTML_TABLE_CELL (html_object_op_copy (HTML_OBJECT (row_cells [c]), HTML_OBJECT (t),
+				? HTML_TABLE_CELL (html_object_op_copy (HTML_OBJECT (row_cells[c]), HTML_OBJECT (t),
 									e, NULL, NULL, &len))
 				:  html_engine_new_cell (e, t);
 			html_table_set_cell (t, row, c, cell);
-			html_table_cell_set_position (t->cells [row][c], row, c);
+			html_table_cell_set_position (t->cells[row][c], row, c);
 		}
 	}
 
@@ -610,7 +612,7 @@ static void
 delete_row_setup_undo (HTMLEngine *e, HTMLTableCell **row_cells, gint size, guint position_after,
 		       gint row, HTMLUndoDirection dir)
 {
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Delete table row", delete_row_undo_action,
 						    HTML_UNDO_DATA (delete_cells_undo_new (row_cells, size, row)),
 						    html_cursor_get_position (e->cursor),
@@ -651,29 +653,29 @@ html_table_delete_row (HTMLTable *t, HTMLEngine *e, gint row, HTMLUndoDirection 
 	pos.offset = e->cursor->offset;
 
 	html_engine_goto_table_0 (e, t);
-	for (c = 0; c < t->totalCols; c ++) {
-		cell = t->cells [row][c];
+	for (c = 0; c < t->totalCols; c++) {
+		cell = t->cells[row][c];
 
 		/* remove & keep old one */
 		if (cell && cell->row == row) {
 			HTML_OBJECT (cell)->parent = NULL;
-			row_cells [c] = cell;
-			t->cells [row][c] = NULL;
+			row_cells[c] = cell;
+			t->cells[row][c] = NULL;
 		}
 
-		for (r = row + 1; r < t->totalRows; r ++) {
-			cell = t->cells [r][c];
+		for (r = row + 1; r < t->totalRows; r++) {
+			cell = t->cells[r][c];
 			if (cell && cell->row != row) {
 				if (cell->row == r && cell->col == c)
 					html_table_cell_set_position (cell, r - 1, c);
-				t->cells [r - 1][c] = cell;
-				t->cells [r][c]     = NULL;
+				t->cells[r - 1][c] = cell;
+				t->cells[r][c]     = NULL;
 			}
 		}
 	}
 
 	html_cursor_jump_to (e->cursor, e, pos.object, pos.offset);
-	t->totalRows --;
+	t->totalRows--;
 	position_after = e->cursor->position;
 	delete_row_setup_undo (e, row_cells, t->totalCols, position_after, row, dir);
 	html_object_change_set (HTML_OBJECT (t), HTML_CHANGE_ALL_CALC);
@@ -817,7 +819,7 @@ table_set_border_width (HTMLEngine *e, HTMLTable *t, gint border_width, gboolean
 	html_object_change_set (HTML_OBJECT (t), HTML_CHANGE_ALL_CALC);
 	html_engine_thaw (e);
 
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table border width", table_set_border_width_undo_action,
 						    HTML_UNDO_DATA (undo), html_cursor_get_position (e->cursor),
 						    html_cursor_get_position (e->cursor)), dir);
@@ -860,7 +862,7 @@ table_set_bg_color (HTMLEngine *e, HTMLTable *t, GdkColor *c, HTMLUndoDirection 
 		undo->attr.color.has_bg_color = TRUE;
 	} else
 		undo->attr.color.has_bg_color = FALSE;
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table background color", table_set_bg_color_undo_action,
 						    HTML_UNDO_DATA (undo),
 						    html_cursor_get_position (e->cursor),
@@ -906,7 +908,7 @@ table_set_bg_pixmap (HTMLEngine *e, HTMLTable *t, gchar *url, HTMLUndoDirection 
 
 	undo = attr_undo_new (HTML_TABLE_BGPIXMAP);
 	undo->attr.pixmap = t->bgPixmap ? g_strdup (t->bgPixmap->url) : NULL;
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table background pixmap", table_set_bg_pixmap_undo_action,
 						    HTML_UNDO_DATA (undo),
 						    html_cursor_get_position (e->cursor),
@@ -960,7 +962,7 @@ table_set_spacing (HTMLEngine *e, HTMLTable *t, gint spacing, gboolean relative,
 
 	undo = attr_undo_new (HTML_TABLE_SPACING);
 	undo->attr.spacing = t->spacing;
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table spacing", table_set_spacing_undo_action,
 						    HTML_UNDO_DATA (undo),
 						    html_cursor_get_position (e->cursor),
@@ -1012,18 +1014,18 @@ table_set_padding (HTMLEngine *e, HTMLTable *t, gint padding, gboolean relative,
 
 	undo = attr_undo_new (HTML_TABLE_PADDING);
 	undo->attr.padding = t->padding;
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table padding", table_set_padding_undo_action,
 						    HTML_UNDO_DATA (undo),
 						    html_cursor_get_position (e->cursor),
 						    html_cursor_get_position (e->cursor)), dir);
 
 	t->padding = new_padding;
-	for (r = 0; r < t->totalRows; r ++)
-		for (c = 0; c < t->totalCols; c ++)
-			if (t->cells [r][c]->col == c && t->cells [r][c]->row == r) {
-				HTML_CLUEV (t->cells [r][c])->padding = new_padding;
-				HTML_OBJECT (t->cells [r][c])->change |= HTML_CHANGE_ALL_CALC;
+	for (r = 0; r < t->totalRows; r++)
+		for (c = 0; c < t->totalCols; c++)
+			if (t->cells[r][c]->col == c && t->cells[r][c]->row == r) {
+				HTML_CLUEV (t->cells[r][c])->padding = new_padding;
+				HTML_OBJECT (t->cells[r][c])->change |= HTML_CHANGE_ALL_CALC;
 			}
 	html_object_change_set (HTML_OBJECT (t), HTML_CHANGE_ALL_CALC);
 	html_engine_schedule_update (e);
@@ -1085,7 +1087,7 @@ table_set_align (HTMLEngine *e, HTMLTable *t, HTMLHAlignType align, HTMLUndoDire
 	} else
 		g_assert_not_reached ();
 
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table align", table_set_align_undo_action,
 						    HTML_UNDO_DATA (undo),
 						    html_cursor_get_position (e->cursor),
@@ -1129,7 +1131,7 @@ table_set_width (HTMLEngine *e, HTMLTable *t, gint width, gboolean percent, HTML
 		: (HTML_OBJECT (t)->flags & HTML_OBJECT_FLAG_FIXEDWIDTH
 		   ? t->specified_width : 0);
 	undo->attr.width.percent = HTML_OBJECT (t)->percent != 0;
-	html_undo_add_action (e->undo,
+	html_undo_add_action (e->undo, e,
 			      html_undo_action_new ("Set table width", table_set_width_undo_action,
 						    HTML_UNDO_DATA (undo),
 						    html_cursor_get_position (e->cursor),
@@ -1175,12 +1177,12 @@ html_engine_table_set_cols (HTMLEngine *e, gint cols)
 	if (table->totalCols < cols) {
 		gint n = cols - table->totalCols;
 
-		for (; n > 0; n --)
+		for (; n > 0; n--)
 			html_table_insert_column (table, e, table->totalCols, NULL, HTML_UNDO_UNDO);
 	} else {
 		gint n = table->totalCols - cols;
 
-		for (; n > 0; n --)
+		for (; n > 0; n--)
 			html_table_delete_column (table, e, table->totalCols - 1, HTML_UNDO_UNDO);
 	}
 }
@@ -1203,12 +1205,12 @@ html_engine_table_set_rows (HTMLEngine *e, gint rows)
 	if (table->totalRows < rows) {
 		gint n = rows - table->totalRows;
 
-		for (; n > 0; n --)
+		for (; n > 0; n--)
 			html_table_insert_row (table, e, table->totalRows, NULL, HTML_UNDO_UNDO);
 	} else {
 		gint n = table->totalRows - rows;
 
-		for (; n > 0; n --)
+		for (; n > 0; n--)
 			html_table_delete_row (table, e, table->totalRows - 1, HTML_UNDO_UNDO);
 	}
 }

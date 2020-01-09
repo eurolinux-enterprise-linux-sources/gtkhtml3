@@ -215,7 +215,7 @@ html_tokenizer_class_init (HTMLTokenizerClass *klass)
 			      G_TYPE_NONE,
 			      1, G_TYPE_POINTER);
 
-	html_tokenizer_signals [HTML_TOKENIZER_END_SIGNAL] =
+	html_tokenizer_signals[HTML_TOKENIZER_END_SIGNAL] =
 		g_signal_new ("end",
 			      G_TYPE_FROM_CLASS (klass),
 			      G_SIGNAL_RUN_LAST,
@@ -365,8 +365,8 @@ html_token_buffer_append_token (HTMLTokenBuffer * buf, const gchar *token, gint 
 	/* copy token and terminate with zero */
 	strncpy (buf->data + buf->used, token, len);
 	buf->used += len;
-	buf->data [buf->used] = 0;
-	buf->used ++;
+	buf->data[buf->used] = 0;
+	buf->used++;
 
 	dt(printf ("html_token_buffer_append_token: '%s'\n", buf->data + buf->used - 1 - len));
 
@@ -465,7 +465,7 @@ html_tokenizer_convert_entity (gchar *token)
 				/*value to add*/
 				gunichar value = INVALID_ENTITY_CHARACTER_MARKER;
 				/*skip not needed &*/
-				read_pos ++;
+				read_pos++;
 				count_chars = strcspn (read_pos, ";");
 				if (count_chars < 14 && count_chars > 1) {
 					/*save for recovery*/
@@ -483,7 +483,7 @@ html_tokenizer_convert_entity (gchar *token)
 					} else {
 						value = html_entity_parse (read_pos, strlen (read_pos));
 					}
-					if (value != INVALID_ENTITY_CHARACTER_MARKER) {
+					if (*read_pos == '#' || value != INVALID_ENTITY_CHARACTER_MARKER) {
 						write_pos += g_unichar_to_utf8 (value, write_pos);
 						read_pos += (count_chars + 1);
 					} else {
@@ -532,10 +532,10 @@ convert_text_encoding (const GIConv iconv_cd,
 			if (currlength > 0) {
 				g_warning ("IconvError=%s", current);
 				*newbuffer = INVALID_ENTITY_CHARACTER_MARKER;
-				newbuffer ++;
-				current ++;
-				currlength --;
-				newlength --;
+				newbuffer++;
+				current++;
+				currlength--;
+				newlength--;
 			}
 		}
 		returnbuffer[oldlength - newlength] = '\0';
@@ -857,7 +857,7 @@ add_char (HTMLTokenizer *t, gchar c)
 	if (c!='\0')
 	{
 		*(p->dest) = c;
-		p->dest ++;
+		p->dest++;
 		*(p->dest) = 0;
 	}
 }
@@ -955,7 +955,7 @@ in_comment (HTMLTokenizer *t, const gchar **src)
 			p->searchCount++;
 	} else if (p->searchCount == 2 && (**src == '>')) {
 		p->comment = FALSE;          /* We've got a "-->" sequence */
-	} else if (tolower (**src) == gtkhtmlStart [p->searchGtkHTMLCount]) {
+	} else if (tolower (**src) == gtkhtmlStart[p->searchGtkHTMLCount]) {
 		if (p->searchGtkHTMLCount == 8) {
 			p->extension    = TRUE;
 			p->comment = FALSE;
@@ -963,7 +963,7 @@ in_comment (HTMLTokenizer *t, const gchar **src)
 			p->searchExtensionEndCount = 0;
 			p->searchGtkHTMLCount = 0;
 		} else
-			p->searchGtkHTMLCount ++;
+			p->searchGtkHTMLCount++;
 	} else {
 		p->searchGtkHTMLCount = 0;
 		if (p->searchCount < 2)
@@ -991,7 +991,7 @@ in_extension (HTMLTokenizer *t, const gchar **src)
 	/* check for "-->" */
 	if (!p->tquote && **src == '-') {
 		if (p->searchExtensionEndCount < 2)
-			p->searchExtensionEndCount ++;
+			p->searchExtensionEndCount++;
 		(*src) ++;
 	} else if (!p->tquote && p->searchExtensionEndCount == 2 && **src == '>') {
 		p->extension = FALSE;
@@ -1003,7 +1003,7 @@ in_extension (HTMLTokenizer *t, const gchar **src)
 
 				while (p->searchExtensionEndCount) {
 					extension_one_char (t, &c);
-					p->searchExtensionEndCount --;
+					p->searchExtensionEndCount--;
 				}
 			}
 		}
@@ -1020,10 +1020,10 @@ in_script_or_style (HTMLTokenizer *t, const gchar **src)
 	if (p->scriptCodeSize + 11 > p->scriptCodeMaxSize)
 		p->scriptCode = g_realloc (p->scriptCode, p->scriptCodeMaxSize += 1024);
 
-	if ((**src == '>' ) && ( p->searchFor [p->searchCount] == '>')) {
+	if ((**src == '>' ) && ( p->searchFor[p->searchCount] == '>')) {
 		(*src)++;
-		p->scriptCode [p->scriptCodeSize] = 0;
-		p->scriptCode [p->scriptCodeSize + 1] = 0;
+		p->scriptCode[p->scriptCodeSize] = 0;
+		p->scriptCode[p->scriptCodeSize + 1] = 0;
 		if (p->script) {
 			p->script = FALSE;
 		}
@@ -1036,12 +1036,12 @@ in_script_or_style (HTMLTokenizer *t, const gchar **src)
 	/* Check if a </script> tag is on its way */
 	else if (p->searchCount > 0) {
 		gboolean put_to_script = FALSE;
-		if (tolower (**src) == p->searchFor [p->searchCount]) {
-			p->searchBuffer [p->searchCount] = **src;
+		if (tolower (**src) == p->searchFor[p->searchCount]) {
+			p->searchBuffer[p->searchCount] = **src;
 			p->searchCount++;
 			(*src)++;
 		}
-		else if (p->searchFor [p->searchCount] == '>') {
+		else if (p->searchFor[p->searchCount] == '>') {
 			/* There can be any number of white-space characters between
 			   tag name and closing '>' so try to move through them, if possible */
 
@@ -1060,21 +1060,21 @@ in_script_or_style (HTMLTokenizer *t, const gchar **src)
 		if (put_to_script) {
 			gchar *c;
 
-			p->searchBuffer [p->searchCount] = 0;
+			p->searchBuffer[p->searchCount] = 0;
 			c = p->searchBuffer;
 			while (*c)
-				p->scriptCode [p->scriptCodeSize++] = *c++;
-			p->scriptCode [p->scriptCodeSize] = **src; (*src)++;
+				p->scriptCode[p->scriptCodeSize++] = *c++;
+			p->scriptCode[p->scriptCodeSize] = **src; (*src)++;
 			p->searchCount = 0;
 		}
 	}
 	else if (**src == '<') {
 		p->searchCount = 1;
-		p->searchBuffer [0] = '<';
+		p->searchBuffer[0] = '<';
 		(*src)++;
 	}
 	else {
-		p->scriptCode [p->scriptCodeSize] = **src;
+		p->scriptCode[p->scriptCodeSize] = **src;
 		(*src)++;
 	}
 }
@@ -1262,8 +1262,6 @@ in_crlf (HTMLTokenizer *t, const gchar **src)
 static void
 in_space_or_tab (HTMLTokenizer *t, const gchar **src)
 {
-	gchar *ptr;
-
 	if (t->priv->tquote) {
 		if (t->priv->discard == NoneDiscard)
 			t->priv->pending = SpacePending;
@@ -1272,7 +1270,6 @@ in_space_or_tab (HTMLTokenizer *t, const gchar **src)
 		t->priv->searchCount = 0; /* Stop looking for <!-- sequence */
 		if (t->priv->discard == NoneDiscard)
 			t->priv->pending = SpacePending;
-		ptr = t->priv->buffer;
 	}
 	else if (t->priv->pre || t->priv->textarea) {
 		if (t->priv->pending)
@@ -1471,7 +1468,7 @@ html_tokenizer_begin (HTMLTokenizer *t, const gchar *content_type)
 
 	g_return_if_fail (t && HTML_IS_TOKENIZER (t));
 
-	g_signal_emit (t, html_tokenizer_signals [HTML_TOKENIZER_BEGIN_SIGNAL], 0, content_type);
+	g_signal_emit (t, html_tokenizer_signals[HTML_TOKENIZER_BEGIN_SIGNAL], 0, content_type);
 }
 
 void
@@ -1479,7 +1476,7 @@ html_tokenizer_set_engine_type (HTMLTokenizer *t, gboolean engine_type)
 {
 	g_return_if_fail (t && HTML_IS_TOKENIZER (t));
 
-	g_signal_emit (t, html_tokenizer_signals [HTML_TOKENIZER_CHANGEENGINE_SIGNAL], 0, engine_type);
+	g_signal_emit (t, html_tokenizer_signals[HTML_TOKENIZER_CHANGEENGINE_SIGNAL], 0, engine_type);
 }
 
 void
@@ -1487,7 +1484,7 @@ html_tokenizer_change_content_type (HTMLTokenizer *t,const gchar *content_type)
 {
 	g_return_if_fail (t && HTML_IS_TOKENIZER (t));
 
-	g_signal_emit (t, html_tokenizer_signals [HTML_TOKENIZER_CHANGECONTENT_SIGNAL], 0, content_type);
+	g_signal_emit (t, html_tokenizer_signals[HTML_TOKENIZER_CHANGECONTENT_SIGNAL], 0, content_type);
 }
 
 void
