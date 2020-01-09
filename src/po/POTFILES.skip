@@ -1,0 +1,3 @@
+components/html-editor/GNOME_GtkHTML_Editor-emacs.xml
+components/html-editor/GNOME_GtkHTML_Editor.xml
+src/html-component.c

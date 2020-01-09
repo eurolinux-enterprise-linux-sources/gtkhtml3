@@ -1,0 +1,1584 @@
+# translation of ml.po to
+# translation of gtkhtml.gnome-2-28.ml.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2003-2008 gtkhtml'S COPYRIGHT HOLDER.
+#
+# FSF-India <locale@gnu.org.in>, 2003.
+# Ani Peter <apeter@redhat.com>, 2006.
+# Santhosh Thottingal <santhosh00@gmail.com>, 2007.
+# Hari Vishnu <harivishnu@gmail.com>, 2008.
+# Reviewed by Praveen Arimbrathodiyil <pravi.a@gmail.com>, 2008.
+# പ്രവീണ്‍ അരിമ്പ്രത്തൊടിയില്‍ <pravi.a@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: ml\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gtkhtml&component=general\n"
+"POT-Creation-Date: 2009-08-11 14:04+0000\n"
+"PO-Revision-Date: 2009-09-20 10:34+0530\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Malayalam\n"
+"X-Poedit-Country: INDIA\n"
+
+#: ../a11y/image.c:151
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "URL %s ആണ്, %s ആണ് പകരമുള്ള പദാവലി"
+
+#: ../a11y/image.c:153
+#, c-format
+msgid "URL is %s"
+msgstr "URL %s ആണ്"
+
+#: ../a11y/object.c:51 ../a11y/object.c:60 ../a11y/text.c:125
+msgid "grab focus"
+msgstr "ഫോക്കസ് കരസ്ഥമാക്കുക"
+
+#: ../a11y/object.c:253
+msgid "Panel containing HTML"
+msgstr "HTML അടങ്ങുന്ന പാനല്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:79
+msgid "black"
+msgstr "കറുപ്പ്"
+
+#: ../components/editor/gtkhtml-color-combo.c:80
+msgid "light brown"
+msgstr "ഇളം ബ്രൌണ്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:81
+msgid "brown gold"
+msgstr "ബ്രൌണ്‍ കലര്‍ന്ന സ്വര്‍ണ്ണനിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:82
+msgid "dark green #2"
+msgstr "കടും പച്ച #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:83
+msgid "navy"
+msgstr "നേവി"
+
+#: ../components/editor/gtkhtml-color-combo.c:84
+msgid "dark blue"
+msgstr "കടും നീല"
+
+#: ../components/editor/gtkhtml-color-combo.c:85
+msgid "purple #2"
+msgstr "പര്‍പ്പിള്‍ #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:86
+msgid "very dark gray"
+msgstr "വളരെ കടും ഗ്രേ"
+
+#: ../components/editor/gtkhtml-color-combo.c:88
+msgid "dark red"
+msgstr "കടും ചുവപ്പ്"
+
+#: ../components/editor/gtkhtml-color-combo.c:89
+msgid "red-orange"
+msgstr "ചുവപ്പു കലര്‍ന്ന ഓറഞ്ച് നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:90
+msgid "gold"
+msgstr "സ്വര്‍ണ്ണനിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:91
+msgid "dark green"
+msgstr "കടും പച്ച"
+
+#: ../components/editor/gtkhtml-color-combo.c:92
+msgid "dull blue"
+msgstr "മങ്ങിയ നീല"
+
+#: ../components/editor/gtkhtml-color-combo.c:93
+msgid "blue"
+msgstr "നീല"
+
+#: ../components/editor/gtkhtml-color-combo.c:94
+msgid "dull purple"
+msgstr "മങ്ങിയ പര്‍പ്പിള്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:95
+msgid "dark grey"
+msgstr "കടും ഗ്രേ"
+
+#: ../components/editor/gtkhtml-color-combo.c:97
+msgid "red"
+msgstr "ചുവപ്പ്"
+
+#: ../components/editor/gtkhtml-color-combo.c:98
+msgid "orange"
+msgstr "ഓറഞ്ച്"
+
+#: ../components/editor/gtkhtml-color-combo.c:99
+msgid "lime"
+msgstr "നാരങ്ങ"
+
+#: ../components/editor/gtkhtml-color-combo.c:100
+msgid "dull green"
+msgstr "മങ്ങിയ പച്ച"
+
+#: ../components/editor/gtkhtml-color-combo.c:101
+msgid "dull blue #2"
+msgstr "മങ്ങിയ നീല #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:102
+msgid "sky blue #2"
+msgstr "ആകാശ നീല #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:103
+msgid "purple"
+msgstr "പര്‍പ്പിള്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:104
+msgid "gray"
+msgstr "ഗ്രേ"
+
+#: ../components/editor/gtkhtml-color-combo.c:106
+msgid "magenta"
+msgstr "മജന്ത"
+
+#: ../components/editor/gtkhtml-color-combo.c:107
+msgid "bright orange"
+msgstr "തെളിച്ചമുളള ഓറഞ്ച്"
+
+#: ../components/editor/gtkhtml-color-combo.c:108
+msgid "yellow"
+msgstr "മഞ്ഞ"
+
+#: ../components/editor/gtkhtml-color-combo.c:109
+msgid "green"
+msgstr "പച്ച"
+
+#: ../components/editor/gtkhtml-color-combo.c:110
+msgid "cyan"
+msgstr "സിയാന്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:111
+msgid "bright blue"
+msgstr "തെളിച്ചമുളള നീല നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:112
+msgid "red purple"
+msgstr "ചുവപ്പ് കലര്‍ന്ന പര്‍പ്പിള്‍ നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:113
+msgid "light grey"
+msgstr "ഇളം ഗ്രേ"
+
+#: ../components/editor/gtkhtml-color-combo.c:115
+msgid "pink"
+msgstr "പിങ്ക്"
+
+#: ../components/editor/gtkhtml-color-combo.c:116
+msgid "light orange"
+msgstr "ഇളം ഓറഞ്ച്"
+
+#: ../components/editor/gtkhtml-color-combo.c:117
+msgid "light yellow"
+msgstr "ഇളം മഞ്ഞ"
+
+#: ../components/editor/gtkhtml-color-combo.c:118
+msgid "light green"
+msgstr "ഇളം പച്ച"
+
+#: ../components/editor/gtkhtml-color-combo.c:119
+msgid "light cyan"
+msgstr "ഇളം സിയാന്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:120
+msgid "light blue"
+msgstr "ഇളം നീല"
+
+#: ../components/editor/gtkhtml-color-combo.c:121
+msgid "light purple"
+msgstr "ഇളം പര്‍പ്പിള്‍"
+
+#: ../components/editor/gtkhtml-color-combo.c:122
+msgid "white"
+msgstr "വെള്ള നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:274
+msgid "Choose Custom Color"
+msgstr "ഇഷ്ടമുളള നിറം തെരഞ്ഞെടുക്കുക"
+
+#: ../components/editor/gtkhtml-color-combo.c:711
+#: ../components/editor/gtkhtml-color-state.c:205
+msgid "Current color"
+msgstr "നിലവിലുള്ള  നിറം:"
+
+#: ../components/editor/gtkhtml-color-combo.c:712
+msgid "The currently selected color"
+msgstr "നിലവില്‍ തിരഞ്ഞെടുത്തിരിക്കുന്ന നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:721
+#: ../components/editor/gtkhtml-color-state.c:215
+msgid "Default color"
+msgstr "സഹജമായ നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:722
+msgid "The color associated with the default button"
+msgstr "സഹജമായ ബട്ടനുമായ് ബന്ധപ്പെട്ട നിറം"
+
+#: ../components/editor/gtkhtml-color-combo.c:732
+#: ../components/editor/gtkhtml-color-state.c:226
+msgid "Default label"
+msgstr "സഹജമായ പേരു്"
+
+#: ../components/editor/gtkhtml-color-combo.c:733
+msgid "The label for the default button"
+msgstr "ബട്ടനുള്ള സഹജമായ പേരു്)"
+
+#: ../components/editor/gtkhtml-color-combo.c:734
+#: ../components/editor/gtkhtml-color-state.c:228
+msgid "Default"
+msgstr "സഹജമായ"
+
+#: ../components/editor/gtkhtml-color-combo.c:743
+#: ../components/editor/gtkhtml-color-state.c:237
+#| msgid "Transparent"
+msgid "Default is transparent"
+msgstr "സ്വതവേ സുതാര്യം"
+
+#: ../components/editor/gtkhtml-color-combo.c:744
+#: ../components/editor/gtkhtml-color-state.c:238
+msgid "Whether the default color is transparent"
+msgstr "സ്വതവേയുള്ള നിറം സുതാര്യമാണോ എന്നു്"
+
+#: ../components/editor/gtkhtml-color-combo.c:754
+#: ../components/editor/gtkhtml-color-state.c:248
+msgid "Color palette"
+msgstr "നിറങ്ങളുടെ തിരഞ്ഞെടുക്കല്‍ പാളി"
+
+#: ../components/editor/gtkhtml-color-combo.c:755
+#: ../components/editor/gtkhtml-color-state.c:249
+msgid "Custom color palette"
+msgstr "ഇഷ്ടമുളള നിറത്തിന്റെ പാളി:"
+
+#. Translators: This is the nickname for a
+#. * GtkhtmlColorCombo property named "popup-shown",
+#. * based on a similar property in GtkComboBox.
+#: ../components/editor/gtkhtml-color-combo.c:767
+msgid "Popup shown"
+msgstr "കാണിച്ചിരിക്കുന്ന പോപ്പപ്പ്"
+
+#. Translators: This is the blurb for a
+#. * GtkhtmlColorCombo property named "popup-shown",
+#. * based on a similar property in GtkComboBox.
+#: ../components/editor/gtkhtml-color-combo.c:771
+msgid "Whether the combo's dropdown is shown"
+msgstr "കൂട്ടത്തിന്റെ ഡ്രോപ്ഡൗണ്‍ കാണിച്ചിട്ടുണ്ടോ എന്ന്"
+
+#. Translators: This is the nickname for a
+#. GtkHtmlColorCombo property named "state". It holds all
+#. the internal values for a GtkHtml color combination box.
+#.
+#: ../components/editor/gtkhtml-color-combo.c:784
+msgid "Color state"
+msgstr "നിറങ്ങളുടെ ദശ"
+
+#. Translators: This is the blurb for a
+#. GtkHtmlColorCombo property named "state". It holds all
+#. the internal values for a GtkHtml color combination box.
+#.
+#: ../components/editor/gtkhtml-color-combo.c:789
+#| msgid "State of the color combo"
+msgid "The state of a color combo box"
+msgstr "വര്‍ണ കോംബോ ബോക്സിന്റെ അവസ്ഥ"
+
+#: ../components/editor/gtkhtml-color-combo.c:971
+msgid "custom"
+msgstr "ഇഷ്ടമുളള രീതിയില്‍ സജ്ജമാക്കുക"
+
+#: ../components/editor/gtkhtml-color-combo.c:979
+msgid "Custom Color..."
+msgstr "ഇഷ്ടമുളള നിറം..."
+
+#: ../components/editor/gtkhtml-color-state.c:206
+#: ../components/editor/gtkhtml-color-swatch.c:183
+msgid "The current color"
+msgstr "നിലവിലുള്ള നിറം"
+
+#: ../components/editor/gtkhtml-color-state.c:216
+msgid "The default color"
+msgstr "സഹജമായ നിറം"
+
+#: ../components/editor/gtkhtml-color-state.c:227
+msgid "Description of the default color"
+msgstr "സഹജമായ നിറത്തിന്റെ വിശധീകരണം"
+
+#: ../components/editor/gtkhtml-color-swatch.c:182
+msgid "Color"
+msgstr "നിറം"
+
+#: ../components/editor/gtkhtml-color-swatch.c:192
+msgid "Frame Shadow"
+msgstr "ഫ്രേം മറ"
+
+#: ../components/editor/gtkhtml-color-swatch.c:193
+msgid "Appearance of the frame border"
+msgstr "ഫ്രേം പരിധിയുടെ അവതരണം"
+
+#: ../components/editor/gtkhtml-combo-box.c:323
+msgid "Action"
+msgstr "നടപടി"
+
+#: ../components/editor/gtkhtml-combo-box.c:324
+msgid "A GtkRadioAction"
+msgstr "ഒരു ജി.റ്റി.കെ.റേഡിയൊനടപടി"
+
+#. Translators: :-)
+#: ../components/editor/gtkhtml-face-chooser.c:34
+msgid "_Smile"
+msgstr "_പുഞ്ചിരിക്കുക"
+
+#. Translators: :-(
+#: ../components/editor/gtkhtml-face-chooser.c:36
+#| msgid "S_haded"
+msgid "S_ad"
+msgstr "_സങ്കടം"
+
+#. Translators: ;-)
+#: ../components/editor/gtkhtml-face-chooser.c:38
+msgid "_Wink"
+msgstr "_കണ്ണിറുക്കുക"
+
+#. Translators: :-P
+#: ../components/editor/gtkhtml-face-chooser.c:40
+msgid "Ton_gue"
+msgstr "നാക്ക് കാണിക്കുക"
+
+#. Translators: :-))
+#: ../components/editor/gtkhtml-face-chooser.c:42
+#| msgid "_Laughing"
+msgid "Laug_h"
+msgstr "_ചിരി"
+
+#. Translators: :-|
+#: ../components/editor/gtkhtml-face-chooser.c:44
+#| msgid "_Plain Text"
+msgid "_Plain"
+msgstr "_സാധാരണ"
+
+#. Translators: :-!
+#: ../components/editor/gtkhtml-face-chooser.c:46
+msgid "Smi_rk"
+msgstr "_കള്ള ചിരി ചിരിക്കുക"
+
+#. Translators: :"-)
+#: ../components/editor/gtkhtml-face-chooser.c:48
+msgid "_Embarrassed"
+msgstr "_മാനംകെട്ട്"
+
+#. Translators: :-D
+#: ../components/editor/gtkhtml-face-chooser.c:50
+#| msgid "_Smile"
+msgid "_Big Smile"
+msgstr "_പുഞ്ചിരിക്കുക"
+
+#. Translators: :-/
+#: ../components/editor/gtkhtml-face-chooser.c:52
+#| msgid "Underline"
+msgid "Uncer_tain"
+msgstr "_നിശ്ചയമില്ലാത്ത"
+
+#. Translators: :-O
+#: ../components/editor/gtkhtml-face-chooser.c:54
+#| msgid "Sur_prised"
+msgid "S_urprise"
+msgstr "_അതിശയഭാവം"
+
+#. Translators: :-S
+#: ../components/editor/gtkhtml-face-chooser.c:56
+#| msgid "Su_rprised"
+msgid "W_orried"
+msgstr "_വിഷമം"
+
+#. Translators: :-*
+#: ../components/editor/gtkhtml-face-chooser.c:58
+msgid "_Kiss"
+msgstr "_ഉമ്മ കൊടുക്കുക"
+
+#. Translators: X-(
+#: ../components/editor/gtkhtml-face-chooser.c:60
+#| msgid "gray"
+msgid "A_ngry"
+msgstr "_ദേഷ്യം"
+
+#. Translators: B-)
+#: ../components/editor/gtkhtml-face-chooser.c:62
+msgid "_Cool"
+msgstr "_അടിപൊളി"
+
+#. Translators: O:-)
+#: ../components/editor/gtkhtml-face-chooser.c:64
+#| msgid "_Angel"
+msgid "Ange_l"
+msgstr "_മാലാഖ"
+
+#. Translators: :'(
+#: ../components/editor/gtkhtml-face-chooser.c:66
+msgid "Cr_ying"
+msgstr "ക_രയുന്നു"
+
+#. Translators: :-Q
+#: ../components/editor/gtkhtml-face-chooser.c:68
+msgid "S_ick"
+msgstr "_അസുഖം"
+
+#. Translators: |-)
+#: ../components/editor/gtkhtml-face-chooser.c:70
+#| msgid "red"
+msgid "Tire_d"
+msgstr "_ക്ഷീണം"
+
+#. Translators: >:-)
+#: ../components/editor/gtkhtml-face-chooser.c:72
+#| msgid "_Devilish"
+msgid "De_vilish"
+msgstr "_പിശാചു്"
+
+#. Translators: :-(|)
+#: ../components/editor/gtkhtml-face-chooser.c:74
+msgid "_Monkey"
+msgstr "_കുരങ്ങന്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:632
+msgid "Insert HTML File"
+msgstr "HTML ഫയല്‍ ഇടയില്‍ ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:641
+#: ../components/editor/gtkhtml-editor-actions.c:1542
+msgid "Insert Image"
+msgstr "ചിത്രം ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:688
+msgid "Insert Text File"
+msgstr "പദാവലികളുടെ ഫയല്‍ ഇടയില്‍ ചേര്‍ക്കുക"
+
+#. Replace Button
+#: ../components/editor/gtkhtml-editor-actions.c:1177
+#: ../components/editor/gtkhtml-spell-dialog.c:522
+msgid "_Replace"
+msgstr "_മാറ്റിയെഴുതുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1184
+msgid "Replace _All"
+msgstr "_എല്ലാം മാറ്റിയെഴുതുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1198
+msgid "_Next"
+msgstr "_അടുത്തത്"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1205
+msgid "_Copy"
+msgstr "_പകര്‍ത്തുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1212
+msgid "Cu_t"
+msgstr "_മുറിക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1226
+msgid "Find A_gain"
+msgstr "_അടുത്തത് കണ്ടെത്തുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1240
+msgid "_Increase Indent"
+msgstr "ഇന്‍ഡെന്റ് _കൂട്ടുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1242
+msgid "Increase Indent"
+msgstr "ഇന്‍ഡെന്റ് കൂട്ടുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1247
+msgid "_HTML File..."
+msgstr "_HTML ഫയല്‍..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1254
+msgid "Te_xt File..."
+msgstr "_പദാവലി ഫയല്‍..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1261
+msgid "_Paste"
+msgstr "_ഒട്ടിയ്ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1268
+msgid "Paste _Quotation"
+msgstr "_ഉദ്ധരണി ഒട്ടിക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1275
+msgid "_Redo"
+msgstr "വീ_ണ്ടും"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1282
+msgid "Select _All"
+msgstr "_എല്ലാം തെരഞ്ഞെടുക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1289
+msgid "_Find..."
+msgstr "_കണ്ടെത്തുക..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1296
+msgid "Re_place..."
+msgstr "_മാറ്റിയെഴുതുക..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1303
+msgid "Check _Spelling..."
+msgstr "_അക്ഷരത്തെറ്റ് പരിശോധന..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1310
+#: ../components/editor/gtkhtml-editor-builder.ui.h:79
+msgid "_Test URL..."
+msgstr "URL _പരീക്ഷിക്കുക..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1317
+msgid "_Undo"
+msgstr "_വേണ്ട"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1324
+msgid "_Decrease Indent"
+msgstr "_ഇന്‍ഡെന്റ് കുറയ്ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1326
+msgid "Decrease Indent"
+msgstr "ഇന്‍ഡെന്റ് കുറയ്ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1331
+msgid "_Wrap Lines"
+msgstr "വരികള്‍ _ഒതുക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1340
+msgid "_Edit"
+msgstr "_ചിട്ട"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1347
+#: ../components/editor/main.c:327
+msgid "_File"
+msgstr "_ഫയല്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1354
+msgid "For_mat"
+msgstr "_ഫോര്‍മാറ്റ്"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1361
+msgid "_Paragraph Style"
+msgstr "_ഖണ്ഡികയുടെ ശൈലി..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1368
+msgid "_Insert"
+msgstr "_ഇടയ്ക്ക് ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1375
+msgid "_Alignment"
+msgstr "_ക്രമീകരണം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1382
+msgid "Current _Languages"
+msgstr "നിലവിലുളള _ഭാഷകള്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1389
+#: ../components/editor/main.c:358
+msgid "_View"
+msgstr "_‌കാണുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1399
+msgid "_Center"
+msgstr "_മദ്ധ്യത്തില്‍ ആക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1401
+msgid "Center Alignment"
+msgstr "നടുക്ക് ക്രമീകരണം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1406
+msgid "_Left"
+msgstr "_ഇടത്"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1408
+msgid "Left Alignment"
+msgstr "ഇടത് ക്രമീകരണം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1413
+msgid "_Right"
+msgstr "_വലത്"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1415
+msgid "Right Alignment"
+msgstr "വലത് ക്രമീകരണം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1423
+msgid "_HTML"
+msgstr "_‌എച്ച്.ടി.എം.എല്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1425
+msgid "HTML editing mode"
+msgstr "‌എച്ച്.ടി.എം.എല്‍ മാറ്റം വരുത്താനുള്ള ദശ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1430
+msgid "Plain _Text"
+msgstr "_പദാവലി മാത്രം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1432
+msgid "Plain text editing mode"
+msgstr "വെറും പദാവലി മാറ്റാനുള്ള ദശ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1440
+msgid "_Normal"
+msgstr "_സാധാരണ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1447
+msgid "Header _1"
+msgstr "തലക്കെട്ട് _1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1454
+msgid "Header _2"
+msgstr "തലക്കെട്ട് _2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1461
+msgid "Header _3"
+msgstr "തലക്കെട്ട് _3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1468
+msgid "Header _4"
+msgstr "തലക്കെട്ട് _4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1475
+msgid "Header _5"
+msgstr "തലക്കെട്ട് _5"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1482
+msgid "Header _6"
+msgstr "തലക്കെട്ട് _6"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1489
+msgid "A_ddress"
+msgstr "_വിലാസം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1496
+msgid "_Preformatted"
+msgstr "_പ്രീഫോര്‍മാറ്റഡ്"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1503
+msgid "_Bulleted List"
+msgstr "_എണ്ണി ചിട്ടപ്പെടുത്തിയ നാമാവലി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1510
+msgid "_Roman Numeral List"
+msgstr "_റോമന്‍ അക്കങ്ങളുടെ നാമാവലി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1517
+msgid "Numbered _List"
+msgstr "_സംഖ്യാ നാമാവലി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1524
+msgid "_Alphabetical List"
+msgstr "_അകാരാദിക്രമത്തിലുള്ള നാമാവലി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1540
+#: ../components/editor/gtkhtml-editor-actions.c:1575
+msgid "_Image..."
+msgstr "_ചിത്രം..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1547
+#: ../components/editor/gtkhtml-editor-actions.c:1582
+msgid "_Link..."
+msgstr "_കണ്ണി..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1549
+msgid "Insert Link"
+msgstr "കണ്ണി ഇടയ്ക്ക് ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1554
+#: ../components/editor/gtkhtml-editor-actions.c:1596
+msgid "_Rule..."
+msgstr "_നിയമം..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1556
+msgid "Insert Rule"
+msgstr "നിയമം ഇടയില്‍ ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1561
+#: ../components/editor/gtkhtml-editor-actions.c:1603
+msgid "_Table..."
+msgstr "_പട്ടിക..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1563
+msgid "Insert Table"
+msgstr "പട്ടിക ഇടയില്‍ ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1568
+msgid "_Cell..."
+msgstr "_കളം..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1589
+msgid "Pa_ge..."
+msgstr "_താള്‍..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1612
+msgid "Font _Size"
+msgstr "അക്ഷരത്തിന്റെ വലിപ്പം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1619
+msgid "_Font Style"
+msgstr "_അക്ഷരത്തിന്റെ ശൈലി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1629
+#: ../components/editor/gtkhtml-editor-builder.ui.h:60
+msgid "_Bold"
+msgstr "_കട്ടിയായ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1631
+msgid "Bold"
+msgstr "കട്ടിയായ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1637
+#: ../components/editor/gtkhtml-editor-builder.ui.h:67
+msgid "_Italic"
+msgstr "_ചരിവുളളതാക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1639
+msgid "Italic"
+msgstr "ചരിഞ്ഞ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1645
+msgid "_Plain Text"
+msgstr "_പദാവലി മാത്രം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1647
+msgid "Plain Text"
+msgstr "പദാവലി മാത്രം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1653
+#: ../components/editor/gtkhtml-editor-builder.ui.h:76
+msgid "_Strikethrough"
+msgstr "_വെട്ടിയിടുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1655
+msgid "Strikethrough"
+msgstr "വെട്ടിയിടുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1661
+#: ../components/editor/gtkhtml-editor-builder.ui.h:82
+msgid "_Underline"
+msgstr "_അടി വരയിടുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1663
+msgid "Underline"
+msgstr "അടി വരയിടുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1672
+msgid "-2"
+msgstr "-2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1679
+msgid "-1"
+msgstr "-1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1686
+msgid "+0"
+msgstr "+0"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1693
+msgid "+1"
+msgstr "+1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1700
+msgid "+2"
+msgstr "+2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1707
+msgid "+3"
+msgstr "+3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1714
+msgid "+4"
+msgstr "+4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1733
+msgid "Cell Contents"
+msgstr "കളത്തിലുള്ള വിവരങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1740
+msgid "Column"
+msgstr "നിര"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1747
+msgid "Row"
+msgstr "വരി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1754
+#: ../components/editor/gtkhtml-editor-actions.c:1837
+msgid "Table"
+msgstr "പട്ടിക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1763
+msgid "Table Delete"
+msgstr "പട്ടിക നീക്കം ചെയ്യുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1770
+msgid "Input Methods"
+msgstr "നിവേശക രീതികള്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1777
+msgid "Table Insert"
+msgstr "പട്ടിക ഇടയ്ക്ക് ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1784
+msgid "Properties"
+msgstr "ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1802
+msgid "Column After"
+msgstr "ശേഷമുളള നിര"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1809
+msgid "Column Before"
+msgstr "മുമ്പുളള നിര"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1816
+msgid "Insert _Link"
+msgstr "_കണ്ണി ഇടയ്ക്ക് ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1823
+msgid "Row Above"
+msgstr "മുകളില്‍ ഉളള വരി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1830
+msgid "Row Below"
+msgstr "താഴെ ഉളള വരി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1844
+msgid "Cell..."
+msgstr "കളം..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1851
+msgid "Image..."
+msgstr "ചിത്രം... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1858
+msgid "Link..."
+msgstr "കണ്ണ്... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1865
+msgid "Page..."
+msgstr "താള്‍... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1872
+msgid "Paragraph..."
+msgstr "ഖണ്ഡിക... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1879
+msgid "Rule..."
+msgstr "നിയമം... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1886
+msgid "Table..."
+msgstr "പട്ടിക... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1893
+msgid "Text..."
+msgstr "പദാവലി... "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1900
+msgid "Remove Link"
+msgstr "കണ്ണി നീക്കം ചെയ്യുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1917
+msgid "Add Word to Dictionary"
+msgstr "നിഘണ്ടുവിലേക്ക് വാക്ക് ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1924
+msgid "Ignore Misspelled Word"
+msgstr "അക്ഷരത്തെറ്റുളള വാക്കുകള്‍ അവഗണിക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1931
+msgid "Add Word To"
+msgstr "വാക്ക് ചേര്‍ക്കുക "
+
+#: ../components/editor/gtkhtml-editor-actions.c:1940
+#| msgid "Suggestions for \"%s\""
+msgid "More Suggestions"
+msgstr "കൂടുതല്‍ നിര്‍ദ്ദേശങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2107
+msgid "_Emoticon"
+msgstr "_വികാരചിഹ്നങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2108
+#| msgid "Insert Link"
+msgid "Insert Emoticon"
+msgstr "ഇമോട്ടിക്കോണ്‍ ചേര്‍ക്കുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2169
+msgid "_Find"
+msgstr "_കണ്ടെത്തുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2172
+msgid "Re_place"
+msgstr "_മാറ്റിയെഴുതുക"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2175
+msgid "_Image"
+msgstr "_ചിത്രം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2178
+msgid "_Link"
+msgstr "_കണ്ണി"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2181
+msgid "_Rule"
+msgstr "_നിയമം"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2184
+#: ../components/editor/gtkhtml-editor-builder.ui.h:78
+msgid "_Table"
+msgstr "_പട്ടിക"
+
+#: ../components/editor/gtkhtml-editor-private.c:264
+msgid "Paragraph Style"
+msgstr "ഖണ്ഡികയുടെ ശൈലി"
+
+#: ../components/editor/gtkhtml-editor-private.c:278
+msgid "Editing Mode"
+msgstr "മാറ്റം വരുത്താനുള്ള ദശ"
+
+#: ../components/editor/gtkhtml-editor-private.c:290
+msgid "Font Color"
+msgstr "അക്ഷരത്തിന്റെ നിറങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-private.c:300
+msgid "Font Size"
+msgstr "അക്ഷരത്തിന്റെ വലിപ്പം "
+
+#: ../components/editor/gtkhtml-editor-private.c:327
+msgid "Automatic"
+msgstr "തനിയെയുള്ള"
+
+#: ../components/editor/gtkhtml-editor-private.c:599
+#| msgid "Could not load glade file."
+msgid "Could not open the link."
+msgstr "കണ്ണി തുറക്കുവാന്‍ സാധ്യമല്ല."
+
+#: ../components/editor/gtkhtml-editor.c:754
+msgid "Current Folder"
+msgstr "നിലവിലുള്ള അറ"
+
+#: ../components/editor/gtkhtml-editor.c:755
+msgid "The initial folder for file chooser dialogs"
+msgstr "ഫയല്‍ തിരഞ്ഞെടുക്കല്‍ സംഭാഷണങ്ങള്‍ക്ക് ആരംഭത്തിലുള്ള അറ"
+
+#: ../components/editor/gtkhtml-editor.c:765
+msgid "Filename"
+msgstr "ഫയലിന്റെ പേര്"
+
+#: ../components/editor/gtkhtml-editor.c:766
+msgid "The filename to use when saving"
+msgstr "ഫയല്‍ സൂക്ഷിക്കാന്‍ ഉപയോഗിക്കേണ്ട പേര്"
+
+#: ../components/editor/gtkhtml-editor.c:776
+msgid "HTML Mode"
+msgstr "‌എച്ച്.ടി.എം.എല്‍  ദശ"
+
+#: ../components/editor/gtkhtml-editor.c:777
+msgid "Edit HTML or plain text"
+msgstr "എച്ച്.ടി.എം.എലോ വെറും പദാവലികളോ മാറ്റം വരുത്തുക"
+
+#: ../components/editor/gtkhtml-editor.c:787
+msgid "Inline Spelling"
+msgstr "വരിക്കുള്ളില്‍  അക്ഷരത്തെറ്റ് പരിശോധന"
+
+#: ../components/editor/gtkhtml-editor.c:788
+msgid "Check your spelling as you type"
+msgstr "രേഖയിലെ അക്ഷരത്തെറ്റ് പരിശോധിക്കുക ടൈപ് ചെയ്യുമ്പോള്‍"
+
+#: ../components/editor/gtkhtml-editor.c:798
+msgid "Magic Links"
+msgstr "മാന്ത്രികക്കണ്ണികള്‍"
+
+#: ../components/editor/gtkhtml-editor.c:799
+msgid "Make URIs clickable as you type"
+msgstr "യു.ആര്‍.എലുകള്‍ ടൈപ് ചെയ്യുമ്പോള്‍ ക്ലിക്ക് ചെയ്യാവുന്നയാക്കി മാറ്റുക"
+
+#: ../components/editor/gtkhtml-editor.c:809
+msgid "Magic Smileys"
+msgstr "മാന്ത്രിക ചിരിചിത്രങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor.c:810
+msgid "Convert emoticons to images as you type"
+msgstr "വികാരചിഹ്നങ്ങള്‍ ടൈപ്പ് ചെയ്യുമ്പോള്‍ ചിത്രങ്ങളാക്കി മാറ്റുക"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:2
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:3
+msgid "Alignment"
+msgstr "ക്രമീകരണം"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:4
+#| msgid "<b>Alignment &amp; Behavior</b>"
+msgid "Alignment & Behavior"
+msgstr "സ്ഥാന ക്രമീകരണവും പെരുമാറ്റവും"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:5
+#| msgid "_Background:"
+msgid "Background"
+msgstr "പശ്ചാത്തലം"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:6
+msgid "Background Image"
+msgstr "പശ്ചാത്തല ചിത്രം"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:7
+#| msgid "Blue ink"
+msgid "Blue Ink"
+msgstr "നീല മഷി"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:8
+msgid "Bottom"
+msgstr "താഴെ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:9
+msgid "C_ell"
+msgstr "_കളം"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:10
+msgid "C_olor:"
+msgstr "_നിറം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:11
+msgid "C_olumns:"
+msgstr "_നിരകള്‍ :"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:12
+msgid "C_ustom:"
+msgstr "_ഇഷ്ടമുളള രീതിയില്‍ സജ്ജമാക്കുക:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:13
+msgid "Case _sensitive"
+msgstr "വലിയക്ഷരചെറിയക്ഷര_വ്യത്യാസമുള്ള"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:14
+msgid "Cell Properties"
+msgstr "കളത്തിന്റെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:15
+msgid "Center"
+msgstr "മദ്ധ്യത്തില്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:16
+msgid "Co_lor:"
+msgstr "_നിറം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:17
+msgid "Col_umn"
+msgstr "_നിര"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:18
+msgid "Colors"
+msgstr "നിറങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:19
+msgid "Column Span:"
+msgstr "നിരയുടെ വീതി: "
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:20
+msgid "Confidential"
+msgstr "രഹസ്യ സ്വഭാവമുളള"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:21
+msgid "Draft"
+msgstr "പൂര്‍ത്തിയാകാത്തത്"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:22
+msgid "Find"
+msgstr "കണ്ടെത്തുക"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:23
+msgid "General"
+msgstr "സാധാരണയായ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:24
+#| msgid "Graph paper"
+msgid "Graph Paper"
+msgstr "ഗ്രാഫ് പേപ്പര്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:25
+msgid "Hea_der Style"
+msgstr "_തലക്കെട്ടിന്റെ ശൈലി"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:26
+msgid "I_mage:"
+msgstr "_ചിത്രം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:27
+msgid "Image Properties"
+msgstr "ചിത്രത്തിന്റെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:28
+#| msgid "<b>Layout</b>"
+msgid "Layout"
+msgstr "വിന്യാസം"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:29
+msgid "Left"
+msgstr "ഇടത്"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:30
+msgid "Link"
+msgstr "കണ്ണി"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:31
+msgid "Link Properties"
+msgstr "കണ്ണിയുടെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:32
+msgid "Middle"
+msgstr "നടുവില്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:33
+msgid "Midnight"
+msgstr "പാതിരാത്രി"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:34
+msgid "None"
+msgstr "ഒന്നുമില്ല"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:35
+msgid "Page Properties"
+msgstr "താളിന്റെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:36
+msgid "Paper"
+msgstr "കടലാസ്"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:37
+msgid "Paragraph Properties"
+msgstr "ഖണ്ഡികയുടെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:38
+#| msgid "Perforated paper"
+msgid "Perforated Paper"
+msgstr "പ്രിഫൊറേറ്റഡ് പേപ്പര്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:39
+msgid "R_eplace:"
+msgstr "_മാറ്റിയെഴുതുക:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:40
+msgid "Replace"
+msgstr "മാറ്റിയെഴുതുക"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:41
+msgid "Replace Confirmation"
+msgstr "മാറ്റം ഉറപ്പ് വരുത്തുക "
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:42
+msgid "Ribbon"
+msgstr "റിബണ്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:43
+msgid "Right"
+msgstr "വലത്"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:44
+msgid "Row Span:"
+msgstr "വരിയുടെ അളവ്:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:45
+msgid "Rule Properties"
+msgstr "നിയമ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:46
+msgid "S_haded"
+msgstr "_മറഞ്ഞിരിക്കുന്നത്"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:47
+msgid "Scope"
+msgstr "സാധ്യത"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:48
+msgid "Search _backwards"
+msgstr "_പുറകോട്ട് തിരയുക"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:49
+msgid "Select An Image"
+msgstr "ഒരു ചിത്രം തെരഞ്ഞെടുക്കുക"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:50
+msgid "Si_ze:"
+msgstr "_വലിപ്പം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:51
+#| msgid "Size:"
+msgid "Size"
+msgstr "വലിപ്പം"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:52
+msgid "Style"
+msgstr "ശൈലി"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:53
+msgid "T_emplate:"
+msgstr "_ടെംപ്ളേറ്റ്:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:54
+msgid "Table Properties"
+msgstr "പട്ടികയുടെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:55
+msgid "Text Properties"
+msgstr "പദാവലിയുടെ ഗുണഗണങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:56
+msgid "Top"
+msgstr "മുകളില്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:57
+msgid "Width:"
+msgstr "വീതി:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:58
+msgid "_Alignment:"
+msgstr "_ക്രമീകരണം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:59
+msgid "_Background:"
+msgstr "_പശ്ചാത്തലം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:61
+msgid "_Border:"
+msgstr "_അരിക്:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:62
+msgid "_Color:"
+msgstr "_നിറം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:63
+msgid "_Description:"
+msgstr "_വിവരണം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:64
+msgid "_Height:"
+msgstr "_ഉയരം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:65
+msgid "_Horizontal:"
+msgstr "_കുറുകെയുള്ള:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:66
+msgid "_Image:"
+msgstr "_ചിത്രം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:68
+msgid "_Link:"
+msgstr "_കണ്ണി:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:69
+msgid "_Padding:"
+msgstr "_പാഡിങ്:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:70
+msgid "_Regular expression"
+msgstr "_റെഗുലര്‍ എക്സ്പ്രഷന്‍"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:71
+msgid "_Row"
+msgstr "_വരി"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:72
+msgid "_Rows:"
+msgstr "_വരികള്‍:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:73
+msgid "_Size:"
+msgstr "_വലിപ്പം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:74
+msgid "_Source:"
+msgstr "_ഉറവിടം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:75
+msgid "_Spacing:"
+msgstr "_വിടവുകള്‍:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:77
+msgid "_Style:"
+msgstr "_ശൈലി:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:80
+msgid "_Text:"
+msgstr "_പദാവലി:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:81
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:83
+msgid "_Vertical:"
+msgstr "_നേരെയുളള:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:84
+msgid "_Width:"
+msgstr "_വീതി:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:85
+msgid "_With:"
+msgstr "_ഒപ്പം:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:86
+msgid "_Wrap Text"
+msgstr "പദാവലി _ഒതുക്കുക"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:87
+msgid "_X-Padding:"
+msgstr "_X-പാഡിങ്:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:88
+msgid "_Y-Padding:"
+msgstr "_Y-പാഡിങ്:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:89
+#| msgid ""
+#| "px\n"
+#| "%\n"
+#| "follow"
+msgid "follow"
+msgstr "follow"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:90
+msgid "px"
+msgstr "px"
+
+#: ../components/editor/gtkhtml-spell-checker.c:200
+msgid "Language"
+msgstr "ഭാഷ"
+
+#: ../components/editor/gtkhtml-spell-checker.c:201
+msgid "The language used by the spell checker"
+msgstr "അക്ഷരതെറ്റ് പരിശോധകന്‍ ഉപയോഗിക്കുന്ന ഭാഷ"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:117
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr " \"%s\"-ഇനുള്ള നിര്‍ദ്ദേശങ്ങള്‍"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:358
+msgid "Misspelled Word"
+msgstr "അക്ഷരത്തെറ്റുളള വാക്കുകള്‍ "
+
+#: ../components/editor/gtkhtml-spell-dialog.c:359
+msgid "The current misspelled word"
+msgstr "നിലവിലുള്ള അക്ഷരത്തെറ്റുളള വാക്കുകള്‍"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:449
+msgid "Spell Checker"
+msgstr "അക്ഷരത്തെറ്റു പരിശോധന"
+
+#. Replace All Button
+#: ../components/editor/gtkhtml-spell-dialog.c:536
+msgid "R_eplace All"
+msgstr "എല്ലാം _മാറ്റിയെഴുതുക"
+
+#. Ignore Button
+#: ../components/editor/gtkhtml-spell-dialog.c:550
+msgid "_Ignore"
+msgstr "_അവഗണിക്കുക"
+
+#. Skip Button
+#: ../components/editor/gtkhtml-spell-dialog.c:564
+msgid "_Skip"
+msgstr "_വീട്ട് അടുത്തതിലേക്ക് കടക്കുക"
+
+#. Back Button
+#: ../components/editor/gtkhtml-spell-dialog.c:577
+msgid "_Back"
+msgstr "_പുറകോട്ട്"
+
+#. Dictionary Label
+#: ../components/editor/gtkhtml-spell-dialog.c:590
+msgid "Dictionary"
+msgstr "നിഘണ്ടു"
+
+#. Add Word Button
+#: ../components/editor/gtkhtml-spell-dialog.c:619
+msgid "_Add Word"
+msgstr "_വാക്ക് ചേര്‍ക്കുക"
+
+#. Translators: %s is the language ISO code.
+#: ../components/editor/gtkhtml-spell-language.c:184
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "അറിയാത്തതു് (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#: ../components/editor/gtkhtml-spell-language.c:199
+#: ../components/editor/gtkhtml-spell-language.c:204
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+#: ../components/editor/gtkhtml-spell-language.c:389
+msgctxt "language"
+msgid "Default"
+msgstr "സഹജമായ"
+
+#: ../components/editor/main.c:93
+msgid "Save As"
+msgstr "പേര് മാറ്റി സൂക്ഷിക്കുക"
+
+#: ../components/editor/main.c:111
+msgid "Untitled document"
+msgstr "പേരില്ലാത്ത കുറിപ്പ്"
+
+#: ../components/editor/main.c:271
+msgid "HTML Output"
+msgstr "എച്ച്.ടി.എം.എല്‍ ഔട്പുട്ട്"
+
+#: ../components/editor/main.c:278
+msgid "HTML Source"
+msgstr "എച്ച്.ടി.എം.എല്‍ ഉറവിടം:"
+
+#: ../components/editor/main.c:285
+msgid "Plain Source"
+msgstr "വെറും ഉറവിടം മാത്രം"
+
+#: ../components/editor/main.c:292
+msgid "_Print..."
+msgstr "_അച്ചടിയ്ക്കുക..."
+
+#: ../components/editor/main.c:299
+msgid "Print Pre_view"
+msgstr "അച്ചടിയ്ക്കുന്നതിനു് മുമ്പു് _കണ്ടുനോക്കുക "
+
+#: ../components/editor/main.c:306
+msgid "_Quit"
+msgstr "_പുറത്തുകടക്കുക "
+
+#: ../components/editor/main.c:313
+msgid "_Save"
+msgstr "_സൂക്ഷിക്കുക"
+
+#: ../components/editor/main.c:320
+msgid "Save _As..."
+msgstr "ഫയല്‍ പേര് _മാറ്റി സംരക്ഷിക്കുക..."
+
+#: ../components/editor/main.c:337
+msgid "HTML _Output"
+msgstr "എച്ച്.ടി.എം.എല്‍ _ഔട്പുട്ട്"
+
+#: ../components/editor/main.c:344
+msgid "_HTML Source"
+msgstr "_എച്ച്.ടി.എം.എല്‍ ഉറവിടം:"
+
+#: ../components/editor/main.c:351
+msgid "_Plain Source"
+msgstr "വെറും _ഉറവിടം മാത്രം"
+
+#: ../gtkhtml/gtkhtml.c:3073
+msgid "Editable"
+msgstr "മാറ്റം വരുത്തുവാന്‍ സാധ്യമാകുന്ന"
+
+#: ../gtkhtml/gtkhtml.c:3074
+msgid "Whether the html can be edited"
+msgstr "html മാറ്റം വരുത്തുവാന്‍ സാധ്യമാകുന്നതാണോ എന്ന്"
+
+#: ../gtkhtml/gtkhtml.c:3080
+msgid "Document Title"
+msgstr "രേഖയുടെ തലക്കെട്ട്"
+
+#: ../gtkhtml/gtkhtml.c:3081
+msgid "The title of the current document"
+msgstr "നിലവിലുളള രേഖയുടെ തലക്കെട്ട്"
+
+#: ../gtkhtml/gtkhtml.c:3087
+msgid "Document Base"
+msgstr "Document Base"
+
+#: ../gtkhtml/gtkhtml.c:3088
+msgid "The base URL for relative references"
+msgstr "The base URL for relative references"
+
+#: ../gtkhtml/gtkhtml.c:3094
+msgid "Target Base"
+msgstr "Target Base"
+
+#: ../gtkhtml/gtkhtml.c:3095
+msgid "The base URL of the target frame"
+msgstr "The base URL of the target frame"
+
+#: ../gtkhtml/gtkhtml.c:3103
+msgid "Fixed Width Font"
+msgstr "ലിപിയുടെ സ്ഥിരമായ വീതി"
+
+#: ../gtkhtml/gtkhtml.c:3104
+msgid "The Monospace font to use for typewriter text"
+msgstr "ടൈപ്പ് റൈറ്ററിന്റെ വാചകങ്ങള്‍ക്കുളള മോണോസ്പെയിസ് ലിപി"
+
+#: ../gtkhtml/gtkhtml.c:3110
+msgid "New Link Color"
+msgstr "ലിങ്കിനുളള പുതിയ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3111
+msgid "The color of new link elements"
+msgstr "പുതിയ കണ്ണി എലമെന്റുകളുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3116
+msgid "Visited Link Color"
+msgstr "പരിശോധിച്ച കണ്ണിയുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3117
+msgid "The color of visited link elements"
+msgstr "പരിശോധിച്ച കണ്ണി എലമെന്റുകളുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3122
+msgid "Active Link Color"
+msgstr "പ്രവര്‍ത്തനത്തിലുളള കണ്ണിയുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3123
+msgid "The color of active link elements"
+msgstr "പ്രവര്‍ത്തനത്തിലുളള കണ്ണി എലമെന്റുകളുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3128
+msgid "Spelling Error Color"
+msgstr "അക്ഷരപിശകുളള വാക്കുകളുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3129
+msgid "The color of the spelling error markers"
+msgstr "അക്ഷരപിശകുളള വാക്കുകളുടെ നിറം"
+
+#: ../gtkhtml/gtkhtml.c:3134
+msgid "Cite Quotation Color"
+msgstr "Cite Quotation Color"
+
+#: ../gtkhtml/gtkhtml.c:3135
+msgid "The color of the cited text"
+msgstr "The color of the cited text"
+
+#: ../gtkhtml/htmlbutton.c:138
+msgid "Submit Query"
+msgstr "ചോദ്യം സമര്‍പ്പിക്കുക"
+
+#: ../gtkhtml/htmlbutton.c:141
+msgid "Reset"
+msgstr "പുനഃസ്ഥാപിക്കുക"
+
+#. TODO2 dialog instead of warning
+#: ../gtkhtml/htmlengine-print.c:231 ../gtkhtml/htmlengine-print.c:309
+msgid "Cannot allocate default font for printing"
+msgstr "പ്രിന്റ്‌ ചെയ്യുന്നതിനായി സ്വതേയുള്ള ലിപി ഉപയോഗിക്കുവാന്‍ സാധ്യമല്ല"
+
+#: ../gtkhtml/test.c:364
+msgid "GtkHTML Test"
+msgstr "GtkHTML പരിശോധന"
+

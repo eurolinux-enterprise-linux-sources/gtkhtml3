@@ -1,0 +1,13 @@
+prefix=/home/test/opt
+exec_prefix=${prefix}
+libdir=/home/test/opt/lib64
+includedir=${prefix}/include
+
+gtkhtml_api_version=3.14
+
+Name: gtkhtml-editor
+Description: HTML editor widget
+Requires: libgtkhtml-3.14
+Version: 3.28.3
+Libs: -L${libdir} -lgtkhtml-editor
+Cflags: -I${includedir}/libgtkhtml-3.14/editor

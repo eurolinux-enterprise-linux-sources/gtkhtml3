@@ -1,0 +1,2252 @@
+# Brazilian Portuguese translation of gtkhtml
+# Copyright (C) 2000-2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gtkhtml package.
+# Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000, 2004.
+# Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002-2003.
+# Afonso Celso Medina <medina@maua.br>, 2005.
+# Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007.
+# Washington Lins <washington-lins@uol.com.br>, 2007.
+# Vladimir Melo <vladimirmelo.psi@gmail.com>, 2008.
+# Lucas Hermann Negri <kkndrox@gmail.com>, 2008.
+# Og Maciel <ogmaciel@gnome.org>, 2008.
+# Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2008.
+# Andre Gondim <andregondim@ubuntu.com>, 2009.
+# Daniel S. Koda <danielskoda@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhtml\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-18 21:40-0400\n"
+"PO-Revision-Date: 2009-08-17 09:50-0300\n"
+"Last-Translator: Daniel S. Koda <danielskoda@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../a11y/image.c:151
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "O URL é %s, o texto alternativo é %s"
+
+#: ../a11y/image.c:153
+#, c-format
+msgid "URL is %s"
+msgstr "O URL é %s"
+
+#: ../a11y/object.c:51 ../a11y/object.c:60 ../a11y/text.c:125
+msgid "grab focus"
+msgstr "manter o foco"
+
+#: ../a11y/object.c:253
+msgid "Panel containing HTML"
+msgstr "Painel contendo HTML"
+
+#: ../components/editor/gtkhtml-color-combo.c:79
+msgid "black"
+msgstr "preto"
+
+#: ../components/editor/gtkhtml-color-combo.c:80
+msgid "light brown"
+msgstr "marrom claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:81
+msgid "brown gold"
+msgstr "marrom dourado"
+
+#: ../components/editor/gtkhtml-color-combo.c:82
+msgid "dark green #2"
+msgstr "verde escuro #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:83
+msgid "navy"
+msgstr "marinho"
+
+#: ../components/editor/gtkhtml-color-combo.c:84
+msgid "dark blue"
+msgstr "azul escuro"
+
+#: ../components/editor/gtkhtml-color-combo.c:85
+msgid "purple #2"
+msgstr "roxo #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:86
+msgid "very dark gray"
+msgstr "cinza bem escuro"
+
+#: ../components/editor/gtkhtml-color-combo.c:88
+msgid "dark red"
+msgstr "vermelho escuro"
+
+#: ../components/editor/gtkhtml-color-combo.c:89
+msgid "red-orange"
+msgstr "laranja avermelhado"
+
+#: ../components/editor/gtkhtml-color-combo.c:90
+msgid "gold"
+msgstr "ouro"
+
+#: ../components/editor/gtkhtml-color-combo.c:91
+msgid "dark green"
+msgstr "verde escuro"
+
+#: ../components/editor/gtkhtml-color-combo.c:92
+msgid "dull blue"
+msgstr "azul fosco"
+
+#: ../components/editor/gtkhtml-color-combo.c:93
+msgid "blue"
+msgstr "azul"
+
+#: ../components/editor/gtkhtml-color-combo.c:94
+msgid "dull purple"
+msgstr "roxo fosco"
+
+#: ../components/editor/gtkhtml-color-combo.c:95
+msgid "dark grey"
+msgstr "cinza escuro"
+
+#: ../components/editor/gtkhtml-color-combo.c:97
+msgid "red"
+msgstr "vermelho"
+
+#: ../components/editor/gtkhtml-color-combo.c:98
+msgid "orange"
+msgstr "laranja"
+
+#: ../components/editor/gtkhtml-color-combo.c:99
+msgid "lime"
+msgstr "limão"
+
+#: ../components/editor/gtkhtml-color-combo.c:100
+msgid "dull green"
+msgstr "verde fosco"
+
+#: ../components/editor/gtkhtml-color-combo.c:101
+msgid "dull blue #2"
+msgstr "azul fosco #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:102
+msgid "sky blue #2"
+msgstr "azul celeste #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:103
+msgid "purple"
+msgstr "roxo"
+
+#: ../components/editor/gtkhtml-color-combo.c:104
+msgid "gray"
+msgstr "cinza"
+
+#: ../components/editor/gtkhtml-color-combo.c:106
+msgid "magenta"
+msgstr "magenta"
+
+#: ../components/editor/gtkhtml-color-combo.c:107
+msgid "bright orange"
+msgstr "laranja brilhante"
+
+#: ../components/editor/gtkhtml-color-combo.c:108
+msgid "yellow"
+msgstr "amarelo"
+
+#: ../components/editor/gtkhtml-color-combo.c:109
+msgid "green"
+msgstr "verde"
+
+#: ../components/editor/gtkhtml-color-combo.c:110
+msgid "cyan"
+msgstr "turquesa"
+
+#: ../components/editor/gtkhtml-color-combo.c:111
+msgid "bright blue"
+msgstr "azul brilhante"
+
+#: ../components/editor/gtkhtml-color-combo.c:112
+msgid "red purple"
+msgstr "roxo avermelhado"
+
+#: ../components/editor/gtkhtml-color-combo.c:113
+msgid "light grey"
+msgstr "cinza claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:115
+msgid "pink"
+msgstr "rosa"
+
+#: ../components/editor/gtkhtml-color-combo.c:116
+msgid "light orange"
+msgstr "laranja claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:117
+msgid "light yellow"
+msgstr "amarelo claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:118
+msgid "light green"
+msgstr "verde claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:119
+msgid "light cyan"
+msgstr "turquesa claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:120
+msgid "light blue"
+msgstr "azul claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:121
+msgid "light purple"
+msgstr "roxo claro"
+
+#: ../components/editor/gtkhtml-color-combo.c:122
+msgid "white"
+msgstr "branco"
+
+#: ../components/editor/gtkhtml-color-combo.c:274
+msgid "Choose Custom Color"
+msgstr "Escolher cor personalizada"
+
+#: ../components/editor/gtkhtml-color-combo.c:711
+#: ../components/editor/gtkhtml-color-state.c:205
+msgid "Current color"
+msgstr "Cor atual"
+
+#: ../components/editor/gtkhtml-color-combo.c:712
+msgid "The currently selected color"
+msgstr "A cor atualmente selecionada"
+
+#: ../components/editor/gtkhtml-color-combo.c:721
+#: ../components/editor/gtkhtml-color-state.c:215
+msgid "Default color"
+msgstr "Cor padrão"
+
+#: ../components/editor/gtkhtml-color-combo.c:722
+msgid "The color associated with the default button"
+msgstr "A cor associada ao botão padrão"
+
+#: ../components/editor/gtkhtml-color-combo.c:732
+#: ../components/editor/gtkhtml-color-state.c:226
+msgid "Default label"
+msgstr "Rótulo padrão"
+
+#: ../components/editor/gtkhtml-color-combo.c:733
+msgid "The label for the default button"
+msgstr "O rótulo para o botão padrão"
+
+#: ../components/editor/gtkhtml-color-combo.c:734
+#: ../components/editor/gtkhtml-color-state.c:228
+msgid "Default"
+msgstr "Padrão"
+
+#: ../components/editor/gtkhtml-color-combo.c:743
+#: ../components/editor/gtkhtml-color-state.c:237
+msgid "Default is transparent"
+msgstr "Padrão é transparente"
+
+#: ../components/editor/gtkhtml-color-combo.c:744
+#: ../components/editor/gtkhtml-color-state.c:238
+msgid "Whether the default color is transparent"
+msgstr "Se a cor padrão é transparente"
+
+#: ../components/editor/gtkhtml-color-combo.c:754
+#: ../components/editor/gtkhtml-color-state.c:248
+msgid "Color palette"
+msgstr "Paleta de cores"
+
+#: ../components/editor/gtkhtml-color-combo.c:755
+#: ../components/editor/gtkhtml-color-state.c:249
+msgid "Custom color palette"
+msgstr "Paleta de cores personalizada"
+
+# http://bugzilla.gnome.org/show_bug.cgi?id=549232
+#. Translators: This is the nickname for a
+#. * GtkhtmlColorCombo property named "popup-shown",
+#. * based on a similar property in GtkComboBox.
+#: ../components/editor/gtkhtml-color-combo.c:767
+msgid "Popup shown"
+msgstr "Menu de contexto mostrado"
+
+#. Translators: This is the blurb for a
+#. * GtkhtmlColorCombo property named "popup-shown",
+#. * based on a similar property in GtkComboBox.
+#: ../components/editor/gtkhtml-color-combo.c:771
+msgid "Whether the combo's dropdown is shown"
+msgstr "Se a caixa de combinação está ativa"
+
+#. Translators: This is the nickname for a
+#. GtkHtmlColorCombo property named "state". It holds all
+#. the internal values for a GtkHtml color combination box.
+#.
+#: ../components/editor/gtkhtml-color-combo.c:784
+msgid "Color state"
+msgstr "Estado de cor"
+
+# http://bugzilla.gnome.org/show_bug.cgi?id=549231
+#. Translators: This is the blurb for a
+#. GtkHtmlColorCombo property named "state". It holds all
+#. the internal values for a GtkHtml color combination box.
+#.
+#: ../components/editor/gtkhtml-color-combo.c:789
+msgid "The state of a color combo box"
+msgstr "Estado da caixa de combinação de cor"
+
+#: ../components/editor/gtkhtml-color-combo.c:971
+msgid "custom"
+msgstr "personalizada"
+
+#: ../components/editor/gtkhtml-color-combo.c:979
+msgid "Custom Color..."
+msgstr "Cor personalizada..."
+
+#: ../components/editor/gtkhtml-color-state.c:206
+#: ../components/editor/gtkhtml-color-swatch.c:183
+msgid "The current color"
+msgstr "A cor atual"
+
+#: ../components/editor/gtkhtml-color-state.c:216
+msgid "The default color"
+msgstr "A cor padrão"
+
+#: ../components/editor/gtkhtml-color-state.c:227
+msgid "Description of the default color"
+msgstr "Descrição da cor padrão"
+
+#: ../components/editor/gtkhtml-color-swatch.c:182
+msgid "Color"
+msgstr "Cor"
+
+#: ../components/editor/gtkhtml-color-swatch.c:192
+msgid "Frame Shadow"
+msgstr "Sombra da moldura"
+
+#: ../components/editor/gtkhtml-color-swatch.c:193
+msgid "Appearance of the frame border"
+msgstr "Aparência da borda da moldura"
+
+#: ../components/editor/gtkhtml-combo-box.c:323
+msgid "Action"
+msgstr "Ação"
+
+#: ../components/editor/gtkhtml-combo-box.c:324
+msgid "A GtkRadioAction"
+msgstr "Um GtkRadioAction"
+
+#. Translators: :-)
+#: ../components/editor/gtkhtml-face-chooser.c:34
+msgid "_Smile"
+msgstr "_Sorrindo"
+
+#. Translators: :-(
+#: ../components/editor/gtkhtml-face-chooser.c:36
+msgid "S_ad"
+msgstr "Trist_e"
+
+#. Translators: ;-)
+#: ../components/editor/gtkhtml-face-chooser.c:38
+msgid "_Wink"
+msgstr "_Piscando"
+
+#. Translators: :-P
+#: ../components/editor/gtkhtml-face-chooser.c:40
+msgid "Ton_gue"
+msgstr "_Língua"
+
+#. Translators: :-))
+#: ../components/editor/gtkhtml-face-chooser.c:42
+msgid "Laug_h"
+msgstr "Gargal_hada"
+
+#. Translators: :-|
+#: ../components/editor/gtkhtml-face-chooser.c:44
+msgid "_Plain"
+msgstr "Sim_ples"
+
+#. Translators: :-!
+#: ../components/editor/gtkhtml-face-chooser.c:46
+msgid "Smi_rk"
+msgstr "_Sarcástico"
+
+#. Translators: :"-)
+#: ../components/editor/gtkhtml-face-chooser.c:48
+msgid "_Embarrassed"
+msgstr "_Envergonhado"
+
+#. Translators: :-D
+#: ../components/editor/gtkhtml-face-chooser.c:50
+msgid "_Big Smile"
+msgstr "_Grande sorriso"
+
+#. Translators: :-/
+#: ../components/editor/gtkhtml-face-chooser.c:52
+msgid "Uncer_tain"
+msgstr "Incer_to"
+
+#. Translators: :-O
+#: ../components/editor/gtkhtml-face-chooser.c:54
+msgid "S_urprise"
+msgstr "S_urpreso"
+
+#. Translators: :-S
+#: ../components/editor/gtkhtml-face-chooser.c:56
+msgid "W_orried"
+msgstr "Pre_ocupado"
+
+#. Translators: :-*
+#: ../components/editor/gtkhtml-face-chooser.c:58
+msgid "_Kiss"
+msgstr "_Beijo"
+
+#. Translators: X-(
+#: ../components/editor/gtkhtml-face-chooser.c:60
+msgid "A_ngry"
+msgstr "Com rai_va"
+
+#. Translators: B-)
+#: ../components/editor/gtkhtml-face-chooser.c:62
+msgid "_Cool"
+msgstr "_Legal"
+
+#. Translators: O:-)
+#: ../components/editor/gtkhtml-face-chooser.c:64
+msgid "Ange_l"
+msgstr "_Anjo"
+
+#. Translators: :'(
+#: ../components/editor/gtkhtml-face-chooser.c:66
+msgid "Cr_ying"
+msgstr "_Chorando"
+
+#. Translators: :-Q
+#: ../components/editor/gtkhtml-face-chooser.c:68
+msgid "S_ick"
+msgstr "_Enjoado"
+
+#. Translators: |-)
+#: ../components/editor/gtkhtml-face-chooser.c:70
+msgid "Tire_d"
+msgstr "Cansa_do"
+
+#. Translators: >:-)
+#: ../components/editor/gtkhtml-face-chooser.c:72
+msgid "De_vilish"
+msgstr "_Endiabrado"
+
+#. Translators: :-(|)
+#: ../components/editor/gtkhtml-face-chooser.c:74
+msgid "_Monkey"
+msgstr "_Macaco"
+
+#: ../components/editor/gtkhtml-editor-actions.c:632
+msgid "Insert HTML File"
+msgstr "Inserir arquivo HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:641
+#: ../components/editor/gtkhtml-editor-actions.c:1542
+msgid "Insert Image"
+msgstr "Inserir imagem"
+
+#: ../components/editor/gtkhtml-editor-actions.c:688
+msgid "Insert Text File"
+msgstr "Inserir arquivo de texto"
+
+#. Replace Button
+#: ../components/editor/gtkhtml-editor-actions.c:1177
+#: ../components/editor/gtkhtml-spell-dialog.c:522
+msgid "_Replace"
+msgstr "_Substituir"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1184
+msgid "Replace _All"
+msgstr "Substituir _tudo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1198
+msgid "_Next"
+msgstr "_Próximo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1205
+msgid "_Copy"
+msgstr "_Copiar"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1212
+msgid "Cu_t"
+msgstr "Recor_tar"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1226
+msgid "Find A_gain"
+msgstr "Localizar _novamente"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1240
+msgid "_Increase Indent"
+msgstr "_Aumentar recuo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1242
+msgid "Increase Indent"
+msgstr "Aumentar recuo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1247
+msgid "_HTML File..."
+msgstr "Arquivo _HTML..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1254
+msgid "Te_xt File..."
+msgstr "Arquivo de te_xto..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1261
+msgid "_Paste"
+msgstr "C_olar"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1268
+msgid "Paste _Quotation"
+msgstr "Colar como ci_tação"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1275
+msgid "_Redo"
+msgstr "_Refazer"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1282
+msgid "Select _All"
+msgstr "Selecionar _tudo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1289
+msgid "_Find..."
+msgstr "_Localizar..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1296
+msgid "Re_place..."
+msgstr "_Substituir..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1303
+msgid "Check _Spelling..."
+msgstr "Verificar _ortografia..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1310
+#: ../components/editor/gtkhtml-editor-builder.ui.h:79
+msgid "_Test URL..."
+msgstr "_Testar URL..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1317
+msgid "_Undo"
+msgstr "Desfa_zer"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1324
+msgid "_Decrease Indent"
+msgstr "_Diminuir recuo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1326
+msgid "Decrease Indent"
+msgstr "Diminuir recuo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1331
+msgid "_Wrap Lines"
+msgstr "_Quebrar linhas"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1340
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1347
+#: ../components/editor/main.c:327
+msgid "_File"
+msgstr "_Arquivo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1354
+msgid "For_mat"
+msgstr "For_mato"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1361
+msgid "_Paragraph Style"
+msgstr "Estilo do _parágrafo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1368
+msgid "_Insert"
+msgstr "_Inserir"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1375
+msgid "_Alignment"
+msgstr "_Alinhamento"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1382
+msgid "Current _Languages"
+msgstr "_Idiomas atuais"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1389
+#: ../components/editor/main.c:358
+msgid "_View"
+msgstr "_Ver"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1399
+msgid "_Center"
+msgstr "_Centralizar"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1401
+msgid "Center Alignment"
+msgstr "Alinhar ao centro"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1406
+msgid "_Left"
+msgstr "_Esquerda"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1408
+msgid "Left Alignment"
+msgstr "Alinhar à esquerda"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1413
+msgid "_Right"
+msgstr "_Direita"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1415
+msgid "Right Alignment"
+msgstr "Alinhar à direita"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1423
+msgid "_HTML"
+msgstr "_HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1425
+msgid "HTML editing mode"
+msgstr "Modo de edição de HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1430
+msgid "Plain _Text"
+msgstr "_Texto simples"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1432
+msgid "Plain text editing mode"
+msgstr "Modo de edição de texto simples"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1440
+msgid "_Normal"
+msgstr "_Normal"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1447
+msgid "Header _1"
+msgstr "Cabeçalho _1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1454
+msgid "Header _2"
+msgstr "Cabeçalho _2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1461
+msgid "Header _3"
+msgstr "Cabeçalho _3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1468
+msgid "Header _4"
+msgstr "Cabeçalho _4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1475
+msgid "Header _5"
+msgstr "Cabeçalho _5"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1482
+msgid "Header _6"
+msgstr "Cabeçalho _6"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1489
+msgid "A_ddress"
+msgstr "En_dereço"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1496
+msgid "_Preformatted"
+msgstr "_Preformatado"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1503
+msgid "_Bulleted List"
+msgstr "Lista com _Itens"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1510
+msgid "_Roman Numeral List"
+msgstr "Lista com números _romanos"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1517
+msgid "Numbered _List"
+msgstr "_Lista numerada"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1524
+msgid "_Alphabetical List"
+msgstr "Lista com _letras"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1540
+#: ../components/editor/gtkhtml-editor-actions.c:1575
+msgid "_Image..."
+msgstr "_Imagem..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1547
+#: ../components/editor/gtkhtml-editor-actions.c:1582
+msgid "_Link..."
+msgstr "_Link..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1549
+msgid "Insert Link"
+msgstr "Inserir link"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1554
+#: ../components/editor/gtkhtml-editor-actions.c:1596
+msgid "_Rule..."
+msgstr "_Linha..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1556
+msgid "Insert Rule"
+msgstr "Inserir Linha"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1561
+#: ../components/editor/gtkhtml-editor-actions.c:1603
+msgid "_Table..."
+msgstr "_Tabela..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1563
+msgid "Insert Table"
+msgstr "Insere tabela"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1568
+msgid "_Cell..."
+msgstr "_Célula..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1589
+msgid "Pa_ge..."
+msgstr "Pá_gina..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1612
+msgid "Font _Size"
+msgstr "_Tamanho da fonte"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1619
+msgid "_Font Style"
+msgstr "Estilo da _fonte"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1629
+#: ../components/editor/gtkhtml-editor-builder.ui.h:60
+msgid "_Bold"
+msgstr "_Negrito"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1631
+msgid "Bold"
+msgstr "Negrito"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1637
+#: ../components/editor/gtkhtml-editor-builder.ui.h:67
+msgid "_Italic"
+msgstr "_Itálico"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1639
+msgid "Italic"
+msgstr "Itálico"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1645
+msgid "_Plain Text"
+msgstr "Texto _simples"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1647
+msgid "Plain Text"
+msgstr "Texto simples"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1653
+#: ../components/editor/gtkhtml-editor-builder.ui.h:76
+msgid "_Strikethrough"
+msgstr "_Riscado"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1655
+msgid "Strikethrough"
+msgstr "Riscado"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1661
+#: ../components/editor/gtkhtml-editor-builder.ui.h:82
+msgid "_Underline"
+msgstr "_Sublinhado"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1663
+msgid "Underline"
+msgstr "Sublinhado"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1672
+msgid "-2"
+msgstr "-2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1679
+msgid "-1"
+msgstr "-1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1686
+msgid "+0"
+msgstr "+0"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1693
+msgid "+1"
+msgstr "+1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1700
+msgid "+2"
+msgstr "+2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1707
+msgid "+3"
+msgstr "+3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1714
+msgid "+4"
+msgstr "+4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1733
+msgid "Cell Contents"
+msgstr "Conteúdo da célula"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1740
+msgid "Column"
+msgstr "Coluna"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1747
+msgid "Row"
+msgstr "Linha"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1754
+#: ../components/editor/gtkhtml-editor-actions.c:1837
+msgid "Table"
+msgstr "Tabela"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1763
+msgid "Table Delete"
+msgstr "Exclusão de tabela"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1770
+msgid "Input Methods"
+msgstr "Métodos de entrada"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1777
+msgid "Table Insert"
+msgstr "Inserção de tabela"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1784
+msgid "Properties"
+msgstr "Propriedades"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1802
+msgid "Column After"
+msgstr "Coluna após"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1809
+msgid "Column Before"
+msgstr "Coluna anterior"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1816
+msgid "Insert _Link"
+msgstr "Inserir _link"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1823
+msgid "Row Above"
+msgstr "Linha acima"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1830
+msgid "Row Below"
+msgstr "Linha abaixo"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1844
+msgid "Cell..."
+msgstr "Célula..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1851
+msgid "Image..."
+msgstr "Imagem..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1858
+msgid "Link..."
+msgstr "Link..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1865
+msgid "Page..."
+msgstr "Página..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1872
+msgid "Paragraph..."
+msgstr "Parágrafo..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1879
+msgid "Rule..."
+msgstr "Linha..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1886
+msgid "Table..."
+msgstr "Tabela..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1893
+msgid "Text..."
+msgstr "Texto..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1900
+msgid "Remove Link"
+msgstr "Remover link"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1917
+msgid "Add Word to Dictionary"
+msgstr "Adicionar palavra ao dicionário"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1924
+msgid "Ignore Misspelled Word"
+msgstr "Ignorar palavra"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1931
+msgid "Add Word To"
+msgstr "Adicionar palavra ao"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1940
+msgid "More Suggestions"
+msgstr "Mais sugestões"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2107
+msgid "_Emoticon"
+msgstr "_Emoticon"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2108
+msgid "Insert Emoticon"
+msgstr "Inserir emoticon"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2169
+msgid "_Find"
+msgstr "_Localizar"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2172
+msgid "Re_place"
+msgstr "S_ubstituir"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2175
+msgid "_Image"
+msgstr "_Imagem"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2178
+msgid "_Link"
+msgstr "_Link"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2181
+msgid "_Rule"
+msgstr "Li_nha"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2184
+#: ../components/editor/gtkhtml-editor-builder.ui.h:78
+msgid "_Table"
+msgstr "_Tabela"
+
+#: ../components/editor/gtkhtml-editor-private.c:264
+msgid "Paragraph Style"
+msgstr "Estilo do parágrafo"
+
+#: ../components/editor/gtkhtml-editor-private.c:278
+msgid "Editing Mode"
+msgstr "Modo de edição"
+
+#: ../components/editor/gtkhtml-editor-private.c:290
+msgid "Font Color"
+msgstr "Cor da fonte"
+
+#: ../components/editor/gtkhtml-editor-private.c:300
+msgid "Font Size"
+msgstr "Tamanho da fonte"
+
+#: ../components/editor/gtkhtml-editor-private.c:327
+msgid "Automatic"
+msgstr "Automático"
+
+#: ../components/editor/gtkhtml-editor-private.c:599
+msgid "Could not open the link."
+msgstr "Não foi possível abrir o link."
+
+#: ../components/editor/gtkhtml-editor.c:754
+msgid "Current Folder"
+msgstr "Pasta atual"
+
+#: ../components/editor/gtkhtml-editor.c:755
+msgid "The initial folder for file chooser dialogs"
+msgstr "A pasta inicial para diálogos de seleção de arquivo"
+
+#: ../components/editor/gtkhtml-editor.c:765
+msgid "Filename"
+msgstr "Nome de arquivo"
+
+#: ../components/editor/gtkhtml-editor.c:766
+msgid "The filename to use when saving"
+msgstr "O nome de arquivo para salvar"
+
+#: ../components/editor/gtkhtml-editor.c:776
+msgid "HTML Mode"
+msgstr "Modo HTML"
+
+#: ../components/editor/gtkhtml-editor.c:777
+msgid "Edit HTML or plain text"
+msgstr "Editar HTML ou texto simples"
+
+#: ../components/editor/gtkhtml-editor.c:787
+msgid "Inline Spelling"
+msgstr "Verificação _ortográfica automática"
+
+#: ../components/editor/gtkhtml-editor.c:788
+msgid "Check your spelling as you type"
+msgstr "Verificar a ortografia enquanto você digita"
+
+#: ../components/editor/gtkhtml-editor.c:798
+msgid "Magic Links"
+msgstr "Links mágicos"
+
+#: ../components/editor/gtkhtml-editor.c:799
+msgid "Make URIs clickable as you type"
+msgstr "Tornar URIs clicáveis enquanto você digita"
+
+#: ../components/editor/gtkhtml-editor.c:809
+msgid "Magic Smileys"
+msgstr "Smileys mágicos"
+
+#: ../components/editor/gtkhtml-editor.c:810
+msgid "Convert emoticons to images as you type"
+msgstr "Converter emoticons para imagens enquanto você digita"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:2
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:3
+msgid "Alignment"
+msgstr "Alinhamento"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:4
+msgid "Alignment & Behavior"
+msgstr "Alinhamento e comportamento"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:5
+msgid "Background"
+msgstr "Fundo"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:6
+msgid "Background Image"
+msgstr "Imagem de fundo"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:7
+msgid "Blue Ink"
+msgstr "Tinta azul"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:8
+msgid "Bottom"
+msgstr "Abaixo"
+
+# _é só funciona para quem tiver uma tecla "é" no teclado
+#: ../components/editor/gtkhtml-editor-builder.ui.h:9
+msgid "C_ell"
+msgstr "Célula"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:10
+msgid "C_olor:"
+msgstr "C_or:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:11
+msgid "C_olumns:"
+msgstr "Colu_nas:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:12
+msgid "C_ustom:"
+msgstr "_Personalizado:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:13
+msgid "Case _sensitive"
+msgstr "Diferenciar maiú_sculas de minúsculas"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:14
+msgid "Cell Properties"
+msgstr "Propriedades da célula"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:15
+msgid "Center"
+msgstr "Centralizado"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:16
+msgid "Co_lor:"
+msgstr "C_or:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:17
+msgid "Col_umn"
+msgstr "Col_una"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:18
+msgid "Colors"
+msgstr "Cores"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:19
+msgid "Column Span:"
+msgstr "Intervalo de colunas:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:20
+msgid "Confidential"
+msgstr "Confidencial"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:21
+msgid "Draft"
+msgstr "Rascunho"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:22
+msgid "Find"
+msgstr "Localizar"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:23
+msgid "General"
+msgstr "Geral"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:24
+msgid "Graph Paper"
+msgstr "Papel quadriculado"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:25
+msgid "Hea_der Style"
+msgstr "Estilo do _cabeçalho"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:26
+msgid "I_mage:"
+msgstr "I_magem:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:27
+msgid "Image Properties"
+msgstr "Propriedades da imagem"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:28
+msgid "Layout"
+msgstr "Disposição"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:29
+msgid "Left"
+msgstr "Esquerda"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:30
+msgid "Link"
+msgstr "Link"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:31
+msgid "Link Properties"
+msgstr "Propriedades do link"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:32
+msgid "Middle"
+msgstr "Meio"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:33
+msgid "Midnight"
+msgstr "Meia-noite"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:34
+msgid "None"
+msgstr "Nenhum"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:35
+msgid "Page Properties"
+msgstr "Propriedades da página"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:36
+msgid "Paper"
+msgstr "Papel"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:37
+msgid "Paragraph Properties"
+msgstr "Propriedades do parágrafo"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:38
+msgid "Perforated Paper"
+msgstr "Papel perfurado"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:39
+msgid "R_eplace:"
+msgstr "Su_bstituir:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:40
+msgid "Replace"
+msgstr "Substituir"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:41
+msgid "Replace Confirmation"
+msgstr "Confirmação de substituição"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:42
+msgid "Ribbon"
+msgstr "Fita"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:43
+msgid "Right"
+msgstr "Direita"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:44
+msgid "Row Span:"
+msgstr "Intervalo de linhas:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:45
+msgid "Rule Properties"
+msgstr "Propriedades da linha"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:46
+msgid "S_haded"
+msgstr "S_ombreado"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:47
+msgid "Scope"
+msgstr "Escopo"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:48
+msgid "Search _backwards"
+msgstr "_Pesquisa regressiva"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:49
+msgid "Select An Image"
+msgstr "Selecionar uma imagem"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:50
+msgid "Si_ze:"
+msgstr "Ta_manho:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:51
+msgid "Size"
+msgstr "Tamanho"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:52
+msgid "Style"
+msgstr "Estilo"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:53
+msgid "T_emplate:"
+msgstr "M_odelo:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:54
+msgid "Table Properties"
+msgstr "Propriedades da tabela"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:55
+msgid "Text Properties"
+msgstr "Propriedades do texto"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:56
+msgid "Top"
+msgstr "Topo"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:57
+msgid "Width:"
+msgstr "Largura:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:58
+msgid "_Alignment:"
+msgstr "_Alinhamento:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:59
+msgid "_Background:"
+msgstr "_Fundo:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:61
+msgid "_Border:"
+msgstr "_Borda:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:62
+msgid "_Color:"
+msgstr "_Cor:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:63
+msgid "_Description:"
+msgstr "_Descrição:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:64
+msgid "_Height:"
+msgstr "_Altura:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:65
+msgid "_Horizontal:"
+msgstr "_Horizontal:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:66
+msgid "_Image:"
+msgstr "_Imagem:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:68
+msgid "_Link:"
+msgstr "_Link:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:69
+msgid "_Padding:"
+msgstr "Es_paçamento:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:70
+msgid "_Regular expression"
+msgstr "Expressão _regular"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:71
+msgid "_Row"
+msgstr "_Linha"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:72
+msgid "_Rows:"
+msgstr "_Linhas:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:73
+msgid "_Size:"
+msgstr "_Tamanho:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:74
+msgid "_Source:"
+msgstr "_Fonte:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:75
+msgid "_Spacing:"
+msgstr "E_spaçamento:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:77
+msgid "_Style:"
+msgstr "_Estilo:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:80
+msgid "_Text:"
+msgstr "_Texto:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:81
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:83
+msgid "_Vertical:"
+msgstr "_Vertical:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:84
+msgid "_Width:"
+msgstr "_Largura:"
+
+# Substituir: Por:
+#: ../components/editor/gtkhtml-editor-builder.ui.h:85
+msgid "_With:"
+msgstr "_Por:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:86
+msgid "_Wrap Text"
+msgstr "_Quebrar texto"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:87
+msgid "_X-Padding:"
+msgstr "Espaçamento _X:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:88
+msgid "_Y-Padding:"
+msgstr "Espaçamento _Y:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:89
+msgid "follow"
+msgstr "segue"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:90
+msgid "px"
+msgstr "px"
+
+#: ../components/editor/gtkhtml-spell-checker.c:200
+msgid "Language"
+msgstr "Idioma"
+
+#: ../components/editor/gtkhtml-spell-checker.c:201
+msgid "The language used by the spell checker"
+msgstr "O idioma utilizado pelo verificador ortográfico"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:117
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr "Sugestões para \"%s\""
+
+#: ../components/editor/gtkhtml-spell-dialog.c:358
+msgid "Misspelled Word"
+msgstr "Palavra com erro de ortografia"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:359
+msgid "The current misspelled word"
+msgstr "A palavra com erro de ortografia atual"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:449
+msgid "Spell Checker"
+msgstr "Verificador ortográfico"
+
+#. Replace All Button
+#: ../components/editor/gtkhtml-spell-dialog.c:536
+msgid "R_eplace All"
+msgstr "Substituir _tudo"
+
+#. Ignore Button
+#: ../components/editor/gtkhtml-spell-dialog.c:550
+msgid "_Ignore"
+msgstr "_Ignorar"
+
+#. Skip Button
+#: ../components/editor/gtkhtml-spell-dialog.c:564
+msgid "_Skip"
+msgstr "_Pular"
+
+#. Back Button
+#: ../components/editor/gtkhtml-spell-dialog.c:577
+msgid "_Back"
+msgstr "_Voltar"
+
+#. Dictionary Label
+#: ../components/editor/gtkhtml-spell-dialog.c:590
+msgid "Dictionary"
+msgstr "Dicionário"
+
+#. Add Word Button
+#: ../components/editor/gtkhtml-spell-dialog.c:619
+msgid "_Add Word"
+msgstr "_Adicionar palavra"
+
+#. Translators: %s is the language ISO code.
+#: ../components/editor/gtkhtml-spell-language.c:184
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Desconhecido (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#: ../components/editor/gtkhtml-spell-language.c:199
+#: ../components/editor/gtkhtml-spell-language.c:204
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+#: ../components/editor/gtkhtml-spell-language.c:389
+msgctxt "language"
+msgid "Default"
+msgstr "Padrão"
+
+#: ../components/editor/main.c:93
+msgid "Save As"
+msgstr "Salvar como"
+
+#: ../components/editor/main.c:111
+msgid "Untitled document"
+msgstr "Documento sem título"
+
+#: ../components/editor/main.c:271
+msgid "HTML Output"
+msgstr "Saída de HTML"
+
+#: ../components/editor/main.c:278
+msgid "HTML Source"
+msgstr "Código-fonte HTML:"
+
+#: ../components/editor/main.c:285
+msgid "Plain Source"
+msgstr "Código-fonte simples"
+
+#: ../components/editor/main.c:292
+msgid "_Print..."
+msgstr "_Imprimir..."
+
+#: ../components/editor/main.c:299
+msgid "Print Pre_view"
+msgstr "_Visualizar impressão"
+
+#: ../components/editor/main.c:306
+msgid "_Quit"
+msgstr "Sai_r"
+
+#: ../components/editor/main.c:313
+msgid "_Save"
+msgstr "_Salvar"
+
+#: ../components/editor/main.c:320
+msgid "Save _As..."
+msgstr "Salvar _como..."
+
+#: ../components/editor/main.c:337
+msgid "HTML _Output"
+msgstr "Saída de _HTML"
+
+#: ../components/editor/main.c:344
+msgid "_HTML Source"
+msgstr "Código-fonte _HTML:"
+
+#: ../components/editor/main.c:351
+msgid "_Plain Source"
+msgstr "Código-fonte _simples"
+
+#: ../gtkhtml/gtkhtml.c:3073
+msgid "Editable"
+msgstr "Editável"
+
+#: ../gtkhtml/gtkhtml.c:3074
+msgid "Whether the html can be edited"
+msgstr "Permitir ou não a edição do html"
+
+#: ../gtkhtml/gtkhtml.c:3080
+msgid "Document Title"
+msgstr "Título do documento"
+
+#: ../gtkhtml/gtkhtml.c:3081
+msgid "The title of the current document"
+msgstr "O título do documento atual"
+
+#: ../gtkhtml/gtkhtml.c:3087
+msgid "Document Base"
+msgstr "Base do documento"
+
+#: ../gtkhtml/gtkhtml.c:3088
+msgid "The base URL for relative references"
+msgstr "O URL base para referências relativas"
+
+#: ../gtkhtml/gtkhtml.c:3094
+msgid "Target Base"
+msgstr "Base do alvo"
+
+#: ../gtkhtml/gtkhtml.c:3095
+msgid "The base URL of the target frame"
+msgstr "O URL base do frame alvo"
+
+#: ../gtkhtml/gtkhtml.c:3103
+msgid "Fixed Width Font"
+msgstr "Fonte de largura fixa"
+
+#: ../gtkhtml/gtkhtml.c:3104
+msgid "The Monospace font to use for typewriter text"
+msgstr "A fonte Monospace usada para texto datilografado"
+
+#: ../gtkhtml/gtkhtml.c:3110
+msgid "New Link Color"
+msgstr "Cor de link novo"
+
+#: ../gtkhtml/gtkhtml.c:3111
+msgid "The color of new link elements"
+msgstr "A cor dos novos elementos de link"
+
+#: ../gtkhtml/gtkhtml.c:3116
+msgid "Visited Link Color"
+msgstr "Cor de link visitado"
+
+#: ../gtkhtml/gtkhtml.c:3117
+msgid "The color of visited link elements"
+msgstr "A cor dos elementos de links visitados"
+
+#: ../gtkhtml/gtkhtml.c:3122
+msgid "Active Link Color"
+msgstr "Cor de link ativo"
+
+#: ../gtkhtml/gtkhtml.c:3123
+msgid "The color of active link elements"
+msgstr "A cor dos elementos de links ativos"
+
+#: ../gtkhtml/gtkhtml.c:3128
+msgid "Spelling Error Color"
+msgstr "Cor de erro de ortografia"
+
+#: ../gtkhtml/gtkhtml.c:3129
+msgid "The color of the spelling error markers"
+msgstr "A cor das marcas de erros de ortografia"
+
+#: ../gtkhtml/gtkhtml.c:3134
+msgid "Cite Quotation Color"
+msgstr "Cor de citação"
+
+#: ../gtkhtml/gtkhtml.c:3135
+msgid "The color of the cited text"
+msgstr "A cor do texto citado"
+
+#: ../gtkhtml/htmlbutton.c:138
+msgid "Submit Query"
+msgstr "Enviar consulta"
+
+#: ../gtkhtml/htmlbutton.c:141
+msgid "Reset"
+msgstr "Restaurar"
+
+#. TODO2 dialog instead of warning
+#: ../gtkhtml/htmlengine-print.c:231 ../gtkhtml/htmlengine-print.c:309
+msgid "Cannot allocate default font for printing"
+msgstr "Não foi possível alocar fonte padrão para impressão"
+
+#: ../gtkhtml/test.c:364
+msgid "GtkHTML Test"
+msgstr "Teste do GtkHTML"
+
+#~ msgid "<b>Alignment</b>"
+#~ msgstr "<b>Alinhamento</b>"
+
+#~ msgid "<b>Background Image</b>"
+#~ msgstr "<b>Imagem de fundo</b>"
+
+#~ msgid "<b>Background</b>"
+#~ msgstr "<b>Fundo</b>"
+
+#~ msgid "<b>Colors</b>"
+#~ msgstr "<b>Cores</b>"
+
+#~ msgid "<b>General</b>"
+#~ msgstr "<b>Geral</b>"
+
+#~ msgid "<b>Link</b>"
+#~ msgstr "<b>Link</b>"
+
+#~ msgid "<b>Scope</b>"
+#~ msgstr "<b>Escopo</b>"
+
+#~ msgid "<b>Size</b>"
+#~ msgstr "<b>Tamanho</b>"
+
+#~ msgid "<b>Style</b>"
+#~ msgstr "<b>Estilo</b>"
+
+#~ msgid ""
+#~ "Left\n"
+#~ "Center\n"
+#~ "Right"
+#~ msgstr ""
+#~ "Esquerda\n"
+#~ "Centro\n"
+#~ "Direita"
+
+#~ msgid ""
+#~ "None\n"
+#~ "Perforated Paper\n"
+#~ "Blue Ink\n"
+#~ "Paper\n"
+#~ "Ribbon\n"
+#~ "Midnight\n"
+#~ "Confidential\n"
+#~ "Draft\n"
+#~ "Graph Paper"
+#~ msgstr ""
+#~ "Nenhum\n"
+#~ "Papel perfurado\n"
+#~ "Tinta azul\n"
+#~ "Papel\n"
+#~ "Laço\n"
+#~ "Meia-noite\n"
+#~ "Confidencial\n"
+#~ "Rascunho\n"
+#~ "Papel quadriculado"
+
+#~ msgid ""
+#~ "Top\n"
+#~ "Middle\n"
+#~ "Bottom"
+#~ msgstr ""
+#~ "Cima\n"
+#~ "Meio\n"
+#~ "Baixo"
+
+#~ msgid ""
+#~ "px\n"
+#~ "%"
+#~ msgstr ""
+#~ "px\n"
+#~ "%"
+
+#~ msgid "Alphabetical List"
+#~ msgstr "Lista com letras"
+
+#~ msgid "Bulleted List"
+#~ msgstr "Lista com itens"
+
+#~ msgid "Center justifies the paragraphs"
+#~ msgstr "Justificar os parágrafos ao centro"
+
+#~ msgid "Check spelling of the document"
+#~ msgstr "Verificar a ortografia do documento"
+
+#~ msgid "Copy"
+#~ msgstr "Copiar"
+
+#~ msgid "Copy selection to clipboard"
+#~ msgstr "Copiar seleção para a área de transferência"
+
+#~ msgid "Copy the selection"
+#~ msgstr "Copia a seleção"
+
+#~ msgid "Cut"
+#~ msgstr "Recortar"
+
+#~ msgid "Cut selection to clipboard"
+#~ msgstr "Recorta seleção para a área de transferência"
+
+#~ msgid "Cut the selection"
+#~ msgstr "Recorta a seleção"
+
+#~ msgid "Emoti_con"
+#~ msgstr "Emoti_con"
+
+#~ msgid "Find _Again"
+#~ msgstr "Localizar _novamente"
+
+#~ msgid "Find again"
+#~ msgstr "Localizar novamente"
+
+#~ msgid "Find and Replace"
+#~ msgstr "Localiza e substitui"
+
+#~ msgid "Find and replace"
+#~ msgstr "Localiza e substitui"
+
+#~ msgid "I_nsert"
+#~ msgstr "I_nserir"
+
+#~ msgid "Image"
+#~ msgstr "Imagem"
+
+#~ msgid "Insert Crying emoticon into document..."
+#~ msgstr "Insere emoticon \"Chorando\" no documento..."
+
+#~ msgid "Insert Frown emoticon into document..."
+#~ msgstr "Insere emoticon \"Desconfiado\" no documento..."
+
+#~ msgid "Insert HTML file into document..."
+#~ msgstr "Insere arquivo HTML no documento..."
+
+#~ msgid "Insert HTML link into document..."
+#~ msgstr "Insere link HTML no documento..."
+
+#~ msgid "Insert HTML template into document..."
+#~ msgstr "Insere modelo HTML no documento..."
+
+#~ msgid "Insert Indifferent emoticon into document..."
+#~ msgstr "Insere emoticon \"Indiferente\" no documento..."
+
+#~ msgid "Insert Laughing emoticon into document..."
+#~ msgstr "Insere emoticon \"Gargalhada\" no documento..."
+
+#~ msgid "Insert Oh no! emoticon into document..."
+#~ msgstr "Insere emoticon \"Ah, não!\" no documento..."
+
+#~ msgid "Insert Sick emoticon into document..."
+#~ msgstr "Insere emoticon \"Enjoado\" no documento..."
+
+#~ msgid "Insert Smile emoticon into document..."
+#~ msgstr "Insere emoticon \"Sorrindo\" no documento..."
+
+#~ msgid "Insert Surprised emoticon into document..."
+#~ msgstr "Insere emoticon \"Surpreso\" no documento..."
+
+#~ msgid "Insert Tongue emoticon into document..."
+#~ msgstr "Insere emoticon \"Língua\" no documento..."
+
+#~ msgid "Insert Undecided emoticon into document..."
+#~ msgstr "Insere emoticon \"Indeciso\" no documento..."
+
+#~ msgid "Insert Wink emoticon into document..."
+#~ msgstr "Insere emoticon \"Piscando\" no documento..."
+
+#~ msgid "Insert image"
+#~ msgstr "Inserir imagem"
+
+#~ msgid "Insert image into document..."
+#~ msgstr "Insere imagem no documento..."
+
+#~ msgid "Insert link"
+#~ msgstr "Inserir link"
+
+#~ msgid "Insert rule"
+#~ msgstr "Inserir linha"
+
+#~ msgid "Insert rule into document..."
+#~ msgstr "Insere linha no documento..."
+
+#~ msgid "Insert table"
+#~ msgstr "Inserir tabela"
+
+#~ msgid "Insert table into document..."
+#~ msgstr "Insere tabela no documento..."
+
+#~ msgid "Insert text file into document..."
+#~ msgstr "Insere arquivo texto no documento..."
+
+#~ msgid "Left justifies the paragraphs"
+#~ msgstr "Justifica os parágrafos à esquerda"
+
+#~ msgid "Make the current Paragraph style Normal"
+#~ msgstr "Adota o estilo normal para o parágrafo atual"
+
+#~ msgid "Make the current Paragraph style Preformat"
+#~ msgstr "Adota o estilo preformatado para o parágrafo atual"
+
+#~ msgid "Make the current paragraph a bulleted list"
+#~ msgstr "Transforma o parágrafo atual em uma lista com itens"
+
+#~ msgid "Make the current paragraph a list with roman numerals"
+#~ msgstr "Transforma o parágrafo atual em uma lista com números romanos"
+
+#~ msgid "Make the current paragraph a numbered list"
+#~ msgstr "Transforma o parágrafo atual em uma lista numerada"
+
+#~ msgid "Make the current paragraph an H1 header"
+#~ msgstr "Transforma o parágrafo atual em um cabeçalho H1"
+
+#~ msgid "Make the current paragraph an H2 header"
+#~ msgstr "Transforma o parágrafo atual em um cabeçalho H2"
+
+#~ msgid "Make the current paragraph an H3 header"
+#~ msgstr "Transforma o parágrafo atual em um cabeçalho H3"
+
+#~ msgid "Make the current paragraph an H4 header"
+#~ msgstr "Transforma o parágrafo atual em um cabeçalho H4"
+
+#~ msgid "Make the current paragraph an H5 header"
+#~ msgstr "Transforma o parágrafo atual em um cabeçalho H5"
+
+#~ msgid "Make the current paragraph an H6 header"
+#~ msgstr "Transforma o parágrafo atual em um cabeçalho H6"
+
+#~ msgid "Make the current paragraph an address"
+#~ msgstr "Transforma o parágrafo atual em um endereço"
+
+#~ msgid "Make the current paragraph an alphabetical list"
+#~ msgstr "Transforma o parágrafo atual em uma lista com letras"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Numbered List"
+#~ msgstr "Lista numerada"
+
+#~ msgid "Oh _No!"
+#~ msgstr "Ah, _não!"
+
+#~ msgid "Paste"
+#~ msgstr "Colar"
+
+#~ msgid "Paste from clipboard"
+#~ msgstr "Cola da área de transferência"
+
+#~ msgid "Paste the clipboard"
+#~ msgstr "Cola o conteúdo da área de transferência"
+
+#~ msgid "Paste the clipboard as a quotation"
+#~ msgstr "Cola como citação o conteúdo da área de transferência"
+
+#~ msgid "Preformat"
+#~ msgstr "Preformatado"
+
+#~ msgid "Redo"
+#~ msgstr "Refazer"
+
+#~ msgid "Redo previously undone change"
+#~ msgstr "Refaz a ação desfeita anteriormente"
+
+#~ msgid "Redo the undone action"
+#~ msgstr "Refaz a ação desfeita"
+
+#~ msgid "Right justifies the paragraphs"
+#~ msgstr "Justifica os parágrafos à direita"
+
+#~ msgid "Roman Numeral List"
+#~ msgstr "Lista com números romanos"
+
+#~ msgid "Rule"
+#~ msgstr "Linha"
+
+#~ msgid "Select the entire contents of the document"
+#~ msgstr "Selecionar todo o conteúdo do documento"
+
+#~ msgid "Strikeout"
+#~ msgstr "Riscado"
+
+#~ msgid "Su_rprised"
+#~ msgstr "Su_rpreso"
+
+#~ msgid "Subscript"
+#~ msgstr "Subscrito"
+
+#~ msgid "Superscript"
+#~ msgstr "Sobrescrito"
+
+#~ msgid "Te_mplate..."
+#~ msgstr "_Modelo..."
+
+#~ msgid "Typewriter"
+#~ msgstr "Máquina de escrever"
+
+#~ msgid "Undo"
+#~ msgstr "Desfazer"
+
+#~ msgid "Undo previous changes"
+#~ msgstr "Desfaz alterações anteriores"
+
+#~ msgid "Undo the last action"
+#~ msgstr "Desfaz a última ação"
+
+#~ msgid "_Font Size"
+#~ msgstr "Tamanho da _fonte"
+
+#~ msgid "_Frown"
+#~ msgstr "_Desconfiado"
+
+#~ msgid "_Heading"
+#~ msgstr "_Cabeçalho"
+
+#~ msgid "_Indifferent"
+#~ msgstr "_Indiferente"
+
+#~ msgid "_Laughing"
+#~ msgstr "_Gargalhada"
+
+#~ msgid "_Page..."
+#~ msgstr "_Página..."
+
+#~ msgid "_Paragraph..."
+#~ msgstr "_Parágrafo..."
+
+#~ msgid "_Replace..."
+#~ msgstr "_Substituir..."
+
+#~ msgid "_Style"
+#~ msgstr "_Estilo"
+
+#~ msgid "_Text..."
+#~ msgstr "_Texto..."
+
+#~ msgid "_Undecided"
+#~ msgstr "Indecis_o"
+
+#~ msgid "GNOME HTML Editor"
+#~ msgstr "O Editor de HTML do GNOME"
+
+#~ msgid "GNOME HTML Editor Control"
+#~ msgstr "O Controle do editor HTML do GNOME"
+
+#~ msgid "GNOME HTML Editor Factory"
+#~ msgstr "A fábrica do editor HTML do GNOME"
+
+#~ msgid "Background Image File Path"
+#~ msgstr "Caminho do arquivo da imagem de fundo"
+
+#~ msgid "Template"
+#~ msgstr "Modelo"
+
+#~ msgid "Could not load glade file."
+#~ msgstr "Não foi possível carregar arquivo glade."
+
+#~ msgid "Transparent"
+#~ msgstr "Transparência"
+
+#~ msgid "Text"
+#~ msgstr "Texto"
+
+#~ msgid "Paragraph"
+#~ msgstr "Parágrafo"
+
+#~ msgid "Page"
+#~ msgstr "Página"
+
+#~ msgid "color preview"
+#~ msgstr "visualizar cor"
+
+#~ msgid "Custom Color:"
+#~ msgstr "Cor personalizada:"
+
+#~ msgid "purplish blue"
+#~ msgstr "azul arroxeado"
+
+#~ msgid "dark purple"
+#~ msgstr "roxo escuro"
+
+#~ msgid "sky blue"
+#~ msgstr "azul celeste"
+
+#~ msgid "Popup"
+#~ msgstr "Instantâneo"
+
+#~ msgid "GtkHTML Editor Control"
+#~ msgstr "Controle do editor GtkHTML"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid ""
+#~ "-2\n"
+#~ "-1\n"
+#~ "Standard\n"
+#~ "+1\n"
+#~ "+2\n"
+#~ "+3\n"
+#~ "+4"
+#~ msgstr ""
+#~ "-2\n"
+#~ "-1\n"
+#~ "Padrão\n"
+#~ "+1\n"
+#~ "+2\n"
+#~ "+3\n"
+#~ "+4"
+
+#~ msgid "<b>Alignment &amp; Behaviour</b>"
+#~ msgstr "<b>Alinhamento e comportamento</b>"
+
+#~ msgid "<span weight=\"bold\">General</span>"
+#~ msgstr "<span weight=\"bold\">Geral</span>"
+
+#~ msgid "<span weight=\"bold\">Layout</span>"
+#~ msgstr "<span weight=\"bold\">Disposição</span>"
+
+#~ msgid "<span weight=\"bold\">Link</span>"
+#~ msgstr "<span weight=\"bold\">Link</span>"
+
+#~ msgid "<span weight=\"bold\">Size</span>"
+#~ msgstr "<span weight=\"bold\">Tamanho</span>"
+
+#~ msgid "<span weight=\"bold\">Style</span>"
+#~ msgstr "<span weight=\"bold\">Estilo</span>"
+
+#~ msgid "<span weight=\"bold\">Template</span>"
+#~ msgstr "<span weight=\"bold\">Modelo</span>"
+
+#~ msgid "Alignment:"
+#~ msgstr "Alinhamento:"
+
+#~ msgid "Cell"
+#~ msgstr "Célula"
+
+#~ msgid "Colu_mns:"
+#~ msgstr "Colu_nas:"
+
+#~ msgid "Column span:"
+#~ msgstr "Intervalo de colunas:"
+
+#~ msgid "Enable"
+#~ msgstr "Habilitar"
+
+#~ msgid "Hea_der style"
+#~ msgstr "Estilo do cabeçalho"
+
+#~ msgid "Horizontal alignment:"
+#~ msgstr "Alinhamento horizontal:"
+
+#~ msgid "Horizontal:"
+#~ msgstr "Horizontal:"
+
+#~ msgid ""
+#~ "Left\n"
+#~ "Center\n"
+#~ "Right\n"
+#~ "None"
+#~ msgstr ""
+#~ "Esquerda\n"
+#~ "Centro\n"
+#~ "Direita\n"
+#~ "Nenhum"
+
+#~ msgid "Link properties"
+#~ msgstr "Propriedades do link"
+
+#~ msgid "Row span:"
+#~ msgstr "Intervalo de linhas:"
+
+#~ msgid "Shade"
+#~ msgstr "Sombreado"
+
+#~ msgid "Vertical:"
+#~ msgstr "Vertical:"
+
+#~ msgid "xxxxxxxxxxxxxx"
+#~ msgstr "xxxxxxxxxxxxxx"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "Description:"
+#~ msgstr "Descrição:"
+
+#~ msgid "Insert"
+#~ msgstr "Inserir"
+
+#~ msgid "Error loading file '%s': %s"
+#~ msgstr "Erro ao carregar o arquivo \"%s\": %s"
+
+#~ msgid "Format"
+#~ msgstr "Formatar"
+
+#~ msgid "Roman List"
+#~ msgstr "Lista em romanos"
+
+#~ msgid "Header 1"
+#~ msgstr "Cabeçalho 1"
+
+#~ msgid "Header 2"
+#~ msgstr "Cabeçalho 2"
+
+#~ msgid "Header 3"
+#~ msgstr "Cabeçalho 3"
+
+#~ msgid "Header 4"
+#~ msgstr "Cabeçalho 4"
+
+#~ msgid "Header 5"
+#~ msgstr "Cabeçalho 5"
+
+#~ msgid "Header 6"
+#~ msgstr "Cabeçalho 6"
+
+#~ msgid "Address"
+#~ msgstr "Endereço"
+
+#~ msgid "Text Style..."
+#~ msgstr "Estilo do texto..."
+
+#~ msgid "Paragraph Style..."
+#~ msgstr "Estilo do parágrafo..."
+
+#~ msgid "Link Style..."
+#~ msgstr "Estilo do link..."
+
+#~ msgid "Rule Style..."
+#~ msgstr "Estilo da linha..."
+
+#~ msgid "Image Style..."
+#~ msgstr "Estilo da imagem..."
+
+#~ msgid "Cell Style..."
+#~ msgstr "Estilo da célula..."
+
+#~ msgid "Table Style..."
+#~ msgstr "Estilo da tabela..."
+
+#~ msgid "Page Style..."
+#~ msgstr "Estilo da página..."
+
+#~ msgid "Table insert"
+#~ msgstr "Inserção de tabela"
+
+#~ msgid "Row above"
+#~ msgstr "Linha acima"
+
+#~ msgid "Row below"
+#~ msgstr "Linha abaixo"
+
+#~ msgid "Column before"
+#~ msgstr "Coluna anterior"
+
+#~ msgid "Column after"
+#~ msgstr "Coluna após"
+
+#~ msgid "Table delete"
+#~ msgstr "Exclusão de tabela"
+
+#~ msgid "Cell contents"
+#~ msgstr "Conteúdo da célula"
+
+#~ msgid "Add Word to"
+#~ msgstr "Adicionar palavra ao"
+
+# http://bugzilla.gnome.org/show_bug.cgi?id=549239
+#~ msgid "%s Dictionary"
+#~ msgstr "Dicionário de %s"
+
+#~ msgid "Replace confirmation"
+#~ msgstr "Confirmação de substituição"
+
+#~ msgid "Search _backward"
+#~ msgstr "_Pesquisa regressiva"
+
+#~ msgid "_Backward"
+#~ msgstr "_Regressivo"
+
+#~ msgid "_Regular Expression"
+#~ msgstr "Expressão _regular"
+
+#~ msgid "Input the words you want to search here"
+#~ msgstr "Digite aqui as palavras que você deseja pesquisar"
+
+#~ msgid ""
+#~ "Unable to add word to dictionary,\n"
+#~ "language settings are broken.\n"
+#~ msgstr ""
+#~ "Não foi possível adicionar a palavra ao dicionário,\n"
+#~ "as definições de idioma estão com defeito.\n"
+
+#~ msgid "No misspelled word found"
+#~ msgstr "Nenhuma palavra errada foi localizada"
+
+#~ msgid "Spell checker"
+#~ msgstr "Verificador ortográfico"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgid "Place your text here"
+#~ msgstr "Coloque seu texto aqui"
+
+#~ msgid "Image frame"
+#~ msgstr "Moldura de imagem"
+
+#~ msgid "Template Labels"
+#~ msgstr "Modelo de etiquetas"
+
+#~ msgid "Open file..."
+#~ msgstr "Abrir arquivo..."
+
+#~ msgid "Save file as..."
+#~ msgstr "Salvar arquivo como..."
+
+#~ msgid "GtkHTML Editor Test Container"
+#~ msgstr "Repositório de teste do editor GtkHTML"
+
+#~ msgid "Left align"
+#~ msgstr "Alinhar à esquerda"
+
+#~ msgid "Right align"
+#~ msgstr "Alinhar à direita"
+
+#~ msgid "Toggle typewriter font style"
+#~ msgstr "Alterna o estilo de fonte máquina de escrever"
+
+#~ msgid "Makes the text bold"
+#~ msgstr "Torna o texto negrito"
+
+#~ msgid "Makes the text italic"
+#~ msgstr "Torna o texto itálico"
+
+#~ msgid "Underlines the text"
+#~ msgstr "Sublinha o texto"
+
+#~ msgid "Strikes out the text"
+#~ msgstr "Risca o texto"
+
+#~ msgid "Unindent"
+#~ msgstr "Avançar"
+
+#~ msgid "Indents the paragraphs less"
+#~ msgstr "Diminui recuo dos parágrafos"
+
+#~ msgid "Indent"
+#~ msgstr "Recuar"
+
+#~ msgid "Indents the paragraphs more"
+#~ msgstr "Aumenta recuo dos parágrafos"
+
+#~ msgid "Text Color"
+#~ msgstr "Cor do texto"
+
+#~ msgid "Sample"
+#~ msgstr "Amostra"
+
+#~ msgid ""
+#~ "The edited object was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "O objeto editado foi removido do documento.\n"
+#~ "Não foi possível aplicar suas alterações."
+
+#~ msgid "Print pre_view"
+#~ msgstr "_Visualizar impressão"
+
+#~ msgid "Print preview"
+#~ msgstr "Visualizar impressão"
+
+#~ msgid "GtkHTML Test Application"
+#~ msgstr "Aplicativo de teste do GtkHTML"
+
+#~ msgid "_Tongue"
+#~ msgstr "_Língua"
+
+#~ msgid "language|Default"
+#~ msgstr "Padrão"
+
+#~ msgid "Make the current Paragraph style Preformatted"
+#~ msgstr "Adota o estilo preformatado para o parágrafo atual"
+
+#~ msgid "Preformatted"
+#~ msgstr "Preformatado"
+
+#~ msgid "Cannot allocate default font for printing\n"
+#~ msgstr "Não é possível alocar fonte padrão para impressão\n"
