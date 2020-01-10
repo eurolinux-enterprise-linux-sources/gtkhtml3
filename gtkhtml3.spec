@@ -5,7 +5,7 @@
 
 Name: gtkhtml3
 Version: 4.6.6
-Release: 1%{?dist}
+Release: 3%{?dist}
 Group: System Environment/Libraries
 Summary: GtkHTML library
 License: LGPLv2+ and GPLv2
@@ -74,6 +74,12 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %{_libdir}/pkgconfig/*.pc
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 4.6.6-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 4.6.6-2
+- Mass rebuild 2013-12-27
+
 * Wed Jul 24 2013 Milan Crha <mcrha@redhat.com> - 4.6.6-1
 - Update to 4.6.6
 
