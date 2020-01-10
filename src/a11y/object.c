@@ -35,10 +35,8 @@
 
 static void gtk_html_a11y_class_init (GtkHTMLA11YClass *klass);
 static void gtk_html_a11y_init       (GtkHTMLA11Y *a11y);
-static void gtk_html_a11y_initialize (AtkObject *obj,
-                                      gpointer data);
 
-static GtkContainerAccessibleClass *parent_class = NULL;
+static GtkAccessibleClass *parent_class = NULL;
 
 static gint
 get_n_actions (AtkAction *action)
@@ -131,7 +129,21 @@ gtk_html_a11y_get_type (void)
 			NULL
 		};
 
-		type = g_type_register_static (GTK_TYPE_CONTAINER_ACCESSIBLE, "GtkHTMLA11Y", &tinfo, 0);
+		/*
+		 * Figure out the size of the class and instance
+		 * we are deriving from
+		 */
+		AtkObjectFactory *factory;
+		GTypeQuery query;
+		GType derived_atk_type;
+
+		factory = atk_registry_get_factory (atk_get_default_registry (), GTK_TYPE_WIDGET);
+		derived_atk_type = atk_object_factory_get_accessible_type (factory);
+		g_type_query (derived_atk_type, &query);
+		tinfo.class_size = query.class_size;
+		tinfo.instance_size = query.instance_size;
+
+		type = g_type_register_static (derived_atk_type, "GtkHTMLA11Y", &tinfo, 0);
 
 		g_type_add_interface_static (type, ATK_TYPE_ACTION, &atk_action_info);
 	}
@@ -143,6 +155,18 @@ static void
 gtk_html_a11y_finalize (GObject *obj)
 {
 	G_OBJECT_CLASS (parent_class)->finalize (obj);
+}
+
+static void
+gtk_html_a11y_initialize (AtkObject *obj,
+                          gpointer data)
+{
+	/* printf ("gtk_html_a11y_initialize\n"); */
+
+	if (ATK_OBJECT_CLASS (parent_class)->initialize)
+		ATK_OBJECT_CLASS (parent_class)->initialize (obj, data);
+
+	g_object_set_data (G_OBJECT (obj), GTK_HTML_ID, data);
 }
 
 static gint
@@ -362,27 +386,22 @@ gtk_html_a11y_delete_object_cb (GtkWidget *widget,
 	}
 }
 
-static void
-gtk_html_a11y_initialize (AtkObject *obj,
-                          gpointer data)
+AtkObject *
+gtk_html_a11y_new (GtkWidget *widget)
 {
-	GtkWidget *widget;
 	GtkHTML *html;
+	GObject *object;
 	AtkObject *accessible;
 	AtkObject *focus_object = NULL;
 
-	/* printf ("gtk_html_a11y_initialize\n"); */
+	g_return_val_if_fail (GTK_IS_HTML (widget), NULL);
 
-	if (ATK_OBJECT_CLASS (parent_class)->initialize)
-		ATK_OBJECT_CLASS (parent_class)->initialize (obj, data);
+	object = g_object_new (G_TYPE_GTK_HTML_A11Y, NULL);
 
-	g_object_set_data (G_OBJECT (obj), GTK_HTML_ID, data);
+	accessible = ATK_OBJECT (object);
+	atk_object_initialize (accessible, widget);
 
-	obj->role = ATK_ROLE_PANEL;
-
-	widget = gtk_accessible_get_widget (GTK_ACCESSIBLE (obj));
-	accessible = ATK_OBJECT (obj);
-
+	accessible->role = ATK_ROLE_PANEL;
 	g_signal_connect (widget, "grab_focus",
 			G_CALLBACK (gtk_html_a11y_grab_focus_cb),
 			NULL);
@@ -407,4 +426,6 @@ gtk_html_a11y_initialize (AtkObject *obj,
 		gtk_html_a11y_focus_object = focus_object;
 		atk_focus_tracker_notify (focus_object);
 	}
+
+	return accessible;
 }

@@ -9,6 +9,8 @@ noinst_LTLIBRARIES = libgtkhtml-a11y.la
 libgtkhtml_a11y_la_SOURCES =				\
 	cell.h						\
 	cell.c						\
+	factory.h					\
+	factory.c					\
 	html.h						\
 	html.c						\
 	hyperlink.h					\

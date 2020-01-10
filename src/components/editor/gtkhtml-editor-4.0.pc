@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/mbarnes/local/common
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -8,6 +8,6 @@ gtkhtml_api_version=4.0
 Name: gtkhtml-editor
 Description: HTML editor widget
 Requires: libgtkhtml-4.0
-Version: 4.8.5
+Version: 4.6.6
 Libs: -L${libdir} -lgtkhtml-editor-4.0
 Cflags: -I${includedir}/libgtkhtml-4.0/editor

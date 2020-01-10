@@ -28,7 +28,6 @@
 #include "htmlengine-edit-cursor.h"
 #include "htmlengine-edit-table.h"
 #include "htmlengine-edit-tablecell.h"
-#include "htmlgdkpainter.h"
 #include "htmlimage.h"
 #include "htmlobject.h"
 #include "htmltable.h"
@@ -358,26 +357,7 @@ html_engine_draw_cursor_in_area (HTMLEngine *engine,
 
 	if (clip_cursor (engine, x, y, width, height, &x1, &y1, &x2, &y2)) {
 		cairo_t *cr;
-		gboolean using_painter_cr;
-
-		using_painter_cr = engine->painter &&
-		    HTML_IS_GDK_PAINTER (engine->painter) &&
-		    HTML_GDK_PAINTER (engine->painter)->cr != NULL;
-
-		if (using_painter_cr) {
-			HTMLGdkPainter *gdk_painter = HTML_GDK_PAINTER (engine->painter);
-
-			cr = gdk_painter->cr;
-			cairo_save (cr);
-
-			x1 -= gdk_painter->x1;
-			y1 -= gdk_painter->y1;
-			x2 -= gdk_painter->x1;
-			y2 -= gdk_painter->y1;
-		} else {
-			cr = gdk_cairo_create (engine->window);
-		}
-
+		cr = gdk_cairo_create (engine->window);
 		cairo_set_source_rgb (cr, 1, 1, 1);
 		cairo_set_operator (cr, CAIRO_OPERATOR_DIFFERENCE);
 		cairo_set_line_cap (cr, CAIRO_LINE_CAP_SQUARE);
@@ -385,11 +365,7 @@ html_engine_draw_cursor_in_area (HTMLEngine *engine,
 		cairo_line_to (cr, x2 + 0.5, y2 - 0.5);
 		cairo_set_line_width (cr, 1);
 		cairo_stroke (cr);
-
-		if (using_painter_cr)
-			cairo_restore (cr);
-		else
-			cairo_destroy (cr);
+		cairo_destroy (cr);
 	}
 }
 

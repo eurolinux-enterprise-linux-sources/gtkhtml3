@@ -4,34 +4,26 @@
 ### Abstract ###
 
 Name: gtkhtml3
-Version: 4.8.5
-Release: 2%{?dist}
+Version: 4.6.6
+Release: 1%{?dist}
 Group: System Environment/Libraries
 Summary: GtkHTML library
 License: LGPLv2+ and GPLv2
 URL: http://projects.gnome.org/evolution/
-Source: http://download.gnome.org/sources/gtkhtml/4.8/gtkhtml-%{version}.tar.xz
-
-# RH bug #1255831
-Patch01: gtkhtml-4.8.5-crash-link-update.patch
-
-# RH bug #1255826
-Patch02: gtkhtml-4.8.5-editor-test-images.patch
+Source: http://download.gnome.org/sources/gtkhtml/4.6/gtkhtml-%{version}.tar.xz
 
 ### Build Dependencies ###
 
+BuildRequires: enchant-devel
+BuildRequires: gail-devel
 BuildRequires: gettext
 BuildRequires: gnome-common
+BuildRequires: gnome-icon-theme
+BuildRequires: gsettings-desktop-schemas-devel
+BuildRequires: gtk3-devel
 BuildRequires: intltool
+BuildRequires: iso-codes-devel
 BuildRequires: libtool
-
-BuildRequires: pkgconfig(cairo)
-BuildRequires: pkgconfig(enchant)
-BuildRequires: pkgconfig(gail-3.0)
-BuildRequires: pkgconfig(gsettings-desktop-schemas)
-BuildRequires: pkgconfig(gtk+-3.0)
-BuildRequires: pkgconfig(libsoup-2.4)
-BuildRequires: pkgconfig(iso-codes)
 
 %description
 GtkHTML is a lightweight HTML rendering/printing/editing engine.
@@ -49,8 +41,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q -n gtkhtml-%{version}
-%patch01 -p1 -b .crash-link-update
-%patch02 -p1 -b .editor-test-images
+#%patch01 -p1 -b .no-g-thread-init
 
 %build
 autoreconf -fi
@@ -83,19 +74,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %{_libdir}/pkgconfig/*.pc
 
 %changelog
-* Wed Aug 26 2015 Milan Crha <mcrha@redhat.com> - 4.8.5-2
-- Add patch for RH bug #1255831 (Crash under html_text_get_link_at_offset())
-- Add patch for RH bug #1255826 (Images are not displayed in gtkhtml-editor-test)
-
-* Mon May 04 2015 Milan Crha <mcrha@redhat.com> - 4.8.5-1
-- Update to 4.8.5
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 4.6.6-3
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 4.6.6-2
-- Mass rebuild 2013-12-27
-
 * Wed Jul 24 2013 Milan Crha <mcrha@redhat.com> - 4.6.6-1
 - Update to 4.6.6
 
@@ -829,7 +807,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 * Mon Jun  9 2003 Jeremy Katz <katzj@redhat.com> 3.0.5-1
 - 3.0.5
 
-* Thu Jun 5 2003 Elliot Lee <sopwith@redhat.com>
+* Wed Jun 5 2003 Elliot Lee <sopwith@redhat.com>
 - rebuilt
 
 * Thu Jun  5 2003 Jeremy Katz <katzj@redhat.com> 3.0.4-3
@@ -968,7 +946,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 * Fri Jul 20 2001 Alexander Larsson <alexl@redhat.com>
 - Add more build dependencies
 
-* Tue Jul 17 2001 Bill Nottingham <notting@redhat.com>
+* Thu Jul 17 2001 Bill Nottingham <notting@redhat.com>
 - fix devel package requirements
 
 * Sat Jul  7 2001 Tim Powers <timp@redhat.com>

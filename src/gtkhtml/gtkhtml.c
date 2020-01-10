@@ -26,7 +26,7 @@
 #include <glib/gi18n-lib.h>
 #include <string.h>
 
-#include "../a11y/object.h"
+#include "../a11y/factory.h"
 
 #include "htmlcolorset.h"
 #include "htmlcluev.h"
@@ -3270,7 +3270,7 @@ gtk_html_class_init (GtkHTMLClass *klass)
 	html_class->properties        = gtk_html_class_properties_new ();
 
 	add_bindings (klass);
-	gtk_widget_class_set_accessible_type (widget_class, G_TYPE_GTK_HTML_A11Y);
+	gtk_html_accessibility_init ();
 
 	filename = g_build_filename (PREFIX, "share", GTKHTML_RELEASE_STRING, "keybindingsrc.emacs", NULL);
 	gtk_rc_parse (filename);
@@ -3973,7 +3973,7 @@ gtk_html_save (GtkHTML *html,
  * by calling the function listed in @receiver data becomes avaiable.  When @receiver is
  * called @user_data is passed in as the user_data parameter.
  *
- * Returns: TRUE if the export was successful, FALSE otherwise.
+ * Returns: TRUE if the export was successfull, FALSE otherwise.
  **/
 gboolean
 gtk_html_export (GtkHTML *html,

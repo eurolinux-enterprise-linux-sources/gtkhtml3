@@ -1,6 +1,6 @@
 dnl Initialization
 AC_PREREQ(2.58)
-AC_INIT([gtkhtml], [4.8.5], [http://bugzilla.gnome.org/enter_bug.cgi?product=GtkHtml])
+AC_INIT([gtkhtml], [4.6.6], [http://bugzilla.gnome.org/enter_bug.cgi?product=GtkHtml])
 AM_INIT_AUTOMAKE([gnu 1.9 dist-xz no-dist-gzip -Wno-portability])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS(config.h)
@@ -9,8 +9,9 @@ AC_CONFIG_SRCDIR(README)
 PACKAGE=gtkhtml
 
 dnl Required Package Versions
-m4_define([gtk_minimum_version], [3.2.0])
+m4_define([gtk_minimum_version], [3.0.2])
 m4_define([enchant_minimum_version], [1.1.7])
+m4_define([gnome_icon_theme_minimum_version], [2.22.0])
 m4_define([cairo_minimum_version], [1.10.0])
 
 GTKHTML_API_VERSION=4.0
@@ -181,6 +182,11 @@ AM_CONDITIONAL(HAVE_SOUP, test x$have_soup != xno)
 AM_CONDITIONAL(HAVE_NEWSOUP, test x$HAVE_NEWSOUP != xno)
 
 dnl **************************************************
+dnl Gnome Icon Theme
+dnl **************************************************
+PKG_CHECK_MODULES(GIT, gnome-icon-theme >= gnome_icon_theme_minimum_version)
+
+dnl **************************************************
 dnl iso-codes
 dnl **************************************************
 AC_MSG_CHECKING([for iso-codes package])
@@ -279,6 +285,7 @@ dnl **************
 
 AC_CONFIG_FILES([
 Makefile
+gtkhtml-zip
 a11y/Makefile
 art/Makefile
 components/Makefile
