@@ -1,0 +1,1193 @@
+# GtkHtml-i eesti keele tõlge.
+# Estonian translation of GtkHtml.
+#
+# Copyright (C) 2002, 2004-2006 Free Software Foundation, Inc.
+# Copyright (C) 2007-2010 The GNOME Project.
+# This file is distributed under the same license as the gtkhtml package.
+#
+# Tõivo Leedjärv <leedjarv interest ee>, 2002.
+# Priit Laes <amd store20 com>, 2004-2006.
+# Ivar Smolin <okul linux ee>, 2005-2010.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2009, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhtml MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gtkhtml&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-02-20 15:04+0000\n"
+"PO-Revision-Date: 2012-02-22 12:41+0200\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "URL on %s, alternatiivtekst on %s"
+
+#, c-format
+msgid "URL is %s"
+msgstr "URL on %s"
+
+msgid "grab focus"
+msgstr "haara fookus"
+
+msgid "Panel containing HTML"
+msgstr "Paneel sisaldab HTML-i"
+
+msgid "black"
+msgstr "must"
+
+msgid "light brown"
+msgstr "helepruun"
+
+msgid "brown gold"
+msgstr "kuldpruun"
+
+msgid "dark green #2"
+msgstr "tumeroheline nr. 2"
+
+msgid "navy"
+msgstr "tumesinine"
+
+msgid "dark blue"
+msgstr "tumesinine"
+
+msgid "purple #2"
+msgstr "purpurne #2"
+
+msgid "very dark gray"
+msgstr "väga tume hall"
+
+msgid "dark red"
+msgstr "tumepunane"
+
+msgid "red-orange"
+msgstr "punakasoranž"
+
+msgid "gold"
+msgstr "kuldne"
+
+msgid "dark green"
+msgstr "tumeroheline"
+
+msgid "dull blue"
+msgstr "tuhmsinine"
+
+msgid "blue"
+msgstr "sinine"
+
+msgid "dull purple"
+msgstr "tuhmpurpurne"
+
+msgid "dark grey"
+msgstr "tumehall"
+
+msgid "red"
+msgstr "punane"
+
+msgid "orange"
+msgstr "oranž"
+
+msgid "lime"
+msgstr "erkvalge"
+
+msgid "dull green"
+msgstr "tuhmroheline"
+
+msgid "dull blue #2"
+msgstr "tuhmsinine nr. 2"
+
+msgid "sky blue #2"
+msgstr "taevasinine nr. 2"
+
+msgid "purple"
+msgstr "purpur"
+
+msgid "gray"
+msgstr "hall"
+
+msgid "magenta"
+msgstr "fuksiin"
+
+msgid "bright orange"
+msgstr "erkoranž"
+
+msgid "yellow"
+msgstr "kollane"
+
+msgid "green"
+msgstr "roheline"
+
+msgid "cyan"
+msgstr "tsüaan"
+
+msgid "bright blue"
+msgstr "erksinine"
+
+msgid "red purple"
+msgstr "purpurpunane"
+
+msgid "light grey"
+msgstr "helehall"
+
+msgid "pink"
+msgstr "roosa"
+
+msgid "light orange"
+msgstr "heleoranž"
+
+msgid "light yellow"
+msgstr "helekollane"
+
+msgid "light green"
+msgstr "heleroheline"
+
+msgid "light cyan"
+msgstr "heletsüaan"
+
+msgid "light blue"
+msgstr "helesinine"
+
+msgid "light purple"
+msgstr "helepurpurne"
+
+msgid "white"
+msgstr "valge"
+
+msgid "Choose Custom Color"
+msgstr "Kohandatud värvuse valimine"
+
+msgid "Default"
+msgstr "Vaikimisi"
+
+msgid "custom"
+msgstr "kohandatud"
+
+msgid "Custom Color..."
+msgstr "Kohandatud värvus..."
+
+#. Translators: :-)
+msgid "_Smile"
+msgstr "_Naeratav"
+
+#. Translators: :-(
+msgid "S_ad"
+msgstr "_Kurb"
+
+#. Translators: ;-)
+msgid "_Wink"
+msgstr "_Silma pilgutav"
+
+#. Translators: :-P
+msgid "Ton_gue"
+msgstr "K_eelt näitav"
+
+#. Translators: :-))
+msgid "Laug_h"
+msgstr "N_aerev"
+
+#. Translators: :-|
+msgid "_Plain"
+msgstr "_Tõsine"
+
+#. Translators: :-!
+msgid "Smi_rk"
+msgstr "_Irvitav"
+
+#. Translators: :"-)
+msgid "_Embarrassed"
+msgstr "_Kimbatuses"
+
+#. Translators: :-D
+msgid "_Big Smile"
+msgstr "_Laia naeratusega"
+
+#. Translators: :-/
+msgid "Uncer_tain"
+msgstr "_Ebamäärane"
+
+#. Translators: :-O
+msgid "S_urprise"
+msgstr "Ül_latunud"
+
+#. Translators: :-S
+msgid "W_orried"
+msgstr "_Murelik"
+
+#. Translators: :-*
+msgid "_Kiss"
+msgstr "Suu_dlus"
+
+#. Translators: X-(
+msgid "A_ngry"
+msgstr "_Vihane"
+
+#. Translators: B-)
+msgid "_Cool"
+msgstr "_Vinge"
+
+#. Translators: O:-)
+msgid "Ange_l"
+msgstr "In_gel"
+
+#. Translators: :'(
+msgid "Cr_ying"
+msgstr "Nu_ttev"
+
+#. Translators: :-Q
+msgid "S_ick"
+msgstr "_Haige"
+
+#. Translators: |-)
+msgid "Tire_d"
+msgstr "_Väsinud"
+
+#. Translators: >:-)
+msgid "De_vilish"
+msgstr "_Saatanlik"
+
+#. Translators: :-(|)
+msgid "_Monkey"
+msgstr "_Ahv"
+
+msgid "Failed to insert HTML file."
+msgstr "Tõrge HTML-faili lisamisel."
+
+msgid "Failed to insert text file."
+msgstr "Tõrge tekstifaili lisamisel."
+
+msgid "No match found"
+msgstr "Ühtegi vastet ei leitud"
+
+msgid "Insert HTML File"
+msgstr "HTML-faili lisamine"
+
+msgid "Insert Image"
+msgstr "Pildi lisamine"
+
+msgid "Insert Text File"
+msgstr "Tekstifaili lisamine"
+
+#. Replace Button
+msgid "_Replace"
+msgstr "_Asenda"
+
+msgid "Replace _All"
+msgstr "Asenda _kõik"
+
+msgid "_Next"
+msgstr "_Järgmine"
+
+msgid "_Copy"
+msgstr "_Kopeeri"
+
+msgid "Cu_t"
+msgstr "_Lõika"
+
+msgid "Find A_gain"
+msgstr "Otsi _uuesti"
+
+msgid "_Increase Indent"
+msgstr "_Suurenda taandust"
+
+msgid "Increase Indent"
+msgstr "Taanduse suurendamine"
+
+msgid "_HTML File..."
+msgstr "_HTML-fail..."
+
+msgid "Te_xt File..."
+msgstr "_Tekstifail..."
+
+msgid "_Paste"
+msgstr "_Aseta"
+
+msgid "Paste _Quotation"
+msgstr "Aseta _tsiteering"
+
+msgid "_Redo"
+msgstr "_Taasta"
+
+msgid "Select _All"
+msgstr "Vali _kõik"
+
+msgid "_Find..."
+msgstr "_Otsi..."
+
+msgid "Re_place..."
+msgstr "_Asenda..."
+
+msgid "Check _Spelling..."
+msgstr "Kontrolli _sõna õigekirja..."
+
+msgid "_Test URL..."
+msgstr "_Testi URL-i..."
+
+msgid "_Undo"
+msgstr "_Tühista"
+
+msgid "_Decrease Indent"
+msgstr "_Vähenda taandust"
+
+msgid "Decrease Indent"
+msgstr "Taanduse vähendamine"
+
+msgid "_Wrap Lines"
+msgstr "_Ridade murdmine"
+
+msgid "_Edit"
+msgstr "_Redaktor"
+
+msgid "_File"
+msgstr "_Fail"
+
+msgid "For_mat"
+msgstr "Vor_ming"
+
+msgid "_Paragraph Style"
+msgstr "_Lõigu laad"
+
+msgid "_Insert"
+msgstr "L_isa"
+
+msgid "_Alignment"
+msgstr "_Joondus"
+
+msgid "Current _Languages"
+msgstr "Aktiivsed _keeled"
+
+msgid "_View"
+msgstr "_Vaade"
+
+msgid "_Center"
+msgstr "_Keskel"
+
+msgid "Center Alignment"
+msgstr "Joondamine keskele"
+
+msgid "_Left"
+msgstr "_Vasakul"
+
+msgid "Left Alignment"
+msgstr "Joondamine vasakule"
+
+msgid "_Right"
+msgstr "_Paremal"
+
+msgid "Right Alignment"
+msgstr "Joondamine paremale"
+
+msgid "_HTML"
+msgstr "_HTML"
+
+msgid "HTML editing mode"
+msgstr "HTML-i redigeerimisrežiim"
+
+msgid "Plain _Text"
+msgstr "_Lihttekst"
+
+msgid "Plain text editing mode"
+msgstr "Lihtteksti redigeerimisrežiim"
+
+msgid "_Normal"
+msgstr "T_avaline"
+
+msgid "Header _1"
+msgstr "Päis _1"
+
+msgid "Header _2"
+msgstr "Päis _2"
+
+msgid "Header _3"
+msgstr "Päis _3"
+
+msgid "Header _4"
+msgstr "Päis _4"
+
+msgid "Header _5"
+msgstr "Päis _5"
+
+msgid "Header _6"
+msgstr "Päis _6"
+
+msgid "A_ddress"
+msgstr "Aa_dress"
+
+msgid "_Preformatted"
+msgstr "_Eelvormindatud"
+
+msgid "_Bulleted List"
+msgstr "Tä_pploetelu"
+
+msgid "_Roman Numeral List"
+msgstr "_Rooma numbrite loetelu"
+
+msgid "Numbered _List"
+msgstr "Nummerdatud _loetelu"
+
+msgid "_Alphabetical List"
+msgstr "_Tähestikuline loetelu"
+
+msgid "_Image..."
+msgstr "_Pilt..."
+
+msgid "_Link..."
+msgstr "_Viit..."
+
+msgid "Insert Link"
+msgstr "Viida lisamine"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+msgid "_Rule..."
+msgstr "_Vahejoon..."
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+msgid "Insert Rule"
+msgstr "Vahejoone lisamine"
+
+msgid "_Table..."
+msgstr "_Tabel..."
+
+msgid "Insert Table"
+msgstr "Tabeli lisamine"
+
+msgid "_Cell..."
+msgstr "_Lahter..."
+
+msgid "Pa_ge..."
+msgstr "_Lehekülg..."
+
+msgid "Font _Size"
+msgstr "Kirja suu_rus"
+
+msgid "_Font Style"
+msgstr "_Kirja laad"
+
+msgid "_Bold"
+msgstr "_Rasvane"
+
+msgid "Bold"
+msgstr "Rasvane"
+
+msgid "_Italic"
+msgstr "_Kursiiv"
+
+msgid "Italic"
+msgstr "Kaldkiri"
+
+msgid "_Plain Text"
+msgstr "_Lihttekst"
+
+msgid "Plain Text"
+msgstr "Lihttekst"
+
+msgid "_Strikethrough"
+msgstr "Lä_bikriipsutatud"
+
+msgid "Strikethrough"
+msgstr "Läbikriipsutatud"
+
+msgid "_Underline"
+msgstr "_Allajoonitud"
+
+msgid "Underline"
+msgstr "Allakriipsutus"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "-2"
+msgstr "-2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "-1"
+msgstr "-1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "+0"
+msgstr "+0"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "+1"
+msgstr "+1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "+2"
+msgstr "+2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "+3"
+msgstr "+3"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+msgid "+4"
+msgstr "+4"
+
+msgid "Cell Contents"
+msgstr "Lahtri sisu"
+
+msgid "Column"
+msgstr "Veerg"
+
+msgid "Row"
+msgstr "Rida"
+
+msgid "Table"
+msgstr "Tabel"
+
+#. Translators: Popup menu item caption, containing all the Delete options for a table
+msgid "Table Delete"
+msgstr "Tabeli kustutamine"
+
+msgid "Input Methods"
+msgstr "Sisestusmeetodid"
+
+#. Translators: Popup menu item caption, containing all the Insert options for a table
+msgid "Table Insert"
+msgstr "Tabeli lisamine"
+
+msgid "Properties"
+msgstr "Omadused"
+
+msgid "Column After"
+msgstr "Veerg pärast"
+
+msgid "Column Before"
+msgstr "Veerg enne"
+
+msgid "Insert _Link"
+msgstr "Lisa _viit"
+
+msgid "Row Above"
+msgstr "Rida ülalpool"
+
+msgid "Row Below"
+msgstr "Rida allpool"
+
+msgid "Cell..."
+msgstr "Lahter..."
+
+msgid "Image..."
+msgstr "Pilt..."
+
+msgid "Link..."
+msgstr "Viide..."
+
+msgid "Page..."
+msgstr "Lehekülg"
+
+msgid "Paragraph..."
+msgstr "Lõik..."
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+msgid "Rule..."
+msgstr "Vahejoon..."
+
+msgid "Table..."
+msgstr "Tabel..."
+
+msgid "Text..."
+msgstr "Tekst..."
+
+msgid "Remove Link"
+msgstr "Eemalda viit"
+
+msgid "Add Word to Dictionary"
+msgstr "Lisa sõna sõnastikku"
+
+msgid "Ignore Misspelled Word"
+msgstr "Kirjaveaga sõna eiramine"
+
+msgid "Add Word To"
+msgstr "Lisa sõna"
+
+msgid "More Suggestions"
+msgstr "Täiendavad soovitused"
+
+#. Translators: %s will be replaced with the actual dictionary name,
+#. * where a user can add a word to. This is part of an "Add Word To" submenu.
+#, c-format
+msgid "%s Dictionary"
+msgstr "sõnastikku %s"
+
+msgid "_Emoticon"
+msgstr "_Tujunägu"
+
+msgid "Insert Emoticon"
+msgstr "Tujunäo lisamine"
+
+msgid "_Find"
+msgstr "_Otsi"
+
+msgid "Re_place"
+msgstr "_Asenda"
+
+msgid "_Image"
+msgstr "_Pilt"
+
+msgid "_Link"
+msgstr "_Viit"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+msgid "_Rule"
+msgstr "_Vahejoon"
+
+msgid "_Table"
+msgstr "_Tabel"
+
+msgid "Paragraph Style"
+msgstr "Lõigu laad"
+
+msgid "Editing Mode"
+msgstr "Redigeerimisrežiim"
+
+msgid "Font Color"
+msgstr "Kirja värvus"
+
+msgid "Font Size"
+msgstr "Kirja suurus"
+
+msgid "Automatic"
+msgstr "Automaatne"
+
+msgid "Could not open the link."
+msgstr "Viita pole võimalik avada."
+
+msgid "Changed property"
+msgstr "Muudetud omadus"
+
+msgid "Whether editor changed"
+msgstr "Kas redaktoris on muudatusi või mitte"
+
+msgid "px"
+msgstr "px"
+
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+msgid "follow"
+msgstr "tuletatud"
+
+msgid "Top"
+msgstr "Üleval"
+
+msgid "Middle"
+msgstr "Keskel"
+
+msgid "Bottom"
+msgstr "All"
+
+msgid "Left"
+msgstr "Vasakul"
+
+msgid "Center"
+msgstr "Keskel"
+
+msgid "Right"
+msgstr "Paremal"
+
+msgid "None"
+msgstr "Puudub"
+
+msgid "Perforated Paper"
+msgstr "Perforeeritud paber"
+
+msgid "Blue Ink"
+msgstr "Sinise tindiga"
+
+msgid "Paper"
+msgstr "Paber"
+
+msgid "Ribbon"
+msgstr "Kummiriba"
+
+msgid "Midnight"
+msgstr "Kesköö"
+
+msgid "Confidential"
+msgstr "Salajane"
+
+msgid "Draft"
+msgstr "Mustand"
+
+msgid "Graph Paper"
+msgstr "Ruuduline paber"
+
+msgid "Text Properties"
+msgstr "Teksti omadused"
+
+msgid "Si_ze:"
+msgstr "_Suurus:"
+
+msgid "_Color:"
+msgstr "_Värvus:"
+
+msgid "Paragraph Properties"
+msgstr "Lõigu omadused"
+
+msgid "General"
+msgstr "Üldine"
+
+msgid "_Style:"
+msgstr "_Laad:"
+
+msgid "Alignment"
+msgstr "Joondus"
+
+msgid "Find"
+msgstr "Otsimine"
+
+msgid "Search _backwards"
+msgstr "Otsi _tahapoole"
+
+msgid "Case _sensitive"
+msgstr "_Tõstutundlik"
+
+msgid "_Regular expression"
+msgstr "_Regulaaravaldis"
+
+msgid "Replace"
+msgstr "Asendamine"
+
+msgid "_With:"
+msgstr "_Järgnevaga:"
+
+msgid "R_eplace:"
+msgstr "_Asenda:"
+
+msgid "Replace Confirmation"
+msgstr "Asendamise kinnitus"
+
+msgid "Link Properties"
+msgstr "Viida omadused"
+
+msgid "_URL:"
+msgstr "_URL:"
+
+msgid "_Description:"
+msgstr "_Kirjeldus:"
+
+#. Translators: Caption of a window. 'Rule' here means a horizontal line in an HTML text.
+msgid "Rule Properties"
+msgstr "Vahejoone omadused"
+
+msgid "Size"
+msgstr "Suurus"
+
+msgid "_Width:"
+msgstr "_Laius:"
+
+msgid "_Size:"
+msgstr "_Suurus:"
+
+msgid "Style"
+msgstr "Laad"
+
+msgid "_Alignment:"
+msgstr "_Joondus:"
+
+msgid "S_haded"
+msgstr "_Varjutatud"
+
+msgid "Table Properties"
+msgstr "Tabeli omadused"
+
+msgid "_Rows:"
+msgstr "_Ridu:"
+
+msgid "C_olumns:"
+msgstr "_Veerud:"
+
+msgid "Layout"
+msgstr "Paigutus"
+
+msgid "_Spacing:"
+msgstr "_Jaotus:"
+
+msgid "_Padding:"
+msgstr "Pols_terdus:"
+
+msgid "_Border:"
+msgstr "Ää_ris:"
+
+msgid "Background"
+msgstr "Taust"
+
+msgid "Co_lor:"
+msgstr "_Värvus:"
+
+msgid "_Image:"
+msgstr "_Pilt:"
+
+msgid "Page Properties"
+msgstr "Lehekülje omadused"
+
+msgid "Colors"
+msgstr "Värvused"
+
+msgid "_Text:"
+msgstr "_Tekst:"
+
+msgid "_Link:"
+msgstr "_Viit:"
+
+msgid "_Background:"
+msgstr "_Taust:"
+
+msgid "Background Image"
+msgstr "Taustapilt"
+
+msgid "T_emplate:"
+msgstr "_Mall:"
+
+msgid "C_ustom:"
+msgstr "K_ohandatud:"
+
+msgid "Cell Properties"
+msgstr "Lahtri omadused"
+
+msgid "Scope"
+msgstr "Skoop"
+
+msgid "Col_umn"
+msgstr "_Veerg"
+
+msgid "_Row"
+msgstr "_Rida"
+
+msgid "C_ell"
+msgstr "_Lahter"
+
+msgid "Alignment & Behavior"
+msgstr "Joondus ja käitumine"
+
+msgid "_Wrap Text"
+msgstr "Ridade _murdmine"
+
+msgid "Hea_der Style"
+msgstr "_Päise laad"
+
+msgid "_Vertical:"
+msgstr "_Püstine:"
+
+msgid "_Horizontal:"
+msgstr "Rõ_htne:"
+
+msgid "Column Span:"
+msgstr "Veeru ulatus:"
+
+msgid "Row Span:"
+msgstr "Rea ulatus:"
+
+msgid "Width:"
+msgstr "Laius:"
+
+msgid "Select An Image"
+msgstr "Vali pilt"
+
+msgid "I_mage:"
+msgstr "_Pilt:"
+
+msgid "C_olor:"
+msgstr "_Värvus:"
+
+msgid "Image Properties"
+msgstr "Pildi omadused"
+
+msgid "_Source:"
+msgstr "_Allikas:"
+
+msgid "_Height:"
+msgstr "_Kõrgus:"
+
+msgid "_X-Padding:"
+msgstr "_X-polsterdus:"
+
+msgid "_Y-Padding:"
+msgstr "_Y-polsterdus:"
+
+msgid "Link"
+msgstr "Viit"
+
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr "Soovitused \"%s\" jaoks"
+
+msgid "Spell Checker"
+msgstr "Õigekirjakontroll"
+
+#. Replace All Button
+msgid "R_eplace All"
+msgstr "Asenda _kõik"
+
+#. Ignore Button
+msgid "_Ignore"
+msgstr "_Eira"
+
+#. Skip Button
+msgid "_Skip"
+msgstr "_Jäta vahele"
+
+#. Back Button
+msgid "_Back"
+msgstr "_Tagasi"
+
+#. Dictionary Label
+msgid "Dictionary"
+msgstr "Sõnastik"
+
+#. Add Word Button
+msgid "_Add Word"
+msgstr "_Lisa sõna"
+
+#. Translators: %s is the language ISO code.
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Tundmatu (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+msgctxt "language"
+msgid "Default"
+msgstr "Vaikimisi"
+
+msgid "Save As"
+msgstr "Salvesta kui"
+
+msgid "Untitled document"
+msgstr "Pealkirjata dokument"
+
+msgid "HTML Output"
+msgstr "HTML-väljund"
+
+msgid "HTML Source"
+msgstr "HTML-allikas"
+
+msgid "Plain Source"
+msgstr "Lihtallikas"
+
+msgid "_Print..."
+msgstr "_Prindi..."
+
+msgid "Print Pre_view"
+msgstr "Printimise eel_vaade"
+
+msgid "_Quit"
+msgstr "_Lõpeta"
+
+msgid "_Save"
+msgstr "_Salvesta"
+
+msgid "Save _As..."
+msgstr "Salvesta _kui..."
+
+msgid "HTML _Output"
+msgstr "_HTML-väljund"
+
+msgid "_HTML Source"
+msgstr "_HTML-allikas"
+
+msgid "_Plain Source"
+msgstr "_Lihtallikas"
+
+msgid "Submit Query"
+msgstr "Saada päring"
+
+msgid "Reset"
+msgstr "Lähtesta"
+
+#. TODO2 dialog instead of warning
+msgid "Cannot allocate default font for printing"
+msgstr "Printimise vaikimisi kirjatüüpi pole võimalik eraldada"
+
+msgid "GtkHTML Test"
+msgstr "GtkHTML test"
+
+#~ msgid "Current color"
+#~ msgstr "Praegune värvus"
+
+#~ msgid "The currently selected color"
+#~ msgstr "Hetkel valitud värvus"
+
+#~ msgid "Default color"
+#~ msgstr "Vaikimisi värvus"
+
+#~ msgid "The color associated with the default button"
+#~ msgstr "Vaikimisi nupuga seotud värvus"
+
+#~ msgid "Default label"
+#~ msgstr "Vaikimisi silt"
+
+#~ msgid "The label for the default button"
+#~ msgstr "Vaikimisi nupu silt"
+
+#~ msgid "Default is transparent"
+#~ msgstr "Vaikimisi on läbipaistev"
+
+#~ msgid "Whether the default color is transparent"
+#~ msgstr "Kas vaikimisi värvus on läbipaistev"
+
+#~ msgid "Color palette"
+#~ msgstr "Värvipalett"
+
+#~ msgid "Custom color palette"
+#~ msgstr "Kohandatud värvipalett"
+
+#~ msgid "Popup shown"
+#~ msgstr "Valiku lahtihüppamine"
+
+#~ msgid "Whether the combo's dropdown is shown"
+#~ msgstr "Kas lahtihüppavat valikut näidatakse või mitte"
+
+#~ msgid "Color state"
+#~ msgstr "Värvuse olek"
+
+#~ msgid "The state of a color combo box"
+#~ msgstr "Värvusevalija olek"
+
+#~ msgid "The current color"
+#~ msgstr "Praegune värvus"
+
+#~ msgid "The default color"
+#~ msgstr "Vaikimisi värvus"
+
+#~ msgid "Description of the default color"
+#~ msgstr "Vaikimisi värvuse kirjeldus"
+
+#~ msgid "Color"
+#~ msgstr "Värvus"
+
+#~ msgid "Frame Shadow"
+#~ msgstr "Raami vari"
+
+#~ msgid "Appearance of the frame border"
+#~ msgstr "Raami äärise välimus"
+
+#~ msgid "Action"
+#~ msgstr "Tegevus"
+
+#~ msgid "A GtkRadioAction"
+#~ msgstr "GtkRadioAction"
+
+#~ msgid "Current Folder"
+#~ msgstr "Praegune kataloog"
+
+#~ msgid "The initial folder for file chooser dialogs"
+#~ msgstr "Failivalimise dialoogi algne kataloog"
+
+#~ msgid "Filename"
+#~ msgstr "Failinimi"
+
+#~ msgid "The filename to use when saving"
+#~ msgstr "Salvestamisel kasutatav failinimi"
+
+#~ msgid "HTML Editing Widget"
+#~ msgstr "HTML-redaktori vidin"
+
+#~ msgid "The main HTML editing widget"
+#~ msgstr "Peamine HTML-i redigeerimise vidin"
+
+#~ msgid "HTML Mode"
+#~ msgstr "HTML-režiim"
+
+#~ msgid "Edit HTML or plain text"
+#~ msgstr "HTML-i või lihtteksti redigeerimine"
+
+#~ msgid "Inline Spelling"
+#~ msgstr "Vahetu õigekirjakontroll"
+
+#~ msgid "Check your spelling as you type"
+#~ msgstr "Õigekirjakontroll sisestamise ajal"
+
+#~ msgid "Magic Links"
+#~ msgstr "Maagilised viidad"
+
+#~ msgid "Make URIs clickable as you type"
+#~ msgstr "Sisestamise ajal automaatselt URI-de muutmine klõpsatavaks"
+
+#~ msgid "Magic Smileys"
+#~ msgstr "Maagilised tujunäod"
+
+#~ msgid "Convert emoticons to images as you type"
+#~ msgstr "Sisestamise ajal tujunägude automaatne teisendamine piltideks"
+
+#~ msgid "Language"
+#~ msgstr "Keel"
+
+#~ msgid "The language used by the spell checker"
+#~ msgstr "Õigekirjakontrolli poolt kasutatav keel"
+
+#~ msgid "Misspelled Word"
+#~ msgstr "Kirjaveaga sõna"
+
+#~ msgid "The current misspelled word"
+#~ msgstr "Käesolev kirjaveaga sõna"
+
+#~ msgid "Editable"
+#~ msgstr "Redigeeritav"
+
+#~ msgid "Document Title"
+#~ msgstr "Dokumendi pealkiri"
+
+#~ msgid "The title of the current document"
+#~ msgstr "Aktiivse dokumendi pealkiri"
+
+#~ msgid "Document Base"
+#~ msgstr "Dokumendi alus"
+
+#~ msgid "The base URL for relative references"
+#~ msgstr "AlusURL suhteliste viitade jaoks"
+
+#~ msgid "Target Base"
+#~ msgstr "Sihtkoha alus"
+
+#~ msgid "The base URL of the target frame"
+#~ msgstr "AlusURL sihtraami jaoks"
+
+#~ msgid "Fixed Width Font"
+#~ msgstr "Fikseeritud laiusega kirjatüüp"
+
+#~ msgid "The Monospace font to use for typewriter text"
+#~ msgstr "Monospace kirjatüüp kirjutusmasinateksti jaoks"
+
+#~ msgid "New Link Color"
+#~ msgstr "Uus viidavärvus"
+
+#~ msgid "The color of new link elements"
+#~ msgstr "Uute viidaelementide värvus"
+
+#~ msgid "Visited Link Color"
+#~ msgstr "Külastatud viida värvus"
+
+#~ msgid "The color of visited link elements"
+#~ msgstr "Külastatud viidaelementide värvus"
+
+#~ msgid "Active Link Color"
+#~ msgstr "Aktiivse viida värvus"
+
+#~ msgid "The color of active link elements"
+#~ msgstr "Aktiivsete viitade värvus"
+
+#~ msgid "Spelling Error Color"
+#~ msgstr "Kirjavea värvus"
+
+#~ msgid "The color of the spelling error markers"
+#~ msgstr "Kirjavigade tähistamise värvus"
+
+#~ msgid "Cite Quotation Color"
+#~ msgstr "Tsiteeringu värvus"
+
+#~ msgid "The color of the cited text"
+#~ msgstr "Tsiteeritud teksti värvus"

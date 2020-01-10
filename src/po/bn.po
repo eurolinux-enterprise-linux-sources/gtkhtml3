@@ -1,0 +1,1570 @@
+# Bengali translation for gtkhtml
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Runa Bhattacharjee <runa@bengalinux.org>, 2005.
+# Runa Bhattacharjee <runabh@gmail.com>, 2007.
+# Runa Bhattacharjee <runab@fedoraproject.org>, 2008.
+# Runa Bhattacharjee <runab@redhat.com>, 2009.
+# Israt Jahan <israt@ankur.org.bd>, 2009 - 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gtkhtml&component=general\n"
+"POT-Creation-Date: 2010-03-17 15:38+0000\n"
+"PO-Revision-Date: 2010-03-24 11:02+0600\n"
+"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../a11y/image.c:151
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "URL হল %s, বিকল্প হিসাবে ব্যবহৃত পাঠ্য হল %s"
+
+#: ../a11y/image.c:153
+#, c-format
+msgid "URL is %s"
+msgstr "URL হল %s"
+
+#: ../a11y/object.c:51 ../a11y/object.c:60 ../a11y/text.c:125
+msgid "grab focus"
+msgstr "ফোকাস করা হবে"
+
+#: ../a11y/object.c:253
+msgid "Panel containing HTML"
+msgstr "HTML ধারণকারী প্যানেল"
+
+#: ../components/editor/gtkhtml-color-combo.c:79
+msgid "black"
+msgstr "কালো"
+
+#: ../components/editor/gtkhtml-color-combo.c:80
+msgid "light brown"
+msgstr "হালকা বাদামি"
+
+#: ../components/editor/gtkhtml-color-combo.c:81
+msgid "brown gold"
+msgstr "বাদামি সোনালি"
+
+#: ../components/editor/gtkhtml-color-combo.c:82
+msgid "dark green #2"
+msgstr "গাঢ় সবুজ #২"
+
+#: ../components/editor/gtkhtml-color-combo.c:83
+msgid "navy"
+msgstr "নেভী"
+
+#: ../components/editor/gtkhtml-color-combo.c:84
+msgid "dark blue"
+msgstr "গাঢ় নীল"
+
+#: ../components/editor/gtkhtml-color-combo.c:85
+msgid "purple #2"
+msgstr "বেগুনি #২"
+
+#: ../components/editor/gtkhtml-color-combo.c:86
+msgid "very dark gray"
+msgstr "অত্যন্ত গাঢ় ধুসর"
+
+#: ../components/editor/gtkhtml-color-combo.c:88
+msgid "dark red"
+msgstr "গাঢ় লাল"
+
+#: ../components/editor/gtkhtml-color-combo.c:89
+msgid "red-orange"
+msgstr "লাল-কমলা"
+
+#: ../components/editor/gtkhtml-color-combo.c:90
+msgid "gold"
+msgstr "সোনালি"
+
+#: ../components/editor/gtkhtml-color-combo.c:91
+msgid "dark green"
+msgstr "গাঢ় সবুজ"
+
+#: ../components/editor/gtkhtml-color-combo.c:92
+msgid "dull blue"
+msgstr "ফিকে নীল"
+
+#: ../components/editor/gtkhtml-color-combo.c:93
+msgid "blue"
+msgstr "নীল"
+
+#: ../components/editor/gtkhtml-color-combo.c:94
+msgid "dull purple"
+msgstr "ফিকে বেগুনে"
+
+#: ../components/editor/gtkhtml-color-combo.c:95
+msgid "dark grey"
+msgstr "গাঢ় ধূসর"
+
+#: ../components/editor/gtkhtml-color-combo.c:97
+msgid "red"
+msgstr "লাল"
+
+#: ../components/editor/gtkhtml-color-combo.c:98
+msgid "orange"
+msgstr "কমলা"
+
+#: ../components/editor/gtkhtml-color-combo.c:99
+msgid "lime"
+msgstr "হালকা সবুজ"
+
+#: ../components/editor/gtkhtml-color-combo.c:100
+msgid "dull green"
+msgstr "ফিকে সবুজ"
+
+#: ../components/editor/gtkhtml-color-combo.c:101
+msgid "dull blue #2"
+msgstr "ফিকে নীল #২"
+
+#: ../components/editor/gtkhtml-color-combo.c:102
+msgid "sky blue #2"
+msgstr "অাকাশি নীল #২"
+
+#: ../components/editor/gtkhtml-color-combo.c:103
+msgid "purple"
+msgstr "বেগুনি"
+
+#: ../components/editor/gtkhtml-color-combo.c:104
+msgid "gray"
+msgstr "ধূসর"
+
+#: ../components/editor/gtkhtml-color-combo.c:106
+msgid "magenta"
+msgstr "ম্যাজেন্টা"
+
+#: ../components/editor/gtkhtml-color-combo.c:107
+msgid "bright orange"
+msgstr "উজ্জ্বল কমলা"
+
+#: ../components/editor/gtkhtml-color-combo.c:108
+msgid "yellow"
+msgstr "হলুদ"
+
+#: ../components/editor/gtkhtml-color-combo.c:109
+msgid "green"
+msgstr "সবুজ"
+
+#: ../components/editor/gtkhtml-color-combo.c:110
+msgid "cyan"
+msgstr "সায়ান"
+
+#: ../components/editor/gtkhtml-color-combo.c:111
+msgid "bright blue"
+msgstr "উজ্জ্বল নীল"
+
+#: ../components/editor/gtkhtml-color-combo.c:112
+msgid "red purple"
+msgstr "লাল বেগুনি"
+
+#: ../components/editor/gtkhtml-color-combo.c:113
+msgid "light grey"
+msgstr "হালকা ধূসর"
+
+#: ../components/editor/gtkhtml-color-combo.c:115
+msgid "pink"
+msgstr "গোলাপি"
+
+#: ../components/editor/gtkhtml-color-combo.c:116
+msgid "light orange"
+msgstr "হালকা কমলা"
+
+#: ../components/editor/gtkhtml-color-combo.c:117
+msgid "light yellow"
+msgstr "হালকা হলুদ"
+
+#: ../components/editor/gtkhtml-color-combo.c:118
+msgid "light green"
+msgstr "হালকা সবুজ"
+
+#: ../components/editor/gtkhtml-color-combo.c:119
+msgid "light cyan"
+msgstr "হালকা সায়ান"
+
+#: ../components/editor/gtkhtml-color-combo.c:120
+msgid "light blue"
+msgstr "হালকা নীল"
+
+#: ../components/editor/gtkhtml-color-combo.c:121
+msgid "light purple"
+msgstr "হালকা বেগুনি"
+
+#: ../components/editor/gtkhtml-color-combo.c:122
+msgid "white"
+msgstr "সাদা"
+
+#: ../components/editor/gtkhtml-color-combo.c:274
+msgid "Choose Custom Color"
+msgstr "স্বনির্বাচিত রং বেছে নিন"
+
+#: ../components/editor/gtkhtml-color-combo.c:727
+#: ../components/editor/gtkhtml-color-state.c:205
+msgid "Current color"
+msgstr "বর্তমান রং"
+
+#: ../components/editor/gtkhtml-color-combo.c:728
+msgid "The currently selected color"
+msgstr "বর্তমানে নির্বাচিত রং"
+
+#: ../components/editor/gtkhtml-color-combo.c:737
+#: ../components/editor/gtkhtml-color-state.c:215
+msgid "Default color"
+msgstr "ডিফল্ট রং"
+
+#: ../components/editor/gtkhtml-color-combo.c:738
+msgid "The color associated with the default button"
+msgstr "ডিফল্ট বোতামের সাথে যুক্ত রং"
+
+#: ../components/editor/gtkhtml-color-combo.c:748
+#: ../components/editor/gtkhtml-color-state.c:226
+msgid "Default label"
+msgstr "ডিফল্ট লেবেল"
+
+#: ../components/editor/gtkhtml-color-combo.c:749
+msgid "The label for the default button"
+msgstr "ডিফল্ট বোতামের লেবেল"
+
+#: ../components/editor/gtkhtml-color-combo.c:750
+#: ../components/editor/gtkhtml-color-state.c:228
+msgid "Default"
+msgstr "ডিফল্ট"
+
+#: ../components/editor/gtkhtml-color-combo.c:759
+#: ../components/editor/gtkhtml-color-state.c:237
+msgid "Default is transparent"
+msgstr "ডিফল্ট মান স্বচ্ছ ধার্য হয়েছে"
+
+#: ../components/editor/gtkhtml-color-combo.c:760
+#: ../components/editor/gtkhtml-color-state.c:238
+msgid "Whether the default color is transparent"
+msgstr "ডিফল্ট রং স্বচ্ছ নির্ধারণ করা হবে কি না"
+
+#: ../components/editor/gtkhtml-color-combo.c:770
+#: ../components/editor/gtkhtml-color-state.c:248
+msgid "Color palette"
+msgstr "রঙের প্যালেট"
+
+#: ../components/editor/gtkhtml-color-combo.c:771
+#: ../components/editor/gtkhtml-color-state.c:249
+msgid "Custom color palette"
+msgstr "রঙের স্বনির্ধারিত প্যালেট"
+
+#. Translators: This is the nickname for a
+#. * GtkhtmlColorCombo property named "popup-shown",
+#. * based on a similar property in GtkComboBox.
+#: ../components/editor/gtkhtml-color-combo.c:783
+msgid "Popup shown"
+msgstr "পপ-আপ প্রদর্শন করা হবে"
+
+#. Translators: This is the blurb for a
+#. * GtkhtmlColorCombo property named "popup-shown",
+#. * based on a similar property in GtkComboBox.
+#: ../components/editor/gtkhtml-color-combo.c:787
+msgid "Whether the combo's dropdown is shown"
+msgstr "কম্বো বাক্সের ড্রপ ডাউন প্রদর্শন করা হবে কি না"
+
+#. Translators: This is the nickname for a
+#. GtkHtmlColorCombo property named "state". It holds all
+#. the internal values for a GtkHtml color combination box.
+#.
+#: ../components/editor/gtkhtml-color-combo.c:800
+msgid "Color state"
+msgstr "রঙের অবস্থা"
+
+#. Translators: This is the blurb for a
+#. GtkHtmlColorCombo property named "state". It holds all
+#. the internal values for a GtkHtml color combination box.
+#.
+#: ../components/editor/gtkhtml-color-combo.c:805
+msgid "The state of a color combo box"
+msgstr "রঙের কম্বো বাক্সের অবস্থা"
+
+#: ../components/editor/gtkhtml-color-combo.c:987
+msgid "custom"
+msgstr "স্বনির্বাচিত"
+
+#: ../components/editor/gtkhtml-color-combo.c:995
+msgid "Custom Color..."
+msgstr "স্বনির্ধারিত রং..."
+
+#: ../components/editor/gtkhtml-color-state.c:206
+#: ../components/editor/gtkhtml-color-swatch.c:183
+msgid "The current color"
+msgstr "বর্তমান রং"
+
+#: ../components/editor/gtkhtml-color-state.c:216
+msgid "The default color"
+msgstr "ডিফল্ট রং"
+
+#: ../components/editor/gtkhtml-color-state.c:227
+msgid "Description of the default color"
+msgstr "ডিফল্ট রঙের বিবরণ"
+
+#: ../components/editor/gtkhtml-color-swatch.c:182
+msgid "Color"
+msgstr "রং"
+
+#: ../components/editor/gtkhtml-color-swatch.c:192
+msgid "Frame Shadow"
+msgstr "ফ্রেমের ছায়া"
+
+#: ../components/editor/gtkhtml-color-swatch.c:193
+msgid "Appearance of the frame border"
+msgstr "ফ্রেমের প্রান্তের রূপ"
+
+#: ../components/editor/gtkhtml-combo-box.c:323
+msgid "Action"
+msgstr "কর্ম"
+
+#: ../components/editor/gtkhtml-combo-box.c:324
+msgid "A GtkRadioAction"
+msgstr "একটি GtkRadioAction"
+
+#. Translators: :-)
+#: ../components/editor/gtkhtml-face-chooser.c:34
+msgid "_Smile"
+msgstr "হাসি (_S)"
+
+#. Translators: :-(
+#: ../components/editor/gtkhtml-face-chooser.c:36
+msgid "S_ad"
+msgstr "দুঃখ (_a)"
+
+#. Translators: ;-)
+#: ../components/editor/gtkhtml-face-chooser.c:38
+msgid "_Wink"
+msgstr "চোখ টেপা (_W)"
+
+#. Translators: :-P
+#: ../components/editor/gtkhtml-face-chooser.c:40
+msgid "Ton_gue"
+msgstr "জিহ্বা (_g)"
+
+#. Translators: :-))
+#: ../components/editor/gtkhtml-face-chooser.c:42
+msgid "Laug_h"
+msgstr "হাস্যরত (_h)"
+
+#. Translators: :-|
+#: ../components/editor/gtkhtml-face-chooser.c:44
+msgid "_Plain"
+msgstr "সাধারণ (_P)"
+
+#. Translators: :-!
+#: ../components/editor/gtkhtml-face-chooser.c:46
+msgid "Smi_rk"
+msgstr "বাঁকা হাসি (_r)"
+
+#. Translators: :"-)
+#: ../components/editor/gtkhtml-face-chooser.c:48
+msgid "_Embarrassed"
+msgstr "লজ্জিত (_E)"
+
+#. Translators: :-D
+#: ../components/editor/gtkhtml-face-chooser.c:50
+msgid "_Big Smile"
+msgstr "একগাল হাসি (_B)"
+
+#. Translators: :-/
+#: ../components/editor/gtkhtml-face-chooser.c:52
+msgid "Uncer_tain"
+msgstr "অনিশ্চিত (_t)"
+
+#. Translators: :-O
+#: ../components/editor/gtkhtml-face-chooser.c:54
+msgid "S_urprise"
+msgstr "চমকিত (_u)"
+
+#. Translators: :-S
+#: ../components/editor/gtkhtml-face-chooser.c:56
+msgid "W_orried"
+msgstr "চিন্তিত (_o)"
+
+#. Translators: :-*
+#: ../components/editor/gtkhtml-face-chooser.c:58
+msgid "_Kiss"
+msgstr "চুম্বন (_K)"
+
+#. Translators: X-(
+#: ../components/editor/gtkhtml-face-chooser.c:60
+msgid "A_ngry"
+msgstr "রাগান্বিত (_n)"
+
+#. Translators: B-)
+#: ../components/editor/gtkhtml-face-chooser.c:62
+msgid "_Cool"
+msgstr "দারুন (_C)"
+
+#. Translators: O:-)
+#: ../components/editor/gtkhtml-face-chooser.c:64
+msgid "Ange_l"
+msgstr "পরী (_l)"
+
+#. Translators: :'(
+#: ../components/editor/gtkhtml-face-chooser.c:66
+msgid "Cr_ying"
+msgstr "ক্রন্দনরত (_y)"
+
+#. Translators: :-Q
+#: ../components/editor/gtkhtml-face-chooser.c:68
+msgid "S_ick"
+msgstr "অসুস্থ (_i)"
+
+#. Translators: |-)
+#: ../components/editor/gtkhtml-face-chooser.c:70
+msgid "Tire_d"
+msgstr "ক্লান্ত (_d)"
+
+#. Translators: >:-)
+#: ../components/editor/gtkhtml-face-chooser.c:72
+msgid "De_vilish"
+msgstr "বদমাইশ (_v)"
+
+#. Translators: :-(|)
+#: ../components/editor/gtkhtml-face-chooser.c:74
+msgid "_Monkey"
+msgstr "বাঁদর (_M)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:190
+msgid "Failed to insert HTML file."
+msgstr "HTML ফাইল প্রবেশে ব্যর্থ।"
+
+#: ../components/editor/gtkhtml-editor-actions.c:227
+msgid "Failed to insert text file."
+msgstr "টেক্সট ফাইল প্রবেশে ব্যর্থ।"
+
+#: ../components/editor/gtkhtml-editor-actions.c:615
+msgid "Insert HTML File"
+msgstr "HTML ফাইল প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:631
+#: ../components/editor/gtkhtml-editor-actions.c:1541
+msgid "Insert Image"
+msgstr "ছবি প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:680
+msgid "Insert Text File"
+msgstr "টেক্সট ফাইল প্রবেশ করুন"
+
+#. Replace Button
+#: ../components/editor/gtkhtml-editor-actions.c:1176
+#: ../components/editor/gtkhtml-spell-dialog.c:520
+msgid "_Replace"
+msgstr "প্রতিস্থাপন (_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1183
+msgid "Replace _All"
+msgstr "সব প্রতিস্থাপন করুন (_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1197
+msgid "_Next"
+msgstr "পরবর্তী (_N)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1204
+msgid "_Copy"
+msgstr "অনুলিপি (_C)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1211
+msgid "Cu_t"
+msgstr "কাটা (_t)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1225
+msgid "Find A_gain"
+msgstr "পুনরায় অনুসন্ধান করুন (_g)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1239
+msgid "_Increase Indent"
+msgstr "ইনডেন্ট বৃদ্ধি করা হবে (_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1241
+msgid "Increase Indent"
+msgstr "ইনডেন্ট বৃদ্ধি করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1246
+msgid "_HTML File..."
+msgstr "HTML ফাইল...(_H)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1253
+msgid "Te_xt File..."
+msgstr "টেক্সট ফাইল...(_x)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1260
+msgid "_Paste"
+msgstr "প্রতিলেপন (_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1267
+msgid "Paste _Quotation"
+msgstr "উদ্ধৃতি প্রতিলেপন করুন (_Q)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1274
+msgid "_Redo"
+msgstr "পুনরাবৃত্তি (_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1281
+msgid "Select _All"
+msgstr "সব নির্বাচন (_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1288
+msgid "_Find..."
+msgstr "অনুসন্ধান...(_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1295
+msgid "Re_place..."
+msgstr "প্রতিস্থাপন... (_p)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1302
+msgid "Check _Spelling..."
+msgstr "বানান পরীক্ষণ...(_S)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1309
+#: ../components/editor/gtkhtml-editor-builder.ui.h:79
+msgid "_Test URL..."
+msgstr "পরীক্ষামূলক URL...(_T)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1316
+msgid "_Undo"
+msgstr "পূর্বাবস্থা (_U)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1323
+msgid "_Decrease Indent"
+msgstr "ইনডেন্ট হ্রাস করুন (_D)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1325
+msgid "Decrease Indent"
+msgstr "ইনডেন্ট হ্রাস করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1330
+msgid "_Wrap Lines"
+msgstr "রেখা মোড়ানো হবে (_W)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1339
+msgid "_Edit"
+msgstr "সম্পাদনা (_E)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1346
+#: ../components/editor/main.c:327
+msgid "_File"
+msgstr "ফাইল (_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1353
+msgid "For_mat"
+msgstr "বিন্যাস (_m)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1360
+msgid "_Paragraph Style"
+msgstr "অনুচ্ছেদের বিন্যাস (_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1367
+msgid "_Insert"
+msgstr "প্রবেশ (_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1374
+msgid "_Alignment"
+msgstr "প্রান্তিককরণ (_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1381
+msgid "Current _Languages"
+msgstr "বর্তমান ভাষা (_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1388
+#: ../components/editor/main.c:358
+msgid "_View"
+msgstr "প্রদর্শন (_V)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1398
+msgid "_Center"
+msgstr "কেন্দ্রস্থিত (_C)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1400
+msgid "Center Alignment"
+msgstr "কেন্দ্রে প্রান্তিককরণ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1405
+msgid "_Left"
+msgstr "বাম (_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1407
+msgid "Left Alignment"
+msgstr "বাম প্রান্তিককরণ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1412
+msgid "_Right"
+msgstr "ডান (_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1414
+msgid "Right Alignment"
+msgstr "ডান প্রান্তিককরণ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1422
+msgid "_HTML"
+msgstr "HTML (_H)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1424
+msgid "HTML editing mode"
+msgstr "HTML সম্পাদনার মোড"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1429
+msgid "Plain _Text"
+msgstr "সরল টেক্সট (_T)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1431
+msgid "Plain text editing mode"
+msgstr "সরল টেক্সট সম্পাদনার মোড"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1439
+msgid "_Normal"
+msgstr "স্বাভাবিক (_N)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1446
+msgid "Header _1"
+msgstr "হেডার ১ (_1)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1453
+msgid "Header _2"
+msgstr "হেডার ২ (_2)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1460
+msgid "Header _3"
+msgstr "হেডার ৩ (_3)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1467
+msgid "Header _4"
+msgstr "হেডার ৪ (_4)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1474
+msgid "Header _5"
+msgstr "হেডার ৫ (_5)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1481
+msgid "Header _6"
+msgstr "হেডার ৬ (_6)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1488
+msgid "A_ddress"
+msgstr "ঠিকানা (_d)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1495
+msgid "_Preformatted"
+msgstr "পূর্ববিন্যাসিত (_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1502
+msgid "_Bulleted List"
+msgstr "বুলেটযুক্ত তালিকা (_B)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1509
+msgid "_Roman Numeral List"
+msgstr "রোমান সংখ্যার তালিকা (_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1516
+msgid "Numbered _List"
+msgstr "নম্বরযুক্ত তালিকা (_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1523
+msgid "_Alphabetical List"
+msgstr "বর্ণানুক্রমিক তালিকা (_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1539
+#: ../components/editor/gtkhtml-editor-actions.c:1574
+msgid "_Image..."
+msgstr "ছবি... (_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1546
+#: ../components/editor/gtkhtml-editor-actions.c:1581
+msgid "_Link..."
+msgstr "লিংক... (_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1548
+msgid "Insert Link"
+msgstr "লিংক প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1553
+#: ../components/editor/gtkhtml-editor-actions.c:1595
+msgid "_Rule..."
+msgstr "নিয়ম... (_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1555
+msgid "Insert Rule"
+msgstr "নিয়ম প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1560
+#: ../components/editor/gtkhtml-editor-actions.c:1602
+msgid "_Table..."
+msgstr "সারণি... (_T)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1562
+msgid "Insert Table"
+msgstr "সারণি প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1567
+msgid "_Cell..."
+msgstr "ঘর...(_C)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1588
+msgid "Pa_ge..."
+msgstr "পৃষ্ঠা... (_g)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1611
+msgid "Font _Size"
+msgstr "ফন্টের আকার (_S)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1618
+msgid "_Font Style"
+msgstr "ফন্টের শৈলী (_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1628
+#: ../components/editor/gtkhtml-editor-builder.ui.h:60
+msgid "_Bold"
+msgstr "গাঢ় (_B)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1630
+msgid "Bold"
+msgstr "গাঢ়"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1636
+#: ../components/editor/gtkhtml-editor-builder.ui.h:67
+msgid "_Italic"
+msgstr "তির্যক (_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1638
+msgid "Italic"
+msgstr "তির্যক"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1644
+msgid "_Plain Text"
+msgstr "সরল টেক্সট (_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1646
+msgid "Plain Text"
+msgstr "সরল টেক্সট"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1652
+#: ../components/editor/gtkhtml-editor-builder.ui.h:76
+msgid "_Strikethrough"
+msgstr "অবচ্ছেদন রেখা (_S)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1654
+msgid "Strikethrough"
+msgstr "অবচ্ছেদন রেখা"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1660
+#: ../components/editor/gtkhtml-editor-builder.ui.h:82
+msgid "_Underline"
+msgstr "নিম্নরেখা (_U)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1662
+msgid "Underline"
+msgstr "নিম্নরেখা"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1671
+msgid "-2"
+msgstr "-২"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1678
+msgid "-1"
+msgstr "-১"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1685
+msgid "+0"
+msgstr "+০"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1692
+msgid "+1"
+msgstr "+১"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1699
+msgid "+2"
+msgstr "+২"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1706
+msgid "+3"
+msgstr "+৩"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1713
+msgid "+4"
+msgstr "+৪"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1732
+msgid "Cell Contents"
+msgstr "ঘরের বিষয়বস্তু"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1739
+msgid "Column"
+msgstr "কলাম"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1746
+msgid "Row"
+msgstr "সারি"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1753
+#: ../components/editor/gtkhtml-editor-actions.c:1836
+msgid "Table"
+msgstr "সারণি"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1762
+msgid "Table Delete"
+msgstr "সারণি মুছে ফেলুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1769
+msgid "Input Methods"
+msgstr "ইনপুট মেথড"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1776
+msgid "Table Insert"
+msgstr "সারণি প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1783
+msgid "Properties"
+msgstr "বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1801
+msgid "Column After"
+msgstr "পরবর্তী কলাম"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1808
+msgid "Column Before"
+msgstr "পূর্ববর্তী কলাম"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1815
+msgid "Insert _Link"
+msgstr "লিংক প্রবেশ করুন (_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1822
+msgid "Row Above"
+msgstr "উপরের সারি"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1829
+msgid "Row Below"
+msgstr "নীচের সারি"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1843
+msgid "Cell..."
+msgstr "ঘর..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1850
+msgid "Image..."
+msgstr "ছবি..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1857
+msgid "Link..."
+msgstr "লিংক..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1864
+msgid "Page..."
+msgstr "পৃষ্ঠা..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1871
+msgid "Paragraph..."
+msgstr "অনুচ্ছেদ..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1878
+msgid "Rule..."
+msgstr "নিয়ম..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1885
+msgid "Table..."
+msgstr "সারণি..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1892
+msgid "Text..."
+msgstr "টেক্সট..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1899
+msgid "Remove Link"
+msgstr "লিংক সরিয়ে ফেলুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1916
+msgid "Add Word to Dictionary"
+msgstr "অভিধানে শব্দ যোগ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1923
+msgid "Ignore Misspelled Word"
+msgstr "ভুল বানান অগ্রাহ্য করা হবে"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1930
+msgid "Add Word To"
+msgstr "চিহ্নিত স্থানে শব্দ যোগ করা হবে"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1939
+msgid "More Suggestions"
+msgstr "অতিরিক্ত পরামর্শ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2106
+msgid "_Emoticon"
+msgstr "ইমোটিকন (_E)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2107
+msgid "Insert Emoticon"
+msgstr "ইমোটিকন প্রবেশ করুন"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2168
+msgid "_Find"
+msgstr "অনুসন্ধান (_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2171
+msgid "Re_place"
+msgstr "প্রতিস্থাপন (_p)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2174
+msgid "_Image"
+msgstr "ছবি (_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2177
+msgid "_Link"
+msgstr "লিংক (_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2180
+msgid "_Rule"
+msgstr "নিয়ম (_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2183
+#: ../components/editor/gtkhtml-editor-builder.ui.h:78
+msgid "_Table"
+msgstr "সারণি (_T)"
+
+#: ../components/editor/gtkhtml-editor-private.c:271
+msgid "Paragraph Style"
+msgstr "অনুচ্ছেদের শৈলী"
+
+#: ../components/editor/gtkhtml-editor-private.c:285
+msgid "Editing Mode"
+msgstr "সম্পাদনার মোড"
+
+#: ../components/editor/gtkhtml-editor-private.c:297
+msgid "Font Color"
+msgstr "ফন্টের রং"
+
+#: ../components/editor/gtkhtml-editor-private.c:307
+msgid "Font Size"
+msgstr "ফন্টের আকার"
+
+#: ../components/editor/gtkhtml-editor-private.c:334
+msgid "Automatic"
+msgstr "স্বয়ংক্রিয়"
+
+#: ../components/editor/gtkhtml-editor-private.c:587
+msgid "Could not open the link."
+msgstr "লিংক খোলা যায়নি।"
+
+#: ../components/editor/gtkhtml-editor.c:778
+msgid "Current Folder"
+msgstr "বর্তমান ফোল্ডার"
+
+#: ../components/editor/gtkhtml-editor.c:779
+msgid "The initial folder for file chooser dialogs"
+msgstr "ফাইল নির্বাচনের ডায়লগে প্রদর্শিত প্রথম ফোল্ডার"
+
+#: ../components/editor/gtkhtml-editor.c:789
+msgid "Filename"
+msgstr "ফাইলের নাম"
+
+#: ../components/editor/gtkhtml-editor.c:790
+msgid "The filename to use when saving"
+msgstr "সংরক্ষণের জন্য ব্যবহৃত ফাইলের নাম"
+
+#: ../components/editor/gtkhtml-editor.c:800
+msgid "HTML Editing Widget"
+msgstr "HTML সম্পাদনার উইজেড"
+
+#: ../components/editor/gtkhtml-editor.c:801
+msgid "The main HTML editing widget"
+msgstr "প্রধান HTML সম্পাদনার মোড"
+
+#: ../components/editor/gtkhtml-editor.c:811
+msgid "HTML Mode"
+msgstr "HTML মোড"
+
+#: ../components/editor/gtkhtml-editor.c:812
+msgid "Edit HTML or plain text"
+msgstr "HTML অথবা সরল টেক্সট সম্পাদনা করুন"
+
+#: ../components/editor/gtkhtml-editor.c:822
+msgid "Inline Spelling"
+msgstr "ইনলাইন বানান পরীক্ষণ"
+
+#: ../components/editor/gtkhtml-editor.c:823
+msgid "Check your spelling as you type"
+msgstr "লেখার সময় বানান পরীক্ষা করুন"
+
+#: ../components/editor/gtkhtml-editor.c:833
+msgid "Magic Links"
+msgstr "ম্যাজিক লিংক"
+
+#: ../components/editor/gtkhtml-editor.c:834
+msgid "Make URIs clickable as you type"
+msgstr "URI টাইপ করার সময় সেগুলি ক্লিক করার জন্য তৈরি করা হবে"
+
+#: ../components/editor/gtkhtml-editor.c:844
+msgid "Magic Smileys"
+msgstr "ম্যাজিক স্মাইলি"
+
+#: ../components/editor/gtkhtml-editor.c:845
+msgid "Convert emoticons to images as you type"
+msgstr "টাইপ করার সময় ইমোটিকন রূপান্তর করা হবে"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:2
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:3
+msgid "Alignment"
+msgstr "প্রান্তিককরণ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:4
+msgid "Alignment & Behavior"
+msgstr "প্রান্তিককরণ ও আচরণ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:5
+msgid "Background"
+msgstr "পটভূমি"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:6
+msgid "Background Image"
+msgstr "পটভূমির ছবি"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:7
+msgid "Blue Ink"
+msgstr "নীল রঙের কালি"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:8
+msgid "Bottom"
+msgstr "নীচে"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:9
+msgid "C_ell"
+msgstr "ঘর (_e)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:10
+msgid "C_olor:"
+msgstr "রং (_o):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:11
+msgid "C_olumns:"
+msgstr "কলাম (_o):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:12
+msgid "C_ustom:"
+msgstr "স্বনির্বাচিত (_u):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:13
+msgid "Case _sensitive"
+msgstr "অক্ষর ছাঁদ নির্ভরশীল (_s)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:14
+msgid "Cell Properties"
+msgstr "ঘরের বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:15
+msgid "Center"
+msgstr "কেন্দ্র"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:16
+msgid "Co_lor:"
+msgstr "রং (_l):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:17
+msgid "Col_umn"
+msgstr "কলাম (_u)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:18
+msgid "Colors"
+msgstr "রং"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:19
+msgid "Column Span:"
+msgstr "কলামের বিস্তার:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:20
+msgid "Confidential"
+msgstr "গোপনীয়"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:21
+msgid "Draft"
+msgstr "খসড়া"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:22
+msgid "Find"
+msgstr "অনুসন্ধান"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:23
+msgid "General"
+msgstr "সাধারণ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:24
+msgid "Graph Paper"
+msgstr "গ্রাফের কাগজ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:25
+msgid "Hea_der Style"
+msgstr "শীর্ষচরণের শৈলী (_d)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:26
+msgid "I_mage:"
+msgstr "ছবি (_m):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:27
+msgid "Image Properties"
+msgstr "ছবির বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:28
+msgid "Layout"
+msgstr "বহির্বিন্যাস"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:29
+msgid "Left"
+msgstr "বাম"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:30
+msgid "Link"
+msgstr "লিংক"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:31
+msgid "Link Properties"
+msgstr "লিংকের বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:32
+msgid "Middle"
+msgstr "মধ্যম"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:33
+msgid "Midnight"
+msgstr "মধ্যরাত্রি"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:34
+msgid "None"
+msgstr "কোনওটিই না"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:35
+msgid "Page Properties"
+msgstr "পৃষ্ঠার বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:36
+msgid "Paper"
+msgstr "কাগজ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:37
+msgid "Paragraph Properties"
+msgstr "অনুচ্ছেদের বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:38
+msgid "Perforated Paper"
+msgstr "ছিদ্রযুক্ত কাগজ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:39
+msgid "R_eplace:"
+msgstr "প্রতিস্থাপন (_e):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:40
+msgid "Replace"
+msgstr "প্রতিস্থাপন"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:41
+msgid "Replace Confirmation"
+msgstr "প্রতিস্থাপন প্রক্রিয়ার নিশ্চিতকরণ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:42
+msgid "Ribbon"
+msgstr "ফিতা"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:43
+msgid "Right"
+msgstr "ডান"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:44
+msgid "Row Span:"
+msgstr "সারির বিস্তার:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:45
+msgid "Rule Properties"
+msgstr "নিয়মের বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:46
+msgid "S_haded"
+msgstr "ছায়াবৃত (_h)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:47
+msgid "Scope"
+msgstr "ব্যপ্তি"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:48
+msgid "Search _backwards"
+msgstr "বিপরীত দিশায় অনুসন্ধান করা হবে (_b)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:49
+msgid "Select An Image"
+msgstr "একটি ছবি নির্বাচন করুন"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:50
+msgid "Si_ze:"
+msgstr "আকার (_z):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:51
+msgid "Size"
+msgstr "আকার"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:52
+msgid "Style"
+msgstr "শৈলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:53
+msgid "T_emplate:"
+msgstr "ফর্মা (_T):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:54
+msgid "Table Properties"
+msgstr "সারণির বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:55
+msgid "Text Properties"
+msgstr "টেক্সটের বৈশিষ্ট্যাবলী"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:56
+msgid "Top"
+msgstr "উপরে"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:57
+msgid "Width:"
+msgstr "প্রস্থ:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:58
+msgid "_Alignment:"
+msgstr "প্রান্তিককরণ (_A):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:59
+msgid "_Background:"
+msgstr "পটভূমি (_B):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:61
+msgid "_Border:"
+msgstr "সীমানা (_B):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:62
+msgid "_Color:"
+msgstr "রং (_C):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:63
+msgid "_Description:"
+msgstr "বিবরণ (_D):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:64
+msgid "_Height:"
+msgstr "উচ্চতা (_H):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:65
+msgid "_Horizontal:"
+msgstr "অনুভূমিক (_H):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:66
+msgid "_Image:"
+msgstr "ছবি (_I):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:68
+msgid "_Link:"
+msgstr "লিংক (_L):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:69
+msgid "_Padding:"
+msgstr "প্যাডিং (_P):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:70
+msgid "_Regular expression"
+msgstr "রেগুলার এক্সপ্রেশন (_R)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:71
+msgid "_Row"
+msgstr "সারি (_R)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:72
+msgid "_Rows:"
+msgstr "সারি (_R):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:73
+msgid "_Size:"
+msgstr "আকার (_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:74
+msgid "_Source:"
+msgstr "উৎস (_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:75
+msgid "_Spacing:"
+msgstr "স্থান ফাঁকাকরণ (_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:77
+msgid "_Style:"
+msgstr "শৈলী (_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:80
+msgid "_Text:"
+msgstr "টেক্সট (_T):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:81
+msgid "_URL:"
+msgstr "URL (_U):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:83
+msgid "_Vertical:"
+msgstr "উল্লম্ব (_V):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:84
+msgid "_Width:"
+msgstr "প্রস্থ (_W):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:85
+msgid "_With:"
+msgstr "উল্লিখিত মান দ্বারা (_W):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:86
+msgid "_Wrap Text"
+msgstr "টেক্সট মোড়ানো (_W)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:87
+msgid "_X-Padding:"
+msgstr "X-প্যাডিং (_X):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:88
+msgid "_Y-Padding:"
+msgstr "Y-প্যাডিং (_Y):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:89
+msgid "follow"
+msgstr "অনুসরণ করা হবে"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:90
+msgid "px"
+msgstr "px"
+
+#: ../components/editor/gtkhtml-spell-checker.c:200
+msgid "Language"
+msgstr "ভাষা"
+
+#: ../components/editor/gtkhtml-spell-checker.c:201
+msgid "The language used by the spell checker"
+msgstr "বানান পরীক্ষণ ব্যবস্থা দ্বারা ব্যবহৃত ভাষা"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:117
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr "\"%s\"-র জন্য পরামর্শ"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:358
+msgid "Misspelled Word"
+msgstr "ভুল বানান"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:359
+msgid "The current misspelled word"
+msgstr "বর্তমানে চিহ্নিত ভুল বানান"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:447
+msgid "Spell Checker"
+msgstr "বানান পরীক্ষণ ব্যবস্থা"
+
+#. Replace All Button
+#: ../components/editor/gtkhtml-spell-dialog.c:534
+msgid "R_eplace All"
+msgstr "সব প্রতিস্থাপন করুন (_e)"
+
+#. Ignore Button
+#: ../components/editor/gtkhtml-spell-dialog.c:548
+msgid "_Ignore"
+msgstr "উপেক্ষা করুন (_I)"
+
+#. Skip Button
+#: ../components/editor/gtkhtml-spell-dialog.c:562
+msgid "_Skip"
+msgstr "এড়িয়ে চলুন (_S)"
+
+#. Back Button
+#: ../components/editor/gtkhtml-spell-dialog.c:575
+msgid "_Back"
+msgstr "পূর্বে (_B)"
+
+#. Dictionary Label
+#: ../components/editor/gtkhtml-spell-dialog.c:588
+msgid "Dictionary"
+msgstr "অভিধান"
+
+#. Add Word Button
+#: ../components/editor/gtkhtml-spell-dialog.c:617
+msgid "_Add Word"
+msgstr "শব্দ যোগ করুন (_A)"
+
+#. Translators: %s is the language ISO code.
+#: ../components/editor/gtkhtml-spell-language.c:184
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "অজানা (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#: ../components/editor/gtkhtml-spell-language.c:199
+#: ../components/editor/gtkhtml-spell-language.c:204
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+#: ../components/editor/gtkhtml-spell-language.c:389
+msgctxt "language"
+msgid "Default"
+msgstr "ডিফল্ট"
+
+#: ../components/editor/main.c:93
+msgid "Save As"
+msgstr "নতুন রূপে সংরক্ষণ"
+
+#: ../components/editor/main.c:111
+msgid "Untitled document"
+msgstr "নামবিহীন নথি"
+
+#: ../components/editor/main.c:271
+msgid "HTML Output"
+msgstr "HTML আউটপুট"
+
+#: ../components/editor/main.c:278
+msgid "HTML Source"
+msgstr "HTML সোর্স"
+
+#: ../components/editor/main.c:285
+msgid "Plain Source"
+msgstr "সাধারণ সোর্স"
+
+#: ../components/editor/main.c:292
+msgid "_Print..."
+msgstr "মুদ্রণ করুন... (_P)"
+
+#: ../components/editor/main.c:299
+msgid "Print Pre_view"
+msgstr "মুদ্রণের প্রাকদর্শন (_v)"
+
+#: ../components/editor/main.c:306
+msgid "_Quit"
+msgstr "প্রস্থান (_Q)"
+
+#: ../components/editor/main.c:313
+msgid "_Save"
+msgstr "সংরক্ষণ করুন (_S)"
+
+#: ../components/editor/main.c:320
+msgid "Save _As..."
+msgstr "নতুন রূপে সংরক্ষণ করুন... (_A)"
+
+#: ../components/editor/main.c:337
+msgid "HTML _Output"
+msgstr "HTML আউটপুট (_O)"
+
+#: ../components/editor/main.c:344
+msgid "_HTML Source"
+msgstr "HTML সোর্স (_H)"
+
+#: ../components/editor/main.c:351
+msgid "_Plain Source"
+msgstr "সাধারণ সোর্স (_P)"
+
+#: ../gtkhtml/gtkhtml.c:3068
+msgid "Editable"
+msgstr "সম্পাদনযোগ্য"
+
+#: ../gtkhtml/gtkhtml.c:3069
+msgid "Whether the html can be edited"
+msgstr "html সম্পাদনযোগ্য কিনা"
+
+#: ../gtkhtml/gtkhtml.c:3075
+msgid "Document Title"
+msgstr "নথির শিরোনাম"
+
+#: ../gtkhtml/gtkhtml.c:3076
+msgid "The title of the current document"
+msgstr "বর্তমান নথির শিরোনাম"
+
+#: ../gtkhtml/gtkhtml.c:3082
+msgid "Document Base"
+msgstr "নথির ভিত্তি"
+
+#: ../gtkhtml/gtkhtml.c:3083
+msgid "The base URL for relative references"
+msgstr "আপেক্ষিক রেফারেন্সের জন্য মূল URL"
+
+#: ../gtkhtml/gtkhtml.c:3089
+msgid "Target Base"
+msgstr "টার্গেটের ভিত্তি"
+
+#: ../gtkhtml/gtkhtml.c:3090
+msgid "The base URL of the target frame"
+msgstr "টার্গেট ফ্রেমের মূল URL"
+
+#: ../gtkhtml/gtkhtml.c:3098
+msgid "Fixed Width Font"
+msgstr "নির্ধারিত প্রস্থের ফন্ট"
+
+#: ../gtkhtml/gtkhtml.c:3099
+msgid "The Monospace font to use for typewriter text"
+msgstr "টাইপরাইটার টেক্সটের ক্ষেত্রে ব্যবহৃত মোনোস্পেস ফন্ট"
+
+#: ../gtkhtml/gtkhtml.c:3105
+msgid "New Link Color"
+msgstr "নতুন লিংকের রং"
+
+#: ../gtkhtml/gtkhtml.c:3106
+msgid "The color of new link elements"
+msgstr "নতুন লিংক উপাদানের রং"
+
+#: ../gtkhtml/gtkhtml.c:3111
+msgid "Visited Link Color"
+msgstr "পরিদর্শিত লিংকের রং"
+
+#: ../gtkhtml/gtkhtml.c:3112
+msgid "The color of visited link elements"
+msgstr "পরিদর্শিত লিংকের উপাদানের রং"
+
+#: ../gtkhtml/gtkhtml.c:3117
+msgid "Active Link Color"
+msgstr "সক্রিয় লিংকের রং"
+
+#: ../gtkhtml/gtkhtml.c:3118
+msgid "The color of active link elements"
+msgstr "সক্রিয় লিংকের উপাদানের রং"
+
+#: ../gtkhtml/gtkhtml.c:3123
+msgid "Spelling Error Color"
+msgstr "ভুল বানানের রং"
+
+#: ../gtkhtml/gtkhtml.c:3124
+msgid "The color of the spelling error markers"
+msgstr "ভুল বানান চিহ্নের রং"
+
+#: ../gtkhtml/gtkhtml.c:3129
+msgid "Cite Quotation Color"
+msgstr "সাইট উদ্ধৃতির রং"
+
+#: ../gtkhtml/gtkhtml.c:3130
+msgid "The color of the cited text"
+msgstr "উদ্ধৃতির টেক্সটের রং"
+
+#: ../gtkhtml/htmlbutton.c:138
+msgid "Submit Query"
+msgstr "কোয়েরি জমা দিন"
+
+#: ../gtkhtml/htmlbutton.c:141
+msgid "Reset"
+msgstr "রিসেট করা হবে"
+
+#. TODO2 dialog instead of warning
+#: ../gtkhtml/htmlengine-print.c:231 ../gtkhtml/htmlengine-print.c:309
+msgid "Cannot allocate default font for printing"
+msgstr "মুদ্রণের উদ্দেশ্যে ডিফল্ট ফন্ট নির্ধারণ করা যায়নি"
+
+#: ../gtkhtml/test.c:364
+msgid "GtkHTML Test"
+msgstr "GtkHTML টেস্ট"

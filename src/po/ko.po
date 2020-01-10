@@ -1,0 +1,1517 @@
+# Korean translation of gtkhtml.
+# This file is distributed under the same license as the gtkhtml package.
+#
+# Chideok Hwang <hwang@mizi.co.kr>, 2000, 2001.
+# Young-Ho, Cha <ganadist@chollian.net>, 2000, 2001, 2002.
+# Changwoo Ryu <cwryu@debian.org>, 2004-2006, 2007, 2008, 2009, 2010, 2011.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhtml\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gtkhtml&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-04-07 22:09+0000\n"
+"PO-Revision-Date: 2011-09-24 07:58+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Language: Korean\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# alternative text는 img 태그의 alt 속성을 말한다
+#: ../a11y/image.c:151
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "URL은 %s, ALT 텍스트는 %s"
+
+#: ../a11y/image.c:153
+#, c-format
+msgid "URL is %s"
+msgstr "URL은 %s"
+
+#: ../a11y/object.c:51 ../a11y/object.c:60 ../a11y/text.c:125
+msgid "grab focus"
+msgstr "포커스 잡기"
+
+#: ../a11y/object.c:253
+msgid "Panel containing HTML"
+msgstr "패널에 HTML 들어 있음"
+
+#: ../components/editor/gtkhtml-color-combo.c:75
+msgid "black"
+msgstr "검정"
+
+#: ../components/editor/gtkhtml-color-combo.c:76
+msgid "light brown"
+msgstr "옅은 갈색"
+
+#: ../components/editor/gtkhtml-color-combo.c:77
+msgid "brown gold"
+msgstr "갈빛 금색"
+
+#: ../components/editor/gtkhtml-color-combo.c:78
+msgid "dark green #2"
+msgstr "어두운 녹색 #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:79
+msgid "navy"
+msgstr "짙은 남색"
+
+#: ../components/editor/gtkhtml-color-combo.c:80
+msgid "dark blue"
+msgstr "어두운 파란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:81
+msgid "purple #2"
+msgstr "자주색 #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:82
+msgid "very dark gray"
+msgstr "아주 어두운 회색"
+
+#: ../components/editor/gtkhtml-color-combo.c:84
+msgid "dark red"
+msgstr "어두운 빨강"
+
+#: ../components/editor/gtkhtml-color-combo.c:85
+msgid "red-orange"
+msgstr "적홍색"
+
+#: ../components/editor/gtkhtml-color-combo.c:86
+msgid "gold"
+msgstr "금색"
+
+#: ../components/editor/gtkhtml-color-combo.c:87
+msgid "dark green"
+msgstr "어두운 녹색"
+
+#: ../components/editor/gtkhtml-color-combo.c:88
+msgid "dull blue"
+msgstr "흐린 파란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:89
+msgid "blue"
+msgstr "파란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:90
+msgid "dull purple"
+msgstr "흐린 자주색"
+
+#: ../components/editor/gtkhtml-color-combo.c:91
+msgid "dark grey"
+msgstr "어두운 회색"
+
+#: ../components/editor/gtkhtml-color-combo.c:93
+msgid "red"
+msgstr "빨간색"
+
+#: ../components/editor/gtkhtml-color-combo.c:94
+msgid "orange"
+msgstr "주황색"
+
+#: ../components/editor/gtkhtml-color-combo.c:95
+msgid "lime"
+msgstr "라임색"
+
+#: ../components/editor/gtkhtml-color-combo.c:96
+msgid "dull green"
+msgstr "흐린 녹색"
+
+#: ../components/editor/gtkhtml-color-combo.c:97
+msgid "dull blue #2"
+msgstr "흐린 파란색 #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:98
+msgid "sky blue #2"
+msgstr "흐린 하늘색 #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:99
+msgid "purple"
+msgstr "자주색"
+
+#: ../components/editor/gtkhtml-color-combo.c:100
+msgid "gray"
+msgstr "회색"
+
+#: ../components/editor/gtkhtml-color-combo.c:102
+msgid "magenta"
+msgstr "자홍색"
+
+#: ../components/editor/gtkhtml-color-combo.c:103
+msgid "bright orange"
+msgstr "밝은 주황색"
+
+#: ../components/editor/gtkhtml-color-combo.c:104
+msgid "yellow"
+msgstr "노란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:105
+msgid "green"
+msgstr "녹색"
+
+#: ../components/editor/gtkhtml-color-combo.c:106
+msgid "cyan"
+msgstr "청록색"
+
+#: ../components/editor/gtkhtml-color-combo.c:107
+msgid "bright blue"
+msgstr "밝은 파란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:108
+msgid "red purple"
+msgstr "빨간 자주색"
+
+#: ../components/editor/gtkhtml-color-combo.c:109
+msgid "light grey"
+msgstr "밝은 회색"
+
+#: ../components/editor/gtkhtml-color-combo.c:111
+msgid "pink"
+msgstr "분홍색"
+
+#: ../components/editor/gtkhtml-color-combo.c:112
+msgid "light orange"
+msgstr "밝은 주황색"
+
+#: ../components/editor/gtkhtml-color-combo.c:113
+msgid "light yellow"
+msgstr "밝은 노란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:114
+msgid "light green"
+msgstr "밝은 녹색"
+
+#: ../components/editor/gtkhtml-color-combo.c:115
+msgid "light cyan"
+msgstr "밝은 청록색"
+
+#: ../components/editor/gtkhtml-color-combo.c:116
+msgid "light blue"
+msgstr "밝은 파란색"
+
+#: ../components/editor/gtkhtml-color-combo.c:117
+msgid "light purple"
+msgstr "밝은 자주색"
+
+#: ../components/editor/gtkhtml-color-combo.c:118
+msgid "white"
+msgstr "흰색"
+
+#: ../components/editor/gtkhtml-color-combo.c:273
+msgid "Choose Custom Color"
+msgstr "사용자 지정 색을 고르십시오"
+
+#: ../components/editor/gtkhtml-color-combo.c:755
+#: ../components/editor/gtkhtml-color-state.c:224
+msgid "Default"
+msgstr "기본값"
+
+#: ../components/editor/gtkhtml-color-combo.c:979
+msgid "custom"
+msgstr "사용자 지정"
+
+#: ../components/editor/gtkhtml-color-combo.c:987
+msgid "Custom Color..."
+msgstr "사용자 지정 색..."
+
+#. Translators: :-)
+#: ../components/editor/gtkhtml-face-chooser.c:34
+msgid "_Smile"
+msgstr "미소(_S)"
+
+#. Translators: :-(
+#: ../components/editor/gtkhtml-face-chooser.c:36
+msgid "S_ad"
+msgstr "슬픔(_A)"
+
+#. Translators: ;-)
+#: ../components/editor/gtkhtml-face-chooser.c:38
+msgid "_Wink"
+msgstr "윙크(_W)"
+
+#. Translators: :-P
+#: ../components/editor/gtkhtml-face-chooser.c:40
+msgid "Ton_gue"
+msgstr "혓바닥(_G)"
+
+#. Translators: :-))
+#: ../components/editor/gtkhtml-face-chooser.c:42
+msgid "Laug_h"
+msgstr "웃음(_H)"
+
+#. Translators: :-|
+#: ../components/editor/gtkhtml-face-chooser.c:44
+msgid "_Plain"
+msgstr "평범(_P)"
+
+#. Translators: :-!
+#: ../components/editor/gtkhtml-face-chooser.c:46
+msgid "Smi_rk"
+msgstr "킥킥(_R)"
+
+#. Translators: :"-)
+#: ../components/editor/gtkhtml-face-chooser.c:48
+msgid "_Embarrassed"
+msgstr "난처함(_E)"
+
+#. Translators: :-D
+#: ../components/editor/gtkhtml-face-chooser.c:50
+msgid "_Big Smile"
+msgstr "큰 미소(_B)"
+
+#. Translators: :-/
+#: ../components/editor/gtkhtml-face-chooser.c:52
+msgid "Uncer_tain"
+msgstr "불확실(_T)"
+
+#. Translators: :-O
+#: ../components/editor/gtkhtml-face-chooser.c:54
+msgid "S_urprise"
+msgstr "놀라움(_U)"
+
+#. Translators: :-S
+#: ../components/editor/gtkhtml-face-chooser.c:56
+msgid "W_orried"
+msgstr "걱정(_O)"
+
+#. Translators: :-*
+#: ../components/editor/gtkhtml-face-chooser.c:58
+msgid "_Kiss"
+msgstr "키스(_K)"
+
+#. Translators: X-(
+#: ../components/editor/gtkhtml-face-chooser.c:60
+msgid "A_ngry"
+msgstr "분노(_N)"
+
+#. Translators: B-)
+#: ../components/editor/gtkhtml-face-chooser.c:62
+msgid "_Cool"
+msgstr "멋짐(_C)"
+
+#. Translators: O:-)
+#: ../components/editor/gtkhtml-face-chooser.c:64
+msgid "Ange_l"
+msgstr "천사(_L)"
+
+#. Translators: :'(
+#: ../components/editor/gtkhtml-face-chooser.c:66
+msgid "Cr_ying"
+msgstr "울음(_Y)"
+
+#. Translators: :-Q
+#: ../components/editor/gtkhtml-face-chooser.c:68
+msgid "S_ick"
+msgstr "실망(_I)"
+
+#. Translators: |-)
+#: ../components/editor/gtkhtml-face-chooser.c:70
+msgid "Tire_d"
+msgstr "피곤(_D)"
+
+#. Translators: >:-)
+#: ../components/editor/gtkhtml-face-chooser.c:72
+msgid "De_vilish"
+msgstr "악마(_V)"
+
+#. Translators: :-(|)
+#: ../components/editor/gtkhtml-face-chooser.c:74
+msgid "_Monkey"
+msgstr "원숭이(_M)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:175
+msgid "Failed to insert HTML file."
+msgstr "HTML 파일을 넣는데 실패했습니다."
+
+#: ../components/editor/gtkhtml-editor-actions.c:212
+msgid "Failed to insert text file."
+msgstr "텍스트 파일을 넣는데 실패했습니다."
+
+#: ../components/editor/gtkhtml-editor-actions.c:512
+msgid "No match found"
+msgstr "일치하는 항목 없음"
+
+#: ../components/editor/gtkhtml-editor-actions.c:605
+msgid "Insert HTML File"
+msgstr "HTML 파일 넣기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:628
+#: ../components/editor/gtkhtml-editor-actions.c:1562
+msgid "Insert Image"
+msgstr "그림 넣기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:697
+msgid "Insert Text File"
+msgstr "텍스트 파일 넣기"
+
+#. Replace Button
+#: ../components/editor/gtkhtml-editor-actions.c:1197
+#: ../components/editor/gtkhtml-spell-dialog.c:516
+msgid "_Replace"
+msgstr "바꾸기(_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1204
+msgid "Replace _All"
+msgstr "모두 바꾸기(_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1218
+msgid "_Next"
+msgstr "다음(_N)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1225
+msgid "_Copy"
+msgstr "복사(_C)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1232
+msgid "Cu_t"
+msgstr "잘라내기(_T)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1246
+msgid "Find A_gain"
+msgstr "다시 찾기(_G)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1260
+msgid "_Increase Indent"
+msgstr "들여 쓰기(_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1262
+msgid "Increase Indent"
+msgstr "들여 쓰기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1267
+msgid "_HTML File..."
+msgstr "HTML 파일(_H)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1274
+msgid "Te_xt File..."
+msgstr "텍스트 파일(_X)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1281
+msgid "_Paste"
+msgstr "붙여넣기(_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1288
+msgid "Paste _Quotation"
+msgstr "인용문 붙여넣기(_Q)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1295
+msgid "_Redo"
+msgstr "다시 실행(_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1302
+msgid "Select _All"
+msgstr "전부 선택(_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1309
+msgid "_Find..."
+msgstr "찾기(_F)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1316
+msgid "Re_place..."
+msgstr "바꾸기(_P)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1323
+msgid "Check _Spelling..."
+msgstr "맞춤법 검사(_S)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1330
+#: ../components/editor/gtkhtml-editor-builder.ui.h:80
+msgid "_Test URL..."
+msgstr "URL 테스트(_T)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1337
+msgid "_Undo"
+msgstr "실행취소(_U)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1344
+msgid "_Decrease Indent"
+msgstr "내어 쓰기(_D)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1346
+msgid "Decrease Indent"
+msgstr "내어 쓰기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1351
+msgid "_Wrap Lines"
+msgstr "줄 바꿈(_W)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1360
+msgid "_Edit"
+msgstr "편집(_E)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1367
+#: ../components/editor/main.c:326
+msgid "_File"
+msgstr "파일(_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1374
+msgid "For_mat"
+msgstr "형식(_M)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1381
+msgid "_Paragraph Style"
+msgstr "문단 모양새(_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1388
+msgid "_Insert"
+msgstr "넣기(_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1395
+msgid "_Alignment"
+msgstr "정렬(_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1402
+msgid "Current _Languages"
+msgstr "현재 언어(_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1409
+#: ../components/editor/main.c:357
+msgid "_View"
+msgstr "보기(_V)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1419
+msgid "_Center"
+msgstr "가운데(_C)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1421
+msgid "Center Alignment"
+msgstr "가운데 정렬"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1426
+msgid "_Left"
+msgstr "왼쪽(_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1428
+msgid "Left Alignment"
+msgstr "왼쪽 정렬"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1433
+msgid "_Right"
+msgstr "오른쪽(_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1435
+msgid "Right Alignment"
+msgstr "오른쪽 정렬"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1443
+msgid "_HTML"
+msgstr "_HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1445
+msgid "HTML editing mode"
+msgstr "HTML 편집 모드"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1450
+msgid "Plain _Text"
+msgstr "일반 텍스트(_T)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1452
+msgid "Plain text editing mode"
+msgstr "일반 텍스트 편집 모드"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1460
+msgid "_Normal"
+msgstr "보통(_N)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1467
+msgid "Header _1"
+msgstr "제목 _1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1474
+msgid "Header _2"
+msgstr "제목 _2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1481
+msgid "Header _3"
+msgstr "제목 _3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1488
+msgid "Header _4"
+msgstr "제목 _4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1495
+msgid "Header _5"
+msgstr "제목 _5"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1502
+msgid "Header _6"
+msgstr "제목 _6"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1509
+msgid "A_ddress"
+msgstr "주소(_D)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1516
+msgid "_Preformatted"
+msgstr "원래 모양대로(_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1523
+msgid "_Bulleted List"
+msgstr "점 목록(_B)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1530
+msgid "_Roman Numeral List"
+msgstr "로마 숫자 목록(_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1537
+msgid "Numbered _List"
+msgstr "번호 목록(_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1544
+msgid "_Alphabetical List"
+msgstr "알파벳 목록(_A)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1560
+#: ../components/editor/gtkhtml-editor-actions.c:1597
+msgid "_Image..."
+msgstr "이미지(_I)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1567
+#: ../components/editor/gtkhtml-editor-actions.c:1604
+msgid "_Link..."
+msgstr "링크(_L)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1569
+msgid "Insert Link"
+msgstr "링크 넣기"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1575
+#: ../components/editor/gtkhtml-editor-actions.c:1619
+msgid "_Rule..."
+msgstr "가로줄(_R)..."
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1578
+msgid "Insert Rule"
+msgstr "가로줄 넣기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1583
+#: ../components/editor/gtkhtml-editor-actions.c:1626
+msgid "_Table..."
+msgstr "표(_T)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1585
+msgid "Insert Table"
+msgstr "표 넣기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1590
+msgid "_Cell..."
+msgstr "셀(_C)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1611
+msgid "Pa_ge..."
+msgstr "페이지(_G)..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1635
+msgid "Font _Size"
+msgstr "글꼴 크기(_S)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1642
+msgid "_Font Style"
+msgstr "글꼴 모양(_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1652
+#: ../components/editor/gtkhtml-editor-builder.ui.h:61
+msgid "_Bold"
+msgstr "두꺼운꼴(_B)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1654
+msgid "Bold"
+msgstr "두꺼운꼴"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1660
+#: ../components/editor/gtkhtml-editor-builder.ui.h:68
+msgid "_Italic"
+msgstr "기울인꼴(_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1662
+msgid "Italic"
+msgstr "기울인꼴"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1668
+msgid "_Plain Text"
+msgstr "일반 텍스트(_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1670
+msgid "Plain Text"
+msgstr "일반 텍스트"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1676
+#: ../components/editor/gtkhtml-editor-builder.ui.h:77
+msgid "_Strikethrough"
+msgstr "취소선(_S)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1678
+msgid "Strikethrough"
+msgstr "취소선"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1684
+#: ../components/editor/gtkhtml-editor-builder.ui.h:83
+msgid "_Underline"
+msgstr "밑줄(_U)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1686
+msgid "Underline"
+msgstr "밑줄"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1696
+msgid "-2"
+msgstr "-2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1704
+msgid "-1"
+msgstr "-1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1712
+msgid "+0"
+msgstr "+0"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1720
+msgid "+1"
+msgstr "+1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1728
+msgid "+2"
+msgstr "+2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1736
+msgid "+3"
+msgstr "+3"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1744
+msgid "+4"
+msgstr "+4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1763
+msgid "Cell Contents"
+msgstr "셀 내용"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1770
+msgid "Column"
+msgstr "열"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1777
+msgid "Row"
+msgstr "행"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1784
+#: ../components/editor/gtkhtml-editor-actions.c:1869
+msgid "Table"
+msgstr "표"
+
+#. Translators: Popup menu item caption, containing all the Delete options for a table
+#: ../components/editor/gtkhtml-editor-actions.c:1794
+msgid "Table Delete"
+msgstr "표 삭제"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1801
+msgid "Input Methods"
+msgstr "입력기"
+
+#. Translators: Popup menu item caption, containing all the Insert options for a table
+#: ../components/editor/gtkhtml-editor-actions.c:1809
+msgid "Table Insert"
+msgstr "표 넣기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1816
+msgid "Properties"
+msgstr "속성"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1834
+msgid "Column After"
+msgstr "뒤에 열"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1841
+msgid "Column Before"
+msgstr "앞에 열"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1848
+msgid "Insert _Link"
+msgstr "링크 넣기(_L)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1855
+msgid "Row Above"
+msgstr "위에 행"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1862
+msgid "Row Below"
+msgstr "아래에 행"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1876
+msgid "Cell..."
+msgstr "셀..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1883
+msgid "Image..."
+msgstr "그림..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1890
+msgid "Link..."
+msgstr "링크..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1897
+msgid "Page..."
+msgstr "페이지..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1904
+msgid "Paragraph..."
+msgstr "문단..."
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1912
+msgid "Rule..."
+msgstr "가로줄..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1919
+msgid "Table..."
+msgstr "표..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1926
+msgid "Text..."
+msgstr "글자..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1933
+msgid "Remove Link"
+msgstr "링크 제거"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1950
+msgid "Add Word to Dictionary"
+msgstr "사전에 단어 추가"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1957
+msgid "Ignore Misspelled Word"
+msgstr "맞춤법이 잘못된 단어 무시"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1964
+msgid "Add Word To"
+msgstr "단어 추가할 위치"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1973
+msgid "More Suggestions"
+msgstr "다른 제시어"
+
+#. Translators: %s will be replaced with the actual dictionary name,
+#. where a user can add a word to. This is part of an "Add Word To" submenu.
+#: ../components/editor/gtkhtml-editor-actions.c:2074
+#, c-format
+msgid "%s Dictionary"
+msgstr "%s 사전"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2142
+msgid "_Emoticon"
+msgstr "이모티콘(_E)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2143
+msgid "Insert Emoticon"
+msgstr "이모티콘 넣기"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2204
+msgid "_Find"
+msgstr "찾기(_F)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2207
+msgid "Re_place"
+msgstr "바꾸기(_P)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2210
+msgid "_Image"
+msgstr "그림(_I)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2213
+msgid "_Link"
+msgstr "링크(_L)"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:2217
+msgid "_Rule"
+msgstr "가로줄(_R)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2220
+#: ../components/editor/gtkhtml-editor-builder.ui.h:79
+msgid "_Table"
+msgstr "표(_T)"
+
+#: ../components/editor/gtkhtml-editor-private.c:277
+msgid "Paragraph Style"
+msgstr "문단 모양새"
+
+#: ../components/editor/gtkhtml-editor-private.c:291
+msgid "Editing Mode"
+msgstr "편집 모드"
+
+#: ../components/editor/gtkhtml-editor-private.c:303
+msgid "Font Color"
+msgstr "글꼴 색"
+
+#: ../components/editor/gtkhtml-editor-private.c:313
+msgid "Font Size"
+msgstr "글꼴 크기"
+
+#: ../components/editor/gtkhtml-editor-private.c:340
+msgid "Automatic"
+msgstr "자동"
+
+#: ../components/editor/gtkhtml-editor-private.c:563
+msgid "Could not open the link."
+msgstr "링크를 열 수 없습니다."
+
+#: ../components/editor/gtkhtml-editor.c:897
+msgid "Changed property"
+msgstr "바뀜 속성"
+
+#: ../components/editor/gtkhtml-editor.c:898
+msgid "Whether editor changed"
+msgstr "편집기 내용이 바뀌었는지 여부"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:2
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:3
+msgid "Alignment"
+msgstr "정렬"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:4
+msgid "Alignment & Behavior"
+msgstr "정렬 및 동작"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:5
+msgid "Background"
+msgstr "배경"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:6
+msgid "Background Image"
+msgstr "배경 그림"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:7
+msgid "Blue Ink"
+msgstr "파란 잉크"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:8
+msgid "Bottom"
+msgstr "아래"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:9
+msgid "C_ell"
+msgstr "셀(_E)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:10
+msgid "C_olor:"
+msgstr "색(_O):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:11
+msgid "C_olumns:"
+msgstr "열(_O):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:12
+msgid "C_ustom:"
+msgstr "사용자 지정(_U):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:13
+msgid "Case _sensitive"
+msgstr "대소문자 구별(_S)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:14
+msgid "Cell Properties"
+msgstr "셀 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:15
+msgid "Center"
+msgstr "가운데"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:16
+msgid "Co_lor:"
+msgstr "색(_L):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:17
+msgid "Col_umn"
+msgstr "열(_U)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:18
+msgid "Colors"
+msgstr "색"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:19
+msgid "Column Span:"
+msgstr "열 범위:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:20
+msgid "Confidential"
+msgstr "비밀"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:21
+msgid "Draft"
+msgstr "초안"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:22
+msgid "Find"
+msgstr "찾기"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:23
+msgid "General"
+msgstr "일반"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:24
+msgid "Graph Paper"
+msgstr "그래프 종이"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:25
+msgid "Hea_der Style"
+msgstr "헤더 모양(_D)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:26
+msgid "I_mage:"
+msgstr "그림(_M):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:27
+msgid "Image Properties"
+msgstr "그림 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:28
+msgid "Layout"
+msgstr "배치"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:29
+msgid "Left"
+msgstr "왼쪽"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:30
+msgid "Link"
+msgstr "링크"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:31
+msgid "Link Properties"
+msgstr "링크 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:32
+msgid "Middle"
+msgstr "가운데"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:33
+msgid "Midnight"
+msgstr "깊은 밤"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:34
+msgid "None"
+msgstr "없음"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:35
+msgid "Page Properties"
+msgstr "페이지 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:36
+msgid "Paper"
+msgstr "종이"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:37
+msgid "Paragraph Properties"
+msgstr "문단 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:38
+msgid "Perforated Paper"
+msgstr "구멍 뚫은 종이"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:39
+msgid "R_eplace:"
+msgstr "바꾸기(_E):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:40
+msgid "Replace"
+msgstr "바꾸기"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:41
+msgid "Replace Confirmation"
+msgstr "바꾸기 확인"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:42
+msgid "Ribbon"
+msgstr "리본"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:43
+msgid "Right"
+msgstr "오른쪽"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:44
+msgid "Row Span:"
+msgstr "행 범위:"
+
+#. Translators: Caption of a window. 'Rule' here means a horizontal line in an HTML text.
+#: ../components/editor/gtkhtml-editor-builder.ui.h:46
+msgid "Rule Properties"
+msgstr "가로줄 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:47
+msgid "S_haded"
+msgstr "그림자(_H)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:48
+msgid "Scope"
+msgstr "범위"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:49
+msgid "Search _backwards"
+msgstr "뒤로 검색(_B)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:50
+msgid "Select An Image"
+msgstr "그림 선택"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:51
+msgid "Si_ze:"
+msgstr "크기(_Z):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:52
+msgid "Size"
+msgstr "크기"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:53
+msgid "Style"
+msgstr "스타일"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:54
+msgid "T_emplate:"
+msgstr "서식(_E):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:55
+msgid "Table Properties"
+msgstr "표 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:56
+msgid "Text Properties"
+msgstr "글자 속성"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:57
+msgid "Top"
+msgstr "위"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:58
+msgid "Width:"
+msgstr "너비:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:59
+msgid "_Alignment:"
+msgstr "정렬(_A):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:60
+msgid "_Background:"
+msgstr "배경(_B):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:62
+msgid "_Border:"
+msgstr "테두리(_B):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:63
+msgid "_Color:"
+msgstr "색(_C):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:64
+msgid "_Description:"
+msgstr "설명(_D):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:65
+msgid "_Height:"
+msgstr "높이(_H):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:66
+msgid "_Horizontal:"
+msgstr "가로(_H):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:67
+msgid "_Image:"
+msgstr "그림(_I):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:69
+msgid "_Link:"
+msgstr "링크(_L):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:70
+msgid "_Padding:"
+msgstr "채움(_P):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:71
+msgid "_Regular expression"
+msgstr "정규식(_R)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:72
+msgid "_Row"
+msgstr "행(_R)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:73
+msgid "_Rows:"
+msgstr "행(_R):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:74
+msgid "_Size:"
+msgstr "크기(_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:75
+msgid "_Source:"
+msgstr "원본(_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:76
+msgid "_Spacing:"
+msgstr "간격(_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:78
+msgid "_Style:"
+msgstr "스타일(_S):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:81
+msgid "_Text:"
+msgstr "글자(_T):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:82
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:84
+msgid "_Vertical:"
+msgstr "세로(_V):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:85
+msgid "_Width:"
+msgstr "너비(_W):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:86
+msgid "_With:"
+msgstr "다음으로(_W):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:87
+msgid "_Wrap Text"
+msgstr "줄 바꿈(_W)"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:88
+msgid "_X-Padding:"
+msgstr "가로 채움(_X):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:89
+msgid "_Y-Padding:"
+msgstr "세로 채움(_Y):"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:90
+msgid "follow"
+msgstr "따라가기"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:91
+msgid "px"
+msgstr "픽셀"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:113
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr "\"%s\"에 대한 제시어"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:443
+msgid "Spell Checker"
+msgstr "맞춤법 검사"
+
+#. Replace All Button
+#: ../components/editor/gtkhtml-spell-dialog.c:530
+msgid "R_eplace All"
+msgstr "모두 바꾸기(_E)"
+
+#. Ignore Button
+#: ../components/editor/gtkhtml-spell-dialog.c:544
+msgid "_Ignore"
+msgstr "무시(_I)"
+
+#. Skip Button
+#: ../components/editor/gtkhtml-spell-dialog.c:558
+msgid "_Skip"
+msgstr "건너 뛰기(_S)"
+
+#. Back Button
+#: ../components/editor/gtkhtml-spell-dialog.c:571
+msgid "_Back"
+msgstr "뒤로(_B)"
+
+#. Dictionary Label
+#: ../components/editor/gtkhtml-spell-dialog.c:584
+msgid "Dictionary"
+msgstr "사전"
+
+#. Add Word Button
+#: ../components/editor/gtkhtml-spell-dialog.c:613
+msgid "_Add Word"
+msgstr "단어 추가(_A)"
+
+#. Translators: %s is the language ISO code.
+#: ../components/editor/gtkhtml-spell-language.c:255
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "알 수 없음 (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#: ../components/editor/gtkhtml-spell-language.c:270
+#: ../components/editor/gtkhtml-spell-language.c:275
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+#: ../components/editor/gtkhtml-spell-language.c:460
+msgctxt "language"
+msgid "Default"
+msgstr "기본값"
+
+#: ../components/editor/main.c:93
+msgid "Save As"
+msgstr "다른 이름으로 저장"
+
+#: ../components/editor/main.c:111
+msgid "Untitled document"
+msgstr "제목 없는 문서"
+
+#: ../components/editor/main.c:270
+msgid "HTML Output"
+msgstr "HTML 출력"
+
+#: ../components/editor/main.c:277
+msgid "HTML Source"
+msgstr "HTML 원본"
+
+#: ../components/editor/main.c:284
+msgid "Plain Source"
+msgstr "일반 텍스트 원본"
+
+#: ../components/editor/main.c:291
+msgid "_Print..."
+msgstr "인쇄(_P)..."
+
+#: ../components/editor/main.c:298
+msgid "Print Pre_view"
+msgstr "인쇄 미리 보기(_V)"
+
+#: ../components/editor/main.c:305
+msgid "_Quit"
+msgstr "끝내기(_Q)"
+
+#: ../components/editor/main.c:312
+msgid "_Save"
+msgstr "저장(_S)"
+
+#: ../components/editor/main.c:319
+msgid "Save _As..."
+msgstr "다른 이름으로 저장(_A)..."
+
+#: ../components/editor/main.c:336
+msgid "HTML _Output"
+msgstr "HTML 출력(_O)"
+
+#: ../components/editor/main.c:343
+msgid "_HTML Source"
+msgstr "HTML 원본(_H)"
+
+#: ../components/editor/main.c:350
+msgid "_Plain Source"
+msgstr "일반 텍스트 원본(_P)"
+
+#: ../gtkhtml/htmlbutton.c:138
+msgid "Submit Query"
+msgstr "쿼리 전송"
+
+#: ../gtkhtml/htmlbutton.c:141
+msgid "Reset"
+msgstr "리셋"
+
+#. TODO2 dialog instead of warning
+#: ../gtkhtml/htmlengine-print.c:231 ../gtkhtml/htmlengine-print.c:309
+msgid "Cannot allocate default font for printing"
+msgstr "인쇄용 기본 글꼴을 할당할 수 없습니다"
+
+#: ../gtkhtml/test.c:364
+msgid "GtkHTML Test"
+msgstr "GtkHTML 테스트"
+
+#~ msgid "Current color"
+#~ msgstr "현재 색"
+
+#~ msgid "The currently selected color"
+#~ msgstr "현재 선택한 색"
+
+#~ msgid "Default color"
+#~ msgstr "기본 색"
+
+#~ msgid "The color associated with the default button"
+#~ msgstr "기본 단추의 색"
+
+#~ msgid "Default label"
+#~ msgstr "기본 레이블"
+
+#~ msgid "The label for the default button"
+#~ msgstr "기본 단추의 레이블"
+
+#~ msgid "Default is transparent"
+#~ msgstr "기본값이 투명"
+
+#~ msgid "Whether the default color is transparent"
+#~ msgstr "기본값 색이 투명인지 여부"
+
+#~ msgid "Color palette"
+#~ msgstr "색 팔레트"
+
+#~ msgid "Custom color palette"
+#~ msgstr "사용자 지정 색 팔레트"
+
+#~ msgid "Popup shown"
+#~ msgstr "팝업 표시"
+
+#~ msgid "Whether the combo's dropdown is shown"
+#~ msgstr "콤보 상자의 드롭다운 팝업을 표시할 지 여부"
+
+#~ msgid "Color state"
+#~ msgstr "색 상태"
+
+#~ msgid "The state of a color combo box"
+#~ msgstr "색 콤보 상자의 상태"
+
+#~ msgid "The current color"
+#~ msgstr "현재 색"
+
+#~ msgid "The default color"
+#~ msgstr "기본 색"
+
+#~ msgid "Description of the default color"
+#~ msgstr "기본 색의 설명"
+
+#~ msgid "Color"
+#~ msgstr "색"
+
+#~ msgid "Frame Shadow"
+#~ msgstr "테두리 그림자"
+
+#~ msgid "Appearance of the frame border"
+#~ msgstr "테두리의 모양"
+
+#~ msgid "Action"
+#~ msgstr "동작"
+
+#~ msgid "A GtkRadioAction"
+#~ msgstr "GtkRadioAction 값"
+
+#~ msgid "Current Folder"
+#~ msgstr "현재 폴더"
+
+#~ msgid "The initial folder for file chooser dialogs"
+#~ msgstr "파일 선택 대화 창의 최초 폴더"
+
+#~ msgid "Filename"
+#~ msgstr "파일 이름"
+
+#~ msgid "The filename to use when saving"
+#~ msgstr "저장할 때 사용할 파일 이름"
+
+#~ msgid "HTML Editing Widget"
+#~ msgstr "HTML 편집 위젯"
+
+#~ msgid "The main HTML editing widget"
+#~ msgstr "주 HTML 편집 위젯"
+
+#~ msgid "HTML Mode"
+#~ msgstr "HTML 모드"
+
+#~ msgid "Edit HTML or plain text"
+#~ msgstr "HTML 편집인지 일반 텍스트 편집인지"
+
+#~ msgid "Inline Spelling"
+#~ msgstr "실시간 맞춤법 검사"
+
+#~ msgid "Check your spelling as you type"
+#~ msgstr "입력할 때 맞춤법을 검사합니다"
+
+#~ msgid "Magic Links"
+#~ msgstr "자동 링크"
+
+#~ msgid "Make URIs clickable as you type"
+#~ msgstr "URI를 입력하면 누를 수 있게 만듭니다"
+
+#~ msgid "Magic Smileys"
+#~ msgstr "자동 이모티콘"
+
+#~ msgid "Convert emoticons to images as you type"
+#~ msgstr "이모티콘을 입력하면 그림으로 변환합니다"
+
+#~ msgid "Language"
+#~ msgstr "언어"
+
+#~ msgid "The language used by the spell checker"
+#~ msgstr "맞춤법 검사에 사용할 언어"
+
+#~ msgid "Misspelled Word"
+#~ msgstr "맞춤법이 잘못된 단어"
+
+#~ msgid "The current misspelled word"
+#~ msgstr "현재 맞춤법이 잘못된 단어"
+
+#~ msgid "Editable"
+#~ msgstr "편집 가능"
+
+#~ msgid "Document Title"
+#~ msgstr "문서 제목"
+
+#~ msgid "The title of the current document"
+#~ msgstr "현재 문서의 제목"
+
+#~ msgid "Document Base"
+#~ msgstr "문서 기준"
+
+#~ msgid "The base URL for relative references"
+#~ msgstr "상대 참조할 때 기준 URL"
+
+#~ msgid "Target Base"
+#~ msgstr "목표 기준"
+
+#~ msgid "The base URL of the target frame"
+#~ msgstr "목표 프레임의 기준 URL"
+
+#~ msgid "Fixed Width Font"
+#~ msgstr "고정폭 글꼴"
+
+#~ msgid "The Monospace font to use for typewriter text"
+#~ msgstr "타자체 텍스트에 사용할 고정폭 글꼴"
+
+#~ msgid "New Link Color"
+#~ msgstr "새로운 링크 색"
+
+#~ msgid "The color of new link elements"
+#~ msgstr "새로운 링크에 사용할 색"
+
+#~ msgid "Visited Link Color"
+#~ msgstr "방문한 링크 색"
+
+#~ msgid "The color of visited link elements"
+#~ msgstr "방문한 링크에 사용할 색"
+
+#~ msgid "Active Link Color"
+#~ msgstr "활성 링크 색"
+
+#~ msgid "The color of active link elements"
+#~ msgstr "활성 링크에 사용할 색"
+
+#~ msgid "Spelling Error Color"
+#~ msgstr "맞춤법 오류 색"
+
+#~ msgid "The color of the spelling error markers"
+#~ msgstr "맞춤법 오류 표시할 때 사용할 색"
+
+#~ msgid "Cite Quotation Color"
+#~ msgstr "인용문 색"
+
+#~ msgid "The color of the cited text"
+#~ msgstr "인용문에 사용할 색"

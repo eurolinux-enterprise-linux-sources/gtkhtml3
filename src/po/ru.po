@@ -1,0 +1,1372 @@
+# translation of gtkhtml to Russian
+# Copyright (C) 2000-2008, 2010 Free Software Foundation, Inc.
+#
+# Valek Filippov <frob@df.ru>, 2000.
+# Dmitry Mastrukov <dmitry@taurussoft.org>, 2001-2003.
+# Leonid Kanter <leon@asplinux.ru>, 2002-2004, 2005, 2006.
+# Vasiliy Faronov <qvvx@yandex.ru>, 2007.
+# Yuri Kozlov <yuray@komyakino.ru>, 2010, 2011.
+# Alexsey Nadtochey <irbis4lan@yandex.com>, 2012.
+# Yuri Myasoedov <omerta13@yandex.ru>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhtml trunk\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gtkhtml&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-22 16:42+0000\n"
+"PO-Revision-Date: 2012-09-28 12:07+0400\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"Language-Team: русский <gnome-cyr@gnome.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: ../a11y/image.c:152
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "URL — %s, альтернативный текст — %s"
+
+#: ../a11y/image.c:154
+#, c-format
+msgid "URL is %s"
+msgstr "URL — %s"
+
+#: ../a11y/object.c:52 ../a11y/object.c:62 ../a11y/text.c:126
+msgid "grab focus"
+msgstr "перехватить фокус"
+
+#: ../a11y/object.c:258
+msgid "Panel containing HTML"
+msgstr "Панель, содержащая HTML"
+
+#: ../components/editor/gtkhtml-color-combo.c:77
+msgid "black"
+msgstr "чёрный"
+
+#: ../components/editor/gtkhtml-color-combo.c:78
+msgid "light brown"
+msgstr "светло-коричневый"
+
+#: ../components/editor/gtkhtml-color-combo.c:79
+msgid "brown gold"
+msgstr "золотисто-коричневый"
+
+#: ../components/editor/gtkhtml-color-combo.c:80
+msgid "dark green #2"
+msgstr "тёмно-зелёный №2"
+
+#: ../components/editor/gtkhtml-color-combo.c:81
+msgid "navy"
+msgstr "морской"
+
+#: ../components/editor/gtkhtml-color-combo.c:82
+msgid "dark blue"
+msgstr "тёмно-синий"
+
+#: ../components/editor/gtkhtml-color-combo.c:83
+msgid "purple #2"
+msgstr "пурпурный №2"
+
+#: ../components/editor/gtkhtml-color-combo.c:84
+msgid "very dark gray"
+msgstr "очень тёмный серый"
+
+#: ../components/editor/gtkhtml-color-combo.c:86
+msgid "dark red"
+msgstr "тёмно-красный"
+
+#: ../components/editor/gtkhtml-color-combo.c:87
+msgid "red-orange"
+msgstr "красно-оранжевый"
+
+#: ../components/editor/gtkhtml-color-combo.c:88
+msgid "gold"
+msgstr "золотистый"
+
+#: ../components/editor/gtkhtml-color-combo.c:89
+msgid "dark green"
+msgstr "тёмно-зеленый"
+
+#: ../components/editor/gtkhtml-color-combo.c:90
+msgid "dull blue"
+msgstr "бледно-синий"
+
+#: ../components/editor/gtkhtml-color-combo.c:91
+msgid "blue"
+msgstr "синий"
+
+#: ../components/editor/gtkhtml-color-combo.c:92
+msgid "dull purple"
+msgstr "бледно-пурпурный"
+
+#: ../components/editor/gtkhtml-color-combo.c:93
+msgid "dark grey"
+msgstr "тёмно-серый"
+
+#: ../components/editor/gtkhtml-color-combo.c:95
+msgid "red"
+msgstr "красный"
+
+#: ../components/editor/gtkhtml-color-combo.c:96
+msgid "orange"
+msgstr "оранжевый"
+
+#: ../components/editor/gtkhtml-color-combo.c:97
+msgid "lime"
+msgstr "лимонный"
+
+#: ../components/editor/gtkhtml-color-combo.c:98
+msgid "dull green"
+msgstr "бледно-зеленый"
+
+#: ../components/editor/gtkhtml-color-combo.c:99
+msgid "dull blue #2"
+msgstr "бледно-синий №2"
+
+#: ../components/editor/gtkhtml-color-combo.c:100
+msgid "sky blue #2"
+msgstr "небесно-голубой №2"
+
+#: ../components/editor/gtkhtml-color-combo.c:101
+msgid "purple"
+msgstr "пурпурный"
+
+#: ../components/editor/gtkhtml-color-combo.c:102
+msgid "gray"
+msgstr "серый"
+
+#: ../components/editor/gtkhtml-color-combo.c:104
+msgid "magenta"
+msgstr "фуксин"
+
+#: ../components/editor/gtkhtml-color-combo.c:105
+msgid "bright orange"
+msgstr "ярко-оранжевый"
+
+#: ../components/editor/gtkhtml-color-combo.c:106
+msgid "yellow"
+msgstr "жёлтый"
+
+#: ../components/editor/gtkhtml-color-combo.c:107
+msgid "green"
+msgstr "зелёный"
+
+#: ../components/editor/gtkhtml-color-combo.c:108
+msgid "cyan"
+msgstr "голубой"
+
+#: ../components/editor/gtkhtml-color-combo.c:109
+msgid "bright blue"
+msgstr "ярко-синий"
+
+#: ../components/editor/gtkhtml-color-combo.c:110
+msgid "red purple"
+msgstr "красно-пурпурный"
+
+#: ../components/editor/gtkhtml-color-combo.c:111
+msgid "light grey"
+msgstr "светло-серый"
+
+#: ../components/editor/gtkhtml-color-combo.c:113
+msgid "pink"
+msgstr "розовый"
+
+#: ../components/editor/gtkhtml-color-combo.c:114
+msgid "light orange"
+msgstr "светло-оранжевый"
+
+#: ../components/editor/gtkhtml-color-combo.c:115
+msgid "light yellow"
+msgstr "светло-жёлтый"
+
+#: ../components/editor/gtkhtml-color-combo.c:116
+msgid "light green"
+msgstr "светло-зелёный"
+
+#: ../components/editor/gtkhtml-color-combo.c:117
+msgid "light cyan"
+msgstr "светло-голубой"
+
+#: ../components/editor/gtkhtml-color-combo.c:118
+msgid "light blue"
+msgstr "светло-синий"
+
+#: ../components/editor/gtkhtml-color-combo.c:119
+msgid "light purple"
+msgstr "светло-пурпурный"
+
+#: ../components/editor/gtkhtml-color-combo.c:120
+msgid "white"
+msgstr "белый"
+
+#: ../components/editor/gtkhtml-color-combo.c:275
+msgid "Choose Custom Color"
+msgstr "Выберите другой цвет"
+
+#: ../components/editor/gtkhtml-color-combo.c:785
+#: ../components/editor/gtkhtml-color-state.c:224
+msgid "Default"
+msgstr "По умолчанию"
+
+#: ../components/editor/gtkhtml-color-combo.c:1009
+msgid "custom"
+msgstr "другой"
+
+#: ../components/editor/gtkhtml-color-combo.c:1017
+msgid "Custom Color..."
+msgstr "Другой цвет…"
+
+#. Translators: :-)
+#: ../components/editor/gtkhtml-face-chooser.c:34
+msgid "_Smile"
+msgstr "_Улыбающийся"
+
+#. Translators: :-(
+#: ../components/editor/gtkhtml-face-chooser.c:36
+msgid "S_ad"
+msgstr "_Грустный"
+
+#. Translators: ;-)
+#: ../components/editor/gtkhtml-face-chooser.c:38
+msgid "_Wink"
+msgstr "Под_мигивающий"
+
+#. Translators: :-P
+#: ../components/editor/gtkhtml-face-chooser.c:40
+msgid "Ton_gue"
+msgstr "_Язык"
+
+#. Translators: :-))
+#: ../components/editor/gtkhtml-face-chooser.c:42
+msgid "Laug_h"
+msgstr "_Смеющийся"
+
+#. Translators: :-|
+#: ../components/editor/gtkhtml-face-chooser.c:44
+msgid "_Plain"
+msgstr "_Равнодушный"
+
+#. Translators: :-!
+#: ../components/editor/gtkhtml-face-chooser.c:46
+msgid "Smi_rk"
+msgstr "Само_довольный"
+
+#. Translators: :"-)
+#: ../components/editor/gtkhtml-face-chooser.c:48
+msgid "_Embarrassed"
+msgstr "_Затрудняюсь"
+
+#. Translators: :-D
+#: ../components/editor/gtkhtml-face-chooser.c:50
+msgid "_Big Smile"
+msgstr "_Улыбающийся"
+
+#. Translators: :-/
+#: ../components/editor/gtkhtml-face-chooser.c:52
+msgid "Uncer_tain"
+msgstr "Не_определённый"
+
+#. Translators: :-O
+#: ../components/editor/gtkhtml-face-chooser.c:54
+msgid "S_urprise"
+msgstr "У_дивлённый"
+
+#. Translators: :-S
+#: ../components/editor/gtkhtml-face-chooser.c:56
+msgid "W_orried"
+msgstr "В_зволнованный"
+
+#. Translators: :-*
+#: ../components/editor/gtkhtml-face-chooser.c:58
+msgid "_Kiss"
+msgstr "_Целующий"
+
+#. Translators: X-(
+#: ../components/editor/gtkhtml-face-chooser.c:60
+msgid "A_ngry"
+msgstr "З_лой"
+
+#. Translators: B-)
+#: ../components/editor/gtkhtml-face-chooser.c:62
+msgid "_Cool"
+msgstr "_Отлично"
+
+#. Translators: O:-)
+#: ../components/editor/gtkhtml-face-chooser.c:64
+msgid "Ange_l"
+msgstr "_Ангельский"
+
+#. Translators: :'(
+#: ../components/editor/gtkhtml-face-chooser.c:66
+msgid "Cr_ying"
+msgstr "_Плачущий"
+
+#. Translators: :-Q
+#: ../components/editor/gtkhtml-face-chooser.c:68
+msgid "S_ick"
+msgstr "_Больной"
+
+#. Translators: |-)
+#: ../components/editor/gtkhtml-face-chooser.c:70
+msgid "Tire_d"
+msgstr "Ус_тавший"
+
+#. Translators: >:-)
+#: ../components/editor/gtkhtml-face-chooser.c:72
+msgid "De_vilish"
+msgstr "_Дьявольский"
+
+#. Translators: :-(|)
+#: ../components/editor/gtkhtml-face-chooser.c:74
+msgid "_Monkey"
+msgstr "_Дразнящий"
+
+#: ../components/editor/gtkhtml-editor-actions.c:175
+msgid "Failed to insert HTML file."
+msgstr "Не удалось вставить файл HTML."
+
+#: ../components/editor/gtkhtml-editor-actions.c:212
+msgid "Failed to insert text file."
+msgstr "Не удалось вставить текстовый файл."
+
+#: ../components/editor/gtkhtml-editor-actions.c:512
+msgid "No match found"
+msgstr "Не найдено ни одного совпадения"
+
+#: ../components/editor/gtkhtml-editor-actions.c:605
+msgid "Insert HTML File"
+msgstr "Вставить файл HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:628
+#: ../components/editor/gtkhtml-editor-actions.c:1558
+msgid "Insert Image"
+msgstr "Вставить изображение"
+
+#: ../components/editor/gtkhtml-editor-actions.c:691
+msgid "Insert Text File"
+msgstr "Вставить текстовый файл"
+
+#. Replace Button
+#: ../components/editor/gtkhtml-editor-actions.c:1193
+#: ../components/editor/gtkhtml-spell-dialog.c:516
+msgid "_Replace"
+msgstr "_Заменить"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1200
+msgid "Replace _All"
+msgstr "Заменить _все"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1214
+msgid "_Next"
+msgstr "_Следующее"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1221
+msgid "_Copy"
+msgstr "_Копировать"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1223
+msgid "Copy selected text to the clipboard"
+msgstr "Копировать выделенный текст в буфер обмена"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1228
+msgid "Cu_t"
+msgstr "_Вырезать"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1230
+msgid "Cut selected text to the clipboard"
+msgstr "Вырезать выделенный текст в буфер обмена"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1242
+msgid "Find A_gain"
+msgstr "Найти _снова"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1256
+msgid "_Increase Indent"
+msgstr "У_величить отступ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1258
+msgid "Increase Indent"
+msgstr "Увеличить отступ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1263
+msgid "_HTML File..."
+msgstr "Файл _HTML…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1270
+msgid "Te_xt File..."
+msgstr "Те_кстовый файл…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1277
+msgid "_Paste"
+msgstr "Вст_авить"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1279
+msgid "Paste text from the clipboard"
+msgstr "Вставить текст из буфера обмена"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1284
+msgid "Paste _Quotation"
+msgstr "Вставить _цитату"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1291
+msgid "_Redo"
+msgstr "Ве_рнуть"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1293
+msgid "Redo the last undone action"
+msgstr "Повторить последнее отменённое действие"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1298
+msgid "Select _All"
+msgstr "В_ыделить всё"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1305
+msgid "_Find..."
+msgstr "_Найти…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1307
+msgid "Search for text"
+msgstr "Поиск текста"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1312
+msgid "Re_place..."
+msgstr "За_менить…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1314
+msgid "Search for and replace text"
+msgstr "Поиск и замена текста"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1319
+msgid "Check _Spelling..."
+msgstr "Проверить _орфографию…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1326
+#: ../components/editor/gtkhtml-editor-builder.ui.h:91
+msgid "_Test URL..."
+msgstr "_Тестовый URL…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1333
+msgid "_Undo"
+msgstr "_Отменить"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1335
+msgid "Undo the last action"
+msgstr "Повторить последнее отменённое действие"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1340
+msgid "_Decrease Indent"
+msgstr "У_меньшить отступ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1342
+msgid "Decrease Indent"
+msgstr "Уменьшить отступ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1347
+msgid "_Wrap Lines"
+msgstr "Пе_реносить строки"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1356
+msgid "_Edit"
+msgstr "_Правка"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1363
+#: ../components/editor/main.c:323
+msgid "_File"
+msgstr "_Файл"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1370
+msgid "For_mat"
+msgstr "Фор_мат"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1377
+msgid "_Paragraph Style"
+msgstr "Ст_иль абзаца"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1384
+msgid "_Insert"
+msgstr "Вст_авить"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1391
+msgid "_Alignment"
+msgstr "_Выровнять"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1398
+msgid "Current _Languages"
+msgstr "Текущие _языки"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1405
+#: ../components/editor/main.c:354
+msgid "_View"
+msgstr "_Вид"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1415
+msgid "_Center"
+msgstr "По _центру"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1417
+msgid "Center Alignment"
+msgstr "Выравнивать по центру"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1422
+msgid "_Left"
+msgstr "По _левому краю"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1424
+msgid "Left Alignment"
+msgstr "Выравнивать по левому краю"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1429
+msgid "_Right"
+msgstr "По _правому краю"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1431
+msgid "Right Alignment"
+msgstr "Выравнивать по правому краю"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1439
+msgid "_HTML"
+msgstr "_HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1441
+msgid "HTML editing mode"
+msgstr "Режим редактирования HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1446
+msgid "Plain _Text"
+msgstr "_Обычный текст"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1448
+msgid "Plain text editing mode"
+msgstr "Режим редактирования текста"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1456
+msgid "_Normal"
+msgstr "_Обычный"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1463
+msgid "Header _1"
+msgstr "Заголовок _1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1470
+msgid "Header _2"
+msgstr "Заголовок _2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1477
+msgid "Header _3"
+msgstr "Заголовок _3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1484
+msgid "Header _4"
+msgstr "Заголовок _4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1491
+msgid "Header _5"
+msgstr "Заголовок _5"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1498
+msgid "Header _6"
+msgstr "Заголовок _6"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1505
+msgid "A_ddress"
+msgstr "А_дрес"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1512
+msgid "_Preformatted"
+msgstr "_Форматированный"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1519
+msgid "_Bulleted List"
+msgstr "_Маркированный список"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1526
+msgid "_Roman Numeral List"
+msgstr "Нуме_рованный список (римские цифры)"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1533
+msgid "Numbered _List"
+msgstr "Нумерованный _список"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1540
+msgid "_Alphabetical List"
+msgstr "_Алфавитный список"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1556
+#: ../components/editor/gtkhtml-editor-actions.c:1593
+msgid "_Image..."
+msgstr "_Изображение…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1563
+#: ../components/editor/gtkhtml-editor-actions.c:1600
+msgid "_Link..."
+msgstr "_Ссылка…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1565
+msgid "Insert Link"
+msgstr "Вставить ссылку"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1571
+#: ../components/editor/gtkhtml-editor-actions.c:1615
+msgid "_Rule..."
+msgstr "Горизонтальная _линия…"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1574
+msgid "Insert Rule"
+msgstr "Вставить горизонтальную линию"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1579
+#: ../components/editor/gtkhtml-editor-actions.c:1622
+msgid "_Table..."
+msgstr "_Таблица…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1581
+msgid "Insert Table"
+msgstr "Вставить таблицу"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1586
+msgid "_Cell..."
+msgstr "_Ячейка…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1607
+msgid "Pa_ge..."
+msgstr "_Страница…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1631
+msgid "Font _Size"
+msgstr "Размер _шрифта"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1638
+msgid "_Font Style"
+msgstr "Стиль шриф_та"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1648
+#: ../components/editor/gtkhtml-editor-builder.ui.h:24
+msgid "_Bold"
+msgstr "_Полужирный"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1650
+msgid "Bold"
+msgstr "Полужирный"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1656
+#: ../components/editor/gtkhtml-editor-builder.ui.h:23
+msgid "_Italic"
+msgstr "_Курсив"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1658
+msgid "Italic"
+msgstr "Наклонный"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1664
+msgid "_Plain Text"
+msgstr "_Обычный текст"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1666
+msgid "Plain Text"
+msgstr "Обычный текст"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1672
+#: ../components/editor/gtkhtml-editor-builder.ui.h:21
+msgid "_Strikethrough"
+msgstr "Пере_чёркнутый"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1674
+msgid "Strikethrough"
+msgstr "Перечёркнутый"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1680
+#: ../components/editor/gtkhtml-editor-builder.ui.h:22
+msgid "_Underline"
+msgstr "_Подчёркнутый"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1682
+msgid "Underline"
+msgstr "Подчёркнутый"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1692
+msgid "-2"
+msgstr "−2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1700
+msgid "-1"
+msgstr "−1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1708
+msgid "+0"
+msgstr "+0"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1716
+msgid "+1"
+msgstr "+1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1724
+msgid "+2"
+msgstr "+2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1732
+msgid "+3"
+msgstr "+3"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1740
+msgid "+4"
+msgstr "+4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1759
+msgid "Cell Contents"
+msgstr "Содержимое ячейки"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1766
+msgid "Column"
+msgstr "Столбец"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1773
+msgid "Row"
+msgstr "Строка"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1780
+#: ../components/editor/gtkhtml-editor-actions.c:1865
+msgid "Table"
+msgstr "Таблица"
+
+#. Translators: Popup menu item caption, containing all the Delete options for a table
+#: ../components/editor/gtkhtml-editor-actions.c:1790
+msgid "Table Delete"
+msgstr "Удалить таблицу"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1797
+msgid "Input Methods"
+msgstr "Методы ввода"
+
+#. Translators: Popup menu item caption, containing all the Insert options for a table
+#: ../components/editor/gtkhtml-editor-actions.c:1805
+msgid "Table Insert"
+msgstr "Вставить таблицу"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1812
+msgid "Properties"
+msgstr "Свойства"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1830
+msgid "Column After"
+msgstr "Столбец после"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1837
+msgid "Column Before"
+msgstr "Столбец до"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1844
+msgid "Insert _Link"
+msgstr "Вставить _ссылку"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1851
+msgid "Row Above"
+msgstr "Строка над"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1858
+msgid "Row Below"
+msgstr "Строка под"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1872
+msgid "Cell..."
+msgstr "Ячейка…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1879
+msgid "Image..."
+msgstr "Изображение…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1886
+msgid "Link..."
+msgstr "Ссылка…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1893
+msgid "Page..."
+msgstr "Страница…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1900
+msgid "Paragraph..."
+msgstr "Абзац…"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1908
+msgid "Rule..."
+msgstr "Горизонтальная линия…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1915
+msgid "Table..."
+msgstr "Таблица…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1922
+msgid "Text..."
+msgstr "Текст…"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1929
+msgid "Remove Link"
+msgstr "Удалить ссылку"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1946
+msgid "Add Word to Dictionary"
+msgstr "Добавить в словарь"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1953
+msgid "Ignore Misspelled Word"
+msgstr "Игнорировать ошибочное слово"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1960
+msgid "Add Word To"
+msgstr "Добавить слово в"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1969
+msgid "More Suggestions"
+msgstr "Больше предположений"
+
+#. Translators: %s will be replaced with the actual dictionary name,
+#. * where a user can add a word to. This is part of an "Add Word To" submenu.
+#: ../components/editor/gtkhtml-editor-actions.c:2070
+#, c-format
+msgid "%s Dictionary"
+msgstr "Словарь %s"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2138
+msgid "_Emoticon"
+msgstr "_Эмоции"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2139
+msgid "Insert Emoticon"
+msgstr "Вставить значок эмоции"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2200
+msgid "_Find"
+msgstr "_Найти"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2203
+msgid "Re_place"
+msgstr "За_менить"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2206
+msgid "_Image"
+msgstr "_Изображение"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2209
+msgid "_Link"
+msgstr "_Ссылка:"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:2213
+msgid "_Rule"
+msgstr "_Линия"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2216
+#: ../components/editor/gtkhtml-editor-builder.ui.h:72
+msgid "_Table"
+msgstr "_Таблица"
+
+#: ../components/editor/gtkhtml-editor-private.c:277
+msgid "Paragraph Style"
+msgstr "Стиль абзаца"
+
+#: ../components/editor/gtkhtml-editor-private.c:291
+msgid "Editing Mode"
+msgstr "Режим редактирования"
+
+#: ../components/editor/gtkhtml-editor-private.c:303
+msgid "Font Color"
+msgstr "Цвета шрифта"
+
+#: ../components/editor/gtkhtml-editor-private.c:313
+msgid "Font Size"
+msgstr "Размер шрифта"
+
+#: ../components/editor/gtkhtml-editor-private.c:340
+msgid "Automatic"
+msgstr "Автоматическое"
+
+#: ../components/editor/gtkhtml-editor-private.c:548
+msgid "Could not open the link."
+msgstr "Не удалось открыть ссылку."
+
+#: ../components/editor/gtkhtml-editor.c:878
+msgid "Changed property"
+msgstr "Изменённое свойство"
+
+#: ../components/editor/gtkhtml-editor.c:879
+msgid "Whether editor changed"
+msgstr "Может ли редактор вносить изменения"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:1
+msgid "px"
+msgstr "px"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:3
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:4
+msgid "follow"
+msgstr "follow"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:5
+msgid "Top"
+msgstr "Верх"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:6
+msgid "Middle"
+msgstr "Середина"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:7
+msgid "Bottom"
+msgstr "Низ"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:8
+msgid "Left"
+msgstr "Влево"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:9
+msgid "Center"
+msgstr "По центру"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:10
+msgid "Right"
+msgstr "Вправо"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:11
+msgid "None"
+msgstr "Нет"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:12
+msgid "Perforated Paper"
+msgstr "Перфорированная бумага"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:13
+msgid "Blue Ink"
+msgstr "Синие чернила"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:14
+msgid "Paper"
+msgstr "Бумага"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:15
+msgid "Ribbon"
+msgstr "Лента"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:16
+msgid "Midnight"
+msgstr "Полночь"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:17
+msgid "Confidential"
+msgstr "Конфиденциально"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:18
+msgid "Draft"
+msgstr "Черновик"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:19
+msgid "Graph Paper"
+msgstr "Миллиметровая бумага"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:20
+msgid "Text Properties"
+msgstr "Свойства текста"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:25
+msgid "Si_ze:"
+msgstr "Ра_змер"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:26
+msgid "_Color:"
+msgstr "_Цвет:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:27
+msgid "Paragraph Properties"
+msgstr "Свойства абзаца"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:28
+msgid "General"
+msgstr "Общие"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:29
+msgid "_Style:"
+msgstr "_Стиль:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:30
+msgid "Alignment"
+msgstr "Выравнивание"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:31
+msgid "Find"
+msgstr "Найти"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:32
+msgid "Search _backwards"
+msgstr "Искать _назад"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:33
+msgid "Case _sensitive"
+msgstr "С учётом _регистра"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:34
+msgid "_Regular expression"
+msgstr "_Регулярное выражение"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:35
+msgid "Replace"
+msgstr "Заменить"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:36
+msgid "_With:"
+msgstr "_Ширина:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:37
+msgid "R_eplace:"
+msgstr "_Заменить:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:38
+msgid "Replace Confirmation"
+msgstr "Подтверждение замены"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:39
+msgid "Link Properties"
+msgstr "Свойства ссылки"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:40
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:41
+msgid "_Description:"
+msgstr "_Описание:"
+
+#. Translators: Caption of a window. 'Rule' here means a horizontal line in an HTML text.
+#: ../components/editor/gtkhtml-editor-builder.ui.h:43
+msgid "Rule Properties"
+msgstr "Свойства линии"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:44
+msgid "Size"
+msgstr "Размер"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:45
+msgid "_Width:"
+msgstr "_Ширина:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:46
+msgid "_Size:"
+msgstr "Р_азмер:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:47
+msgid "Style"
+msgstr "Стиль"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:48
+msgid "_Alignment:"
+msgstr "_Выравнивание:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:49
+msgid "S_haded"
+msgstr "Зате_нённое"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:50
+msgid "Table Properties"
+msgstr "Свойства таблицы"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:51
+msgid "_Rows:"
+msgstr "Ст_рок:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:52
+msgid "C_olumns:"
+msgstr "_Столбцы:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:53
+msgid "Layout"
+msgstr "Макет"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:54
+msgid "_Spacing:"
+msgstr "_Интервал:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:55
+msgid "_Padding:"
+msgstr "_Заполнение:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:56
+msgid "_Border:"
+msgstr "_Рамка:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:57
+msgid "Background"
+msgstr "Фон"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:58
+msgid "Co_lor:"
+msgstr "_Цвет:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:59
+msgid "_Image:"
+msgstr "Р_исунок:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:60
+msgid "Page Properties"
+msgstr "Свойства страницы"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:61
+msgid "Colors"
+msgstr "Цвета"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:62
+msgid "_Text:"
+msgstr "_Текст:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:63
+msgid "_Link:"
+msgstr "_Ссылка:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:64
+msgid "_Background:"
+msgstr "_Фон:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:65
+msgid "Background Image"
+msgstr "Фоновое изображение"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:66
+msgid "T_emplate:"
+msgstr "_Шаблон:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:67
+msgid "C_ustom:"
+msgstr "Др_угой:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:68
+msgid "Cell Properties"
+msgstr "Свойства ячейки"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:69
+msgid "Scope"
+msgstr "Граница"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:70
+msgid "Col_umn"
+msgstr "Ст_олбец"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:71
+msgid "_Row"
+msgstr "_Строка"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:73
+msgid "C_ell"
+msgstr "_Ячейка"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:74
+msgid "Alignment & Behavior"
+msgstr "Выравнивание и поведение"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:75
+msgid "_Wrap Text"
+msgstr "Пе_реносить строки"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:76
+msgid "Hea_der Style"
+msgstr "Стиль _заголовка"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:77
+msgid "_Vertical:"
+msgstr "В_ертикальное:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:78
+msgid "_Horizontal:"
+msgstr "_Горизонтальное:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:79
+msgid "Column Span:"
+msgstr "Диапазон столбца:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:80
+msgid "Row Span:"
+msgstr "Диапазон строки:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:81
+msgid "Width:"
+msgstr "Ширина:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:82
+msgid "Select An Image"
+msgstr "Выделить изображение"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:83
+msgid "I_mage:"
+msgstr "_Рисунок:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:84
+msgid "C_olor:"
+msgstr "_Цвет:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:85
+msgid "Image Properties"
+msgstr "Свойства изображения"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:86
+msgid "_Source:"
+msgstr "_Источник:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:87
+msgid "_Height:"
+msgstr "В_ысота:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:88
+msgid "_X-Padding:"
+msgstr "Заполнение по _X:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:89
+msgid "_Y-Padding:"
+msgstr "Заполнение по _Y:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:90
+msgid "Link"
+msgstr "Ссылка"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:113
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr "Замены для «%s»"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:443
+msgid "Spell Checker"
+msgstr "Проверка орфографии"
+
+#. Replace All Button
+#: ../components/editor/gtkhtml-spell-dialog.c:530
+msgid "R_eplace All"
+msgstr "Заменить _все"
+
+#. Ignore Button
+#: ../components/editor/gtkhtml-spell-dialog.c:544
+msgid "_Ignore"
+msgstr "_Игнорировать"
+
+#. Skip Button
+#: ../components/editor/gtkhtml-spell-dialog.c:558
+msgid "_Skip"
+msgstr "_Пропустить"
+
+#. Back Button
+#: ../components/editor/gtkhtml-spell-dialog.c:571
+msgid "_Back"
+msgstr "_Назад"
+
+#. Dictionary Label
+#: ../components/editor/gtkhtml-spell-dialog.c:584
+msgid "Dictionary"
+msgstr "Словарь"
+
+#. Add Word Button
+#: ../components/editor/gtkhtml-spell-dialog.c:613
+msgid "_Add Word"
+msgstr "Д_обавить слово"
+
+#. Translators: %s is the language ISO code.
+#: ../components/editor/gtkhtml-spell-language.c:255
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Неизвестный (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#: ../components/editor/gtkhtml-spell-language.c:270
+#: ../components/editor/gtkhtml-spell-language.c:275
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+#: ../components/editor/gtkhtml-spell-language.c:460
+msgctxt "language"
+msgid "Default"
+msgstr "По умолчанию"
+
+#: ../components/editor/main.c:93
+msgid "Save As"
+msgstr "Сохранить как"
+
+#: ../components/editor/main.c:109
+msgid "Untitled document"
+msgstr "Несохранённый документ"
+
+#: ../components/editor/main.c:267
+msgid "HTML Output"
+msgstr "Результат HTML"
+
+#: ../components/editor/main.c:274
+msgid "HTML Source"
+msgstr "Источник HTML"
+
+#: ../components/editor/main.c:281
+msgid "Plain Source"
+msgstr "Обычный текст"
+
+#: ../components/editor/main.c:288
+msgid "_Print..."
+msgstr "_Печать…"
+
+#: ../components/editor/main.c:295
+msgid "Print Pre_view"
+msgstr "Про_смотр печати"
+
+#: ../components/editor/main.c:302
+msgid "_Quit"
+msgstr "В_ыйти"
+
+#: ../components/editor/main.c:309
+msgid "_Save"
+msgstr "_Сохранить"
+
+#: ../components/editor/main.c:316
+msgid "Save _As..."
+msgstr "Сохранить _как…"
+
+#: ../components/editor/main.c:333
+msgid "HTML _Output"
+msgstr "Р_езультат HTML"
+
+#: ../components/editor/main.c:340
+msgid "_HTML Source"
+msgstr "Ист_очник HTML"
+
+#: ../components/editor/main.c:347
+msgid "_Plain Source"
+msgstr "_Обычный текст"
+
+#: ../gtkhtml/htmlbutton.c:140
+msgid "Submit Query"
+msgstr "Выполнить запрос"
+
+#: ../gtkhtml/htmlbutton.c:143
+msgid "Reset"
+msgstr "Сброс"
+
+#. TODO2 dialog instead of warning
+#: ../gtkhtml/htmlengine-print.c:231 ../gtkhtml/htmlengine-print.c:310
+msgid "Cannot allocate default font for printing"
+msgstr "Не удалось распределить исходный шрифт для печати"
+
+#: ../gtkhtml/test.c:374
+msgid "GtkHTML Test"
+msgstr "Проверка GtkHTML"

@@ -1,0 +1,27 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+a11y/image.c
+a11y/object.c
+a11y/text.c
+components/editor/gtkhtml-color-combo.c
+components/editor/gtkhtml-color-state.c
+components/editor/gtkhtml-color-swatch.c
+components/editor/gtkhtml-combo-box.c
+components/editor/gtkhtml-face-chooser.c
+components/editor/gtkhtml-editor-actions.c
+components/editor/gtkhtml-editor-private.c
+components/editor/gtkhtml-editor.c
+[type: gettext/glade]components/editor/gtkhtml-editor-builder.ui
+components/editor/gtkhtml-face-chooser.c
+components/editor/gtkhtml-spell-checker.c
+components/editor/gtkhtml-spell-dialog.c
+components/editor/gtkhtml-spell-language.c
+components/editor/main.c
+gtkhtml/gtkhtml-properties.c
+gtkhtml/gtkhtml.c
+gtkhtml/htmlbutton.c
+gtkhtml/htmlengine-print.c
+gtkhtml/htmlgdkpainter.c
+gtkhtml/htmlprinter.c
+gtkhtml/test.c
+gtkhtml/testgtkhtml.c

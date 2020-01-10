@@ -1,0 +1,2594 @@
+# translation of gtkhtml.txt.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhtml.txt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-11-09 17:30+0200\n"
+"PO-Revision-Date: 2012-11-10 00:10+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0\n"
+
+#: ../a11y/image.c:152
+#, c-format
+msgid "URL is %s, Alternative Text is %s"
+msgstr "הכתובת היא %s, הטקסט האלטרנטיבי הוא %s"
+
+#: ../a11y/image.c:154
+#, c-format
+msgid "URL is %s"
+msgstr "הכתובת היא %s"
+
+#: ../a11y/object.c:52
+#: ../a11y/object.c:62
+#: ../a11y/text.c:126
+msgid "grab focus"
+msgstr "לכידת המיקוד"
+
+#: ../a11y/object.c:258
+msgid "Panel containing HTML"
+msgstr "לוח שמכיל HTML"
+
+#: ../components/editor/gtkhtml-color-combo.c:77
+msgid "black"
+msgstr "שחור"
+
+#: ../components/editor/gtkhtml-color-combo.c:78
+msgid "light brown"
+msgstr "חום בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:79
+msgid "brown gold"
+msgstr "זהב חום"
+
+#: ../components/editor/gtkhtml-color-combo.c:80
+msgid "dark green #2"
+msgstr "ירוק כהה #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:81
+msgid "navy"
+msgstr "כחול כהה מאוד"
+
+#: ../components/editor/gtkhtml-color-combo.c:82
+msgid "dark blue"
+msgstr "כחול כהה"
+
+#: ../components/editor/gtkhtml-color-combo.c:83
+msgid "purple #2"
+msgstr "סגול #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:84
+msgid "very dark gray"
+msgstr "אפור כהה מאוד"
+
+#: ../components/editor/gtkhtml-color-combo.c:86
+msgid "dark red"
+msgstr "אדום כהה"
+
+#: ../components/editor/gtkhtml-color-combo.c:87
+msgid "red-orange"
+msgstr "אדום-כתום"
+
+#: ../components/editor/gtkhtml-color-combo.c:88
+msgid "gold"
+msgstr "זהב"
+
+#: ../components/editor/gtkhtml-color-combo.c:89
+msgid "dark green"
+msgstr "ירוק כהה"
+
+#: ../components/editor/gtkhtml-color-combo.c:90
+msgid "dull blue"
+msgstr "כחול עמום"
+
+#: ../components/editor/gtkhtml-color-combo.c:91
+msgid "blue"
+msgstr "כחול"
+
+#: ../components/editor/gtkhtml-color-combo.c:92
+msgid "dull purple"
+msgstr "סגול עמום"
+
+#: ../components/editor/gtkhtml-color-combo.c:93
+msgid "dark grey"
+msgstr "אפור כהה"
+
+#: ../components/editor/gtkhtml-color-combo.c:95
+msgid "red"
+msgstr "אדום"
+
+#: ../components/editor/gtkhtml-color-combo.c:96
+msgid "orange"
+msgstr "כתום"
+
+#: ../components/editor/gtkhtml-color-combo.c:97
+msgid "lime"
+msgstr "ירקרק"
+
+#: ../components/editor/gtkhtml-color-combo.c:98
+msgid "dull green"
+msgstr "ירוק עמום"
+
+#: ../components/editor/gtkhtml-color-combo.c:99
+msgid "dull blue #2"
+msgstr "כחול עמום #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:100
+msgid "sky blue #2"
+msgstr "תכלת #2"
+
+#: ../components/editor/gtkhtml-color-combo.c:101
+msgid "purple"
+msgstr "סגול"
+
+#: ../components/editor/gtkhtml-color-combo.c:102
+msgid "gray"
+msgstr "אפור"
+
+#: ../components/editor/gtkhtml-color-combo.c:104
+msgid "magenta"
+msgstr "אדום לילכי"
+
+#: ../components/editor/gtkhtml-color-combo.c:105
+msgid "bright orange"
+msgstr "כתום בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:106
+msgid "yellow"
+msgstr "צהוב"
+
+#: ../components/editor/gtkhtml-color-combo.c:107
+msgid "green"
+msgstr "ירוק"
+
+#: ../components/editor/gtkhtml-color-combo.c:108
+msgid "cyan"
+msgstr "כחול-ירקרק"
+
+#: ../components/editor/gtkhtml-color-combo.c:109
+msgid "bright blue"
+msgstr "כחול בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:110
+msgid "red purple"
+msgstr "סגול אדום"
+
+#: ../components/editor/gtkhtml-color-combo.c:111
+msgid "light grey"
+msgstr "אפור בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:113
+msgid "pink"
+msgstr "ורוד"
+
+#: ../components/editor/gtkhtml-color-combo.c:114
+msgid "light orange"
+msgstr "כתום בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:115
+msgid "light yellow"
+msgstr "צהוב בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:116
+msgid "light green"
+msgstr "ירוק בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:117
+msgid "light cyan"
+msgstr "כחול-ירקרק בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:118
+msgid "light blue"
+msgstr "כחול בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:119
+msgid "light purple"
+msgstr "סגול בהיר"
+
+#: ../components/editor/gtkhtml-color-combo.c:120
+msgid "white"
+msgstr "לבן"
+
+#: ../components/editor/gtkhtml-color-combo.c:275
+msgid "Choose Custom Color"
+msgstr "בחירת צבע מותאם אישית"
+
+#: ../components/editor/gtkhtml-color-combo.c:785
+#: ../components/editor/gtkhtml-color-state.c:224
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: ../components/editor/gtkhtml-color-combo.c:1009
+msgid "custom"
+msgstr "מותאם אישית"
+
+#: ../components/editor/gtkhtml-color-combo.c:1017
+msgid "Custom Color..."
+msgstr "צבע מותאם אישית..."
+
+#. Translators: :-)
+#: ../components/editor/gtkhtml-face-chooser.c:34
+msgid "_Smile"
+msgstr "מ_חייך"
+
+#. Translators: :-(
+#: ../components/editor/gtkhtml-face-chooser.c:36
+msgid "S_ad"
+msgstr "ע_צוב"
+
+#. Translators: ;-)
+#: ../components/editor/gtkhtml-face-chooser.c:38
+msgid "_Wink"
+msgstr "_קורץ"
+
+#. Translators: :-P
+#: ../components/editor/gtkhtml-face-chooser.c:40
+msgid "Ton_gue"
+msgstr "_לשון"
+
+#. Translators: :-))
+#: ../components/editor/gtkhtml-face-chooser.c:42
+msgid "Laug_h"
+msgstr "צו_חק"
+
+#. Translators: :-|
+#: ../components/editor/gtkhtml-face-chooser.c:44
+msgid "_Plain"
+msgstr "_פשוט"
+
+#. Translators: :-!
+#: ../components/editor/gtkhtml-face-chooser.c:46
+msgid "Smi_rk"
+msgstr "_גיחוך"
+
+#. Translators: :"-)
+#: ../components/editor/gtkhtml-face-chooser.c:48
+msgid "_Embarrassed"
+msgstr "_נבוך"
+
+#. Translators: :-D
+#: ../components/editor/gtkhtml-face-chooser.c:50
+msgid "_Big Smile"
+msgstr "ח_יוך גדול"
+
+#. Translators: :-/
+#: ../components/editor/gtkhtml-face-chooser.c:52
+msgid "Uncer_tain"
+msgstr "לא ה_חלטי"
+
+#. Translators: :-O
+#: ../components/editor/gtkhtml-face-chooser.c:54
+msgid "S_urprise"
+msgstr "_מופתע"
+
+#. Translators: :-S
+#: ../components/editor/gtkhtml-face-chooser.c:56
+msgid "W_orried"
+msgstr "מו_דאג"
+
+#. Translators: :-*
+#: ../components/editor/gtkhtml-face-chooser.c:58
+msgid "_Kiss"
+msgstr "_נשיקה"
+
+#. Translators: X-(
+#: ../components/editor/gtkhtml-face-chooser.c:60
+msgid "A_ngry"
+msgstr "_כועס"
+
+#. Translators: B-)
+#: ../components/editor/gtkhtml-face-chooser.c:62
+msgid "_Cool"
+msgstr "מ_גניב"
+
+#. Translators: O:-)
+#: ../components/editor/gtkhtml-face-chooser.c:64
+msgid "Ange_l"
+msgstr "_מלאך"
+
+#. Translators: :'(
+#: ../components/editor/gtkhtml-face-chooser.c:66
+msgid "Cr_ying"
+msgstr "_בוכה"
+
+#. Translators: :-Q
+#: ../components/editor/gtkhtml-face-chooser.c:68
+msgid "S_ick"
+msgstr "_חולה"
+
+#. Translators: |-)
+#: ../components/editor/gtkhtml-face-chooser.c:70
+msgid "Tire_d"
+msgstr "_עייף"
+
+#. Translators: >:-)
+#: ../components/editor/gtkhtml-face-chooser.c:72
+msgid "De_vilish"
+msgstr "_שטני"
+
+#. Translators: :-(|)
+#: ../components/editor/gtkhtml-face-chooser.c:74
+msgid "_Monkey"
+msgstr "_קוף"
+
+#: ../components/editor/gtkhtml-editor-actions.c:175
+msgid "Failed to insert HTML file."
+msgstr "ארע כשל בהוספת קובץ ה־HTML."
+
+#: ../components/editor/gtkhtml-editor-actions.c:212
+msgid "Failed to insert text file."
+msgstr "ארע כשל בהוספת קובץ הטקסט."
+
+#: ../components/editor/gtkhtml-editor-actions.c:512
+msgid "No match found"
+msgstr "לא נמצאו התאמות"
+
+#: ../components/editor/gtkhtml-editor-actions.c:605
+msgid "Insert HTML File"
+msgstr "הוספת קובץ HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:628
+#: ../components/editor/gtkhtml-editor-actions.c:1558
+msgid "Insert Image"
+msgstr "הוספת תמונה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:691
+msgid "Insert Text File"
+msgstr "הוספת קובץ טקסט"
+
+#. Replace Button
+#: ../components/editor/gtkhtml-editor-actions.c:1193
+#: ../components/editor/gtkhtml-spell-dialog.c:516
+msgid "_Replace"
+msgstr "ה_חלפה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1200
+msgid "Replace _All"
+msgstr "החלפת ה_כול"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1214
+msgid "_Next"
+msgstr "ה_בא"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1221
+msgid "_Copy"
+msgstr "ה_עתק"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1223
+msgid "Copy selected text to the clipboard"
+msgstr "העתקת הטקסט הנבחר ללוח הגזירים"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1228
+msgid "Cu_t"
+msgstr "_גזור"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1230
+msgid "Cut selected text to the clipboard"
+msgstr "גזירת הטקסט הנבחר ללוח הגזירים"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1242
+msgid "Find A_gain"
+msgstr "חיפוש _שוב"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1256
+msgid "_Increase Indent"
+msgstr "ה_גדלת הזחה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1258
+msgid "Increase Indent"
+msgstr "הגדלת הזחה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1263
+msgid "_HTML File..."
+msgstr "_קובץ HTML..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1270
+msgid "Te_xt File..."
+msgstr "קובץ _טקסט..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1277
+msgid "_Paste"
+msgstr "ה_דבק"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1279
+msgid "Paste text from the clipboard"
+msgstr "הדבקה מלוח הגזירים"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1284
+msgid "Paste _Quotation"
+msgstr "הדבק _ציטוט"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1291
+msgid "_Redo"
+msgstr "_ביצוע שוב"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1293
+msgid "Redo the last undone action"
+msgstr "ביצוע חוזר של הפעולה שבוטלה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1298
+msgid "Select _All"
+msgstr "בחר_הכול"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1305
+msgid "_Find..."
+msgstr "_חיפוש..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1307
+msgid "Search for text"
+msgstr "חיפוש אחר טקסט"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1312
+msgid "Re_place..."
+msgstr "_החלפה..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1314
+msgid "Search for and replace text"
+msgstr "חיפוש אחר טקסט והחלפתו"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1319
+msgid "Check _Spelling..."
+msgstr "בדיקת _איות..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1326
+#: ../components/editor/gtkhtml-editor-builder.ui.h:91
+msgid "_Test URL..."
+msgstr "ב_דיקת כתובת..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1333
+msgid "_Undo"
+msgstr "_ביטול"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1335
+msgid "Undo the last action"
+msgstr "בטל את השינוי האחרון"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1340
+msgid "_Decrease Indent"
+msgstr "ה_קטנת הזחה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1342
+msgid "Decrease Indent"
+msgstr "הקטנת הזחה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1347
+msgid "_Wrap Lines"
+msgstr "_גלישת שורות"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1356
+msgid "_Edit"
+msgstr "_עריכה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1363
+#: ../components/editor/main.c:323
+msgid "_File"
+msgstr "_קובץ"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1370
+msgid "For_mat"
+msgstr "_תבנית"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1377
+msgid "_Paragraph Style"
+msgstr "סגנון _פסקה..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1384
+msgid "_Insert"
+msgstr "ה_וספה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1391
+msgid "_Alignment"
+msgstr "_יישור"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1398
+msgid "Current _Languages"
+msgstr "שפות _נוכחיות"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1405
+#: ../components/editor/main.c:354
+msgid "_View"
+msgstr "_תצוגה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1415
+msgid "_Center"
+msgstr "_מרכז"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1417
+msgid "Center Alignment"
+msgstr "יישור למרכז"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1422
+msgid "_Left"
+msgstr "_שמאל"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1424
+msgid "Left Alignment"
+msgstr "יישור לשמאל"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1429
+msgid "_Right"
+msgstr "_ימין"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1431
+msgid "Right Alignment"
+msgstr "יישור לימין"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1439
+msgid "_HTML"
+msgstr "_HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1441
+msgid "HTML editing mode"
+msgstr "מצב עריכת HTML"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1446
+msgid "Plain _Text"
+msgstr "טקסט _פשוט"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1448
+msgid "Plain text editing mode"
+msgstr "מצב עריכת טקסט פשוט"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1456
+msgid "_Normal"
+msgstr "_רגיל"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1463
+msgid "Header _1"
+msgstr "כותרת _1"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1470
+msgid "Header _2"
+msgstr "כותרת _2"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1477
+msgid "Header _3"
+msgstr "כותרת _3"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1484
+msgid "Header _4"
+msgstr "כותרת _4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1491
+msgid "Header _5"
+msgstr "כותרת _5"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1498
+msgid "Header _6"
+msgstr "כותרת _6"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1505
+msgid "A_ddress"
+msgstr "_כתובות"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1512
+msgid "_Preformatted"
+msgstr "_תבנית מוגדרת"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1519
+msgid "_Bulleted List"
+msgstr "רשימה _מובלטת"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1526
+msgid "_Roman Numeral List"
+msgstr "רשימה מספרית _רומית"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1533
+msgid "Numbered _List"
+msgstr "_רשימה מספרית"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1540
+msgid "_Alphabetical List"
+msgstr "רשימה _אלפבתית"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1556
+#: ../components/editor/gtkhtml-editor-actions.c:1593
+msgid "_Image..."
+msgstr "_תמונה..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1563
+#: ../components/editor/gtkhtml-editor-actions.c:1600
+msgid "_Link..."
+msgstr "_קישור..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1565
+msgid "Insert Link"
+msgstr "הוספת קישור"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1571
+#: ../components/editor/gtkhtml-editor-actions.c:1615
+msgid "_Rule..."
+msgstr "_קו..."
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1574
+msgid "Insert Rule"
+msgstr "הוספת קו"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1579
+#: ../components/editor/gtkhtml-editor-actions.c:1622
+msgid "_Table..."
+msgstr "_טבלה..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1581
+msgid "Insert Table"
+msgstr "הוספת טבלה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1586
+msgid "_Cell..."
+msgstr "_תא..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1607
+msgid "Pa_ge..."
+msgstr "_עמוד..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1631
+msgid "Font _Size"
+msgstr "_גודל גופן"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1638
+msgid "_Font Style"
+msgstr "_סגנון גופן"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1648
+#: ../components/editor/gtkhtml-editor-builder.ui.h:24
+msgid "_Bold"
+msgstr "_מודגש"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1650
+msgid "Bold"
+msgstr "מודגש"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1656
+#: ../components/editor/gtkhtml-editor-builder.ui.h:23
+msgid "_Italic"
+msgstr "_נטוי"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1658
+msgid "Italic"
+msgstr "נטוי"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1664
+msgid "_Plain Text"
+msgstr "טקסט _פשוט"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1666
+msgid "Plain Text"
+msgstr "טקסט פשוט"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1672
+#: ../components/editor/gtkhtml-editor-builder.ui.h:21
+msgid "_Strikethrough"
+msgstr "_קו חוצה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1674
+msgid "Strikethrough"
+msgstr "קו חוצה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1680
+#: ../components/editor/gtkhtml-editor-builder.ui.h:22
+msgid "_Underline"
+msgstr "_קו תחתי"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1682
+msgid "Underline"
+msgstr "קו תחתי"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1692
+msgid "-2"
+msgstr "-2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1700
+msgid "-1"
+msgstr "-1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1708
+msgid "+0"
+msgstr "+0"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1716
+msgid "+1"
+msgstr "+1"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1724
+msgid "+2"
+msgstr "+2"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1732
+msgid "+3"
+msgstr "+3"
+
+#. Translators: This is a font size level. It is shown on a tool bar. Please keep it as short as possible.
+#: ../components/editor/gtkhtml-editor-actions.c:1740
+msgid "+4"
+msgstr "+4"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1759
+msgid "Cell Contents"
+msgstr "תכני תא"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1766
+msgid "Column"
+msgstr "עמודה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1773
+msgid "Row"
+msgstr "שורה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1780
+#: ../components/editor/gtkhtml-editor-actions.c:1865
+msgid "Table"
+msgstr "טבלה"
+
+#. Translators: Popup menu item caption, containing all the Delete options for a table
+#: ../components/editor/gtkhtml-editor-actions.c:1790
+msgid "Table Delete"
+msgstr "מחיקת טבלה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1797
+msgid "Input Methods"
+msgstr "שיטות קלט"
+
+#. Translators: Popup menu item caption, containing all the Insert options for a table
+#: ../components/editor/gtkhtml-editor-actions.c:1805
+msgid "Table Insert"
+msgstr "הוספת טבלה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1812
+msgid "Properties"
+msgstr "מאפיינים"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1830
+msgid "Column After"
+msgstr "עמודה אחרי"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1837
+msgid "Column Before"
+msgstr "עמודה לפני"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1844
+msgid "Insert _Link"
+msgstr "הוספת _קישור"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1851
+msgid "Row Above"
+msgstr "שורה מעלה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1858
+msgid "Row Below"
+msgstr "שורה מטה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1872
+msgid "Cell..."
+msgstr "תא..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1879
+msgid "Image..."
+msgstr "תמונה..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1886
+msgid "Link..."
+msgstr "קישור..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1893
+msgid "Page..."
+msgstr "עמוד..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1900
+msgid "Paragraph..."
+msgstr "פסקה..."
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:1908
+msgid "Rule..."
+msgstr "קו..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1915
+msgid "Table..."
+msgstr "טבלה..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1922
+msgid "Text..."
+msgstr "טקסט..."
+
+#: ../components/editor/gtkhtml-editor-actions.c:1929
+msgid "Remove Link"
+msgstr "הסרת קישור"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1946
+msgid "Add Word to Dictionary"
+msgstr "הוספת מילה למילון"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1953
+msgid "Ignore Misspelled Word"
+msgstr "התעלמות משגיאות כתיב"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1960
+msgid "Add Word To"
+msgstr "הוספת מילה אל"
+
+#: ../components/editor/gtkhtml-editor-actions.c:1969
+msgid "More Suggestions"
+msgstr "הצעות נוספות"
+
+#. Translators: %s will be replaced with the actual dictionary name,
+#. * where a user can add a word to. This is part of an "Add Word To" submenu.
+#: ../components/editor/gtkhtml-editor-actions.c:2070
+#, c-format
+msgid "%s Dictionary"
+msgstr "מילון %s"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2138
+msgid "_Emoticon"
+msgstr "_סמיילי"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2139
+msgid "Insert Emoticon"
+msgstr "הכנסת רגשונים"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2200
+msgid "_Find"
+msgstr "_חיפוש"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2203
+msgid "Re_place"
+msgstr "הח_לפה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2206
+msgid "_Image"
+msgstr "תמו_נה"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2209
+msgid "_Link"
+msgstr "_קישור"
+
+#. Translators: 'Rule' here means a horizontal line in an HTML text
+#: ../components/editor/gtkhtml-editor-actions.c:2213
+msgid "_Rule"
+msgstr "_קו"
+
+#: ../components/editor/gtkhtml-editor-actions.c:2216
+#: ../components/editor/gtkhtml-editor-builder.ui.h:72
+msgid "_Table"
+msgstr "טב_לה"
+
+#: ../components/editor/gtkhtml-editor-private.c:277
+msgid "Paragraph Style"
+msgstr "סגנון פסקה"
+
+#: ../components/editor/gtkhtml-editor-private.c:291
+msgid "Editing Mode"
+msgstr "מצב עריכה"
+
+#: ../components/editor/gtkhtml-editor-private.c:303
+msgid "Font Color"
+msgstr "צבע גופן"
+
+#: ../components/editor/gtkhtml-editor-private.c:313
+msgid "Font Size"
+msgstr "גודל גופן"
+
+#: ../components/editor/gtkhtml-editor-private.c:340
+msgid "Automatic"
+msgstr "אוטומטי"
+
+#: ../components/editor/gtkhtml-editor-private.c:548
+msgid "Could not open the link."
+msgstr "לא ניתן לפתוח את הקישור."
+
+#: ../components/editor/gtkhtml-editor.c:878
+msgid "Changed property"
+msgstr "המאפיין השתנה"
+
+#: ../components/editor/gtkhtml-editor.c:879
+msgid "Whether editor changed"
+msgstr "האם העורך השתנה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:1
+msgid "px"
+msgstr "פיקסלים"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:3
+#, no-c-format
+msgid "%"
+msgstr "%"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:4
+msgid "follow"
+msgstr "מעקב"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:5
+msgid "Top"
+msgstr "מעלה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:6
+msgid "Middle"
+msgstr "אמצע"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:7
+msgid "Bottom"
+msgstr "תחתית"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:8
+msgid "Left"
+msgstr "שמאל"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:9
+msgid "Center"
+msgstr "מרכז"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:10
+msgid "Right"
+msgstr "ימין"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:11
+msgid "None"
+msgstr "ללא"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:12
+msgid "Perforated Paper"
+msgstr "נייר מחורר"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:13
+msgid "Blue Ink"
+msgstr "דיו כחול"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:14
+msgid "Paper"
+msgstr "נייר"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:15
+msgid "Ribbon"
+msgstr "סרט"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:16
+msgid "Midnight"
+msgstr "חצות"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:17
+msgid "Confidential"
+msgstr "חסוי"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:18
+msgid "Draft"
+msgstr "טיוטה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:19
+msgid "Graph Paper"
+msgstr "דף משבצות"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:20
+msgid "Text Properties"
+msgstr "מאפייני טקסט"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:25
+msgid "Si_ze:"
+msgstr "_גודל:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:26
+msgid "_Color:"
+msgstr "_צבע:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:27
+msgid "Paragraph Properties"
+msgstr "מאפייני פסקה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:28
+msgid "General"
+msgstr "כללי"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:29
+msgid "_Style:"
+msgstr "_סגנון:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:30
+msgid "Alignment"
+msgstr "יישור"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:31
+msgid "Find"
+msgstr "חפש"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:32
+msgid "Search _backwards"
+msgstr "חפש _אחורה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:33
+msgid "Case _sensitive"
+msgstr "תלוי _רישיות"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:34
+msgid "_Regular expression"
+msgstr "_ביטוי רגולרי"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:35
+msgid "Replace"
+msgstr "החלף"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:36
+msgid "_With:"
+msgstr "_עם:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:37
+msgid "R_eplace:"
+msgstr "ה_חלף:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:38
+msgid "Replace Confirmation"
+msgstr "אישור להחלפה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:39
+msgid "Link Properties"
+msgstr "מאפייני קישור"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:40
+msgid "_URL:"
+msgstr "כ_תובת:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:41
+msgid "_Description:"
+msgstr "תי_אור:"
+
+#. Translators: Caption of a window. 'Rule' here means a horizontal line in an HTML text.
+#: ../components/editor/gtkhtml-editor-builder.ui.h:43
+msgid "Rule Properties"
+msgstr "מאפייני קו"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:44
+msgid "Size"
+msgstr "גודל"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:45
+msgid "_Width:"
+msgstr "_רוחב:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:46
+msgid "_Size:"
+msgstr "גו_דל:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:47
+msgid "Style"
+msgstr "סגנון"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:48
+msgid "_Alignment:"
+msgstr "_יישור:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:49
+msgid "S_haded"
+msgstr "_מוצל"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:50
+msgid "Table Properties"
+msgstr "מאפייני טבלה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:51
+msgid "_Rows:"
+msgstr "שו_רות:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:52
+msgid "C_olumns:"
+msgstr "ע_מודות:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:53
+msgid "Layout"
+msgstr "פריסה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:54
+msgid "_Spacing:"
+msgstr "מ_רווח:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:55
+msgid "_Padding:"
+msgstr "רי_פוד:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:56
+msgid "_Border:"
+msgstr "_גבול:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:57
+msgid "Background"
+msgstr "רקע"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:58
+msgid "Co_lor:"
+msgstr "_צבע:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:59
+msgid "_Image:"
+msgstr "תמו_נה:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:60
+msgid "Page Properties"
+msgstr "מאפייני דף"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:61
+msgid "Colors"
+msgstr "צבעים"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:62
+msgid "_Text:"
+msgstr "_טקסט:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:63
+msgid "_Link:"
+msgstr "_קישור:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:64
+msgid "_Background:"
+msgstr "_רקע:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:65
+msgid "Background Image"
+msgstr "תמונת הרקע"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:66
+msgid "T_emplate:"
+msgstr "_תבנית"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:67
+msgid "C_ustom:"
+msgstr "_מותאם:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:68
+msgid "Cell Properties"
+msgstr "מאפייני תא"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:69
+msgid "Scope"
+msgstr "טווח"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:70
+msgid "Col_umn"
+msgstr "_עמודה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:71
+msgid "_Row"
+msgstr "_שורה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:73
+msgid "C_ell"
+msgstr "_תא"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:74
+msgid "Alignment & Behavior"
+msgstr "כיוון והתנהגות"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:75
+msgid "_Wrap Text"
+msgstr "_גלישת השורה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:76
+msgid "Hea_der Style"
+msgstr "סגנון _כותרת"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:77
+msgid "_Vertical:"
+msgstr "א_נכי:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:78
+msgid "_Horizontal:"
+msgstr "אופ_קי:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:79
+msgid "Column Span:"
+msgstr "פריסת עמודה:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:80
+msgid "Row Span:"
+msgstr "פריסת שורה:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:81
+msgid "Width:"
+msgstr "רוחב:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:82
+msgid "Select An Image"
+msgstr "בחר_תמונה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:83
+msgid "I_mage:"
+msgstr "ת_מונה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:84
+msgid "C_olor:"
+msgstr "_צבע:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:85
+msgid "Image Properties"
+msgstr "מאפייני תמונה"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:86
+msgid "_Source:"
+msgstr "_מקור:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:87
+msgid "_Height:"
+msgstr "גו_בה:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:88
+msgid "_X-Padding:"
+msgstr "ריפוד _X:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:89
+msgid "_Y-Padding:"
+msgstr "ריפוד _Y:"
+
+#: ../components/editor/gtkhtml-editor-builder.ui.h:90
+msgid "Link"
+msgstr "קישור"
+
+#: ../components/editor/gtkhtml-spell-dialog.c:113
+#, c-format
+msgid "Suggestions for \"%s\""
+msgstr "הצעות עבור \"%s\""
+
+#: ../components/editor/gtkhtml-spell-dialog.c:443
+msgid "Spell Checker"
+msgstr "בודק איות"
+
+#. Replace All Button
+#: ../components/editor/gtkhtml-spell-dialog.c:530
+msgid "R_eplace All"
+msgstr "החלפת ה_כול"
+
+#. Ignore Button
+#: ../components/editor/gtkhtml-spell-dialog.c:544
+msgid "_Ignore"
+msgstr "_התעלמות"
+
+#. Skip Button
+#: ../components/editor/gtkhtml-spell-dialog.c:558
+msgid "_Skip"
+msgstr "_דילוג"
+
+#. Back Button
+#: ../components/editor/gtkhtml-spell-dialog.c:571
+msgid "_Back"
+msgstr "_אחורה"
+
+#. Dictionary Label
+#: ../components/editor/gtkhtml-spell-dialog.c:584
+msgid "Dictionary"
+msgstr "מילון"
+
+#. Add Word Button
+#: ../components/editor/gtkhtml-spell-dialog.c:613
+msgid "_Add Word"
+msgstr "הוספת _מילה"
+
+#. Translators: %s is the language ISO code.
+#: ../components/editor/gtkhtml-spell-language.c:255
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "לא ידוע (%s)"
+
+#. Translators: The first %s is the language name, and the
+#. * second is the country name. Example: "French (France)"
+#: ../components/editor/gtkhtml-spell-language.c:270
+#: ../components/editor/gtkhtml-spell-language.c:275
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: This refers to the default language used
+#. * by the spell checker.
+#: ../components/editor/gtkhtml-spell-language.c:460
+msgctxt "language"
+msgid "Default"
+msgstr "ברירת המחדל"
+
+#: ../components/editor/main.c:93
+msgid "Save As"
+msgstr "שמור בשם"
+
+#: ../components/editor/main.c:109
+msgid "Untitled document"
+msgstr "מסמך ללא שם"
+
+#: ../components/editor/main.c:267
+msgid "HTML Output"
+msgstr "פלט HTML"
+
+#: ../components/editor/main.c:274
+msgid "HTML Source"
+msgstr "מקור HTML"
+
+#: ../components/editor/main.c:281
+msgid "Plain Source"
+msgstr "טקסט פשוט"
+
+#: ../components/editor/main.c:288
+msgid "_Print..."
+msgstr "_הדפס..."
+
+#: ../components/editor/main.c:295
+msgid "Print Pre_view"
+msgstr "_תצוגה מקדימה"
+
+#: ../components/editor/main.c:302
+msgid "_Quit"
+msgstr "_יציאה"
+
+#: ../components/editor/main.c:309
+msgid "_Save"
+msgstr "_שמור"
+
+#: ../components/editor/main.c:316
+msgid "Save _As..."
+msgstr "שמור _בשם..."
+
+#: ../components/editor/main.c:333
+msgid "HTML _Output"
+msgstr "_פלט HTML"
+
+#: ../components/editor/main.c:340
+msgid "_HTML Source"
+msgstr "_מקור HTML"
+
+#: ../components/editor/main.c:347
+msgid "_Plain Source"
+msgstr "טקסט _פשוט"
+
+#: ../gtkhtml/htmlbutton.c:140
+msgid "Submit Query"
+msgstr "שליחת שאילתה"
+
+#: ../gtkhtml/htmlbutton.c:143
+msgid "Reset"
+msgstr "איפוס"
+
+#. TODO2 dialog instead of warning
+#: ../gtkhtml/htmlengine-print.c:231
+#: ../gtkhtml/htmlengine-print.c:310
+msgid "Cannot allocate default font for printing"
+msgstr "לא ניתן להקצות גופן ברירת מחדל להדפסה"
+
+#: ../gtkhtml/test.c:374
+msgid "GtkHTML Test"
+msgstr "בדיקת GtkHTML"
+
+#~ msgid "Current color"
+#~ msgstr "צבע נוכחי"
+
+#~ msgid "The currently selected color"
+#~ msgstr "הצבע הנוכחי"
+
+#~ msgid "Default color"
+#~ msgstr "צבע ברירת המחדל"
+
+#~ msgid "The color associated with the default button"
+#~ msgstr "הצבע שמשוייך לכפתור ברירת המחדל"
+
+#~ msgid "Default label"
+#~ msgstr "תווית ברירת המחדל"
+
+#~ msgid "The label for the default button"
+#~ msgstr "התווית עבור כפתור ברירת המחדל"
+
+#~ msgid "Default is transparent"
+#~ msgstr "שקוף הוא ברירת המחדל"
+
+#~ msgid "Whether the default color is transparent"
+#~ msgstr "האם צבע ברירת המחדל הוא שקוף"
+
+#~ msgid "Color palette"
+#~ msgstr "פלטת צבע"
+
+#~ msgid "Custom color palette"
+#~ msgstr "פלטת צבע צבע מותאמת אישית"
+
+#~ msgid "Popup shown"
+#~ msgstr "פריט מוקפץ יופיע"
+
+#~ msgid "Whether the combo's dropdown is shown"
+#~ msgstr "האם תופיע תיבת הבחירה הנגללת"
+
+#~ msgid "Color state"
+#~ msgstr "מצב צבע"
+
+#~ msgid "The state of a color combo box"
+#~ msgstr "מצב תיבת בחירת הצבע הנגללת"
+
+#~ msgid "The current color"
+#~ msgstr "הצבע הנוכחי"
+
+#~ msgid "The default color"
+#~ msgstr "צבע ברירת המחדל"
+
+#~ msgid "Description of the default color"
+#~ msgstr "תיאור צבע ברירת המחדל"
+
+#~ msgid "Color"
+#~ msgstr "צבע"
+
+#~ msgid "Frame Shadow"
+#~ msgstr "צל מסגרת"
+
+#~ msgid "Appearance of the frame border"
+#~ msgstr "מראה גבול המסגרת"
+
+#~ msgid "Action"
+#~ msgstr "פעולה"
+
+#~ msgid "A GtkRadioAction"
+#~ msgstr "‏GtkRadioAction"
+
+#~ msgid "Current Folder"
+#~ msgstr "תיקייה נוכחית"
+
+#~ msgid "The initial folder for file chooser dialogs"
+#~ msgstr "תיקיית ההתחלה בחלונות בחירת קובץ"
+
+#~ msgid "Filename"
+#~ msgstr "שם קובץ"
+
+#~ msgid "The filename to use when saving"
+#~ msgstr "שם הקובץ לשמירה"
+
+#~ msgid "HTML Mode"
+#~ msgstr "מצב HTML"
+
+#~ msgid "Edit HTML or plain text"
+#~ msgstr "ערוך HTML או טקסט פשוט"
+
+#~ msgid "Inline Spelling"
+#~ msgstr "בדיקת איות פנימית"
+
+#~ msgid "Check your spelling as you type"
+#~ msgstr "בדוק את האיות שלך תוך כדי כתיבה"
+
+#~ msgid "Magic Links"
+#~ msgstr "קישורים קסומים"
+
+#~ msgid "Make URIs clickable as you type"
+#~ msgstr "הפוך כתובות ללחיצות תוך כדי כתיבה"
+
+#~ msgid "Magic Smileys"
+#~ msgstr "סמיילים קסומים"
+
+#~ msgid "Convert emoticons to images as you type"
+#~ msgstr "המרת הרגשונים לתמונות בעת ההקלדה"
+
+#~ msgid "Language"
+#~ msgstr "שפה"
+
+#~ msgid "The language used by the spell checker"
+#~ msgstr "השפה לשימוש על ידי בודק האיות"
+
+#~ msgid "Misspelled Word"
+#~ msgstr "שגיאת כתיב"
+
+#~ msgid "The current misspelled word"
+#~ msgstr "שגיאת הכתיב הנוכחית"
+
+#~ msgid "Editable"
+#~ msgstr "ניתן לעריכה"
+
+#~ msgid "Document Title"
+#~ msgstr "שם מסמך"
+
+#~ msgid "The title of the current document"
+#~ msgstr "שם המסמך הנוכחי"
+
+#~ msgid "Document Base"
+#~ msgstr "בסיס המסמך"
+
+#~ msgid "The base URL for relative references"
+#~ msgstr "כתובת הבסיס עבור הפניות יחסיות"
+
+#~ msgid "Target Base"
+#~ msgstr "בסיס מטרה"
+
+#~ msgid "The base URL of the target frame"
+#~ msgstr "כתובת הבסיס של מסגרת היעד"
+
+#~ msgid "Fixed Width Font"
+#~ msgstr "גופן רוחב קבוע"
+
+#~ msgid "The Monospace font to use for typewriter text"
+#~ msgstr "גופן ה-Monospace עבור הטקסט בכתבן"
+
+#~ msgid "New Link Color"
+#~ msgstr "צבע קישור חדש"
+
+#~ msgid "The color of new link elements"
+#~ msgstr "הצבע של קישורים חדשים"
+
+#~ msgid "Visited Link Color"
+#~ msgstr "צבע קישור שבוקר"
+
+#~ msgid "The color of visited link elements"
+#~ msgstr "הצבע של קישורים שבוקרו"
+
+#~ msgid "Active Link Color"
+#~ msgstr "צבע קישור פעיל"
+
+#~ msgid "The color of active link elements"
+#~ msgstr "הצבע של קישורים פעילים"
+
+#~ msgid "Spelling Error Color"
+#~ msgstr "צבע שגיאת כתיב"
+
+#~ msgid "The color of the spelling error markers"
+#~ msgstr "הצבע של מזהי שגיאות כתיב"
+
+#~ msgid "Cite Quotation Color"
+#~ msgstr "צבע ציטוט"
+
+#~ msgid "The color of the cited text"
+#~ msgstr "הצבע של הטקסט המצוטט"
+
+#~ msgid "<b>Alignment</b>"
+#~ msgstr "<b>יישור</b>"
+
+#~ msgid "<b>Background Image</b>"
+#~ msgstr "<b>תמונת רקע</b>"
+
+#~ msgid "<b>Background</b>"
+#~ msgstr "<b>רקע</b>"
+
+#~ msgid "<b>Colors</b>"
+#~ msgstr "<b>צבעים</b>"
+
+#~ msgid "<b>General</b>"
+#~ msgstr "<b>כללי</b>"
+
+#~ msgid "<b>Link</b>"
+#~ msgstr "<b>קישור</b>"
+
+#~ msgid "<b>Scope</b>"
+#~ msgstr "<b>מתחם</b>"
+
+#~ msgid "<b>Size</b>"
+#~ msgstr "<b>גודל</b>"
+
+#~ msgid "<b>Style</b>"
+#~ msgstr "<b>סגנון</b>"
+
+#~ msgid ""
+#~ "Left\n"
+#~ "Center\n"
+#~ "Right"
+#~ msgstr ""
+#~ "שמאל\n"
+#~ "מרכז\n"
+#~ "ימין"
+
+#~ msgid ""
+#~ "None\n"
+#~ "Perforated Paper\n"
+#~ "Blue Ink\n"
+#~ "Paper\n"
+#~ "Ribbon\n"
+#~ "Midnight\n"
+#~ "Confidential\n"
+#~ "Draft\n"
+#~ "Graph Paper"
+#~ msgstr ""
+#~ "ללא\n"
+#~ "דף מחורר\n"
+#~ "דיו כחול\n"
+#~ "דף\n"
+#~ "דף רצועת תבנית\n"
+#~ "חצות\n"
+#~ "מסווג\n"
+#~ "טיוטה\n"
+#~ "דף משבצות"
+
+#~ msgid ""
+#~ "Top\n"
+#~ "Middle\n"
+#~ "Bottom"
+#~ msgstr ""
+#~ "עליון\n"
+#~ "אמצעי\n"
+#~ "תחתון"
+
+#~ msgid ""
+#~ "px\n"
+#~ "%"
+#~ msgstr ""
+#~ "פק'\n"
+#~ "%"
+
+#~ msgid "Alphabetical List"
+#~ msgstr "רשימה אלפבתית"
+
+#~ msgid "Bulleted List"
+#~ msgstr "רשימת תבליטים"
+
+#~ msgid "Center justifies the paragraphs"
+#~ msgstr "מיישר לאמצע את הפסקאות"
+
+#~ msgid "Check spelling of the document"
+#~ msgstr "בדוק את איות המסמך"
+
+#~ msgid "Copy"
+#~ msgstr "העתק"
+
+#~ msgid "Copy the selection"
+#~ msgstr "העתק את הבחירה"
+
+#~ msgid "Cut"
+#~ msgstr "גזור"
+
+#~ msgid "Cut the selection"
+#~ msgstr "גזור את הבחירה"
+
+#~ msgid "Emoti_con"
+#~ msgstr "_סמיילי"
+
+#~ msgid "Find _Again"
+#~ msgstr "חפש _שוב"
+
+#~ msgid "Find again"
+#~ msgstr "חפש שוב"
+
+#~ msgid "Find and Replace"
+#~ msgstr "חפש והחלף"
+
+#~ msgid "Find and replace"
+#~ msgstr "חפש והחלף"
+
+#~ msgid "I_nsert"
+#~ msgstr "ה_כנס"
+
+#~ msgid "Image"
+#~ msgstr "תמונה"
+
+#~ msgid "Insert Crying emoticon into document..."
+#~ msgstr "הכנס סמיילי בוכה למסמך..."
+
+#~ msgid "Insert Frown emoticon into document..."
+#~ msgstr "הכנס סמיילי זועף למסמך..."
+
+#~ msgid "Insert HTML file into document..."
+#~ msgstr "הכנס קובץ HTML למסמך..."
+
+#~ msgid "Insert HTML link into document..."
+#~ msgstr "הכנס קישור HTML למסמך..."
+
+#~ msgid "Insert HTML template into document..."
+#~ msgstr "הכנס תבנית HTML למסמך..."
+
+#~ msgid "Insert Indifferent emoticon into document..."
+#~ msgstr "הכנס סמיילי אדיש למסמך..."
+
+#~ msgid "Insert Laughing emoticon into document..."
+#~ msgstr "הכנס סמיילי צוחק למסמך..."
+
+#~ msgid "Insert Oh no! emoticon into document..."
+#~ msgstr "הנס סמיילי הו-לא! למסמך..."
+
+#~ msgid "Insert Sick emoticon into document..."
+#~ msgstr "הכנס סמיילי חולה למסמך..."
+
+#~ msgid "Insert Smile emoticon into document..."
+#~ msgstr "הכנס סמיילי מחייך למסמך..."
+
+#~ msgid "Insert Surprised emoticon into document..."
+#~ msgstr "הכנס סמיילי מופתע למסמך..."
+
+#~ msgid "Insert Tongue emoticon into document..."
+#~ msgstr "הכנס סמיילי לשון למסמך..."
+
+#~ msgid "Insert Undecided emoticon into document..."
+#~ msgstr "הכנס סמיילי לא החלטי למסמך..."
+
+#~ msgid "Insert Wink emoticon into document..."
+#~ msgstr "הכנס סמיילי קורץ למסמך..."
+
+#~ msgid "Insert image"
+#~ msgstr "הכנס תמונה"
+
+#~ msgid "Insert image into document..."
+#~ msgstr "הכנס תמונה למסמך..."
+
+#~ msgid "Insert link"
+#~ msgstr "הכנס קישור"
+
+#~ msgid "Insert rule"
+#~ msgstr "הכנס קו"
+
+#~ msgid "Insert rule into document..."
+#~ msgstr "הכנס קו למסמך..."
+
+#~ msgid "Insert table"
+#~ msgstr "הכנס טבלה"
+
+#~ msgid "Insert table into document..."
+#~ msgstr "הכנס טבלה למסמך..."
+
+#~ msgid "Insert text file into document..."
+#~ msgstr "הכנס קובץ מלל למסמך..."
+
+#~ msgid "Left justifies the paragraphs"
+#~ msgstr "יישר הפסקאות לשמאל"
+
+#~ msgid "Make the current Paragraph style Normal"
+#~ msgstr "שנה את סגנון הפסקה הנוכחי לרגיל"
+
+#~ msgid "Make the current Paragraph style Preformat"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי לפי מבנה מוגדר"
+
+#~ msgid "Make the current paragraph a bulleted list"
+#~ msgstr "שנה את סגנון הפסקה הנוכחי לרשימה מובלטת"
+
+#~ msgid "Make the current paragraph a list with roman numerals"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי רשימה מספרית רומית"
+
+#~ msgid "Make the current paragraph a numbered list"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי רשימה מספרית"
+
+#~ msgid "Make the current paragraph an H1 header"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כותרת H1"
+
+#~ msgid "Make the current paragraph an H2 header"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כותרת H2"
+
+#~ msgid "Make the current paragraph an H3 header"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כותרת H3"
+
+#~ msgid "Make the current paragraph an H4 header"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כותרת H4"
+
+#~ msgid "Make the current paragraph an H5 header"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כותרת H5"
+
+#~ msgid "Make the current paragraph an H6 header"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כותרת H6"
+
+#~ msgid "Make the current paragraph an address"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי כתובת"
+
+#~ msgid "Make the current paragraph an alphabetical list"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי רשימה אלפבתית"
+
+#~ msgid "Normal"
+#~ msgstr "רגיל"
+
+#~ msgid "Numbered List"
+#~ msgstr "רשימה מספרית"
+
+#~ msgid "Oh _No!"
+#~ msgstr "הו _לא!"
+
+#~ msgid "Paste"
+#~ msgstr "הדבק"
+
+#~ msgid "Paste the clipboard"
+#~ msgstr "הדבק את הלוח"
+
+#~ msgid "Paste the clipboard as a quotation"
+#~ msgstr "הדבק את הלוח כציטוט"
+
+#~ msgid "Preformat"
+#~ msgstr "תבנית מוגדרת"
+
+#~ msgid "Redo"
+#~ msgstr "בצע שוב"
+
+#~ msgid "Redo previously undone change"
+#~ msgstr "בצע שוב את השינוי המבוטל הקודם"
+
+#~ msgid "Right justifies the paragraphs"
+#~ msgstr "יישר לימין את הפסקאות"
+
+#~ msgid "Roman Numeral List"
+#~ msgstr "רשימה מספרית רומית"
+
+#~ msgid "Rule"
+#~ msgstr "קו"
+
+#~ msgid "Select the entire contents of the document"
+#~ msgstr "בחר את כול התכנים של המסמך"
+
+#~ msgid "Strikeout"
+#~ msgstr "קו חוצה"
+
+#~ msgid "Su_rprised"
+#~ msgstr "_מופתע"
+
+#~ msgid "Subscript"
+#~ msgstr "כתב תחתי"
+
+#~ msgid "Superscript"
+#~ msgstr "כתב עילי"
+
+#~ msgid "Te_mplate..."
+#~ msgstr "_תבנית..."
+
+#~ msgid "Typewriter"
+#~ msgstr "מכונת-כתיבה"
+
+#~ msgid "Undo"
+#~ msgstr "בטל"
+
+#~ msgid "Undo previous changes"
+#~ msgstr "בטל את השינויים האחרונים"
+
+#~ msgid "_Font Size"
+#~ msgstr "_גודל הגופן"
+
+#~ msgid "_Frown"
+#~ msgstr "_זועף"
+
+#~ msgid "_Heading"
+#~ msgstr "_כותרת"
+
+#~ msgid "_Indifferent"
+#~ msgstr "_אדיש"
+
+#~ msgid "_Laughing"
+#~ msgstr "_צוחק"
+
+#~ msgid "_Page..."
+#~ msgstr "_עמוד..."
+
+#~ msgid "_Paragraph..."
+#~ msgstr "_פסקה..."
+
+#~ msgid "_Replace..."
+#~ msgstr "_החלף..."
+
+#~ msgid "_Style"
+#~ msgstr "_סגנון"
+
+#~ msgid "_Text..."
+#~ msgstr "_טקסט..."
+
+#~ msgid "_Undecided"
+#~ msgstr "_לא החלטי"
+
+#~ msgid "GNOME HTML Editor"
+#~ msgstr "GNOME HTML Editor"
+
+#~ msgid "GNOME HTML Editor Control"
+#~ msgstr "GNOME HTML Editor Control"
+
+#~ msgid "GNOME HTML Editor Factory"
+#~ msgstr "GNOME HTML Editor Factory"
+
+#~ msgid "Background Image File Path"
+#~ msgstr "נתיב תמונת הרקע"
+
+#~ msgid "Template"
+#~ msgstr "תבנית"
+
+#~ msgid "Could not load glade file."
+#~ msgstr "לא ניתן לטעון את קובץ glade."
+
+#~ msgid "Transparent"
+#~ msgstr "שקוף"
+
+#~ msgid "Text"
+#~ msgstr "טקסט"
+
+#~ msgid "Paragraph"
+#~ msgstr "פסקה"
+
+#~ msgid "Page"
+#~ msgstr "עמוד"
+
+#~ msgid "color preview"
+#~ msgstr "תצוגה מקדימה של הצבע"
+
+#~ msgid "Custom Color:"
+#~ msgstr "צבע מותאם אישית:"
+
+#~ msgid "purplish blue"
+#~ msgstr "כחול סגלגל"
+
+#~ msgid "dark purple"
+#~ msgstr "סגול כהה"
+
+#~ msgid "sky blue"
+#~ msgstr "תכלת"
+
+#~ msgid "Popup"
+#~ msgstr "חלונית קופצת"
+
+#~ msgid "GtkHTML Editor Control"
+#~ msgstr "בקרת עורך GtkHTML"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid ""
+#~ "-2\n"
+#~ "-1\n"
+#~ "Standard\n"
+#~ "+1\n"
+#~ "+2\n"
+#~ "+3\n"
+#~ "+4"
+#~ msgstr ""
+#~ "-2\n"
+#~ "-1\n"
+#~ "רגיל\n"
+#~ "+1\n"
+#~ "+2\n"
+#~ "+3\n"
+#~ "+4"
+
+#~ msgid "<b>Alignment &amp; Behaviour</b>"
+#~ msgstr "<b>יישור והתנהגות</b>"
+
+#~ msgid "<span weight=\"bold\">General</span>"
+#~ msgstr "<span weight=\"bold\">כללי</span>"
+
+#~ msgid "<span weight=\"bold\">Layout</span>"
+#~ msgstr "<span weight=\"bold\">פריסה</span>"
+
+#~ msgid "<span weight=\"bold\">Link</span>"
+#~ msgstr "<span weight=\"bold\">קישור</span>"
+
+#~ msgid "<span weight=\"bold\">Size</span>"
+#~ msgstr "<span weight=\"bold\">גודל</span>"
+
+#~ msgid "<span weight=\"bold\">Style</span>"
+#~ msgstr "<span weight=\"bold\">סגנון</span>"
+
+#~ msgid "<span weight=\"bold\">Template</span>"
+#~ msgstr "<span weight=\"bold\">תבנית</span>"
+
+#~ msgid "Alignment:"
+#~ msgstr "יישור:"
+
+#~ msgid "Cell"
+#~ msgstr "תא"
+
+#~ msgid "Colu_mns:"
+#~ msgstr "ע_מודות:"
+
+#~ msgid "Column span:"
+#~ msgstr "פריסת עמודה:"
+
+#~ msgid "Enable"
+#~ msgstr "אפשר"
+
+#~ msgid "Hea_der style"
+#~ msgstr "סגנון _כותרת"
+
+#~ msgid "Horizontal alignment:"
+#~ msgstr "יישור אופקי:"
+
+#~ msgid "Horizontal:"
+#~ msgstr "אופקי:"
+
+#~ msgid ""
+#~ "Left\n"
+#~ "Center\n"
+#~ "Right\n"
+#~ "None"
+#~ msgstr ""
+#~ "שמאל\n"
+#~ "מרכז\n"
+#~ "ימין\n"
+#~ "ללא"
+
+#~ msgid "Link properties"
+#~ msgstr "מאפייני קישור"
+
+#~ msgid "Row span:"
+#~ msgstr "פריסת שורה:"
+
+#~ msgid "Shade"
+#~ msgstr "צל"
+
+#~ msgid "Vertical:"
+#~ msgstr "אנכי:"
+
+#~ msgid "xxxxxxxxxxxxxx"
+#~ msgstr "xxxxxxxxxxxxxx"
+
+#~ msgid "URL:"
+#~ msgstr "כתובת:"
+
+#~ msgid "Description:"
+#~ msgstr "תיאור:"
+
+#~ msgid "Insert"
+#~ msgstr "הכנס"
+
+#~ msgid "Error loading file '%s': %s"
+#~ msgstr "שגיאה בטעינת הקובץ '%s': %s"
+
+#~ msgid "Format"
+#~ msgstr "תבנית"
+
+#~ msgid "Roman List"
+#~ msgstr "רשימה רומאית"
+
+#~ msgid "Header 1"
+#~ msgstr "כותרת 1"
+
+#~ msgid "Header 2"
+#~ msgstr "כותרת 2"
+
+#~ msgid "Header 3"
+#~ msgstr "כותרת 3"
+
+#~ msgid "Header 4"
+#~ msgstr "כותרת 4"
+
+#~ msgid "Header 5"
+#~ msgstr "כותרת 5"
+
+#~ msgid "Header 6"
+#~ msgstr "כותרת 6"
+
+#~ msgid "Address"
+#~ msgstr "כתובת"
+
+#~ msgid "Text Style..."
+#~ msgstr "סגנון טקסט..."
+
+#~ msgid "Paragraph Style..."
+#~ msgstr "סגנון פסקה..."
+
+#~ msgid "Link Style..."
+#~ msgstr "סגנון קישור..."
+
+#~ msgid "Rule Style..."
+#~ msgstr "סגנון קו..."
+
+#~ msgid "Image Style..."
+#~ msgstr "סגנון תמונה..."
+
+#~ msgid "Cell Style..."
+#~ msgstr "סגנון תא..."
+
+#~ msgid "Table Style..."
+#~ msgstr "סגנון טבלה..."
+
+#~ msgid "Page Style..."
+#~ msgstr "סגנון עמוד..."
+
+#~ msgid "Table insert"
+#~ msgstr "הכנס טבלה"
+
+#~ msgid "Row above"
+#~ msgstr "שורה מעלה"
+
+#~ msgid "Row below"
+#~ msgstr "שורה מטה"
+
+#~ msgid "Column before"
+#~ msgstr "עמודה לפני"
+
+#~ msgid "Column after"
+#~ msgstr "עמודה אחרי"
+
+#~ msgid "Table delete"
+#~ msgstr "מחק טבלה"
+
+#~ msgid "Cell contents"
+#~ msgstr "תכני התא"
+
+#~ msgid "Add Word to"
+#~ msgstr "הוסף מילה ל"
+
+#~ msgid "Replace confirmation"
+#~ msgstr "החלף אישור"
+
+#~ msgid "Search _backward"
+#~ msgstr "חפש _אחורה"
+
+#~ msgid "_Backward"
+#~ msgstr "_אחורה"
+
+#~ msgid "_Regular Expression"
+#~ msgstr "_ביטוי רגיל"
+
+#~ msgid "Input the words you want to search here"
+#~ msgstr "הכנס את המילים לחיםוש כאן"
+
+#~ msgid ""
+#~ "Unable to add word to dictionary,\n"
+#~ "language settings are broken.\n"
+#~ msgstr ""
+#~ "לא ניתן להוסיף מילה למילון,\n"
+#~ "הגדרות השפה לא תקינות.\n"
+
+#~ msgid "No misspelled word found"
+#~ msgstr "לא נמצאו שגיאות כתיב"
+
+#~ msgid "Spell checker"
+#~ msgstr "בודק איות"
+
+#~ msgid "Note"
+#~ msgstr "הערה"
+
+#~ msgid "Place your text here"
+#~ msgstr "הכנס את המלל שלך לכאן"
+
+#~ msgid "Image frame"
+#~ msgstr "מסגרת תמונה"
+
+#~ msgid "Template Labels"
+#~ msgstr "תבנית תוויות"
+
+#~ msgid "Open file..."
+#~ msgstr "פתח קובץ..."
+
+#~ msgid "Save file as..."
+#~ msgstr "שמור קובץ בשם..."
+
+#~ msgid "GtkHTML Editor Test Container"
+#~ msgstr "בודק GtkHTML Editor"
+
+#~ msgid "Left align"
+#~ msgstr "יישור לשמאל"
+
+#~ msgid "Right align"
+#~ msgstr "יישור לימין"
+
+#~ msgid "Toggle typewriter font style"
+#~ msgstr "בחר את סגנון גופן הכתבן"
+
+#~ msgid "Makes the text bold"
+#~ msgstr "עושה את המלל מודגש"
+
+#~ msgid "Makes the text italic"
+#~ msgstr "עושה את המלל נטוי"
+
+#~ msgid "Underlines the text"
+#~ msgstr "שם קו תחתי מתחת למלל"
+
+#~ msgid "Strikes out the text"
+#~ msgstr "שם קו חוצה על המלל"
+
+#~ msgid "Unindent"
+#~ msgstr "בטל הזחה"
+
+#~ msgid "Indents the paragraphs less"
+#~ msgstr "מזיח את הפסקה פחות"
+
+#~ msgid "Indent"
+#~ msgstr "הזח"
+
+#~ msgid "Indents the paragraphs more"
+#~ msgstr "מזיח את הפסקה יותר"
+
+#~ msgid "Text Color"
+#~ msgstr "צבע טקסט"
+
+#~ msgid "Sample"
+#~ msgstr "דוגמה"
+
+#~ msgid ""
+#~ "The edited object was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "האובייקט הערוך הוסר מהמסמך.\n"
+#~ "לא ניתן להחל את שינוייך."
+
+#~ msgid "Print pre_view"
+#~ msgstr "_תצוגה מקדימה"
+
+#~ msgid "Print preview"
+#~ msgstr "תצוגה מקדימה"
+
+#~ msgid "GtkHTML Test Application"
+#~ msgstr "GtkHTML Test Application"
+
+#~ msgid "_Tongue"
+#~ msgstr "_לשון"
+
+#~ msgid "language|Default"
+#~ msgstr "ברירת מחדל"
+
+#, fuzzy
+#~ msgid "Make the current Paragraph style Preformatted"
+#~ msgstr "עשה את סגנון הפסקה הנוכחי רגיל"
+
+#~ msgid "_Format"
+#~ msgstr "_תצורה"
+
+#, fuzzy
+#~ msgid "gtk-find-and-replace"
+#~ msgstr "חפש והחלף"
+
+#~ msgid "Cannot allocate default font for printing\n"
+#~ msgstr "לא ניתן להקצות גופן ברירת מחדל להדפסה\n"
+
+#~ msgid "Percent"
+#~ msgstr "אחוז"
+
+#~ msgid "Pixels"
+#~ msgstr "פיקסלים"
+
+#~ msgid "Dot item"
+#~ msgstr "פריט נקודה"
+
+#~ msgid "Number item"
+#~ msgstr "פריט מספר"
+
+#~ msgid "Roman item"
+#~ msgstr "פריט רומאי"
+
+#~ msgid "Alphabeta item"
+#~ msgstr "פריט אלפבתי"
+
+#~ msgid "Paste Quotation"
+#~ msgstr "הדבק ציטוט"
+
+#~ msgid "Li_ck"
+#~ msgstr "מ_לקק"
+
+#, fuzzy
+#~ msgid "Check Word Spelling..."
+#~ msgstr "בודק איות '%s'..."
+
+#~ msgid "Background Color"
+#~ msgstr "צבע הרקע"
+
+#~ msgid "Blue"
+#~ msgstr "כחול"
+
+#~ msgid "Find And Replace"
+#~ msgstr "חפש והחלף"
+
+#~ msgid "Green"
+#~ msgstr "ירוק"
+
+#~ msgid "Insert Lick smiley into document..."
+#~ msgstr "הכנס סמיילי מלקק למסמך..."
+
+#~ msgid "Orange"
+#~ msgstr "כתום"
+
+#~ msgid "Other..."
+#~ msgstr "אחר..."
+
+#~ msgid "Purple"
+#~ msgstr "סגול"
+
+#~ msgid "Red"
+#~ msgstr "אדום"
+
+#~ msgid "Yellow"
+#~ msgstr "צהוב"
+
+#~ msgid "_Spell Check Document..."
+#~ msgstr "_בדוק איות במסמך..."
+
+#~ msgid "etc..."
+#~ msgstr "וכו'..."
+
+#~ msgid "Length:"
+#~ msgstr "אורך:"
+
+#~ msgid "Thickness:"
+#~ msgstr "עובי:"
+
+#~ msgid "Html"
+#~ msgstr "Html"
+
+#~ msgid "Html test"
+#~ msgstr "בדיקת Html"
+
+#~ msgid "Test1"
+#~ msgstr "בדיקה1"
+
+#~ msgid "Test2"
+#~ msgstr "בדיקה2"
+
+#~ msgid "Test3"
+#~ msgstr "בדיקה3"
+
+#~ msgid "Test4"
+#~ msgstr "בדיקה4"
+
+#~ msgid "Test5"
+#~ msgstr "בדיקה5"
+
+#~ msgid "Test6"
+#~ msgstr "בדיקה6"
+
+#~ msgid "Test7"
+#~ msgstr "בדיקה7"
+
+#~ msgid "_Refresh"
+#~ msgstr "_רענן"
+
+#~ msgid "Reload the page"
+#~ msgstr "טוען מחדש את העמוד"
+
+#~ msgid "Could not initialize Bonobo!"
+#~ msgstr "לא ניתן לאתחל את Bonobo!"
+
+#~ msgid "<None>"
+#~ msgstr "<ללא>"
+
+#~ msgid "\n"
+#~ msgstr "\n"
+
+#~ msgid "*********************"
+#~ msgstr "*********************"
+
+#~ msgid "Add Keyboard Shortcuts"
+#~ msgstr "הוסף קיצורי-דרך למקלדת"
+
+#~ msgid "Automatically detect links"
+#~ msgstr "זהה קישורים אוטומטית"
+
+#~ msgid "Behavior"
+#~ msgstr "התנהגות"
+
+#~ msgid "Composer Properties"
+#~ msgstr "מאפייני המחבר"
+
+#~ msgid "Configure spell checking"
+#~ msgstr "הגדר את בודק האיות"
+
+#~ msgid "Fixed width"
+#~ msgstr "רוחב קבוע"
+
+#~ msgid "Fonts"
+#~ msgstr "גופנים"
+
+#~ msgid "For printing"
+#~ msgstr "להדפסה"
+
+#~ msgid "Grab keys"
+#~ msgstr "קבל מקשים"
+
+#~ msgid "Information"
+#~ msgstr "מידע"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "קיצורי-דרך למקלדת"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "שונות"
+
+#~ msgid "New shortcut:"
+#~ msgstr "קיצור-דרך חדש:"
+
+#~ msgid "On screen"
+#~ msgstr "על המסך"
+
+#~ msgid "Select HTML fixed width font"
+#~ msgstr "בחר גופן HTML בעל רוחב קבוע"
+
+#~ msgid "Select HTML fixed width font for printing"
+#~ msgstr "בחר גופן HTML בעל רוחב קבוע להדפסה"
+
+#~ msgid "Select HTML variable width font"
+#~ msgstr "בחר גופן HTML בעל רוחב משתנה"
+
+#~ msgid "Select HTML variable width font for printing"
+#~ msgstr "בחר גופן HTML בעל רוחב משתנה להדפסה"
+
+#~ msgid "Shortcuts _type:"
+#~ msgstr "_סוג קיצור-דרך:"
+
+#~ msgid "Show animated images"
+#~ msgstr "הצג תמונות מונפשות"
+
+#~ msgid "Variable width"
+#~ msgstr "רוחב משתנה"
+
+#~ msgid "_Add"
+#~ msgstr "_הוסף"
+
+#~ msgid "_Delete"
+#~ msgstr "_מחק"
+
+#~ msgid ""
+#~ "Cannot execute GNOME Spell control applet\n"
+#~ "Try to install GNOME Spell if you don't have it installed."
+#~ msgstr ""
+#~ "לא ניתן לפהעיל את יישומון בקרת האיות של GNOME\n"
+#~ "נסה להתקין את GNOME Spell אם אין לך את זה מותקן."
+
+#, fuzzy
+#~ msgid "With:"
+#~ msgstr "רוחב:"
+
+#~ msgid ""
+#~ "@link_begin@<img@alt@@width@@height@@align@ "
+#~ "border=@border@@padh@@padv@@src@>@link_end@"
+#~ msgstr ""
+#~ "@link_begin@<img@alt@@width@@height@@align@ "
+#~ "border=@border@@padh@@padv@@src@>@link_end@"
+
+#~ msgid ""
+#~ "<center><table bgcolor=\"#c0c0c0\" cellspacing=\"0\" "
+#~ "cellpadding=@border@><tr><td><table bgcolor=\"#f2f2f2\" cellspacing=\"0\" "
+#~ "cellpadding=\"8\" width=\"100%\"><tr><td align=\"center\"><img "
+#~ "@src@@alt@@width@@height@align=top border=0></td></tr></table></td></tr></"
+#~ "table></center>"
+#~ msgstr ""
+#~ "<center><table bgcolor=\"#c0c0c0\" cellspacing=\"0\" "
+#~ "cellpadding=@border@><tr><td><table bgcolor=\"#f2f2f2\" cellspacing=\"0\" "
+#~ "cellpadding=\"8\" width=\"100%\"><tr><td align=\"center\"><img "
+#~ "@src@@alt@@width@@height@align=top border=0></td></tr></table></td></tr></"
+#~ "table></center>"
+
+#~ msgid "Caption"
+#~ msgstr "כותרת"
+
+#~ msgid ""
+#~ "<center><table bgcolor=\"#c0c0c0\" cellspacing=\"0\" "
+#~ "cellpadding=@border@><tr><td><table bgcolor=\"#f2f2f2\" cellspacing=\"0\" "
+#~ "cellpadding=\"8\" width=\"100%\"><tr><td align=\"center\"><img "
+#~ "@src@@alt@@width@@height@align=top border=0></td></tr><tr><td><b>[Place "
+#~ "your comment here]</td></tr></table></td></tr></table></center>"
+#~ msgstr ""
+#~ "<center><table bgcolor=\"#c0c0c0\" cellspacing=\"0\" "
+#~ "cellpadding=@border@><tr><td><table bgcolor=\"#f2f2f2\" cellspacing=\"0\" "
+#~ "cellpadding=\"8\" width=\"100%\"><tr><td align=\"center\"><img "
+#~ "@src@@alt@@width@@height@align=top border=0></td></tr><tr><td><b>[הכנס את "
+#~ "הערתך כאן]</td></tr></table></td></tr></table></center>"
+
+#~ msgid "Find A Regular Expression"
+#~ msgstr "חפש ביטוי רגיל"
+
+#~ msgid "Find Regular E_xpression..."
+#~ msgstr "חפש _ביטוי רגיל..."
+
+#, fuzzy
+#~ msgid ""
+#~ "The quick brown <a href=\"mailto:fox\">fox</a> jumps over the lazy <a "
+#~ "href=\"mailto:dog\">dog</a>."
+#~ msgstr "לך אל הנמלה עצל ראה דרכיה וחכם."
+
+#~ msgid "The quick brown fox jumps over the lazy dog."
+#~ msgstr "לך אל הנמלה עצל ראה דרכיה וחכם."
+
+#~ msgid "Other"
+#~ msgstr "אחר"
+
+#~ msgid ""
+#~ "The editted cell was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "התא הערוך הוסר מהמסמך.\n"
+#~ "לא ניתן להחיל את שינוייך."
+
+#~ msgid "************"
+#~ msgstr "************"
+
+#~ msgid "***text***"
+#~ msgstr "***מלל***"
+
+#~ msgid "Apply changes to:"
+#~ msgstr "החל שינויים בעבור:"
+
+#~ msgid "Border"
+#~ msgstr "גבול"
+
+#~ msgid "Click will follow this URL"
+#~ msgstr "לחיצה תעקוב אחרי כתובת זו"
+
+#~ msgid "Click will follow this URL:"
+#~ msgstr "לחיצה תעקוב אחרי כתובת זו:"
+
+#~ msgid "Don't wrap"
+#~ msgstr "אל תגלוש"
+
+#~ msgid "Font size"
+#~ msgstr "גודל הגופן"
+
+#~ msgid "Header"
+#~ msgstr "כתורת"
+
+#~ msgid "Link insert"
+#~ msgstr "הכנס קישור"
+
+#~ msgid "Padding"
+#~ msgstr "ריפוד"
+
+#~ msgid "Percent %"
+#~ msgstr "אחוז %"
+
+#~ msgid "Pixmap:"
+#~ msgstr "מפת פיקסלים:"
+
+#~ msgid "Points"
+#~ msgstr "נקודות"
+
+#~ msgid "Spacing"
+#~ msgstr "מרווח"
+
+#~ msgid "Style:"
+#~ msgstr "סגנון:"
+
+#~ msgid "Wrap"
+#~ msgstr "גלישה"
+
+#~ msgid "Wrapping:"
+#~ msgstr "גלישה:"
+
+#~ msgid "xxxxxxxxx"
+#~ msgstr "xxxxxxxxx"
+
+#~ msgid ""
+#~ "The editted image was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "התמונה הערוכה הוסרה מהמסמך.\n"
+#~ "לא ניתן להחיל את שינוייך."
+
+#~ msgid "Link text"
+#~ msgstr "מלל קישור"
+
+#~ msgid ""
+#~ "The editted link was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "הקישור הערוך הוסר מהמסמך.\n"
+#~ "לא ניתן להחיל את שינוייך."
+
+#~ msgid "Align"
+#~ msgstr "סידור"
+
+#~ msgid ""
+#~ "The editted paragraph was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "הפסקה הערוכה הוסרה מהמסמך.\n"
+#~ "לא ניתן להחיל את השינויים."
+
+#~ msgid "Blue 3D"
+#~ msgstr "כחול תלת-מימד"
+
+#~ msgid "Yellow, flowers"
+#~ msgstr "צהוב, פרחים"
+
+#~ msgid ""
+#~ "The editted rule was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "החוק הערוך הוסר מהמסמך.\n"
+#~ "לא ניתן להחיל את שינוייך."
+
+#~ msgid "Flat gray"
+#~ msgstr "אפור שטוח"
+
+#~ msgid "Dark header"
+#~ msgstr "כותרת כהה"
+
+#~ msgid ""
+#~ "The editted table was removed from the document.\n"
+#~ "Cannot apply your changes."
+#~ msgstr ""
+#~ "הטבלה הערוכה הוסרה מהמסמך.\n"
+#~ "לא ניתן להחיל את שינוייך."
+
+#, fuzzy
+#~ msgid "The quick brown fox jumps over the lazy dog.</div>"
+#~ msgstr "לך אל הנמלה עצל ראה דרכיה וחכם."
+
+#~ msgid "Rectangles"
+#~ msgstr "מלבנים"
+
+#~ msgid "The quick brown fox jumped over the lazy dog."
+#~ msgstr "לך אל הנמלה עצל ראה דרכיה וחכם."
+
+#~ msgid "I could not initialize Bonobo"
+#~ msgstr "לא הצלחתי לאתחל את Bonobo"
